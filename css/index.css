@@ -259,7 +259,7 @@ footer form {
     }
 }
 
-@media (max-width: 375px) and (max-height: 667px) {
+@media (max-width: 460px) and (max-height: 667px) {
     header img {
         margin-left: 10px;
         height: 40px;
