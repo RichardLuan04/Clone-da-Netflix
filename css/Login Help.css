@@ -60,7 +60,7 @@ nav a:hover {
 }
 
 main {
-    height: 75%;
+    height: 85%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -127,7 +127,7 @@ label input {
     width: 90%;
     display: flex;
     justify-content: start;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .botoes input, button {
@@ -135,8 +135,8 @@ label input {
     color: #fff;
     border-radius: 5px;
     border: none;
-    height: 90%;
-    width: 30%;
+    height: 5vh;
+    width: 10vw;
     font-size: 1.2rem;
     cursor: pointer;
     transition: 0.4s;
@@ -168,7 +168,7 @@ main p {
     margin-top: 20px;
 }
 
-main button {
+#saiba-mais {
     background: none;
     font-size: 1.5rem;
     text-decoration: underline;
