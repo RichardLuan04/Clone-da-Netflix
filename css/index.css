@@ -355,7 +355,7 @@ form {
 
 /* Responsividade para diversos tipos de telas necessarios */
 
-@media (max-width: 1680px) and (max-height: 1050px) {
+@media screen and (max-width: 1680px) {
     .Titulo p {
         font-size: 4.5rem;
     }
@@ -383,7 +383,7 @@ form {
     }
 }
 
-@media (max-width: 1440px) and (max-height: 900px) {
+@media screen and (max-width: 1440px) {
     .Titulo p {
         font-size: 3.5rem;
     }
@@ -427,7 +427,7 @@ form {
     }
 }
 
-@media (max-width: 1024px) and (max-height: 768px) {
+@media screen and (max-width: 1024px) {
     header img {
         margin-left: 50px;
     }
@@ -445,7 +445,9 @@ form {
     }
 }
 
-@media (max-width: 460px) and (max-height: 920px) {
+/* Para celulares */
+
+@media screen and (max-width: 420px){
     header img {
         margin-left: 10px;
         height: 40px;
