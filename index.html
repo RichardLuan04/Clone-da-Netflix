@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/index.css">
 
     <script src="./js/Mostrar_modal.js" defer></script>
+    <script src="./js/Entrar.js" defer></script>
 
     <title>Netflix Brasil - assistir a séries online, assistir a filmes online</title>
 </head>
@@ -23,10 +24,10 @@
             </div>
     
             <form>
-                <input type="text" placeholder="Email ou número de telefone" id="email-telefone">
-                <input type="text" placeholder="Senha" id="Senha">
+                <input type="email" placeholder="Email ou número de telefone" id="email-telefone">
+                <input type="password" placeholder="Senha" id="Senha">
     
-                <input type="submit" value="Entrar" id="entrar">
+                <input type="button" value="Entrar" id="entrar" onclick="Entrar()">
     
                 <div class="ajuda">
                     <div class="checkbox">
@@ -40,8 +41,17 @@
             </form>
     
             <div class="infos">
-                <p id="text-1">Novo por aqui: <a href="">Assine agora</a></p>
-                <p id="text-2">Está página é protegida pelo Google reCAPTCHA <br> para garantir que você não é um robô. <button id="saiba-mais">Saiba mais.</button></p>
+                <p id="text-1">Novo por aqui: <a href="./index.html">Assine agora</a></p>
+                <p id="text-2">Está página é protegida pelo Google reCAPTCHA <br> para garantir que você não é um robô.</p>
+                <details>
+                    <summary>Saiba mais</summary>
+                    <p>As informações recolhidas pelo Google reCAPTCHA <br>
+                    estão sujeitas à Política de Privacidade e Termos de <br>
+                    Uso, e são usadas para oferecer, manter e melhorar o <br>
+                    serviço reCAPTCHA e por questões de segurança <br>
+                    (não são usadas para exibir anúncios personalizados <br>
+                    pelo Google).</p>
+                </details>
             </div>
         </div>
 
@@ -75,8 +85,8 @@
             <footer>
                 <p>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
                 <form>
-                    <input type="text" placeholder="Email" id="campo-email">
-                    <input type="submit" value="Vamos lá ㅤ❯" id="botao-email">
+                    <input type="email" placeholder="Email" id="campo-email">
+                    <input type="button" value="Vamos lá ㅤ❯" id="botao-email" onclick="Entrar_index()">
                 </form>
             </footer>
         </div>

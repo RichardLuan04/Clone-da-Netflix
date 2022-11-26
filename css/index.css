@@ -296,6 +296,7 @@ form {
 }
 
 .ajuda {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -346,11 +347,16 @@ form {
     color: #5a6afa;
 }
 
-#saiba-mais {
+summary {
+    margin-top: 5px;
     background: none;
-    color: #5a6afa;
+    color: #FFFFFF;
     cursor: pointer;
     border: none;
+}
+
+details p {
+    color: #a8a8a8;
 }
 
 /* Responsividade para diversos tipos de telas necessarios */
@@ -424,6 +430,7 @@ form {
 
     .modal-login {
         width: 35%;
+        height: 85%;
     }
 }
 
@@ -504,7 +511,8 @@ form {
     }
 
     .modal-login {
-        width: 60%;
+        width: 80%;
+        height: 80%;
     }
 
     .entrar-texto p {
@@ -512,24 +520,29 @@ form {
     }
 
     #email-telefone, #Senha {
-        width: 170px;
+        width: 220px;
         height: 40px;
         font-size: 0.8rem;
         padding-left: 10px;
     }
     
+    .ajuda {
+        width: 67vw;
+    }
+
     #entrar {
-        width: 180px;
+        width: 230px;
         height: 40px;
         font-size: 1rem;
     }
 
     .ajuda a {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
+        margin-left: 25px;
     }
 
     .checkbox label {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
     #text-1 {
@@ -537,7 +550,20 @@ form {
     }
 
     #text-2 {
-        text-align: center;
+        text-align: start;
+        font-size: 0.7rem;
+        width: 65vw;
+    }
+
+    summary {
         font-size: 0.8rem;
+    }
+
+    details {
+        width: 80vw;
+    }
+
+    details p {
+        font-size: 0.7rem;
     }
 }

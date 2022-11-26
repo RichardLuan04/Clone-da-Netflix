@@ -7,7 +7,7 @@
 
 body {
     width: 100vw;
-    height: 120vh;
+    height: 130vh;
     background-image: url(../imgs/login-the-crown.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,11 +17,22 @@ body {
     flex-direction: column;
 }
 
+@keyframes header-animation {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100px, 0);
+    } to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
 header {
     height: 10%;
     width: 100%;
     display: flex;
     flex-direction: row;
+    animation: header-animation 0.7s;
 }
 
 .logo-imagem {
@@ -30,6 +41,7 @@ header {
     display: flex;
     justify-content: start;
     align-items: center;
+    transition: 0.4s;
 }
 
 .logo-imagem img {
@@ -59,13 +71,23 @@ nav a:hover {
     color: #890009;;
 }
 
+@keyframes main-animation {
+    from {
+        opacity: 0;
+        transform: translate3d(-100px, 0, 0);
+    } to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
 main {
-    height: 85%;
+    height: 70%;
     width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: main-animation 0.7s;
 }
 
 section {
@@ -110,6 +132,7 @@ label {
     flex-direction: column;
     color: #808080;
     font-size: 1.5rem;
+    transition: 0.4s;
 }
 
 label input {
@@ -120,6 +143,8 @@ label input {
     margin-bottom: 40px;
     padding-left: 20px;
     font-size: 1.5rem;
+    transition: 0.4s;
+
 }
 
 .botoes {
@@ -135,7 +160,7 @@ label input {
     color: #fff;
     border-radius: 5px;
     border: none;
-    height: 5vh;
+    height: 6vh;
     width: 10vw;
     font-size: 1.2rem;
     cursor: pointer;
@@ -162,15 +187,146 @@ label input {
     background-color: #2e97ff;
 }
 
-main p {
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+
+footer p {
+    text-align: center;
     color: #b3b3b3;
     font-size: 1.5rem;
     margin-top: 20px;
 }
 
-#saiba-mais {
-    background: none;
+summary {
     font-size: 1.5rem;
     text-decoration: underline;
     color: #b3b3b3;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+    .logo-imagem img {
+        height: 80px;
+        width: 200px;
+    }
+
+    nav a {
+        font-size: 3rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .principal p {
+        font-size: 1.2rem;
+    }
+
+    label {
+        font-size: 1.2rem;
+    }
+
+    label input {
+        height: 6vh;
+        font-size: 1.2rem;
+    }
+
+    .botoes input, button {
+        font-size: 1rem;
+    }
+
+    main p {
+        font-size: 1.2rem;
+    }
+
+    footer p, summary {
+        font-size: 1.2rem;
+    }
+} 
+
+@media screen and (max-width: 1024px) {
+    .logo-imagem img {
+        height: 70px;
+        width: 180px;
+    }
+
+    nav a {
+        font-size: 2.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .principal p {
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    label input {
+        font-size: 1rem;
+    }
+
+    .botoes input, button {
+        width: 50%;
+        font-size: 0.8rem;
+    }
+
+    footer p, summary {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .logo-imagem img {
+        height: 30px;
+        width: 100px;
+        margin-left: 0px;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    section {
+        width: 70%;
+    }
+
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .principal p {
+        font-size: 0.6rem;
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+
+    label input {
+        font-size: 0.8rem;
+        height: 5vh;
+    }
+
+    .botoes input, button {
+        width: 50%;
+        font-size: 0.7rem;
+    }
+
+    footer p, summary {
+        font-size: 0.7rem;
+    }
 }
