@@ -13,26 +13,43 @@
 <body>
     <header>
         <div class="logo-imagem">
-
+            <img src="../imgs/logo - Netflix.png" alt="Logo imagem">
         </div>
 
         <nav>
-            
+            <a href="../index.html">Entrar</a>
         </nav>
     </header>
 
     <main>
         <section>
-            <h1>Esqueci meu email / <br> senha</h1>
+            <div class="principal">
+                <h1>Esqueci meu email / <br> senha</h1>
 
-            <p>Para que possamos encontrar sua conta, informe <br> todos os dados abaixo:</p>
+                <p>Para que possamos encontrar sua conta, informe <br> todos os dados abaixo:</p>
 
-            <form>
-                <label for="">
-                    <input type="text" >
-                </label>
-            </form>
+                <form>
+                    <label for="help-name"> Nome na conta
+                        <input type="text" id="help-name">
+                    </label>
+
+                    <label for="help-sobrenome"> Sobrenome na conta
+                        <input type="text" id="help-sobrenome">
+                    </label>
+
+                    <label for="help-cartao"> Cartão de crédito ou débito cadastrado
+                        <input type="text" id="help-cartao">
+                    </label>
+                    
+                    <div class="botoes"> 
+                        <input type="submit" value="Encontrar conta">
+                        <button>Cancelar</button>
+                    </div>
+                </form>
+            </div>
         </section>
+
+        <p>Esta página é protegida pelo Google reCAPTCHA para <br> garantir que você não é um robô. <button>Saiba mais.</button></p>
     </main>
 </body>
 </html>

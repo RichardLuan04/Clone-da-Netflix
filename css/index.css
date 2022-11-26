@@ -346,6 +346,13 @@ form {
     color: #5a6afa;
 }
 
+#saiba-mais {
+    background: none;
+    color: #5a6afa;
+    cursor: pointer;
+    border: none;
+}
+
 /* Responsividade para diversos tipos de telas necessarios */
 
 @media (max-width: 1680px) and (max-height: 1050px) {
