@@ -4,6 +4,16 @@
     font-family: Fira Sans, Arial;
 }
 
+@keyframes animation-body {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    } to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 body {
     background: #141414;
     width: 100vw;
@@ -14,6 +24,7 @@ body {
     align-items: center;
     overflow-y: hidden;
     overflow-y: hidden;
+    animation: animation-body 0.5s normal;
 }
 
 header {
@@ -24,47 +35,11 @@ header {
     align-items: flex-end;
 }
 
-@keyframes texto-animation {
-    from {
-        width: 0;
-    } to {
-        width: 35%;
-    }
-}
-
-@keyframes piscar-cursor {
-    from {
-        border-right-color: rgb(255, 255, 255, 0.75);
-    } to {
-        border-right-color: transparent;
-    }
-}
-
 header p {
     color: #fff;
     font-size: 4.5rem;
     margin-bottom: 40px;
-    border-right: 2px solid rgb(255, 255, 255, 0.75);
-    animation: piscar-cursor 500ms steps(40) infinite normal, 
-    texto-animation 1.5s steps(40) normal;
-    white-space: nowrap;
-    overflow: hidden;
 }
-
-@keyframes animation-perfis {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, 100px, 0);
-    } 50% {
-        opacity: 0;
-        transform: translate3d(0, 100px, 0);
-    } 100% {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-
-}
-
 
 main {
     width: 60%;
@@ -74,31 +49,53 @@ main {
     align-items: flex-start;
     justify-content: center;
     flex-wrap: nowrap;
-    animation: animation-perfis 3s;
 }
 
 figure {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     width: 30%;
     height: 70%;
 }
 
+.filtro {
+    width: 9.3%;
+    height: 17.9%;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 2;
+    position: absolute;
+    border: 3px solid transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtro img {
+    width: 60px;
+    height: 60px;
+    filter: invert(100%);
+    opacity: 0.8;
+}
+
 figure input  {
+    position: relative;
+    z-index: 1;
     height: 180px;
     width: 180px;
     border-radius: 10px;
     cursor: pointer;
-    border: 3px solid transparent;
 }
 
-figure input:hover {
+.filtro:hover {
     border-color: #fff;
 }
 
 figure p {
+    position: relative;
     font-size: 2rem;
     color: #808080;
     text-align: center;
@@ -111,17 +108,16 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    animation: animation-perfis 3s;
 }
 
 footer button {
-    width: 250px;
+    width: 220px;
     height: 60px;
     border-radius: 5px;
-    border: #808080 1px solid;
-    background: none;
-    color: #808080;
-    font-size: 1.3rem;
+    border: none;
+    background: #fff;
+    color: #000;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
