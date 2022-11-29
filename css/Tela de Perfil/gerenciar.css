@@ -1,0 +1,86 @@
+/* Arquivo css feito para modificação de tela ao clicar em gerenciar perfis */
+
+@keyframes animation-gerenciar {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.filtro {
+    width: 175px;
+    height: 175px;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.filtro img {
+    width: 60px;
+    height: 60px;
+    filter: invert(100%);
+    opacity: 0.8;
+    border: none;
+    transition: 0.5s;
+}
+
+.filtro input:hover {
+    transform: scale(1.2);
+}
+
+.filtro:hover {
+    border-color: #fff;
+}
+
+.text-gerenciar {
+    display: none;
+    color: #fff;
+    font-size: 4.5rem;
+    margin-bottom: 40px;
+}
+
+.botao-concluir {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 180px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botao-concluir:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+/* Usar no js */
+
+.title-active {
+    display: flex;
+}
+
+.filtro-active {
+    display: flex;
+}
+
+.botao-concluir-active {
+    display: flex;
+}
+
+.body-animation {
+    animation: animation-gerenciar 1s;
+}

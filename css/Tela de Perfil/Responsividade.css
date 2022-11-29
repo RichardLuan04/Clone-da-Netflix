@@ -1,0 +1,116 @@
+@media screen and (max-width: 1680px) {
+    #titulo, span {
+        font-size: 4rem;
+    }
+
+    figure input  {
+        height: 160px;
+        width: 160px;
+    }
+
+    .filtro {
+        width: 155px;
+        height: 155px;
+    }
+
+    #nome-perfil {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    #titulo, span {
+        font-size: 3rem;
+    }
+
+    #nome-perfil {
+        font-size: 1.3rem;
+    }
+
+    main {
+        width: 70%;
+    }
+
+    #botao-gerenciar {
+        width: 180px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .botao-concluir {
+        width: 150px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #titulo, span {
+        font-size: 2.5rem;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    figure input {
+        height: 140px;
+        width: 140px;
+    }
+
+    .filtro {
+        width: 145px;
+        height: 145px;
+    }
+
+    #nome-perfi {
+        font-size: 1rem;
+    }
+
+    #botao-gerenciar {
+        margin-bottom: 350px;
+        height: 35px;
+        width: 140px;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    header {
+        height: 25%;
+    }
+
+    #titulo, .text-gerenciar {
+        font-size: 1.5rem;
+    }
+
+    main {
+        width: 100%;
+        height: 30%;
+        flex-wrap: wrap;
+    }
+
+    figure {
+        height: 50%;
+    }
+
+    figure input {
+        height: 80px;
+        width: 80px;
+    }
+
+    .filtro {
+        height: 75px;
+        width: 75px;
+    }
+
+    #nome-perfil {
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+
+    footer {
+        height: 45%;
+        justify-content: center;
+        align-items: center;
+    }
+}

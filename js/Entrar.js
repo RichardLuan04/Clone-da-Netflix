@@ -17,7 +17,3 @@ function Entrar() {
         alert("Preencha todos os campos de textos!")
     }
 }
-
-function Gerenciar_Perfil () {
-    window.location.href = 'Gerenciar.html'
-}

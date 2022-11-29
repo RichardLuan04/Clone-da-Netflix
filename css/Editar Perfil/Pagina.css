@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+* {
+    font-family: Fira Sans, Arial;
+}
+
+body {
+    background: #141414;
+    width: 100vw;
+    height: 120vh;
+}

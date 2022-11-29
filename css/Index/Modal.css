@@ -1,0 +1,143 @@
+@keyframes open-modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100px, 0);
+    } to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.modal-login {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.4s;
+    border-radius: 20px;
+    animation: open-modal 0.6s;
+}
+
+.entrar-texto {
+    width: 70%;
+    height: 15%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.entrar-texto p {
+    font-size: 2.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 70%;
+    height: 50%;
+}
+
+#email-telefone, #Senha {
+    width: 90%;
+    height: 15%;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    transition: 0.4s;
+}
+
+#email-telefone {
+    margin-bottom: 15px;
+}
+
+#Senha {
+    margin-bottom: 50px;
+}
+
+#entrar {
+    width: 95%;
+    height: 15%;
+    border: none;
+    border-radius: 5px;
+    background-color: #D6000F;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-bottom: 20px;
+}
+
+#entrar:hover {
+    background-color: #890009;
+}
+
+.ajuda {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox label {
+    color: #a8a8a8;
+    font-size: 1rem;
+}
+
+.ajuda a {
+    color: #a8a8a8;
+    margin-right: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 35%;
+}
+
+#text-1 {
+    font-size: 1.4rem;
+    color: #a8a8a8;
+    margin-bottom: 20px;
+}
+
+#text-1 a {
+    text-decoration: none;
+}
+
+#text-2 {
+    font-size: 1.1rem;
+    color: #a8a8a8;
+}
+
+#text-2 a{
+    text-decoration: none;
+    color: #5a6afa;
+}
+
+summary {
+    margin-top: 5px;
+    background: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+}
+
+details p {
+    color: #a8a8a8;
+}

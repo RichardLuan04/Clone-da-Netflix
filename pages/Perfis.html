@@ -5,46 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/perfis.css">
+    <link rel="stylesheet" href="../css/Padrão/reset.css">
+    <link rel="stylesheet" href="../css/Tela de Perfil/perfis.css">
+    <link rel="stylesheet" href="../css/Tela de Perfil/gerenciar.css">
+    <link rel="stylesheet" href="../css/Tela de Perfil/Responsividade.css">
 
-    <script src="../js/Entrar.js" defer></script>
+    <script src="../js/Perfil.js" defer></script>
     <title>Netflix</title>
 </head>
-<body>
+<body class="body">
     <header>
-        <p>Quem está assistindo?</p>
+        <p id="titulo">Quem está assistindo?</p>
+        <span class="text-gerenciar">Gerenciar Perfis</span>
     </header>
 
     <main>
-        <figure>
-            <input type="image" src="../imgs/imagem-dixie.png" alt="Usuario-imagem">
-            <p>Dixie</p>
-        </figure>
+        <section>
+            <figure>
+                <div onclick="Tela_Editar()" class="filtro">
+                    <img src="../imgs/pen icon.png" alt="Caneta icon">
+                </div>
+                <input type="image" src="../imgs/imagem-dixie.png" alt="Usuario-imagem">
+            </figure>
+            <p id="nome-perfil">Dixie</p>
+        </section>
 
-        <figure>
-            <input type="image" src="../imgs/imagem-raissa.png" alt="Usuario-imagem">
-            <p>Raissa</p>
-        </figure>
+        <section>
+            <figure>
+                <div onclick="Tela_Editar()" class="filtro">
+                    <img src="../imgs/pen icon.png" alt="Caneta icon">
+                </div>
+                <input type="image" src="../imgs/imagem-raissa.png" alt="Usuario-imagem">
+            </figure>
+            <p id="nome-perfil">Raissa</p>
+        </section>
 
-        <figure>
-            <input type="image" src="../imgs/imagem-richard.png" alt="Usuario-imagem">
-            <p>Richard</p>
-        </figure>
+        <section>
+            <figure>
+                <div onclick="Tela_Editar()" class="filtro">
+                    <img src="../imgs/pen icon.png" alt="Caneta icon">
+                </div>
+                <input type="image" src="../imgs/imagem-richard.png" alt="Usuario-imagem">
+            </figure>
+            <p id="nome-perfil">Richard</p>
+        </section>
 
-        <figure>
-            <input type="image" src="../imgs/imagem-lucy.png" alt="Usuario-imagem">
-            <p>Lucy</p>
-        </figure>
+        <section>
+            <figure>
+                <div onclick="Tela_Editar()" class="filtro">
+                    <img src="../imgs/pen icon.png" alt="Caneta icon">
+                </div>
+                <input type="image" src="../imgs/imagem-lucy.png" alt="Usuario-imagem">
+            </figure>
+            <p id="nome-perfil">Lucy</p>
+        </section>
 
-        <figure>
-            <input type="image" src="../imgs/imagem-coronel.png" alt="Usuario-imagem">
-            <p>Coronoel</p>
-        </figure>
+        <section>
+            <figure>
+                <div onclick="Tela_Editar()" class="filtro">
+                    <img src="../imgs/pen icon.png" alt="Caneta icon">
+                </div>
+                <input type="image" src="../imgs/imagem-coronel.png" alt="Usuario-imagem">
+            </figure>
+            <p id="nome-perfil">Coronel</p>
+        </section>
     </main>
 
     <footer>
-        <button onclick="Gerenciar_Perfil()">Gerenciar perfis</button>
+        <button onclick="Concluir_Perfis()" class="botao-concluir">Concluido</button>
+        <button onclick="Gerenciar_Perfil()" id="botao-gerenciar">Gerenciar perfis</button>
     </footer>
 </body>
 </html>

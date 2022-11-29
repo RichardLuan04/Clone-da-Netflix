@@ -1,0 +1,206 @@
+@media screen and (max-width: 1680px) {
+    .Titulo p {
+        font-size: 4.5rem;
+    }
+
+    .Subtitulo p {
+        font-size: 2rem;
+    }
+    
+    footer p {
+        font-size: 1.6rem;
+    }
+
+    #campo-email {
+        width: 550px;
+        height: 70px;
+    }
+    
+    #botao-email {
+        width: 250px;
+        height: 70px;
+    }
+
+    .modal-login {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .Titulo p {
+        font-size: 3.5rem;
+    }
+
+    .Subtitulo p {
+        font-size: 1.5rem;
+    }
+
+    footer p {
+        font-size: 1.4rem;
+    }
+ 
+    footer form {
+        flex-direction: column;
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+
+    #campo-email {
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+
+    #botao-email {
+        font-size: 1.4rem;
+    }
+
+    header img {
+        height: 80px;
+        width: 200px;
+    }
+
+    select,  header button  {
+        width: 150px;
+        height: 40px;
+        font-size: 1.2em;
+    }
+
+    .modal-login {
+        width: 35%;
+        height: 85%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header img {
+        margin-left: 50px;
+    }
+
+    .Titulo p {
+        font-size: 3rem;
+    }
+
+    .modal-login {
+        width: 50%;
+    }
+
+    .infos {
+        margin-top: 50px;
+    }
+}
+
+/* Para celulares */
+
+@media screen and (max-width: 420px){
+    header img {
+        margin-left: 10px;
+        height: 40px;
+        width: 100px;
+    }
+    
+    .botoes {
+        margin-right: 20px;
+    }
+
+    select {
+        width: 85px;
+        height: 35px;
+        font-size: 0.8em;
+    }
+
+    header button {
+        width: 85px;
+        height: 35px;
+        font-size: 0.9em;
+        margin-left: 10px;
+    }
+
+    .Titulo p {
+        font-size: 2.1rem;
+    }
+
+    .Titulo {
+        height: 50%;
+    }
+
+    .Subtitulo {
+        height: 50%;
+    }
+
+    .Subtitulo p {
+        font-size: 1.2rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+
+    #campo-email {
+        width: 350px;
+        height: 60px;
+        font-size: 1rem;
+    }
+
+    #botao-email {
+        width: 200px;
+        height: 60px;
+        font-size: 1rem;
+    }
+
+    .modal-login {
+        width: 80%;
+        height: 80%;
+    }
+
+    .entrar-texto p {
+        font-size: 1.5rem;
+    }
+
+    #email-telefone, #Senha {
+        width: 220px;
+        height: 40px;
+        font-size: 0.8rem;
+        padding-left: 10px;
+    }
+    
+    .ajuda {
+        width: 67vw;
+    }
+
+    #entrar {
+        width: 230px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .ajuda a {
+        font-size: 0.7rem;
+        margin-left: 25px;
+    }
+
+    .checkbox label {
+        font-size: 0.7rem;
+    }
+
+    #text-1 {
+        font-size: 0.9rem;
+    }
+
+    #text-2 {
+        text-align: start;
+        font-size: 0.7rem;
+        width: 65vw;
+    }
+
+    summary {
+        font-size: 0.8rem;
+    }
+
+    details {
+        width: 80vw;
+    }
+
+    details p {
+        font-size: 0.7rem;
+    }
+}
