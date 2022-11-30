@@ -67,7 +67,6 @@
     }
 
     #botao-gerenciar {
-        margin-bottom: 350px;
         height: 35px;
         width: 140px;
         font-size: 0.8rem;
@@ -75,12 +74,33 @@
 }
 
 @media screen and (max-width: 720px) {
+
+    #titulo, .text-gerenciar {
+        font-size: 2rem;
+    }
+
+    figure input {
+        height: 90px;
+        width: 90px;
+    }
+
+    .filtro {
+        height: 85px;
+        width: 85px;
+    }
+}
+
+@media screen and (max-width: 420px) {
     header {
         height: 25%;
     }
 
     #titulo, .text-gerenciar {
         font-size: 1.5rem;
+    }
+
+    .nomes-perfis {
+        padding-top: 10px;
     }
 
     main {
@@ -94,13 +114,13 @@
     }
 
     figure input {
-        height: 80px;
-        width: 80px;
+        height: 100px;
+        width: 100px;
     }
 
     .filtro {
-        height: 75px;
-        width: 75px;
+        height: 95px;
+        width: 95px;
     }
 
     .nomes-perfis {

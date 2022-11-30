@@ -31,23 +31,31 @@ function Concluir_Perfis(){
     document.querySelector(".body").classList.remove("body-animation")
 }
 
-let callback = 0
-function Tela_Editar(nome) {
-    
-    callback += 1
-    if(window.location.href == 'http://127.0.0.1:5500/pages/Editar.html'){ //Mudar para pagina no fim
-        if (callback < 2){
-            Tela_Editar(nome)
-        } else if (callback == 2) {
-            let nome_perfil = nome
-            return nome_perfil
-        }
-    } else {
-        window.location.href = 'Editar.html'
-    }
+// Funções para passar o nome de perfil pra tela de editar por url
+
+function Passar_Nome(nome) {
+    window.location.href = `Editar.html?NomePerfil=${nome}`
 }
 
-if (window.location.href != 'http://127.0.0.1:5500/pages/Perfis.html') { //Mudar para pagina no fim
-    document.getElementById("campo-nome").value = Tela_Editar()     
-} 
+function Consulta(parametro) {  
+    
+    let loc = location.search.substring(1, location.search.length);   
+    let parametro_valor = false;   
+    let parametros = loc.split("&");   
+    for (i=0; i<parametros.length;i++) {   
+        parametro_name = parametros[i].substring(0,parametros[i].indexOf('='));   
+        if (parametro_name == parametro) {                                          
+            parametro_valor = parametros[i].substring(parametros[i].indexOf('=')+1)   
+        }   
+    }   
+    if (parametro_valor) {   
+        return parametro_valor;   
+    }   
+    else {   
+        return undefined;   
+    }   
+}
 
+// Funções para passar a imagem de perfil para o editar por url
+
+document.getElementById("campo-nome").value = Consulta('NomePerfil');
