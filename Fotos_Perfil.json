@@ -283,6 +283,45 @@
     ], 
 
     "Sex_Education": [
-        
+        {
+            "name":"otis",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…hjQrUVQoPcXC84EDLv6DryqciBAfPY5I-bvMWpA.png?r=758"
+        },
+        {
+            "name":"maeve",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…bTsgphCkpzgKrOJZlrypVU77wunWfrh0LxpMlYg.png?r=4ec"
+        },
+        {
+            "name":"jean milburn",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…5FPEEsnhw2uxXmn96PDDp7dGoqicycwM_XXuS6g.png?r=ebd"
+        },
+        {
+            "name":"eric",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…Hy2N7P4ynDou-7yyL1OvWC3pSKVLZDo4QSCfzCg.png?r=a6e"
+        },
+        {
+            "name":"aimee",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…qTg08iqE41XpTiyh86MPJQWrEotUpDkFAE5mhfw.png?r=540"
+        },
+        {
+            "name":"adam",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…LGBlLvz4lGnRVmkp88Xpg_356klk-eBh4dy453A.png?r=1e6"
+        },
+        {
+            "name":"ola",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…3S2C4d1y8dEuGRISLOm06KuAuaLcX8UCJi2qnNg.png?r=1c8"
+        },
+        {
+            "name":"lily",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…xgs9a50VNwHIOHemRBMCluZGJZ1Lr4S3hWKlqig.png?r=089"
+        },
+        {
+            "name":"jackson",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…zVZ8dyeFRVaAD89sfGeIiHUb6Wg4HZaH1dHp1cw.png?r=27f"
+        },
+        {
+            "name":"rahim",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…qXtqnYuUFWGft9Jn7yv6fCyPvRqxM6dTUnzf9rg.png?r=74d"
+        }
     ]
 }
