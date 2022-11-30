@@ -33,29 +33,36 @@ function Concluir_Perfis(){
 
 // Funções para passar o nome de perfil pra tela de editar por url
 
-function Passar_Nome(nome) {
-    window.location.href = `Editar.html?NomePerfil=${nome}`
+function Passar_Nome(nome, imagem) {
+    window.location.href = `Editar.html?NomePerfil=${nome}&Imagem=${imagem}`
 }
 
 function Consulta(parametro) {  
     
-    let loc = location.search.substring(1, location.search.length);   
-    let parametro_valor = false;   
-    let parametros = loc.split("&");   
+    let loc = location.search.substring(1, location.search.length)
+    let parametro_valor = false  
+    let parametros = loc.split("&")
     for (i=0; i<parametros.length;i++) {   
-        parametro_name = parametros[i].substring(0,parametros[i].indexOf('='));   
+        parametro_name = parametros[i].substring(0,parametros[i].indexOf('='))  
         if (parametro_name == parametro) {                                          
             parametro_valor = parametros[i].substring(parametros[i].indexOf('=')+1)   
         }   
     }   
     if (parametro_valor) {   
-        return parametro_valor;   
+        return parametro_valor   
     }   
     else {   
-        return undefined;   
+        return undefined
     }   
 }
 
 // Funções para passar a imagem de perfil para o editar por url
 
-document.getElementById("campo-nome").value = Consulta('NomePerfil');
+document.getElementById("campo-nome").value = Consulta('NomePerfil')
+document.getElementById("campo-imagem").src = Consulta('Imagem')
+
+// Funções para trocar a foto de perfil
+
+function Tela_Trocar_Imagem() {
+    window.location.href = 'Mudar Foto.html'
+}

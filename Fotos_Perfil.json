@@ -323,5 +323,60 @@
             "name":"rahim",
             "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…qXtqnYuUFWGft9Jn7yv6fCyPvRqxM6dTUnzf9rg.png?r=74d"
         }
+    ], 
+
+    "Cobra_kai": [
+        {
+            "name":"daniel",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…aE9zmA0L148Xi0k10u8Kz-rNgxX4ZoL6CCWjCnw.png?r=a48"
+        },
+        {
+            "name":"johnny",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…AJRw_6ktjhsLDzpnp2gjqAGCRtbLx439kPwXIDA.png?r=de5"
+        },
+        {
+            "name":"john ",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…6I_9ig2ZltmnEum28ko9eHvk0c25OgTDeRGLEJA.png?r=5f6"
+        },
+        {
+            "name":"miguel",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…tV7ss1BoJYyMzZpwDYeOb-ge4zXkzXPwgS6rTzg.png?r=0fa"
+        },
+        {
+            "name":"robby",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…hDZYN4t1suO1y0dTRtoYhXv5srt72E-1e43smEQ.png?r=357"
+        },
+        {
+            "name":"samanta",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…dIfVzUy3hgWJX-pCZNAWnEd6GVB9nbfpMu26ZAQ.png?r=bdd"
+        },
+        {
+            "name":"tory",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…-MTbzHS5zviLBczSTltR46ojTVc7HzvbgBwudag.png?r=cdf"
+        },
+        {
+            "name":"ely",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…1Hb80uDBUj4XWJCbPnn-edMyhqQ7UzQtw9TaYoA.png?r=f70"
+        },
+        {
+            "name":"demetri",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…jtuw6dfOzMc_8h8Qmah6gPrmJYAclptmm3xRkCA.png?r=9a5"
+        },
+        {
+            "name":"terry",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…wYxdbGei_aVHtXLFdZ4g5rdjMkbhHzDq0RxV-0w.png?r=b8d"
+        },
+        {
+            "name":"amanda",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…E_KjWwJR7cEEi7IhlD5Sf23v3xY1gxVGy7vEkow.png?r=b18"
+        },
+        {
+            "name":"carmen",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…kj6taj3lEqVE4KxiEk58xkXvJIZuFQ0PHZMetpw.png?r=d4c"
+        },
+        {
+            "name":"sr miyagi",
+            "image":"https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6…mhFJhQCLhT25i1AC4KM0UAS4KuuHEt_j4shpy3A.png?r=223"
+        }
     ]
 }
