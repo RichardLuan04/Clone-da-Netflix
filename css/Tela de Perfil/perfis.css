@@ -41,6 +41,7 @@ header {
 }
 
 header p {
+    font-family: Fira Sans, Arial;
     color: #fff;
     font-size: 4.5rem;
     margin-bottom: 40px;
@@ -109,7 +110,7 @@ figure input:hover {
     border-color: #fff;
 }
 
-#nome-perfil {
+.nomes-perfis {
     font-size: 2rem;
     color: #808080;
     margin-top: 20px;

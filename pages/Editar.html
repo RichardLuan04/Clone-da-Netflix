@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/Editar Perfil/Pagina.css">
     <link rel="stylesheet" href="../css/Editar Perfil/Responsividade.css">
 
+    <script src="../js/Perfil.js" defer></script>
+
     <title>Netflix</title>
 </head>
 <body>
@@ -18,45 +20,104 @@
     </header>
 
     <main>
-        <section>
-            <figure>
-                <img src="" alt="Imagem Perfil">
-            </figure>
+        <figure>
+            <button>
+                <svg width="24" height="24" class="svg-icon">
+                    <path d="M22.2071 7.79285L15.2071 0.792847L13.7929 2.20706L20.7929 9.20706L22.2071 7.79285ZM13.2071 3.79285C12.8166 3.40232 12.1834 3.40232 11.7929 3.79285L2.29289 13.2928C2.10536 13.4804 2 13.7347 2 14V20C2 20.5522 2.44772 21 3 21H9C9.26522 21 9.51957 20.8946 9.70711 20.7071L19.2071 11.2071C19.5976 10.8165 19.5976 10.1834 19.2071 9.79285L13.2071 3.79285ZM17.0858 10.5L8.58579 19H4V14.4142L12.5 5.91417L17.0858 10.5Z">
 
-            <div class="direita-imagem">
-                <div class="nome">
-                    <input type="text">
+                    </path>
+                </svg>
+            </button>
+
+            <img src="../imgs/imagem-raissa.png" alt="Imagem Perfil">
+        </figure>
+
+        <section>
+            <div class="nome">
+                <input type="text" id="campo-nome">
+            </div>
+
+            <div class="idiomas">
+                <p>Idioma:</p>
+                <select id="idioma">
+                    <option>Português</option>
+                    <option>Bahasa Indonesia</option>
+                    <option>Bahasa Melayu</option>
+                    <option>Dansk</option>
+                    <option>Deutsch</option>
+                    <option>English</option>
+                    <option>Español</option>
+                    <option>Filipino</option>
+                    <option>Français</option>
+                    <option>Hrvatski</option>
+                    <option>Italiano</option>
+                    <option>Magyar</option>
+                    <option>Nederlands</option>
+                    <option>Norsk bokmãil</option>
+                    <option>Polski</option>
+                    <option>Românã</option>
+                    <option>Suomi</option>
+                    <option>Svenska</option>
+                </select>
+            </div>
+
+            <div class="game-id">
+                <label for="game-id-text">
+                    <h2>Game ID:</h2>
+                </label>
+
+                <p id="sobre-id">Seu ID é um nome exclusivo que será usado ao jogar com outros assinantes na Netflix Games.
+                    <button>Saiba mais</button>
+                </p>
+
+                <input type="text" placeholder="Criar Game ID" id="game-id-text">
+                <div class="limitacao-input">
+                    <p id="mensagem-limitacao">
+                        Deve conter mais de 2 caracteres
+                        <!--Sucesso-->
+                        <!--Deve conter menos de 16 caracteres-->
+                    </p>
+
+                    <p id="quantidade-limitacao">0/16</p>
                 </div>
 
-                <div class="idiomas">
-                    <p>Idioma:</p>
-                    <select id="idioma">
-                        <option>Português</option>
-                        <option>Bahasa Indonesia</option>
-                        <option>Bahasa Melayu</option>
-                        <option>Dansk</option>
-                        <option>Deutsch</option>
-                        <option>English</option>
-                        <option>Español</option>
-                        <option>Filipino</option>
-                        <option>Français</option>
-                        <option>Hrvatski</option>
-                        <option>Italiano</option>
-                        <option>Magyar</option>
-                        <option>Nederlands</option>
-                        <option>Norsk bokmãil</option>
-                        <option>Polski</option>
-                        <option>Português</option>
-                        <option>Românã</option>
-                        <option>Suomi</option>
-                        <option>Svenska</option>
-                        <option>Tieng Viet</option>
-                        <option>Turkce</option>
-                        <option>Cestina</option>
-                    </select>
+                <hr>
+            </div>
+
+            <div class="classificacao">
+                <h2>Configurações de classificação etária:</h2>
+
+                <button id="button-text">Todas as classificações etárias</button>
+                <p id="show-text">Mostrar títulos de todas as classificações etárias para este perfil.</p>
+
+                <button>Editar</button>
+
+                <hr>
+            </div>
+
+            <div class="controles">
+                <p id="control-title">Controles de início automático</p>
+
+                <div class="div-label">
+                    <input type="checkbox" id="checkbox-1">
+                    <label for="checkbox-1">Iniciar automaticamente o próximo episodio de uma série em todos os aparelhos.</label>
+                </div>
+
+                <div class="div-label">
+                    <input type="checkbox" id="checkbox-2">
+                    <label for="checkbox-2">Reproduzir automaticamente as prévias ao navegar em todos os aparelhos</label>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer>
+        <hr>
+
+        <div class="botoes">
+            <button id="botao-branco">Salvar</button>
+            <button id="botao-preto">Cancelar</button>
+        </div>
+    </footer>
 </body>
 </html>

@@ -13,7 +13,7 @@
         height: 155px;
     }
 
-    #nome-perfil {
+    .nomes-perfis {
         font-size: 1.6rem;
     }
 }
@@ -23,7 +23,7 @@
         font-size: 3rem;
     }
 
-    #nome-perfil {
+    .nomes-perfis {
         font-size: 1.3rem;
     }
 
@@ -62,7 +62,7 @@
         height: 145px;
     }
 
-    #nome-perfi {
+    .nomes-perfis {
         font-size: 1rem;
     }
 
@@ -103,7 +103,7 @@
         width: 75px;
     }
 
-    #nome-perfil {
+    .nomes-perfis {
         font-size: 1rem;
         margin-top: 5px;
     }
