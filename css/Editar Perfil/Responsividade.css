@@ -1,0 +1,180 @@
+@media only screen and (max-width: 1680px) {
+    header p{
+        font-size: 4rem;
+    }
+    
+    figure img {
+        height: 125%;
+        width: 125%;
+    }
+
+    .espaco-image{
+        width: 110%;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    header,footer {
+        min-width: 50vw;
+    }
+
+    main {
+        width: 50vw;
+    }
+
+    header p {
+        font-size: 4rem;
+    }
+
+    figure img{
+        height: 110%;
+        width: 110%;
+    }
+
+    .espaco-image {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    header,footer {
+        min-width: 70vw;
+    }
+
+    main {
+        width: 70vw;
+    }
+
+    header p {
+        font-size: 3.5rem;
+    }
+
+    figure img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    header,footer {
+        min-width: 75vw;
+    }
+
+    main {
+        width: 75vw;
+    }
+
+    figure img{
+        height: 115%;
+        width: 115%;
+    }
+
+    #sobre-id, #sobre-id button, .limitacao-input p, #show-text, .div-label label {
+        font-size: 0.9rem;
+    }
+
+    .idiomas p, .game-id h2, #mensagem-limitacao, 
+    #quantidade-limitacao, .controles p,
+     .classificacao h2, #control-title {
+        font-size: 1.1rem;
+    }
+
+    #campo-nome, #game-id-text, #button-text {
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    .div-label input + label:before {
+        width: 14px;
+        height: 14px;
+    }
+
+    #botao-branco, #botao-preto {
+        height: 40px;
+        width: 120px;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    header,footer {
+        min-width: 50vw;
+    }
+
+    main {
+        width: 85vw;
+    }
+
+    header p {
+        font-size: 2rem;
+    }
+
+    figure img{
+        height: 160%;
+        width: 160%;
+    }
+
+    .espaco-image {
+        width: 130%;
+    }
+
+    figure button {
+        background-color: hsl(0, 0%, 0%, 0);
+    }
+
+    figure svg {
+        filter: invert(0);
+        position: absolute;
+    }
+
+    #sobre-id, #sobre-id button, .limitacao-input p, #show-text, .div-label label {
+        font-size: 0.55rem;
+    }
+
+    .idiomas p, .game-id h2, #mensagem-limitacao, 
+    #quantidade-limitacao, .controles p,
+     .classificacao h2, #control-title {
+        font-size: 0.8rem;
+    }
+
+    #campo-nome, #game-id-text {
+        height: 20px;
+        font-size: 0.8rem;
+    }
+
+    #button-text {
+        height: 25px;
+        width: 160px;
+        font-size: 0.6rem;
+    }
+
+    #campo-nome {
+        height: 30px;
+    }
+
+    .idiomas {
+        padding-top: 2rem;
+    }
+
+    select {
+        height: 20px;
+        width: 120px;
+        font-size: 0.7rem;
+    }
+
+    #botao-editar {
+        height: 25px;
+        width: 100px;
+        font-size: 0.7rem;
+    }
+
+    #botao-branco, #botao-preto {
+        height: 25px;
+        width: 80px;
+        font-size: 0.8rem;
+    }
+
+    #mensagem-limitacao, #quantidade-limitacao {
+        font-size: 0.6rem;
+    }
+}
