@@ -1,7 +1,81 @@
 main {
     width: 100vw;
-    height: 580vh;
+    min-height: 600vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.container {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section {
+    position: relative;
+    max-width: 80vw;
+    margin-top: 8rem;
+}
+
+figure {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+figure::-webkit-scrollbar {
+    display: none;
+}
+
+.galeria {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1.5rem; /*Define a lacuna entre duas tags*/ 
+}
+
+.item {
+    min-height: 100px;
+    min-height: 100px;
+    max-width: 200px;
+    max-height: 200px;
+    width: 12vw;
+    flex-shrink: 0; /*Não permite que o programa faça todos os elementos caberem por padrão*/
+    opacity: 0.6;
+    transition: all 400ms ease-in-out;
+}
+
+.corrente-item {
+    opacity: 1;
+}
+
+.arrow-left, 
+.arrow-right {
+    width: 5%;
+    position: absolute;
+    right: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to left, transparent 0%, #141414 100%);
+    border: none;
+    font-size: 40px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.2;
+    transition: all 400ms ease-in-out;
+}
+
+.arrow-right {
+    right: 0;
+    left: auto;
+    background: linear-gradient(to right, transparent 0%, #141414 100%);
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    opacity: 1;
 }

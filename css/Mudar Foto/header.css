@@ -12,9 +12,12 @@ body {
     font-family: Fira Sans,Arial;
     display: flex;
     flex-direction: column;
+    -webkit-font-smoothing: antialiased;
 }
 
 header {
+    position: absolute;
+    z-index: 1;
     width: 100vw;
     height: 20vh;
     background-color: rgb(20, 20, 20, 0.9);
@@ -56,6 +59,7 @@ nav input {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    line-height: 40px;
 }
 
 .texto-editar h2 {
@@ -80,19 +84,17 @@ nav input {
 .perfil p {
     font-weight: bold;
     font-size: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-.foto {
-    height: 55%;
-    width: 12%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-}
-
-.foto img {
-    height: 100%;
-    width: 100%;
+.perfil img {
+    margin-left: 2rem;
+    max-height: 120px;
+    max-width: 120px;
+    min-height: 60px;
+    min-width: 60px;
+    width: 7vw;
     border-radius: 10px;
 }
