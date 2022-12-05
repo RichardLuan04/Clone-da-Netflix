@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/Mudar Foto/Responsivo.css">
 
     <script src="../js/Slider.js" defer></script>
+    <script src="../js/Perfil.js" defer></script>
 
     <title>Netflix</title>
 </head>
@@ -18,7 +19,7 @@
     <header>
         <div class="voltar">
             <nav>
-                <input type="image" src="../imgs/botao_voltar.png">
+                <input type="image" src="../imgs/botao_voltar.png" onclick="Voltar_Editar()">
             </nav>
             
             <div class="texto-editar">
@@ -40,20 +41,20 @@
                     <p>Os clássicos</p>
                 </div>
 
-                <button onclick="Slider('.control-classico', '.item-classico')" class="arrow-left control-classico" aria-label="Previous image">🠜</button>
-                <button onclick="Slider('.control-classico', '.item-classico')" class="arrow-right control-classico" aria-label="Next image">🠞</button>
+                <button class="arrow-left control-classico" aria-label="Previous image">🠜</button>
+                <button class="arrow-right control-classico" aria-label="Next image">🠞</button>
 
                 <figure>
                     <div class="galeria">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABYSw2XUJOe-RXGqlMhzAK2kb3m8jiiuICaICOYRemQXvfBcEmoaG0XMebWDsKrQ4fhsAYwzopxK6Cm5l5w2F9iMzCVqZuapW7A.png?r=201" class="item-classico corrente-item" alt="Classica">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABVAOVZB6hbXn66eL28YYwIrZ3y7G9clKxQtWp-2Dc1_uq2MuLsPa_mD3N1jJlpMc_61au7gZ69iuTZmeg_YjE-5YKAGbR8JFKg.png?r=7c7" class="item-classico corrente-item" alt="Classica">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABcD0ZrsIMMPdVENlhcMLhAEQsGSplhivXwxPolt5h1wP1bquIL83x4fkrS6we4cwNWTe1nn7exw7GDMLe-72PiRcoMIBjdjmmA.png?r=b39" class="item-classico corrente-item" alt="Classica">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQF7SR467QFM7baRi8ZVxwtPaStoMd9-KZ8qZqba8Tuu8x9OWqkYvzubJwrfBQmJp0spenD2JvuyNz7H1OuY3zhTr6_hZokHwQ.png?r=6a6" class="item-classico corrente-item" alt="Classica">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABWP7dngMuFj6d4Hr3kCkJAijucivMNIbY6ak4NJtbCgEWKSEqE_31Kp6kTIip3kS0JUhEnA78GnsLSq0M829d2jpc4aqffP5ng.png?r=558" class="item-classico corrente-item" alt="Classica">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABeKAhhelX-wz_RiGf_mTrXQgLH9heqmzLj3VTGX3aATuJpHuRGWC_BHqa2yc7HXPSgQ9bfDKD5aXWG7yPRSIYNRVj1CSfDpqNw.png?r=cad" class="item-classico corrente-item" alt="Classica">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABRNxh2T8XhS7jBOLKwI1j-R0CJFhtTa-nxz5EhkX0EL4ue-amefp4mC1fsf0-rd8vynj9TXF2unD7iD4vFlh5kp5XCMtfUa4NA.png?r=a16" class="item-classico corrente-item" alt="Classica">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdxbwI5TRu89nI_cd6jTv-IflvV5Zk6Cs4_ZbL9TqcYqro8KZ6RonjEQZn0ZSkwYJ50xjR6_nbqnnvwVYYCaTagdYdV3aQrkqA.png?r=ae9" class="item-classico corrente-item" alt="Classica">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABRaGfMeG37Ayx3OwvsEqeTlSVvQWzVOiEfYQ8GRHx3zhx81IZy88ZnGN-cU7XLgoc-fIvFfp1ue_Pl-Vqw2cL7KiX5BRdj7z1g.png?r=59d" class="item-classico corrente-item" alt="Classica">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABYSw2XUJOe-RXGqlMhzAK2kb3m8jiiuICaICOYRemQXvfBcEmoaG0XMebWDsKrQ4fhsAYwzopxK6Cm5l5w2F9iMzCVqZuapW7A.png?r=201" class="item-classico" alt="Classica">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABVAOVZB6hbXn66eL28YYwIrZ3y7G9clKxQtWp-2Dc1_uq2MuLsPa_mD3N1jJlpMc_61au7gZ69iuTZmeg_YjE-5YKAGbR8JFKg.png?r=7c7" class="item-classico" alt="Classica">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABcD0ZrsIMMPdVENlhcMLhAEQsGSplhivXwxPolt5h1wP1bquIL83x4fkrS6we4cwNWTe1nn7exw7GDMLe-72PiRcoMIBjdjmmA.png?r=b39" class="item-classico" alt="Classica">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQF7SR467QFM7baRi8ZVxwtPaStoMd9-KZ8qZqba8Tuu8x9OWqkYvzubJwrfBQmJp0spenD2JvuyNz7H1OuY3zhTr6_hZokHwQ.png?r=6a6" class="item-classico" alt="Classica">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABWP7dngMuFj6d4Hr3kCkJAijucivMNIbY6ak4NJtbCgEWKSEqE_31Kp6kTIip3kS0JUhEnA78GnsLSq0M829d2jpc4aqffP5ng.png?r=558" class="item-classico" alt="Classica">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABeKAhhelX-wz_RiGf_mTrXQgLH9heqmzLj3VTGX3aATuJpHuRGWC_BHqa2yc7HXPSgQ9bfDKD5aXWG7yPRSIYNRVj1CSfDpqNw.png?r=cad" class="item-classico" alt="Classica">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABRNxh2T8XhS7jBOLKwI1j-R0CJFhtTa-nxz5EhkX0EL4ue-amefp4mC1fsf0-rd8vynj9TXF2unD7iD4vFlh5kp5XCMtfUa4NA.png?r=a16" class="item-classico" alt="Classica">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdxbwI5TRu89nI_cd6jTv-IflvV5Zk6Cs4_ZbL9TqcYqro8KZ6RonjEQZn0ZSkwYJ50xjR6_nbqnnvwVYYCaTagdYdV3aQrkqA.png?r=ae9" class="item-classico" alt="Classica">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABRaGfMeG37Ayx3OwvsEqeTlSVvQWzVOiEfYQ8GRHx3zhx81IZy88ZnGN-cU7XLgoc-fIvFfp1ue_Pl-Vqw2cL7KiX5BRdj7z1g.png?r=59d" class="item-classico" alt="Classica">
                     </div>
                 </figure>
             </section>
@@ -63,22 +64,22 @@
                     <img src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/S4oi7EPZbv2UEPaukW54OORa0S8/AAAABUJs72MnZ-dmsp-H0vJMP3WXge5ZdtamZxULx6V_hFp0VwWwRnkCS43JJc6TD5NgeopiflME43FL0QtivyhE2zcmzvXSuKai.png?r=cd7" alt="Logo elite">
                 </div>
 
-                <button onclick="Slider('.control-elite', '.item-elite')" class="arrow-left control-elite" aria-label="Previous image">🠜</button>
-                <button onclick="Slider('.control-elite', '.item-elite')" class="arrow-right control-elite" aria-label="Next image">🠞</button>
+                <button class="arrow-left control-elite" aria-label="Previous image">🠜</button>
+                <button class="arrow-right control-elite" aria-label="Next image">🠞</button>
 
                 <figure>
                     <div class="galeria">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQtGKRSGoOtqBm1V7tAxu0oALP-8bpiy0G72wNsVYf9rI0Iz1SWqg0TDPKZ2rGbpc9PqTjpEBNklqsyRRxNFZhE5WHj59DJ9_w.png?r=6de" class="item-elite corrente-item" alt="Elite">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABfUrKVu53lSQ-9MDKtYhEvB0pNFrxRyQU0tgOHdBfjLxTiSWRr3oldYLL4wT2W0QpiX1oqQ4R-sC1ZwnhfhW1gKFaGHNygh7hQ.png?r=c1e" class="item-elite corrente-item" alt="Elite">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABUrEexhijIRVaGve9qbjjrOT1aCBO1REu1DdL9KFR5d2RG8mz1Fszec_4f8Hd2gZoMJRoPKMkETkVesCWSZb3uvwtEWY6gjSvw.png?r=ee7" class="item-elite corrente-item" alt="Elite">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXgK3dHTAwjtEnBMNRqUuIjx53Jer_lwOhzv7CV0Hki-tmNG3gyAigJhzPZX_Kf1raRA0J7hxcdIj_4tnfI3hwHppbZype4Irg.png?r=0b4" class="item-elite corrente-item" alt="Elite">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABd0B5Sy-pjPDhqvGbRJG8iMFqqb7qqaJHCFgx5_fmbu4Kn5DWMis5s1VHlcLBU78PE7KFLVn9sbDHF6SwK9zOSGKbsTrnKjgug.png?r=a99" class="item-elite corrente-item" alt="Elite">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZB_WnzU5hrDn5AfAEwd2K5ldwuCjgXLbh3qQQcNArfDuJRAKvHkdWAlHUuz_I0Pk2L-3vxSuu9SORgSzbtoU5o8_rbnyNXfAg.png?r=38c" class="item-elite corrente-item" alt="Elite">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdf6h0Nvc2z1TsNpCJLs27I4jhpDmzbA0Q5dpCQHOlA_zKJc07eFklsivv0_Pf58-XD2HgFNokCjAw-dzCgTtqsAOQ5kzqxDcg.png?r=c95" class="item-elite corrente-item" alt="Elite">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABd9PasUKTAoSQ4RApObHR5ksib_b6qngnBO1ETxVOLEejb-ovNLGFgTsYtsIvEcAAmksngSBH8--RKE1-ozTsIJ_IH5Fiuxggw.png?r=5ca" class="item-elite corrente-item" alt="Elite">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABWiaoyJyzHPurPXh84z3ppf3vy-2ulEOsyCIHeVLgLKRm2QULCwLdbHhJzlllzuel9bOvYj1GcxAf2Pd2YSfjo8VeRt-rGz_3A.png?r=b82" class="item-elite corrente-item" alt="Elite">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABR3v4qzGJZnBLX_36pllBeU57Q_TYjMgZqylLZU5u6vTB0cT8YxsfROyONAyeBr8A0YzGPiM4PGRIyORqi9plqrqQJ5aQwEPzA.png?r=59c" class="item-elite corrente-item" alt="Elite">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQ1mQBc8MGMdDs7L2TNgBAFSxXsIDmMyFCvyBqxvdYOpLfVoT_cjJnd0P4x0y9Rf5PaL7zd9vGjUGyEN5blbN7dRzPz2OJelRA.png?r=37e" class="item-elite corrente-item" alt="Elite">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQtGKRSGoOtqBm1V7tAxu0oALP-8bpiy0G72wNsVYf9rI0Iz1SWqg0TDPKZ2rGbpc9PqTjpEBNklqsyRRxNFZhE5WHj59DJ9_w.png?r=6de" class="item-elite" alt="Elite">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABfUrKVu53lSQ-9MDKtYhEvB0pNFrxRyQU0tgOHdBfjLxTiSWRr3oldYLL4wT2W0QpiX1oqQ4R-sC1ZwnhfhW1gKFaGHNygh7hQ.png?r=c1e" class="item-elite" alt="Elite">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABUrEexhijIRVaGve9qbjjrOT1aCBO1REu1DdL9KFR5d2RG8mz1Fszec_4f8Hd2gZoMJRoPKMkETkVesCWSZb3uvwtEWY6gjSvw.png?r=ee7" class="item-elite" alt="Elite">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXgK3dHTAwjtEnBMNRqUuIjx53Jer_lwOhzv7CV0Hki-tmNG3gyAigJhzPZX_Kf1raRA0J7hxcdIj_4tnfI3hwHppbZype4Irg.png?r=0b4" class="item-elite" alt="Elite">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABd0B5Sy-pjPDhqvGbRJG8iMFqqb7qqaJHCFgx5_fmbu4Kn5DWMis5s1VHlcLBU78PE7KFLVn9sbDHF6SwK9zOSGKbsTrnKjgug.png?r=a99" class="item-elite" alt="Elite">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZB_WnzU5hrDn5AfAEwd2K5ldwuCjgXLbh3qQQcNArfDuJRAKvHkdWAlHUuz_I0Pk2L-3vxSuu9SORgSzbtoU5o8_rbnyNXfAg.png?r=38c" class="item-elite" alt="Elite">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdf6h0Nvc2z1TsNpCJLs27I4jhpDmzbA0Q5dpCQHOlA_zKJc07eFklsivv0_Pf58-XD2HgFNokCjAw-dzCgTtqsAOQ5kzqxDcg.png?r=c95" class="item-elite" alt="Elite">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABd9PasUKTAoSQ4RApObHR5ksib_b6qngnBO1ETxVOLEejb-ovNLGFgTsYtsIvEcAAmksngSBH8--RKE1-ozTsIJ_IH5Fiuxggw.png?r=5ca" class="item-elite" alt="Elite">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABWiaoyJyzHPurPXh84z3ppf3vy-2ulEOsyCIHeVLgLKRm2QULCwLdbHhJzlllzuel9bOvYj1GcxAf2Pd2YSfjo8VeRt-rGz_3A.png?r=b82" class="item-elite" alt="Elite">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABR3v4qzGJZnBLX_36pllBeU57Q_TYjMgZqylLZU5u6vTB0cT8YxsfROyONAyeBr8A0YzGPiM4PGRIyORqi9plqrqQJ5aQwEPzA.png?r=59c" class="item-elite" alt="Elite">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQ1mQBc8MGMdDs7L2TNgBAFSxXsIDmMyFCvyBqxvdYOpLfVoT_cjJnd0P4x0y9Rf5PaL7zd9vGjUGyEN5blbN7dRzPz2OJelRA.png?r=37e" class="item-elite" alt="Elite">
                     </div>
                 </figure>
             </section>
@@ -88,20 +89,20 @@
                     <img src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/S4oi7EPZbv2UEPaukW54OORa0S8/AAAABRU2gspR3cm9HM8lv6quhYJww65ER4uG4glz9kXNrVYC6595TqM3RsToWfxHKprWmw7tzloTmSvsNqb2ns08TMUouhnLjWqV8Q.png?r=53c" alt="Logo La casa de papel">
                 </div>
 
-                <button class="arrow-left control" aria-label="Previous image">🠜</button>
-                <button class="arrow-right control" aria-label="Next image">🠞</button>
+                <button class="arrow-left control-la" aria-label="Previous image">🠜</button>
+                <button class="arrow-right control-la" aria-label="Next image">🠞</button>
 
                 <figure>
                     <div class="galeria">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZsTJIzptemB-cosynsAooOB5sA4GwhYF_syr7OzlqFdoNloIkfLF0pm1rpmBKTs6fpeFMcxCFB5wzpng6jNJkgaRWh-A_T5nA.png?r=72f" class="item corrente-item" alt="La Casa de Papel">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABSjWB2nFuR8Ri6xzQ3Wu0djefSIhCdrWkFyFfNOCh612BZUZDykQpK4CrzvnhZeSyTWqUh0aSVaISMQteTWOkIdHIuDCigFMfA.png?r=b38" class="item corrente-item" alt="La Casa de Papel">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABU7oWl6jW9XKyvaY5DHYRbfudithuuyPfe5yHfkVVE76JUpbQzyJfKMyvjlyS3cDQbVfFFztc9gw9oEzhocAtn7XzXk26xOkMQ.png?r=28c" class="item corrente-item" alt="La Casa de Papel">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABWxUKPm9bmOncXCVtE1marh6WuREp7UAdGAOkGZj9AxNR6KDTHGS7jl7sL0KkltKcANV-7STNCZBiIAFA03UYyoUHgOSLvcPaw.png?r=f92" class="item corrente-item" alt="La Casa de Papel">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABWWUGhOHlUqiXVsuxRoghiYA3sAECUNaQbyHAKeuSwXTDVIabo7KO1PgYyXIILPZeofb5jqn94S43SMfgkgTZehbAWSjN9OUVA.png?r=b0f" class="item corrente-item" alt="La Casa de Papel">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABcXum0lYCFtdbXpB7Tqs7NZ1geDjtJ3o7rPX8fLbXp1Tg616oaqXf1gIHapojHYMyeC8K_sPvMpLdi6yMc2XYA1QKbhF6BB5wA.png?r=959" class="item corrente-item" alt="La Casa de Papel">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABTsXh2C3K7yY5ktP7V4OkWCfbdQWUWyUxaVk51o-ybIeFtkv5cOXsQByPkxFGk19J4rbHMMqsoytJtEEjqjRDPpBjILs-i8HwQ.png?r=619" class="item corrente-item" alt="La Casa de Papel">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABcH5OPjGFrQb2N8ZSP4l3Jw6cdsknAmzkeDO22-9mGqpNOLc0GWlajuEOeD_cF4uYPDg92m_vc4TLXg8zTmmCtjIpa_fLX2AUg.png?r=cf8" class="item corrente-item" alt="La Casa de Papel">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABW2S0pyTjDyOEy9Hpvu13Exrf389Pioqaco3R9XnZlDXLoAJbef00jZ32Mh42dSvbnTJYcjnEEosjoovBWGk-1cTrKUt4n6q8g.png?r=fe5" class="item corrente-item" alt="La Casa de Papel">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZsTJIzptemB-cosynsAooOB5sA4GwhYF_syr7OzlqFdoNloIkfLF0pm1rpmBKTs6fpeFMcxCFB5wzpng6jNJkgaRWh-A_T5nA.png?r=72f" class="item-la" alt="La Casa de Papel">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABSjWB2nFuR8Ri6xzQ3Wu0djefSIhCdrWkFyFfNOCh612BZUZDykQpK4CrzvnhZeSyTWqUh0aSVaISMQteTWOkIdHIuDCigFMfA.png?r=b38" class="item-la" alt="La Casa de Papel">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABU7oWl6jW9XKyvaY5DHYRbfudithuuyPfe5yHfkVVE76JUpbQzyJfKMyvjlyS3cDQbVfFFztc9gw9oEzhocAtn7XzXk26xOkMQ.png?r=28c" class="item-la" alt="La Casa de Papel">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABWxUKPm9bmOncXCVtE1marh6WuREp7UAdGAOkGZj9AxNR6KDTHGS7jl7sL0KkltKcANV-7STNCZBiIAFA03UYyoUHgOSLvcPaw.png?r=f92" class="item-la" alt="La Casa de Papel">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABWWUGhOHlUqiXVsuxRoghiYA3sAECUNaQbyHAKeuSwXTDVIabo7KO1PgYyXIILPZeofb5jqn94S43SMfgkgTZehbAWSjN9OUVA.png?r=b0f" class="item-la" alt="La Casa de Papel">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABcXum0lYCFtdbXpB7Tqs7NZ1geDjtJ3o7rPX8fLbXp1Tg616oaqXf1gIHapojHYMyeC8K_sPvMpLdi6yMc2XYA1QKbhF6BB5wA.png?r=959" class="item-la" alt="La Casa de Papel">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABTsXh2C3K7yY5ktP7V4OkWCfbdQWUWyUxaVk51o-ybIeFtkv5cOXsQByPkxFGk19J4rbHMMqsoytJtEEjqjRDPpBjILs-i8HwQ.png?r=619" class="item-la" alt="La Casa de Papel">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABcH5OPjGFrQb2N8ZSP4l3Jw6cdsknAmzkeDO22-9mGqpNOLc0GWlajuEOeD_cF4uYPDg92m_vc4TLXg8zTmmCtjIpa_fLX2AUg.png?r=cf8" class="item-la" alt="La Casa de Papel">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABW2S0pyTjDyOEy9Hpvu13Exrf389Pioqaco3R9XnZlDXLoAJbef00jZ32Mh42dSvbnTJYcjnEEosjoovBWGk-1cTrKUt4n6q8g.png?r=fe5" class="item-la" alt="La Casa de Papel">
                     </div>
                 </figure>
             </section>
@@ -111,17 +112,14 @@
                     <img src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/S4oi7EPZbv2UEPaukW54OORa0S8/AAAABURZJh3i4WBqDISukYwtlLsBYCHUHdgQWk2NUGQ5_nZtv8xjMOFGq9L9-5jj20109HLXnvbBSyAmCtsnLXImEg6BnmTJBcY.png?r=817" alt="Logo Sombra Ossos">
                 </div>
 
-                <button class="arrow-left control" aria-label="Previous image">🠜</button>
-                <button class="arrow-right control" aria-label="Next image">🠞</button>
-
                 <figure>
                     <div class="galeria">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQALRN1fXgdXz_NBGwHzrUn7H3MSlOMoIKHEaYLWu6axLqV4US17loLYd3dFR30JE8064U7xX_QY7DY8hkYdVRGUU2jHBkzqAw.png?r=014" class="item corrente-item" alt="Sombra Ossos">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABS_zWlkmOT9hupTUZkXyBbKXgCQWFVkUC5jqfs8QZX96nl_qVxY2c-ISzHqSpzxpPAao0GALl3oWOKpvFv8YFINYuvRZcHznTg.png?r=ade" class="item corrente-item" alt="Sombra Ossos">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABW4Lkkb-PK7KDa4f_YaB88M9SiHbhc-u0GouH1Sg15cvgjEIkL538-YHlf_g86KBQFnqh6tLEr2Kf55ghvrqA6vS8gwwXMF-xw.png?r=579" class="item corrente-item" alt="Sombra Ossos">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZ1OGj4Fz4n17UEsZDMVn_j0mPnLwRi0yE8sY8EFI25JrcJf002y3w9_sIvGaIPCIqlwaH8CM8937DNg2oDxMuJXlHoMYiDa1A.png?r=c46" class="item corrente-item" alt="Sombra Ossos">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABeDHcugV7T6XYeCTQ12cLZIONI2wlHF4jO7EAwKFvHRxTo1rMD9YIQ56vqzw8bWOqVlaAnqED1HXcIz6yGOyG9PGneUdef_qEQ.png?r=5c5" class="item corrente-item" alt="Sombra Ossos">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABUlNNHfJ85SkVqvq0dZ1U9fI3CEFy8WxOQjsOeNkNmomRi_IqxogaL0OvGzyHPR4Ch98abDxzmQ-li8ZbTOz9RToLwszURk3Fw.png?r=377" class="item corrente-item" alt="Sombra Ossos">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQALRN1fXgdXz_NBGwHzrUn7H3MSlOMoIKHEaYLWu6axLqV4US17loLYd3dFR30JE8064U7xX_QY7DY8hkYdVRGUU2jHBkzqAw.png?r=014" alt="Sombra Ossos">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABS_zWlkmOT9hupTUZkXyBbKXgCQWFVkUC5jqfs8QZX96nl_qVxY2c-ISzHqSpzxpPAao0GALl3oWOKpvFv8YFINYuvRZcHznTg.png?r=ade" alt="Sombra Ossos">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABW4Lkkb-PK7KDa4f_YaB88M9SiHbhc-u0GouH1Sg15cvgjEIkL538-YHlf_g86KBQFnqh6tLEr2Kf55ghvrqA6vS8gwwXMF-xw.png?r=579" alt="Sombra Ossos">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZ1OGj4Fz4n17UEsZDMVn_j0mPnLwRi0yE8sY8EFI25JrcJf002y3w9_sIvGaIPCIqlwaH8CM8937DNg2oDxMuJXlHoMYiDa1A.png?r=c46" alt="Sombra Ossos">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABeDHcugV7T6XYeCTQ12cLZIONI2wlHF4jO7EAwKFvHRxTo1rMD9YIQ56vqzw8bWOqVlaAnqED1HXcIz6yGOyG9PGneUdef_qEQ.png?r=5c5" alt="Sombra Ossos">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABUlNNHfJ85SkVqvq0dZ1U9fI3CEFy8WxOQjsOeNkNmomRi_IqxogaL0OvGzyHPR4Ch98abDxzmQ-li8ZbTOz9RToLwszURk3Fw.png?r=377" alt="Sombra Ossos">
                     </div>
                 </figure>
             </section>
@@ -131,18 +129,18 @@
                     <img src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/S4oi7EPZbv2UEPaukW54OORa0S8/AAAABT6xS5VwGATxEK_DiCsc_lz6h0ud-qzgu9GZYOZHxYjjVDHJpEOktOLkR7HZ39sfa7jcya0jSp1wXGRTN8TXMcEe4oZNjVzT.png?r=364" alt="Logo The Umbrella Academy">
                 </div>
 
-                <button class="arrow-left control" aria-label="Previous image">🠜</button>
-                <button class="arrow-right control" aria-label="Next image">🠞</button>
+                <button class="arrow-left control-umbrella" aria-label="Previous image">🠜</button>
+                <button class="arrow-right control-umbrella" aria-label="Next image">🠞</button>
 
                 <figure>
                     <div class="galeria">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZHv6uK9TqNDT4yCJkxlMUtKePcpw9CbZkIjJbNkuvgs4rEM10wOuYWeK7NFkyjJtrtKHgZwZKphguDmr3SBZnkcwlD_kX64BA.png?r=e6c" class="item corrente-item" alt="The Umbrella Academy">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZjjVckcI8tu2fhnhUoi2ZpWjnDkd8pH-elOxnkmyuP3LzY8pOpSHroIdbaG1gSLqz1wjkiz_wVtE2osYunUW0pdLIECsyYjqg.png?r=218" class="item corrente-item" alt="The Umbrella Academy">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABaYD4CNBD0rw03W92lJiI35HbJL8RLaUOfXvTKWMVGGyHBSjyywrVJdOhZGyz-pl6sJsMBOnXwXqnjCB7BA6w3XtK4vQtuwcsA.png?r=7ad" class="item corrente-item" alt="The Umbrella Academy">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABfiRJxf3BAcb8Yc2zbaOHwwqrvEz0WEALh5FaqBYa0LwlSvkNxTnyHe6MI5MBSbMub8nLYqtUtlkZkNiKO3Xa1LeJkxSja8-jA.png?r=b4d" class="item corrente-item" alt="The Umbrella Academy">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABfeu6A72jSr8xMM5ZohlFItEMIsNRp0GKb7FWYldjP54qH9iJ0kCU6G3kRR5BTShkGElE8pHnqIZXl4Na0crw2i5wgEwr1MmKg.png?r=732" class="item corrente-item" alt="The Umbrella Academy">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZakX1CZc09GB3g3YKreW8qduTnWcYN3oA5tDFHAnVytl7ofSReeHdiJ64P93CdrUm30fjjonnv-jKtGOhqMYfM0LXzCey5EBA.png?r=bb3" class="item corrente-item" alt="The Umbrella Academy">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABREd1ZHOEwOxC419-mRZeZS6sz23AYayxKB5-taSvlq7nYhdLgJsfd_LbUotRiEwJa-tJV8GZyuG5rEJopQPqXr6rUCP5MzDkA.png?r=258" class="item corrente-item" alt="The Umbrella Academy">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZHv6uK9TqNDT4yCJkxlMUtKePcpw9CbZkIjJbNkuvgs4rEM10wOuYWeK7NFkyjJtrtKHgZwZKphguDmr3SBZnkcwlD_kX64BA.png?r=e6c" class="item-umbrella" alt="The Umbrella Academy">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZjjVckcI8tu2fhnhUoi2ZpWjnDkd8pH-elOxnkmyuP3LzY8pOpSHroIdbaG1gSLqz1wjkiz_wVtE2osYunUW0pdLIECsyYjqg.png?r=218" class="item-umbrella" alt="The Umbrella Academy">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABaYD4CNBD0rw03W92lJiI35HbJL8RLaUOfXvTKWMVGGyHBSjyywrVJdOhZGyz-pl6sJsMBOnXwXqnjCB7BA6w3XtK4vQtuwcsA.png?r=7ad" class="item-umbrella" alt="The Umbrella Academy">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABfiRJxf3BAcb8Yc2zbaOHwwqrvEz0WEALh5FaqBYa0LwlSvkNxTnyHe6MI5MBSbMub8nLYqtUtlkZkNiKO3Xa1LeJkxSja8-jA.png?r=b4d" class="item-umbrella" alt="The Umbrella Academy">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABfeu6A72jSr8xMM5ZohlFItEMIsNRp0GKb7FWYldjP54qH9iJ0kCU6G3kRR5BTShkGElE8pHnqIZXl4Na0crw2i5wgEwr1MmKg.png?r=732" class="item-umbrella" alt="The Umbrella Academy">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZakX1CZc09GB3g3YKreW8qduTnWcYN3oA5tDFHAnVytl7ofSReeHdiJ64P93CdrUm30fjjonnv-jKtGOhqMYfM0LXzCey5EBA.png?r=bb3" class="item-umbrella" alt="The Umbrella Academy">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABREd1ZHOEwOxC419-mRZeZS6sz23AYayxKB5-taSvlq7nYhdLgJsfd_LbUotRiEwJa-tJV8GZyuG5rEJopQPqXr6rUCP5MzDkA.png?r=258" class="item-umbrella" alt="The Umbrella Academy">
                     </div>
                 </figure>
             </section>
@@ -152,17 +150,14 @@
                     <img src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/S4oi7EPZbv2UEPaukW54OORa0S8/AAAABYwSNapdwkeLqWqph32X1jmnM1D39A_OYnEjhBrJ1nf1U8pGr3H4QgkOljqS0ThvW104H6Kpl_tycJgHpdQJB5jtoMxkcq7iZQ.png?r=095" alt="Logo The Witcher">
                 </div>
 
-                <button class="arrow-left control" aria-label="Previous image">🠜</button>
-                <button class="arrow-right control" aria-label="Next image">🠞</button>
-
                 <figure>
                     <div class="galeria">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABeDSuPsL8-xp8jDinagmHtWKfKg2DIKNjGIHj1iCAuJOpcnNJ7Q3AyJJoL1-TF8opz4zGyr7DzXGcjiMNGKsjgm54_uulOh2rw.png?r=93c" class="item corrente-item" alt="The Witcher">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABbEkLrEdknbwlVXiN2HKmzKg0lXMpQ0lGK0m96ElmUm9EDhTcxO82cvT5XZ7bzfF_fU-_7BOt5K5E-N4p2iMJxrWxYyXsyQATA.png?r=1d8" class="item corrente-item" alt="The Witcher">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABayGPRPt6c0fuhx2PbLOX8Wn3XJpVXLY_u1DOAGUlOuXU-683sUl6ooZAn8Zi4qYPZAOOVdMkkSmlJJMd8b-d6alV4gkpCET3A.png?r=fea" class="item corrente-item" alt="The Witcher">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXrRE5O5OtGU2ezzibp2zn5_b8oyxzzUpgTjFGPyfAnnWLJmds5JnRfqN9v66WqQzo0u1o7w7v0TWuiLd6jgSnLllvMdzHmBeg.png?r=ad4" class="item corrente-item" alt="The Witcher">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABf6xOavwe_0403Yy8hf-XTpZ95quIzDLPuM2srdu0CjNHuaehksf7GeVB6rj1zL-VgOn8arfngrZ_NwJRPA7hmEbKRpIeYqPdg.png?r=9b2" class="item corrente-item" alt="The Witcher">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQASSOChAgborJRJdwN1-slCFVhc77p68koKqaRvmIeu6AThsjVsCQHAhN83VDUa2BIkBgzHbbT-xnVkc7zDqH5hHHFJ5D_3cQ.png?r=8c5" class="item corrente-item" alt="The Witcher">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABeDSuPsL8-xp8jDinagmHtWKfKg2DIKNjGIHj1iCAuJOpcnNJ7Q3AyJJoL1-TF8opz4zGyr7DzXGcjiMNGKsjgm54_uulOh2rw.png?r=93c" alt="The Witcher">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABbEkLrEdknbwlVXiN2HKmzKg0lXMpQ0lGK0m96ElmUm9EDhTcxO82cvT5XZ7bzfF_fU-_7BOt5K5E-N4p2iMJxrWxYyXsyQATA.png?r=1d8" alt="The Witcher">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABayGPRPt6c0fuhx2PbLOX8Wn3XJpVXLY_u1DOAGUlOuXU-683sUl6ooZAn8Zi4qYPZAOOVdMkkSmlJJMd8b-d6alV4gkpCET3A.png?r=fea" alt="The Witcher">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXrRE5O5OtGU2ezzibp2zn5_b8oyxzzUpgTjFGPyfAnnWLJmds5JnRfqN9v66WqQzo0u1o7w7v0TWuiLd6jgSnLllvMdzHmBeg.png?r=ad4" alt="The Witcher">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABf6xOavwe_0403Yy8hf-XTpZ95quIzDLPuM2srdu0CjNHuaehksf7GeVB6rj1zL-VgOn8arfngrZ_NwJRPA7hmEbKRpIeYqPdg.png?r=9b2" alt="The Witcher">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQASSOChAgborJRJdwN1-slCFVhc77p68koKqaRvmIeu6AThsjVsCQHAhN83VDUa2BIkBgzHbbT-xnVkc7zDqH5hHHFJ5D_3cQ.png?r=8c5" alt="The Witcher">
                     </div>
                 </figure>
             </section>
@@ -172,23 +167,23 @@
                     <img src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/S4oi7EPZbv2UEPaukW54OORa0S8/AAAABW57okU8mvgEwFKfc7i-edruEQqqkqmnDHExqfLkZ9V5QWCfoTkGmpNwVJ7-rkKnzyG2d29WlCMHHl9fBULjXSS2wf5hgLia.png?r=946" alt="Logo Round 6">
                 </div>
 
-                <button class="arrow-left control" aria-label="Previous image">🠜</button>
-                <button class="arrow-right control" aria-label="Next image">🠞</button>
+                <button class="arrow-left control-round" aria-label="Previous image">🠜</button>
+                <button class="arrow-right control-round" aria-label="Next image">🠞</button>
 
                 <figure>
                     <div class="galeria">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXV9m-1tH2CczQ748E6sw2GuoovSGTTCoXiTdaPK68bY6pxUIEL_wjltolJN-vBkoy_skZ32eNp2lFaQrSv7NMdCFyvnljIIvA.png?r=54a" class="item corrente-item" alt="Round 6">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABT4aLNvesdrUAA4tfNOT6YOJ_XetXTHrvunk3jCvOYivrcqJaIZubginpPfQjx3AAoC25j9MCVD_9w2E8kzWmkYd5VyvDeXboA.png?r=823" class="item corrente-item" alt="Round 6">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABTy6R6hhOD1ECPRhQIhCI7dw8D_0ePVgEK7C-rd4BV3TFfz3fYVbL9VmPTPuJ6e3PI-HJt79qDEHgWxbAsLsFGWSXl5oz8hbsw.png?r=5fd" class="item corrente-item" alt="Round 6">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABek05gdpGN_ypnJActfZFW7tNl4jfCo3668HALDG6SH8DwaB7oVCOG0YMLZNh1CiOWld_HtQ4VJhExFjJ2W6H-w2p8CO0DMS0g.png?r=3c3" class="item corrente-item" alt="Round 6">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXQUMMx69IEI_OgaAoAbFN9hyPd8GH20FwJFDD31dixgf7VkVHyuUOWRVudbMiHec_G4BKci9yCzEmy-SrUN-iSrbfnzep9imA.png?r=7da" class="item corrente-item" alt="Round 6">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZRSvA099y0TZBCOMM0x_glYS4FmR4tVoe80JKcdvNo7RdT4a2YslxZTUPMcaI5bFrCqUGjTDNVA-4x85CpFXnMjl9Y8DEkehg.png?r=059" class="item corrente-item" alt="Round 6">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABaPrYDwD4CvUnQVHaXN4rqSzyCCbpyK6W4bMdGcLR7Nv29SbwT72oG6fYRyBYrv52IMV9bAEsSdfqPtj6sNv03Sd4xtlImG13g.png?r=34e" class="item corrente-item" alt="Round 6">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABRaZtokFRvU9P0SCNzzPKnQPebj8-cax1jadU-NYoLSigGbEMH_mjUIUg4GFqFveOP5ijDB95u3PHJ8BWsW5cB-ygQOLUk3kpQ.png?r=897" class="item corrente-item" alt="Round 6">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQ7PY0u0oFpvtS7641ZO1RzvE4kakg9ApV5nAJDhZ9akeVLdTSO4s0UkwqBoPsjluY3KrBey0b6qZ3Sx7gfBS7sC3lO0tdsTRQ.png?r=8da" class="item corrente-item" alt="Round 6">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABVWlnzNgtuHQDJ67yC5-M0-qZ7WQmiT8ATI__AOWGo3LIkpW8XBRt8LmcsA9HTuVw6OWjIQGloaGUGIpOu4eC5pC8d4_EB4Ycw.png?r=2bf" class="item corrente-item" alt="Round 6">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXfvqf3lLGhwedcJqMce6O4lc7_y8APDMrXe8TRbi-Bv9IG88em3b-yL3l5l8lMXfE70CB5potYz6wD4JTu0u8xIzdWVw57LKA.png?r=5bf" class="item corrente-item" alt="Round 6">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABTlcf1HU5Voyba17y7tuUAW1Rsc26nS44_UCYCMERPj35YKomjuCk-YQvuWDgc7CsJsXdlqWLB9RcmvDrPNI_xdmkJXfQ-A6pg.png?r=6d4" class="item corrente-item" alt="Round 6">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXV9m-1tH2CczQ748E6sw2GuoovSGTTCoXiTdaPK68bY6pxUIEL_wjltolJN-vBkoy_skZ32eNp2lFaQrSv7NMdCFyvnljIIvA.png?r=54a" class="item-round" alt="Round 6">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABT4aLNvesdrUAA4tfNOT6YOJ_XetXTHrvunk3jCvOYivrcqJaIZubginpPfQjx3AAoC25j9MCVD_9w2E8kzWmkYd5VyvDeXboA.png?r=823" class="item-round" alt="Round 6">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABTy6R6hhOD1ECPRhQIhCI7dw8D_0ePVgEK7C-rd4BV3TFfz3fYVbL9VmPTPuJ6e3PI-HJt79qDEHgWxbAsLsFGWSXl5oz8hbsw.png?r=5fd" class="item-round" alt="Round 6">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABek05gdpGN_ypnJActfZFW7tNl4jfCo3668HALDG6SH8DwaB7oVCOG0YMLZNh1CiOWld_HtQ4VJhExFjJ2W6H-w2p8CO0DMS0g.png?r=3c3" class="item-round" alt="Round 6">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXQUMMx69IEI_OgaAoAbFN9hyPd8GH20FwJFDD31dixgf7VkVHyuUOWRVudbMiHec_G4BKci9yCzEmy-SrUN-iSrbfnzep9imA.png?r=7da" class="item-round" alt="Round 6">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZRSvA099y0TZBCOMM0x_glYS4FmR4tVoe80JKcdvNo7RdT4a2YslxZTUPMcaI5bFrCqUGjTDNVA-4x85CpFXnMjl9Y8DEkehg.png?r=059" class="item-round" alt="Round 6">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABaPrYDwD4CvUnQVHaXN4rqSzyCCbpyK6W4bMdGcLR7Nv29SbwT72oG6fYRyBYrv52IMV9bAEsSdfqPtj6sNv03Sd4xtlImG13g.png?r=34e" class="item-round" alt="Round 6">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABRaZtokFRvU9P0SCNzzPKnQPebj8-cax1jadU-NYoLSigGbEMH_mjUIUg4GFqFveOP5ijDB95u3PHJ8BWsW5cB-ygQOLUk3kpQ.png?r=897" class="item-round" alt="Round 6">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQ7PY0u0oFpvtS7641ZO1RzvE4kakg9ApV5nAJDhZ9akeVLdTSO4s0UkwqBoPsjluY3KrBey0b6qZ3Sx7gfBS7sC3lO0tdsTRQ.png?r=8da" class="item-round" alt="Round 6">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABVWlnzNgtuHQDJ67yC5-M0-qZ7WQmiT8ATI__AOWGo3LIkpW8XBRt8LmcsA9HTuVw6OWjIQGloaGUGIpOu4eC5pC8d4_EB4Ycw.png?r=2bf" class="item-round" alt="Round 6">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXfvqf3lLGhwedcJqMce6O4lc7_y8APDMrXe8TRbi-Bv9IG88em3b-yL3l5l8lMXfE70CB5potYz6wD4JTu0u8xIzdWVw57LKA.png?r=5bf" class="item-round" alt="Round 6">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABTlcf1HU5Voyba17y7tuUAW1Rsc26nS44_UCYCMERPj35YKomjuCk-YQvuWDgc7CsJsXdlqWLB9RcmvDrPNI_xdmkJXfQ-A6pg.png?r=6d4" class="item-round" alt="Round 6">
                     </div>
                 </figure>
             </section>
@@ -198,14 +193,11 @@
                     <img src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/S4oi7EPZbv2UEPaukW54OORa0S8/AAAABdv6RwdzxiCSrbM9Q7EN0z9yn-i3F7Xo4MrD3zYGe64XYnuq4bFhz49YjyN-H2zV1Xf3psAbefogRwU9X-8kmQBDqttYx68wgQ.png?r=2b4" alt="Logo Bright">
                 </div>
 
-                <button class="arrow-left control" aria-label="Previous image">🠜</button>
-                <button class="arrow-right control" aria-label="Next image">🠞</button>
-
                 <figure>
                     <div class="galeria">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABRHaDuNoRXKqSTEcAZY0gXxm_1PORu-nHZOb67R0qXflCAgDsB-tBqmZIFU9JPGSHl2Qa9OyzvqcDWbjzgaMLe1W7mpUmuGuTg.png?r=b7b" class="item corrente-item" alt="Bright">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABb7vu2MM4MDGEoQaIm4-9ikMBrHZtnm3srh165FpW43klvBwLATS6FW667DlQw5AytFdstnMBda-RuaQqkyw-8nJ2TBWUKI4Gw.png?r=8e9" class="item corrente-item" alt="Bright">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABeqkh75hkfW1K8jnIKtx6Grr1RNC9ApgtbSWNMh8KBwNCFpwi08oRNJTQT3pLDJ_BwbwBjKiOv8Md5WeA7xpdr1b7QHrhphLOQ.png?r=924" class="item corrente-item" alt="Bright">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABRHaDuNoRXKqSTEcAZY0gXxm_1PORu-nHZOb67R0qXflCAgDsB-tBqmZIFU9JPGSHl2Qa9OyzvqcDWbjzgaMLe1W7mpUmuGuTg.png?r=b7b" alt="Bright">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABb7vu2MM4MDGEoQaIm4-9ikMBrHZtnm3srh165FpW43klvBwLATS6FW667DlQw5AytFdstnMBda-RuaQqkyw-8nJ2TBWUKI4Gw.png?r=8e9" alt="Bright">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABeqkh75hkfW1K8jnIKtx6Grr1RNC9ApgtbSWNMh8KBwNCFpwi08oRNJTQT3pLDJ_BwbwBjKiOv8Md5WeA7xpdr1b7QHrhphLOQ.png?r=924" alt="Bright">
                     </div>
                 </figure>
             </section>
@@ -215,28 +207,28 @@
                     <img src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/S4oi7EPZbv2UEPaukW54OORa0S8/AAAABRcStVB4KN-AgibbJROvmZ8k1IiwrtYVHaPlSolxb-_WTdGILkAQE1kHWbtjv80NtWpGkFDd8LdmHURyZqhifA-bsI8hQyQ16w.png?r=23b" alt="Logo Stranger Things">
                 </div>
 
-                <button class="arrow-left control" aria-label="Previous image">🠜</button>
-                <button class="arrow-right control" aria-label="Next image">🠞</button>
+                <button class="arrow-left control-stranger" aria-label="Previous image">🠜</button>
+                <button class="arrow-right control-stranger" aria-label="Next image">🠞</button>
 
                 <figure>
                     <div class="galeria">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQDfUZca8zZzo_Z5RvFu_QvF1br73dxlQ99iB-9wh1vdajUmJpKIPPh-6n6hJcBdTrnu40-OGlPM7NMflKRWQaYg3qQjKs2vpw.png?r=1bb" class="item corrente-item" alt="Stranger Things">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABSqkh1WRZZyf5fbD8vtu6eTR3MxSlSKcJYUoWEq9_XioxLuY_F-M8vJVYh0PPUi9dXh563L_lu_PRtN9Y_XqJSw0wjO-UpQu2g.png?r=665" class="item corrente-item" alt="Stranger Things">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABfXTiIHt2m-GRPXM7Ydq5Kc_cRTGpBCsWralunPVun0gGSqaghhRTGOGCTM30_HIyWmzvZALCLwk__OvDPmUwyBLWnQoXwLh_g.png?r=f60" class="item corrente-item" alt="Stranger Things">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABbPPmWXt7yxTbZlTD7FPGIZTwJq7GeZTlnMb2kwohAfg2KVR9ZLJEym6ED3HM9azGh027DM3IBPKjzMdCH_EcH68KdIJYzkePA.png?r=2d1" class="item corrente-item" alt="Stranger Things">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABengGs8E_sk6Eky2EXAyYn4ZNjrV5xNQc--_tXRjZM0YasPv6uLP4MOUREjfMimfGwGreM9rhBwGCjOJne4MbX9RLzS3NPZ6fA.png?r=21b" class="item corrente-item" alt="Stranger Things">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZX9rpqTjB0UHpceR74TIshmcfYsD5tYCMCOre8U-pxZwoGw__h5cW7iAuOPfYT5R1P5IiUV5GPZshwYKkwi4AgYAdB7fzPvMw.png?r=c9f" class="item corrente-item" alt="Stranger Things">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABWmfYHJ1ZQ5CARAVqynmIzYnmhVU1Ap4MhyKv9Ck5soCcU7GOB8L8llOkXm-9VPrN24mDGMog5ox5JJNX3FJC1FLR5RGquOk1Q.png?r=e6c" class="item corrente-item" alt="Stranger Things">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABUbriBdKHAhePVbdiINGKpT0NOrdjxWA3vizUXqvTBSROcdBRnAL9OqIoBa5XxoqA-5gHre8dgSKTaReubi2n1JVohiHhGhtdA.png?r=58e" class="item corrente-item" alt="Stranger Things">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABWRUlXbPZi2ju2gs-7WF5XbJeS93MwxPnQu9bSeZ87pqT4taTqiOcxlgEhrs1EuaWVn7uDhx3ajSjD55hgr41dIUfqNzfAHxlg.png?r=752" class="item corrente-item" alt="Stranger Things">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQDZB7T0dC061ytzMFHhNv0_2AMLeLxlZz4ssJVQFDYgukKvid2Dhc7J-wzUqeY6_kIgv9UArUbygRxnpp_jCOLXDG-5KlTmIQ.png?r=723" class="item corrente-item" alt="Stranger Things">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABS2nsJCYz0j_DlzlDQKgjpBbCtEeowa0nGZ3dSCSJ3Es7axJBl_REksEXNz75WjYk45HXw0BPbB5DA64S5_XinRgjyWlNTtbiA.png?r=c31" class="item corrente-item" alt="Stranger Things">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXPzl4-oNpuIcB_EKUPsHqu2xjdFAUad5fzL7MRUvFoFESC0HLHQ2SSgmSYSlC0dgOGXB5fI74MhmNv8TkR-PWzgG5JwbMi8IA.png?r=f6c" class="item corrente-item" alt="Stranger Things">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABbL4JVidO33jwBdJzOV7N1spcD2-Ld8xA0ZZH2FcfjfBEjfm78aDQxOX85ARAyYjW1gGilqUFhQNNfTSxGzG4uzsk_bzK5VGgg.png?r=4af" class="item corrente-item" alt="Stranger Things">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABeubzZEubBv9DiSBJUJ-yPeq6otpRf3aqO7Nj_xEXNhh8JpncJVM0u8PZ3ZGkQchvExsuktdoKlX1HIXBeHi6S1YlYyjMYpheg.png?r=385" class="item corrente-item" alt="Stranger Things">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdo9cqWq4Pd6GX-7Td7FtE6CmiXP1NF-DeXQ4vdSxmWwvTu6bXalio4UStwus55A15HWo6PTKn_aX0UNG8a4TCFFoxodzS6w0g.png?r=17d" class="item corrente-item" alt="Stranger Things">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABfsxPDy9QxLEYB82tD1zR3XA7pRL89ZWO2JOFe19xsThz9Zve9pvdRRhVUujRAgjo75qlDNVfsbRuvvfCXTh5SgRoizTHUYCMg.png?r=4b6" class="item corrente-item" alt="Stranger Things">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdrnT-vHyU7YdkfVETIAVR1WPnnoDzPahY1OXXhDTzcNt44_-zG7mfQ7aDIDDzST29s6US8YEygUZp6rsyd8PHZmy9GxBVfPjw.png?r=a4f" class="item corrente-item" alt="Stranger Things">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQDfUZca8zZzo_Z5RvFu_QvF1br73dxlQ99iB-9wh1vdajUmJpKIPPh-6n6hJcBdTrnu40-OGlPM7NMflKRWQaYg3qQjKs2vpw.png?r=1bb" class="item-stranger" alt="Stranger Things">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABSqkh1WRZZyf5fbD8vtu6eTR3MxSlSKcJYUoWEq9_XioxLuY_F-M8vJVYh0PPUi9dXh563L_lu_PRtN9Y_XqJSw0wjO-UpQu2g.png?r=665" class="item-stranger" alt="Stranger Things">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABfXTiIHt2m-GRPXM7Ydq5Kc_cRTGpBCsWralunPVun0gGSqaghhRTGOGCTM30_HIyWmzvZALCLwk__OvDPmUwyBLWnQoXwLh_g.png?r=f60" class="item-stranger" alt="Stranger Things">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABbPPmWXt7yxTbZlTD7FPGIZTwJq7GeZTlnMb2kwohAfg2KVR9ZLJEym6ED3HM9azGh027DM3IBPKjzMdCH_EcH68KdIJYzkePA.png?r=2d1" class="item-stranger" alt="Stranger Things">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABengGs8E_sk6Eky2EXAyYn4ZNjrV5xNQc--_tXRjZM0YasPv6uLP4MOUREjfMimfGwGreM9rhBwGCjOJne4MbX9RLzS3NPZ6fA.png?r=21b" class="item-stranger" alt="Stranger Things">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZX9rpqTjB0UHpceR74TIshmcfYsD5tYCMCOre8U-pxZwoGw__h5cW7iAuOPfYT5R1P5IiUV5GPZshwYKkwi4AgYAdB7fzPvMw.png?r=c9f" class="item-stranger" alt="Stranger Things">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABWmfYHJ1ZQ5CARAVqynmIzYnmhVU1Ap4MhyKv9Ck5soCcU7GOB8L8llOkXm-9VPrN24mDGMog5ox5JJNX3FJC1FLR5RGquOk1Q.png?r=e6c" class="item-stranger" alt="Stranger Things">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABUbriBdKHAhePVbdiINGKpT0NOrdjxWA3vizUXqvTBSROcdBRnAL9OqIoBa5XxoqA-5gHre8dgSKTaReubi2n1JVohiHhGhtdA.png?r=58e" class="item-stranger" alt="Stranger Things">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABWRUlXbPZi2ju2gs-7WF5XbJeS93MwxPnQu9bSeZ87pqT4taTqiOcxlgEhrs1EuaWVn7uDhx3ajSjD55hgr41dIUfqNzfAHxlg.png?r=752" class="item-stranger" alt="Stranger Things">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQDZB7T0dC061ytzMFHhNv0_2AMLeLxlZz4ssJVQFDYgukKvid2Dhc7J-wzUqeY6_kIgv9UArUbygRxnpp_jCOLXDG-5KlTmIQ.png?r=723" class="item-stranger" alt="Stranger Things">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABS2nsJCYz0j_DlzlDQKgjpBbCtEeowa0nGZ3dSCSJ3Es7axJBl_REksEXNz75WjYk45HXw0BPbB5DA64S5_XinRgjyWlNTtbiA.png?r=c31" class="item-stranger" alt="Stranger Things">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXPzl4-oNpuIcB_EKUPsHqu2xjdFAUad5fzL7MRUvFoFESC0HLHQ2SSgmSYSlC0dgOGXB5fI74MhmNv8TkR-PWzgG5JwbMi8IA.png?r=f6c" class="item-stranger" alt="Stranger Things">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABbL4JVidO33jwBdJzOV7N1spcD2-Ld8xA0ZZH2FcfjfBEjfm78aDQxOX85ARAyYjW1gGilqUFhQNNfTSxGzG4uzsk_bzK5VGgg.png?r=4af" class="item-stranger" alt="Stranger Things">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABeubzZEubBv9DiSBJUJ-yPeq6otpRf3aqO7Nj_xEXNhh8JpncJVM0u8PZ3ZGkQchvExsuktdoKlX1HIXBeHi6S1YlYyjMYpheg.png?r=385" class="item-stranger" alt="Stranger Things">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdo9cqWq4Pd6GX-7Td7FtE6CmiXP1NF-DeXQ4vdSxmWwvTu6bXalio4UStwus55A15HWo6PTKn_aX0UNG8a4TCFFoxodzS6w0g.png?r=17d" class="item-stranger" alt="Stranger Things">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABfsxPDy9QxLEYB82tD1zR3XA7pRL89ZWO2JOFe19xsThz9Zve9pvdRRhVUujRAgjo75qlDNVfsbRuvvfCXTh5SgRoizTHUYCMg.png?r=4b6" class="item-stranger" alt="Stranger Things">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdrnT-vHyU7YdkfVETIAVR1WPnnoDzPahY1OXXhDTzcNt44_-zG7mfQ7aDIDDzST29s6US8YEygUZp6rsyd8PHZmy9GxBVfPjw.png?r=a4f" class="item-stranger" alt="Stranger Things">
                     </div>
                 </figure>
             </section>
@@ -246,17 +238,14 @@
                     <img src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/S4oi7EPZbv2UEPaukW54OORa0S8/AAAABaj5LdJpl6iWvw-dKxaU2Rtx7gYhX2NX1-PcgeYtobYDBHq2Yn0UlODWsZuzet6ofqYxLvmoO_gO0p0CEoRw76KmtQGMWrGT.png?r=501" alt="Logo Desencanto">
                 </div>
 
-                <button class="arrow-left control" aria-label="Previous image">🠜</button>
-                <button class="arrow-right control" aria-label="Next image">🠞</button>
-
                 <figure>
                     <div class="galeria">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZLyb430y4UtBTwHUKOeUt7ESSCyiG_sbTy6lnLzLB0XS3VjiJ8HcN9Fa67VjtbXr2k-eP1vDIfszx69-ebMOD0k5ilaLtXgjQ.png?r=69d" class="item corrente-item" alt="Desencanto">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABVTvCzw4U16jVuLWNayt3_NWQQ5rlkgZTD6GaE2uCZIq3TLDv5fHhPOvACEOLokC4b2n41_r4Ya6xmeHGIrkoZce_kXhwEPZMw.png?r=4e1" class="item corrente-item" alt="Desencanto">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABSwgTGdQ10_g7S40OTUOZyuo_rI67XiWBqLuavAUpwPLHazdnhEqlQVhNoNpU9N5s7ffdmHsrDYYBsCT2UAGXXi2ppwi_kU0Qg.png?r=5eb" class="item corrente-item" alt="Desencanto">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABeKmsTiFrCGj6QTnFHw89IaNC7_KxW-G20Af8S42eDOuKlGsUm40uCrNdtQ0-w9BwUbLeOnIhAnliAbW6EPlhEkm8CKGC5MXXQ.png?r=bba" class="item corrente-item" alt="Desencanto">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQ_SE8nWtfunDbhH1YG2VNnQJdnGTuKXLFy-1034EbiGTd6jjUI30f7XesxyYxHnkR1go22UblG8DtezXfrJFT8lHsZgUatfJw.png?r=ddf" class="item corrente-item" alt="Desencanto">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQA2ezuC_r7yRxBeCgk-NhOLxj59K5zDt1GCljVfBezTLIhnoj9q65JbqoekVXK7oVPrekv4oyyW3ifBi7hJ2v_uQETI3gzo-g.png?r=2fb" class="item corrente-item" alt="Desencanto">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZLyb430y4UtBTwHUKOeUt7ESSCyiG_sbTy6lnLzLB0XS3VjiJ8HcN9Fa67VjtbXr2k-eP1vDIfszx69-ebMOD0k5ilaLtXgjQ.png?r=69d" alt="Desencanto">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABVTvCzw4U16jVuLWNayt3_NWQQ5rlkgZTD6GaE2uCZIq3TLDv5fHhPOvACEOLokC4b2n41_r4Ya6xmeHGIrkoZce_kXhwEPZMw.png?r=4e1" alt="Desencanto">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABSwgTGdQ10_g7S40OTUOZyuo_rI67XiWBqLuavAUpwPLHazdnhEqlQVhNoNpU9N5s7ffdmHsrDYYBsCT2UAGXXi2ppwi_kU0Qg.png?r=5eb" alt="Desencanto">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABeKmsTiFrCGj6QTnFHw89IaNC7_KxW-G20Af8S42eDOuKlGsUm40uCrNdtQ0-w9BwUbLeOnIhAnliAbW6EPlhEkm8CKGC5MXXQ.png?r=bba" alt="Desencanto">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQ_SE8nWtfunDbhH1YG2VNnQJdnGTuKXLFy-1034EbiGTd6jjUI30f7XesxyYxHnkR1go22UblG8DtezXfrJFT8lHsZgUatfJw.png?r=ddf" alt="Desencanto">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQA2ezuC_r7yRxBeCgk-NhOLxj59K5zDt1GCljVfBezTLIhnoj9q65JbqoekVXK7oVPrekv4oyyW3ifBi7hJ2v_uQETI3gzo-g.png?r=2fb" alt="Desencanto">
                     </div>
                 </figure>
             </section>
@@ -266,23 +255,23 @@
                     <img src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/S4oi7EPZbv2UEPaukW54OORa0S8/AAAABQ89kdPeY51cMn1RRjOszr9wBjZZMlZQQjxbOS4_hIMdUY32Qcue5vOs8rNHtMI-qIvfk-RzOriqOx0GrFqL8Np3LrupOxDisQ.png?r=d44" alt="Logo Cobra Kai">
                 </div>
 
-                <button class="arrow-left control" aria-label="Previous image">🠜</button>
-                <button class="arrow-right control" aria-label="Next image">🠞</button>
+                <button class="arrow-left control-cobra" aria-label="Previous image">🠜</button>
+                <button class="arrow-right control-cobra" aria-label="Next image">🠞</button>
 
                 <figure>
                     <div class="galeria">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABUuJkcqfTU_Pxqx-wPjgtktVoO6bubyXK-5hk6XNKnYQpDd9UZFp9gNZmq3aE9zmA0L148Xi0k10u8Kz-rNgxX4ZoL6CCWjCnw.png?r=a48" class="item corrente-item" alt="Cobra Kai">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABRTzjHMLp_V4lvvJunatv6AM5p7HK8CM26ZwA8bgllwfSqoMtEr1IPKx380AJRw_6ktjhsLDzpnp2gjqAGCRtbLx439kPwXIDA.png?r=de5" class="item corrente-item" alt="Cobra Kai">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABaoZ8Fcb5s5H9OcsYl_jFeF1AR5EAnEI4w1TKSW5icIbyfN17nGoOYi9gFj-MTbzHS5zviLBczSTltR46ojTVc7HzvbgBwudag.png?r=cdf" class="item corrente-item" alt="Cobra Kai">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdYFMN28Rj8mRanOnShae_kOBiGquTivQ-4IE-ZcIAIP1mKs2F6o5RfwI2F1Hb80uDBUj4XWJCbPnn-edMyhqQ7UzQtw9TaYoA.png?r=f70" class="item corrente-item" alt="Cobra Kai">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdXaercQGwLXv7GZR_Co0v03hGun44YA9DmHIApyoNVLqNJpoJAA95d2WePhDZYN4t1suO1y0dTRtoYhXv5srt72E-1e43smEQ.png?r=357" class="item corrente-item" alt="Cobra Kai">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABadcXkVV_gmOnEegWTqBH48OkSMKk7e2Ifz-VMSRIFy6C0DYL1-UgCtxSgLE_KjWwJR7cEEi7IhlD5Sf23v3xY1gxVGy7vEkow.png?r=b18" class="item corrente-item" alt="Cobra Kai">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZQECqc59lfY9RoOGu06ZKuzes0FtLIEvgN880X6VunwyMqQ_42msOXevYntV7ss1BoJYyMzZpwDYeOb-ge4zXkzXPwgS6rTzg.png?r=0fa" class="item corrente-item" alt="Cobra Kai">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABR4hqoAa18SokAhKyW_0vAcTR1NprhH2FsZLrraWlMtdp4xYm9eaDi2n9Vzkj6taj3lEqVE4KxiEk58xkXvJIZuFQ0PHZMetpw.png?r=d4c" class="item corrente-item" alt="Cobra Kai">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdq0mP1DjFG03pJxPz9iLja1UPDGRb902i4ug5AK_GQYP-tzSWwxBbtV4Fzjtuw6dfOzMc_8h8Qmah6gPrmJYAclptmm3xRkCA.png?r=9a5" class="item corrente-item" alt="Cobra Kai">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdO5UoelnG6qm9s6XY3bjxlvNOyPDL2Np6yoh6fMfgBqEYMALwtvFOHh7eXdIfVzUy3hgWJX-pCZNAWnEd6GVB9nbfpMu26ZAQ.png?r=bdd" class="item corrente-item" alt="Cobra Kai">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABeX0rhaZ7ub9ksROiu3j1MhwZ8VM8CIaPy99wNW-rz2wi_z83HB7XbbhH8bmhFJhQCLhT25i1AC4KM0UAS4KuuHEt_j4shpy3A.png?r=223" class="item corrente-item" alt="Cobra Kai">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdD_6xefHK5we0anzkfxvNlCUKxp0y4RGbbiJoGovwtjAa_Zymeo1ySc1tswYxdbGei_aVHtXLFdZ4g5rdjMkbhHzDq0RxV-0w.png?r=b8d" class="item corrente-item" alt="Cobra Kai">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABUuJkcqfTU_Pxqx-wPjgtktVoO6bubyXK-5hk6XNKnYQpDd9UZFp9gNZmq3aE9zmA0L148Xi0k10u8Kz-rNgxX4ZoL6CCWjCnw.png?r=a48" class="item-cobra" alt="Cobra Kai">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABRTzjHMLp_V4lvvJunatv6AM5p7HK8CM26ZwA8bgllwfSqoMtEr1IPKx380AJRw_6ktjhsLDzpnp2gjqAGCRtbLx439kPwXIDA.png?r=de5" class="item-cobra" alt="Cobra Kai">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABaoZ8Fcb5s5H9OcsYl_jFeF1AR5EAnEI4w1TKSW5icIbyfN17nGoOYi9gFj-MTbzHS5zviLBczSTltR46ojTVc7HzvbgBwudag.png?r=cdf" class="item-cobra" alt="Cobra Kai">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdYFMN28Rj8mRanOnShae_kOBiGquTivQ-4IE-ZcIAIP1mKs2F6o5RfwI2F1Hb80uDBUj4XWJCbPnn-edMyhqQ7UzQtw9TaYoA.png?r=f70" class="item-cobra" alt="Cobra Kai">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdXaercQGwLXv7GZR_Co0v03hGun44YA9DmHIApyoNVLqNJpoJAA95d2WePhDZYN4t1suO1y0dTRtoYhXv5srt72E-1e43smEQ.png?r=357" class="item-cobra" alt="Cobra Kai">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABadcXkVV_gmOnEegWTqBH48OkSMKk7e2Ifz-VMSRIFy6C0DYL1-UgCtxSgLE_KjWwJR7cEEi7IhlD5Sf23v3xY1gxVGy7vEkow.png?r=b18" class="item-cobra" alt="Cobra Kai">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZQECqc59lfY9RoOGu06ZKuzes0FtLIEvgN880X6VunwyMqQ_42msOXevYntV7ss1BoJYyMzZpwDYeOb-ge4zXkzXPwgS6rTzg.png?r=0fa" class="item-cobra" alt="Cobra Kai">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABR4hqoAa18SokAhKyW_0vAcTR1NprhH2FsZLrraWlMtdp4xYm9eaDi2n9Vzkj6taj3lEqVE4KxiEk58xkXvJIZuFQ0PHZMetpw.png?r=d4c" class="item-cobra" alt="Cobra Kai">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdq0mP1DjFG03pJxPz9iLja1UPDGRb902i4ug5AK_GQYP-tzSWwxBbtV4Fzjtuw6dfOzMc_8h8Qmah6gPrmJYAclptmm3xRkCA.png?r=9a5" class="item-cobra" alt="Cobra Kai">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdO5UoelnG6qm9s6XY3bjxlvNOyPDL2Np6yoh6fMfgBqEYMALwtvFOHh7eXdIfVzUy3hgWJX-pCZNAWnEd6GVB9nbfpMu26ZAQ.png?r=bdd" class="item-cobra" alt="Cobra Kai">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABeX0rhaZ7ub9ksROiu3j1MhwZ8VM8CIaPy99wNW-rz2wi_z83HB7XbbhH8bmhFJhQCLhT25i1AC4KM0UAS4KuuHEt_j4shpy3A.png?r=223" class="item-cobra" alt="Cobra Kai">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdD_6xefHK5we0anzkfxvNlCUKxp0y4RGbbiJoGovwtjAa_Zymeo1ySc1tswYxdbGei_aVHtXLFdZ4g5rdjMkbhHzDq0RxV-0w.png?r=b8d" class="item-cobra" alt="Cobra Kai">
                     </div>
                 </figure>
             </section>
@@ -292,19 +281,19 @@
                     <img src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/S4oi7EPZbv2UEPaukW54OORa0S8/AAAABXqx1gi4em_IQhsOhem76K3ni0t2q2Ypp1XZUQYdktxYNMfd480Knq1iyG4whpQ5wsLLrWVYAk1yucm1yB4jtfAQDz6xEebc.png?r=da2" alt="Logo Lucifer">
                 </div>
 
-                <button class="arrow-left control" aria-label="Previous image">🠜</button>
-                <button class="arrow-right control" aria-label="Next image">🠞</button>
+                <button class="arrow-left control-lucifer" aria-label="Previous image">🠜</button>
+                <button class="arrow-right control-lucifer" aria-label="Next image">🠞</button>
 
                 <figure>
                     <div class="galeria">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQnnytfA7YTgG136xqjbPbGKUZokiZR58TnXliSzuyq1tY6CDqtvPMAUn5MBdEQB-pf98OWXjI9pZk0BaXy4Xwse7nJn1betaQ.png?r=2c8" class="item corrente-item" alt="Lucifer">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQ6i9b30tRhZVeL3nbGu-ZNfZTFtr3XxCEYRQn6Bda6PZ51B9HjoOiRVulR95rdAcH4mlGtj3z7iLzoMYX_c0jJd03Qu3NebZA.png?r=c99" class="item corrente-item" alt="Lucifer">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABTteEe2Ezby6dRpSckAUu9O8UtQB07ZTuxETM3mtATkhsTr3rwmOZLMXAVVDRZU6WG89NgCbo4GEEpIjVjEaCVbs7WrxgobqHA.png?r=8d4" class="item corrente-item" alt="Lucifer">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABc2a32-7AxeiRQ5LXcvSIKCYSxw_GHku6BNfm-CCfzNf8uxzkL1mlmhRLNbvEdn-j_aR6Qt6Nxo2-FZx2EDkXGoiMmZsyLoi2w.png?r=114" class="item corrente-item" alt="Lucifer">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXI2LXMhCBWRjazWK9SbiDF369SFA07iyBDGJ8ler9Q75XZ09NKvYJTAqo8HR41YnhO2Nh7kJ7B0EXC-Yt7RrefJahEWTVnThA.png?r=808" class="item corrente-item" alt="Lucifer">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABeHm3Nvqtt1QHkPXEqAgSmYIv8kf98SwmjXL-Go2yzy6rXe-W-AqlMFc748aY1WF_9x1CF2OXWFufxHddiV8T06Ol2i3F5KhBA.png?r=47d" class="item corrente-item" alt="Lucifer">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABSuSY4s5VCHAXHRIRysJ4S-e0opazf1XL_TpKmEBJqALeWN4a0jG7dq8INtN-rUnVgdlC4UMPkgha6ZiZpTy2DU_IRKqe8gJYQ.png?r=6d9" class="item corrente-item" alt="Lucifer">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXqhp11o45YG22NLBYsIg8l_TIIPoiPF5Vpuao8QYU3jS_8Gek_uqfqKGeTOhIZUSzcaUId0s1NJyTTrQat5bT5__pvqHsKiCQ.png?r=d9d" class="item corrente-item" alt="Lucifer">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQnnytfA7YTgG136xqjbPbGKUZokiZR58TnXliSzuyq1tY6CDqtvPMAUn5MBdEQB-pf98OWXjI9pZk0BaXy4Xwse7nJn1betaQ.png?r=2c8" class="item-lucifer" alt="Lucifer">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQ6i9b30tRhZVeL3nbGu-ZNfZTFtr3XxCEYRQn6Bda6PZ51B9HjoOiRVulR95rdAcH4mlGtj3z7iLzoMYX_c0jJd03Qu3NebZA.png?r=c99" class="item-lucifer" alt="Lucifer">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABTteEe2Ezby6dRpSckAUu9O8UtQB07ZTuxETM3mtATkhsTr3rwmOZLMXAVVDRZU6WG89NgCbo4GEEpIjVjEaCVbs7WrxgobqHA.png?r=8d4" class="item-lucifer" alt="Lucifer">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABc2a32-7AxeiRQ5LXcvSIKCYSxw_GHku6BNfm-CCfzNf8uxzkL1mlmhRLNbvEdn-j_aR6Qt6Nxo2-FZx2EDkXGoiMmZsyLoi2w.png?r=114" class="item-lucifer" alt="Lucifer">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXI2LXMhCBWRjazWK9SbiDF369SFA07iyBDGJ8ler9Q75XZ09NKvYJTAqo8HR41YnhO2Nh7kJ7B0EXC-Yt7RrefJahEWTVnThA.png?r=808" class="item-lucifer" alt="Lucifer">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABeHm3Nvqtt1QHkPXEqAgSmYIv8kf98SwmjXL-Go2yzy6rXe-W-AqlMFc748aY1WF_9x1CF2OXWFufxHddiV8T06Ol2i3F5KhBA.png?r=47d" class="item-lucifer" alt="Lucifer">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABSuSY4s5VCHAXHRIRysJ4S-e0opazf1XL_TpKmEBJqALeWN4a0jG7dq8INtN-rUnVgdlC4UMPkgha6ZiZpTy2DU_IRKqe8gJYQ.png?r=6d9" class="item-lucifer" alt="Lucifer">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXqhp11o45YG22NLBYsIg8l_TIIPoiPF5Vpuao8QYU3jS_8Gek_uqfqKGeTOhIZUSzcaUId0s1NJyTTrQat5bT5__pvqHsKiCQ.png?r=d9d" class="item-lucifer" alt="Lucifer">
                     </div>
                 </figure>
             </section>
@@ -314,27 +303,27 @@
                     <img src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/S4oi7EPZbv2UEPaukW54OORa0S8/AAAABZ7Hea6_oO-FyBks-V8LswyiVOU8IvCdHq-pKUpE4RfBbGyG7vl_xz1iEz9NPDrssbUkrwEGubEMQ0zHqDWEiQ44aP1XUohE8w.png?r=1cc" alt="Logo Sex Education">
                 </div>
 
-                <button class="arrow-left control" aria-label="Previous image">🠜</button>
-                <button class="arrow-right control" aria-label="Next image">🠞</button>
+                <button class="arrow-left control-sex" aria-label="Previous image">🠜</button>
+                <button class="arrow-right control-sex" aria-label="Next image">🠞</button>
 
                 <figure>
                     <div class="galeria">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZsEiMLMeFj4MnkBVL4boHLA8OaqZhCnMzOQGJbhbGEtpT4-t7d7SwnNXfBhjQrUVQoPcXC84EDLv6DryqciBAfPY5I-bvMWpA.png?r=758" class="item corrente-item" alt="Sex Education">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABRpPR5_IW6-wG7dY2DiOvxyp28hKw5jkqAbJLuZ40Siy7tQELNhiZKpLJJDbTsgphCkpzgKrOJZlrypVU77wunWfrh0LxpMlYg.png?r=4ec" class="item corrente-item" alt="Sex Education">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdJ04TBacLxadSrJMa8bd0OfBO6SOhnjOOdmhZQFauDnvcNPJvjh7VTGka75FPEEsnhw2uxXmn96PDDp7dGoqicycwM_XXuS6g.png?r=ebd" class="item corrente-item" alt="Sex Education">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABThJoLgURI9kr0jj5mUbRKzQH3h9cRDWaBZiIehz_ufa-udupuLGrfvOrWUHy2N7P4ynDou-7yyL1OvWC3pSKVLZDo4QSCfzCg.png?r=a6e" class="item corrente-item" alt="Sex Education">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABbOlvsb0wLBdm_zCHjGingdAlutnFVx7v3Pf8mg9yt7JeM5gKRFk5i5X-RiqTg08iqE41XpTiyh86MPJQWrEotUpDkFAE5mhfw.png?r=540" class="item corrente-item" alt="Sex Education">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXLK1_B064L8w3YL34zy-Xh0KpQ336vf7BKJUwANyjqbsVk9HSFNz-IDpcWLGBlLvz4lGnRVmkp88Xpg_356klk-eBh4dy453A.png?r=1e6" class="item corrente-item" alt="Sex Education">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABS9B-twIoieKvZ_gBuN7HHdKjxGTiZ96HFx8uGujt7eDSl3ooPJG7qHyeU4zVZ8dyeFRVaAD89sfGeIiHUb6Wg4HZaH1dHp1cw.png?r=27f" class="item corrente-item" alt="Sex Education">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABVA6uuDChOocT9qPv5Dez9PaIk7_2-VMDebT8l_Jbgo9DhkIXCncAD8tQgN3S2C4d1y8dEuGRISLOm06KuAuaLcX8UCJi2qnNg.png?r=1c8" class="item corrente-item" alt="Sex Education">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABf_2M2afuqzHjs3GziliVDZl5fmfiESO_R9_hIuIOcg9Cagga6rZ8zr6Dhoxgs9a50VNwHIOHemRBMCluZGJZ1Lr4S3hWKlqig.png?r=089" class="item corrente-item" alt="Sex Education">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABTtQdLTx9K7a7PkG10sEj5v6_R6BzlhybYOm83UfNpo-uTULMUcrkS76cowEC11QjlFYPaZRq_6owNB29yNOIqhmmdOcEezW1w.png?r=35e" class="item corrente-item" alt="Sex Education">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABTC9xblcKh0G2_Vav3Gfkr5rr2MwlZriB4M5PJ2z88E46AFUb_-sxDKNaaY2csPcfE7wjbBR1zSPSs6UMxAGHMFq_4drP-V7WQ.png?r=f8a" class="item corrente-item" alt="Sex Education">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABUTA3VzJyyvYqOsGBfKR_xQrA5UEd7e4wB6H5pmHKX8gPCzzJaWuoya29_QiVz1vXytQTyQ4Zfu06ug1KPHGRld_xq1Kz1Cg_w.png?r=502" class="item corrente-item" alt="Sex Education">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABcLLmAdgmHjikoG2wy1DoCWZl_DRLIGVZ1p83SQE6XkbbDnnAtmLbg-h2HOqXtqnYuUFWGft9Jn7yv6fCyPvRqxM6dTUnzf9rg.png?r=74d" class="item corrente-item" alt="Sex Education">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABUT4Jg45ygkJB4jZixalXTGy3dJ6HmrExnzVODxaZf179IBnpC_jLqlXem6XczwHuvukC8mH0NNzAxP3e0sdXyMKwcxoiuiM9w.png?r=7ed" class="item corrente-item" alt="Sex Education">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABS1hGas2QmXrXUNUzyiKA5J_FFYSpGeejyu36UbAJHbh52E0dp8Be_SKQRZ06BxdvbkLFcxi3lNMFH9TPB1xn6oCgipPOyVg6Q.png?r=59e" class="item corrente-item" alt="Sex Education">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABd9fPgu-4w0r_KM0rO5NMpAFWhLbsvVsDMy3qaQq1_9iT7O2pZASLBWJj1nrbOYAcfK8nuTaixDZqJ_NFxNTx_jY16Ms4Rw2Hw.png?r=b2d" class="item corrente-item" alt="Sex Education">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZsEiMLMeFj4MnkBVL4boHLA8OaqZhCnMzOQGJbhbGEtpT4-t7d7SwnNXfBhjQrUVQoPcXC84EDLv6DryqciBAfPY5I-bvMWpA.png?r=758" class="item-sex" alt="Sex Education">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABRpPR5_IW6-wG7dY2DiOvxyp28hKw5jkqAbJLuZ40Siy7tQELNhiZKpLJJDbTsgphCkpzgKrOJZlrypVU77wunWfrh0LxpMlYg.png?r=4ec" class="item-sex" alt="Sex Education">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdJ04TBacLxadSrJMa8bd0OfBO6SOhnjOOdmhZQFauDnvcNPJvjh7VTGka75FPEEsnhw2uxXmn96PDDp7dGoqicycwM_XXuS6g.png?r=ebd" class="item-sex" alt="Sex Education">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABThJoLgURI9kr0jj5mUbRKzQH3h9cRDWaBZiIehz_ufa-udupuLGrfvOrWUHy2N7P4ynDou-7yyL1OvWC3pSKVLZDo4QSCfzCg.png?r=a6e" class="item-sex" alt="Sex Education">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABbOlvsb0wLBdm_zCHjGingdAlutnFVx7v3Pf8mg9yt7JeM5gKRFk5i5X-RiqTg08iqE41XpTiyh86MPJQWrEotUpDkFAE5mhfw.png?r=540" class="item-sex" alt="Sex Education">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXLK1_B064L8w3YL34zy-Xh0KpQ336vf7BKJUwANyjqbsVk9HSFNz-IDpcWLGBlLvz4lGnRVmkp88Xpg_356klk-eBh4dy453A.png?r=1e6" class="item-sex" alt="Sex Education">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABS9B-twIoieKvZ_gBuN7HHdKjxGTiZ96HFx8uGujt7eDSl3ooPJG7qHyeU4zVZ8dyeFRVaAD89sfGeIiHUb6Wg4HZaH1dHp1cw.png?r=27f" class="item-sex" alt="Sex Education">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABVA6uuDChOocT9qPv5Dez9PaIk7_2-VMDebT8l_Jbgo9DhkIXCncAD8tQgN3S2C4d1y8dEuGRISLOm06KuAuaLcX8UCJi2qnNg.png?r=1c8" class="item-sex" alt="Sex Education">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABf_2M2afuqzHjs3GziliVDZl5fmfiESO_R9_hIuIOcg9Cagga6rZ8zr6Dhoxgs9a50VNwHIOHemRBMCluZGJZ1Lr4S3hWKlqig.png?r=089" class="item-sex" alt="Sex Education">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABTtQdLTx9K7a7PkG10sEj5v6_R6BzlhybYOm83UfNpo-uTULMUcrkS76cowEC11QjlFYPaZRq_6owNB29yNOIqhmmdOcEezW1w.png?r=35e" class="item-sex" alt="Sex Education">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABTC9xblcKh0G2_Vav3Gfkr5rr2MwlZriB4M5PJ2z88E46AFUb_-sxDKNaaY2csPcfE7wjbBR1zSPSs6UMxAGHMFq_4drP-V7WQ.png?r=f8a" class="item-sex" alt="Sex Education">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABUTA3VzJyyvYqOsGBfKR_xQrA5UEd7e4wB6H5pmHKX8gPCzzJaWuoya29_QiVz1vXytQTyQ4Zfu06ug1KPHGRld_xq1Kz1Cg_w.png?r=502" class="item-sex" alt="Sex Education">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABcLLmAdgmHjikoG2wy1DoCWZl_DRLIGVZ1p83SQE6XkbbDnnAtmLbg-h2HOqXtqnYuUFWGft9Jn7yv6fCyPvRqxM6dTUnzf9rg.png?r=74d" class="item-sex" alt="Sex Education">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABUT4Jg45ygkJB4jZixalXTGy3dJ6HmrExnzVODxaZf179IBnpC_jLqlXem6XczwHuvukC8mH0NNzAxP3e0sdXyMKwcxoiuiM9w.png?r=7ed" class="item-sex" alt="Sex Education">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABS1hGas2QmXrXUNUzyiKA5J_FFYSpGeejyu36UbAJHbh52E0dp8Be_SKQRZ06BxdvbkLFcxi3lNMFH9TPB1xn6oCgipPOyVg6Q.png?r=59e" class="item-sex" alt="Sex Education">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABd9fPgu-4w0r_KM0rO5NMpAFWhLbsvVsDMy3qaQq1_9iT7O2pZASLBWJj1nrbOYAcfK8nuTaixDZqJ_NFxNTx_jY16Ms4Rw2Hw.png?r=b2d" class="item-sex" alt="Sex Education">
                     </div>
                 </figure>
             </section>
@@ -344,16 +333,13 @@
                     <img src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/S4oi7EPZbv2UEPaukW54OORa0S8/AAAABVRng2MZrx8Ks_7Lg7CxU6vFzIaW6bZSQPSWSB74ry_OvgYl1Qt5LlgOq7UPk75sO2nmBud7EP_n7mV7qSY2veZEOHHS_C4I8Q.png?r=fe4" alt="Logo Outer Banks">
                 </div>
 
-                <button class="arrow-left control" aria-label="Previous image">🠜</button>
-                <button class="arrow-right control" aria-label="Next image">🠞</button>
-
                 <figure>
                     <div class="galeria">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABRpgAT7qzK_sZZn18e8RkzRZPiHpJ4T7FURtPUPDUbOuPeHQaOtwL1qfxCBKTyk20YX6K0ES-xGqoqzXvHZ6Z5JLXvZuFuUkkg.png?r=f92" class="item corrente-item" alt="Outer Banks">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABY7MquGcaZs_35dP8NZyHiqcKSecLsBBAIAYtMquW9tt3wreSNfNuITEyyPRok3AQPwV1GWiYRiMDf6Dd-3qYg0W5irMNzCKSA.png?r=149" class="item corrente-item" alt="Outer Banks">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABb2gKlNwwxyW0J4GmiY_uE-uTZgipSDiUCdAGhIaikoT2MjFCfcy-7PmELdf6iXxhoHB2vdyl-kwY5Is3AcCSay31N_9ixelfQ.png?r=d86" class="item corrente-item" alt="Outer Banks">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABToiCtFO3zHCmYSLNFrkz_XjlkMuYnluvGwb_3grMwPgAb38ODIeEUKtVuhGXf1lzsD8uV00qhtsjhaIF0d5wdynHy8Vl7VFjA.png?r=246" class="item corrente-item" alt="Outer Banks">
-                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABbzRvCBqehXiTF7zl1Htt7-CJyl-4J90gG0XPGyBPCE68G2xXMZHVxcYXxNVCdQPIbLWZz8ib3bbNace5P0BuHxq6SZ-Zc-g-g.png?r=318" class="item corrente-item" alt="Outer Banks">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABRpgAT7qzK_sZZn18e8RkzRZPiHpJ4T7FURtPUPDUbOuPeHQaOtwL1qfxCBKTyk20YX6K0ES-xGqoqzXvHZ6Z5JLXvZuFuUkkg.png?r=f92" alt="Outer Banks">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABY7MquGcaZs_35dP8NZyHiqcKSecLsBBAIAYtMquW9tt3wreSNfNuITEyyPRok3AQPwV1GWiYRiMDf6Dd-3qYg0W5irMNzCKSA.png?r=149" alt="Outer Banks">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABb2gKlNwwxyW0J4GmiY_uE-uTZgipSDiUCdAGhIaikoT2MjFCfcy-7PmELdf6iXxhoHB2vdyl-kwY5Is3AcCSay31N_9ixelfQ.png?r=d86" alt="Outer Banks">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABToiCtFO3zHCmYSLNFrkz_XjlkMuYnluvGwb_3grMwPgAb38ODIeEUKtVuhGXf1lzsD8uV00qhtsjhaIF0d5wdynHy8Vl7VFjA.png?r=246" alt="Outer Banks">
+                        <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABbzRvCBqehXiTF7zl1Htt7-CJyl-4J90gG0XPGyBPCE68G2xXMZHVxcYXxNVCdQPIbLWZz8ib3bbNace5P0BuHxq6SZ-Zc-g-g.png?r=318" alt="Outer Banks">
                     </div>
                 </figure>
             </section>

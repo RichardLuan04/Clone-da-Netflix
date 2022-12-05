@@ -66,3 +66,7 @@ document.getElementById("campo-imagem").src = Consulta('Imagem')
 function Tela_Trocar_Imagem() {
     window.location.href = 'Mudar Foto.html'
 } 
+
+function Voltar_Editar() {
+    window.location.href = 'Editar.html'
+}

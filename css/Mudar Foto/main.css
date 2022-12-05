@@ -37,19 +37,34 @@ figure::-webkit-scrollbar {
     gap: 1.5rem; /*Define a lacuna entre duas tags*/ 
 }
 
-.item {
+.galeria input{
     min-height: 100px;
     min-height: 100px;
     max-width: 200px;
     max-height: 200px;
     width: 12vw;
     flex-shrink: 0; /*Não permite que o programa faça todos os elementos caberem por padrão*/
-    opacity: 0.6;
-    transition: all 400ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    border-radius: 10px;
+    border: 3px solid transparent ;
 }
 
-.corrente-item {
-    opacity: 1;
+.galeria input:hover{
+    border-color: #fff;
+}
+
+.text img {
+    min-height: 50px;
+    min-width: 150px;
+    max-width: 300px;
+    max-height: 100px;
+    padding-bottom: 1rem;
+}
+
+.text p {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
 }
 
 .arrow-left, 
