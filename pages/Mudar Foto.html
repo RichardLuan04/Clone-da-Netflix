@@ -12,6 +12,7 @@
 
     <script src="../js/Slider.js" defer></script>
     <script src="../js/Perfil.js" defer></script>
+    <script src="../js/localStorage-perfil/Tela Mudar Foto.js" defer></script>
 
     <title>Netflix</title>
 </head>
@@ -29,8 +30,8 @@
         </div>
 
         <div class="perfil">
-            <p class="nome-perfil">Richard</p>   
-            <img src="../imgs/imagem-richard.png" alt="Foto de perfil">
+            <p id='name-perfil' class="nome-perfil"></p>   
+            <img src="" alt="Foto de perfil" id="foto-perfil">
         </div>
     </header>
 
@@ -55,6 +56,14 @@
                         <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABRNxh2T8XhS7jBOLKwI1j-R0CJFhtTa-nxz5EhkX0EL4ue-amefp4mC1fsf0-rd8vynj9TXF2unD7iD4vFlh5kp5XCMtfUa4NA.png?r=a16" class="item-classico" alt="Classica">
                         <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdxbwI5TRu89nI_cd6jTv-IflvV5Zk6Cs4_ZbL9TqcYqro8KZ6RonjEQZn0ZSkwYJ50xjR6_nbqnnvwVYYCaTagdYdV3aQrkqA.png?r=ae9" class="item-classico" alt="Classica">
                         <input type="image" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABRaGfMeG37Ayx3OwvsEqeTlSVvQWzVOiEfYQ8GRHx3zhx81IZy88ZnGN-cU7XLgoc-fIvFfp1ue_Pl-Vqw2cL7KiX5BRdj7z1g.png?r=59d" class="item-classico" alt="Classica">
+                        <input type="image" src="https://occ-0-4855-559.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABSQGQWkzf71tVsbzO1dU6kvtezyXhoWTkUzebNS_MSeRVGdckDNMVs1q7DIks1J_qGDNfrVjr2OEZvTPsNq9zBLKCbgRvCj-RA.png?r=d47" class="item-classico" alt="Classica">
+                        <input type="image" src="https://occ-0-4855-559.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABafGsF7RLiQlTUx1eVpITxBZ5Me8s0M3fvgIbDNpwk1-2dnsNGRdzVOyajfwonpnfF3MKRdPt2l5GejDXr3cbGE8fVV1YWdHhw.png?r=ce4" class="item-classico" alt="Classica">
+                        <input type="image" src="https://occ-0-4855-559.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABWkqCkPdPuyQh9kOjmHPTUZfwG-R8QZbs-drqkZh8qzWeyICABKFknYDnpl_2Nj4pYCA3UxVu3IjuFjW_B_3D5_5I9R4ynhH1g.png?r=ab6" class="item-classico" alt="Classica">
+                        <input type="image" src="https://occ-0-4855-559.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABfMnIhIdkM8LdU5BZaYVaxoVTrMGzIjafPBzCQUwebzxeK7JKvcI7-Jm-5AituzcdJYIT_45NSkbbTwfVva-E01G9J1YVVBveA.png?r=e6e" class="item-classico" alt="Classica"> 
+                        <input type="image" src="https://occ-0-4855-559.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABV0j-bGEVAaWomcgXqIMEfw-h-in8B5DB_edifknx-3aNWWIQKU1KMFN9OZtzQMTCYp2ovDEaPHJlCkDBmdtDUTJwUb0-c_BBg.png?r=a4b" class="item-classico" alt="Classica"> 
+                        <input type="image" src="https://occ-0-4855-559.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZf5kiIAuiZG_DvLse1xSkgukFUqHQQR5d6qSDQBlw720nd7cYHcXavvtFNfg5814g1njOdPHGbrKYs9KdWq9hnEqL2-xxh5MA.png?r=1d4" class="item-classico" alt="Classica"> 
+                        <input type="image" src="https://occ-0-4855-559.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABUoj4FT-0Rr558WbETiintMnmH2JKw4l_p4MdMoxqVx7YXwsvLvvnGUtx3HKZN_BJFH4EHpXn5KqSCBVxLrRz0n4gk64yyeAFw.png?r=229" class="item-classico" alt="Classica">
+                        <input type="image" src="https://occ-0-4855-559.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABRALaKaonY6GfYhbjPRi6y9-yRNzLhI4bjZmc95qXOZODKsLQm6mxPAoEPA9ukfvHSo_OYWkmO1akAmMPTKzig9XzSYimmYUUA.png?r=54c" class="item-classico" alt="Classica"> 
                     </div>
                 </figure>
             </section>

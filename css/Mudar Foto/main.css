@@ -40,8 +40,8 @@ figure::-webkit-scrollbar {
 .galeria input{
     min-height: 100px;
     min-height: 100px;
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 150px;
+    max-height: 150px;
     width: 12vw;
     flex-shrink: 0; /*Não permite que o programa faça todos os elementos caberem por padrão*/
     transition: all 200ms ease-in-out;

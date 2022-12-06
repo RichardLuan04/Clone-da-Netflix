@@ -31,7 +31,7 @@ function Concluir_Perfis(){
     document.querySelector(".body").classList.remove("body-animation")
 }
 
-// Funções para passar o nome de perfil pra tela de editar por url
+// Funções para passar a imagem de perfil para o editar por url
 
 function Passar_Nome(nome, imagem) {
     window.location.href = `Editar.html?NomePerfil=${nome}&Imagem=${imagem}`
@@ -56,10 +56,17 @@ function Consulta(parametro) {
     }   
 }
 
-// Funções para passar a imagem de perfil para o editar por url
+// Local storage 
 
-document.getElementById("campo-nome").value = Consulta('NomePerfil')
-document.getElementById("campo-imagem").src = Consulta('Imagem')
+if (window.location.pathname == '/Clone-da-Netflix/pages/Editar.html') {
+    let perfil = {
+        usuario: Consulta('NomePerfil'),
+        img: Consulta('Imagem')
+    }
+    
+    let perfilJson = JSON.stringify(perfil)
+    localStorage.setItem('user', perfilJson)
+}
 
 // Funções para trocar a foto de perfil
 
@@ -68,5 +75,5 @@ function Tela_Trocar_Imagem() {
 } 
 
 function Voltar_Editar() {
-    window.location.href = 'Editar.html'
-}
+    Passar_Nome()
+} 

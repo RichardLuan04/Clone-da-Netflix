@@ -10,7 +10,7 @@ controle_classico.forEach((control) => {
     control.addEventListener("click", () => {
         const isLeft = control.classList.contains('arrow-left')
 
-        isLeft ? corrente_itens -= 6: corrente_itens += 6
+        isLeft ? corrente_itens -= 8: corrente_itens += 8
 
         if (corrente_itens >= max_itens_classico){
             corrente_itens = 0
