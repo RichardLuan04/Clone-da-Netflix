@@ -33,8 +33,8 @@ function Concluir_Perfis(){
 
 // Funções para passar a imagem de perfil para o editar por url
 
-function Passar_Nome(nome, imagem) {
-    window.location.href = `Editar.html?NomePerfil=${nome}&Imagem=${imagem}`
+function Passar_Nome(usuario, imagem, numero, nome) {
+    window.location.href = `Editar.html?Usuario=${usuario}&Imagem=${imagem}&Numero=${numero}&Nome=${nome}`
 }
 
 function Consulta(parametro) {  
@@ -58,22 +58,63 @@ function Consulta(parametro) {
 
 // Local storage 
 
-if (window.location.pathname == '/Clone-da-Netflix/pages/Editar.html') {
-    let perfil = {
-        usuario: Consulta('NomePerfil'),
-        img: Consulta('Imagem')
-    }
-    
-    let perfilJson = JSON.stringify(perfil)
-    localStorage.setItem('user', perfilJson)
+let numero_perfil = Consulta('Numero')
+let nomeUsuario = Consulta('Usuario')
+let nomePerfil = Consulta('Nome')
+let imagemPerfil = Consulta('Imagem')
+
+let perfil = {
+    numero: numero_perfil,
+    usuario: nomeUsuario,
+    nome: nomePerfil,
+    img: imagemPerfil
 }
+    
+let perfilJson = JSON.stringify(perfil)
+localStorage.setItem(nomeUsuario, perfilJson)
+
+function Salvar() {
+    
+    nomePerfil = document.getElementById('campo-nome').value
+    //imagemPerfil = document.getElementById('campo-imagem"').src
+    
+    perfil = {
+        numero: numero_perfil,
+        usuario: nomeUsuario,
+        nome: nomePerfil,
+        img: imagemPerfil
+    }
+
+    perfilJson = JSON.stringify(perfil)
+    localStorage.setItem(nomeUsuario, perfilJson)
+
+    alert("Perfil atualizado")
+
+    window.location.href = `Perfis.html?NomeAt=${nomePerfil}&imagemAt=${imagemPerfil}&NumeroAt=${numero_perfil}`
+}
+
+// Atualizando perfis
+
+document.getElementById('nome-perfil-1').innerText = JSON.parse(localStorage.getItem('Usuario%201')).nome
+
+
+document.getElementById('nome-perfil-2').innerText = JSON.parse(localStorage.getItem('Usuario%202')).nome
+
+
+document.getElementById('nome-perfil-3').innerText = JSON.parse(localStorage.getItem('Usuario%203')).nome
+
+
+document.getElementById('nome-perfil-4').innerText = JSON.parse(localStorage.getItem('Usuario%204')).nome
+
+
+document.getElementById('nome-perfil-5').innerText = JSON.parse(localStorage.getItem('Usuario%205')).nome
 
 // Funções para trocar a foto de perfil
 
 function Tela_Trocar_Imagem() {
-    window.location.href = 'Mudar Foto.html'
+    window.location.href = `Mudar Foto.html`
 } 
 
-function Voltar_Editar() {
-    Passar_Nome()
-} 
+function Voltar() {
+    window.history.back()
+}

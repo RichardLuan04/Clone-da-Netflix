@@ -143,3 +143,7 @@ footer {
     color: #fff;
     border-color: #fff;
 }
+
+.users {
+    display: none;
+}
