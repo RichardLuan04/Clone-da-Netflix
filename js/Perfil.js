@@ -57,7 +57,6 @@ function Consulta(parametro) {
 }
 
 // Local storage 
-
 let numero_perfil = Consulta('Numero')
 let nomeUsuario = Consulta('Usuario')
 let nomePerfil = Consulta('Nome')
@@ -90,29 +89,32 @@ function Salvar() {
 
     alert("Perfil atualizado")
 
-    window.location.href = `Perfis.html?NomeAt=${nomePerfil}&imagemAt=${imagemPerfil}&NumeroAt=${numero_perfil}`
+    window.location.href = `Perfis.html?NomeAt=${nomePerfil}&imagemAt=${imagemPerfil}`
 }
 
 // Atualizando perfis
 
-document.getElementById('nome-perfil-1').innerText = JSON.parse(localStorage.getItem('Usuario%201')).nome
+if (window.location.pathname == '/Clone-da-Netflix/pages/Perfis.html') {
+
+    document.getElementById('nome-perfil-1').innerText = JSON.parse(localStorage.getItem('Usuario%201')).nome.replace("%20", " ")
 
 
-document.getElementById('nome-perfil-2').innerText = JSON.parse(localStorage.getItem('Usuario%202')).nome
+    document.getElementById('nome-perfil-2').innerText = JSON.parse(localStorage.getItem('Usuario%202')).nome.replace("%20", " ")
 
 
-document.getElementById('nome-perfil-3').innerText = JSON.parse(localStorage.getItem('Usuario%203')).nome
+    document.getElementById('nome-perfil-3').innerText = JSON.parse(localStorage.getItem('Usuario%203')).nome.replace("%20", " ")
 
 
-document.getElementById('nome-perfil-4').innerText = JSON.parse(localStorage.getItem('Usuario%204')).nome
+    document.getElementById('nome-perfil-4').innerText = JSON.parse(localStorage.getItem('Usuario%204')).nome.replace("%20", " ")
 
 
-document.getElementById('nome-perfil-5').innerText = JSON.parse(localStorage.getItem('Usuario%205')).nome
+    document.getElementById('nome-perfil-5').innerText = JSON.parse(localStorage.getItem('Usuario%205')).nome.replace("%20", " ")
+}
 
 // Funções para trocar a foto de perfil
 
 function Tela_Trocar_Imagem() {
-    window.location.href = `Mudar Foto.html`
+    window.location.href = `Mudar Foto.html?Imagem=${imagemPerfil}&Nome=${nomePerfil}`
 } 
 
 function Voltar() {

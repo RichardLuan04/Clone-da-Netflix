@@ -1,0 +1,63 @@
+.modal {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 25vw;
+}
+
+.header-modal {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-modal p {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.main-modal{
+    height: 50%;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagem-atual,
+.imagem-nova {
+    height: 70%;
+    width: 40%;
+}
+
+.main-modal img {
+    border-radius: 10px;
+    height: 80%;
+    width: 100%;
+}
+
+.main-modal p {
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-modal {
+    height: 25%;
+}

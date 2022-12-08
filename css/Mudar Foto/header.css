@@ -10,9 +10,14 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     font-family: Fira Sans,Arial;
-    display: flex;
-    flex-direction: column;
     -webkit-font-smoothing: antialiased;
+}
+
+.principal {
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
 }
 
 header {
