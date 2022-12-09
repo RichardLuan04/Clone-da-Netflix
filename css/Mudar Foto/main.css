@@ -1,6 +1,6 @@
 main {
     width: 100vw;
-    min-height: 600vh;
+    min-height: 770vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@ main {
 
 section {
     position: relative;
-    max-width: 80vw;
+    width: 80vw;
     margin-top: 8rem;
 }
 

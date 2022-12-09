@@ -31,6 +31,22 @@ function Concluir_Perfis(){
     document.querySelector(".body").classList.remove("body-animation")
 }
 
+// Função para mostrar modal de confirmação
+
+const tela_fotos = document.querySelector('.principal')
+const modal_confirma = document.querySelector(".modal")
+
+
+function Modal_Confirmar () {
+    tela_fotos.style.display = 'none'
+    modal_confirma.style.display = 'flex'
+}
+
+function Desativar_Modal () {
+    tela_fotos.style.display = 'flex'
+    modal_confirma.style.display = 'none'
+}
+
 // Funções para passar a imagem de perfil para o editar por url
 
 function Passar_Nome(usuario, imagem, numero, nome) {
