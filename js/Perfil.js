@@ -37,9 +37,11 @@ const tela_fotos = document.querySelector('.principal')
 const modal_confirma = document.querySelector(".modal")
 
 
-function Modal_Confirmar () {
+function Modal_Confirmar (image) {
     tela_fotos.style.display = 'none'
     modal_confirma.style.display = 'flex'
+
+    Click_Image(image)
 }
 
 function Desativar_Modal () {
@@ -89,9 +91,9 @@ let perfilJson = JSON.stringify(perfil)
 localStorage.setItem(nomeUsuario, perfilJson)
 
 function Salvar() {
-    
+        
     nomePerfil = document.getElementById('campo-nome').value
-    //imagemPerfil = document.getElementById('campo-imagem"').src
+    imagemPerfil = document.getElementById('campo-imagem').src
     
     perfil = {
         numero: numero_perfil,
@@ -103,8 +105,6 @@ function Salvar() {
     perfilJson = JSON.stringify(perfil)
     localStorage.setItem(nomeUsuario, perfilJson)
 
-    alert("Perfil atualizado")
-
     window.location.href = `Perfis.html?NomeAt=${nomePerfil}&imagemAt=${imagemPerfil}`
 }
 
@@ -113,26 +113,31 @@ function Salvar() {
 if (window.location.pathname == '/Clone-da-Netflix/pages/Perfis.html') {
 
     document.getElementById('nome-perfil-1').innerText = JSON.parse(localStorage.getItem('Usuario%201')).nome.replace("%20", " ")
-
+    document.getElementById('usuario-imagem-1').src = JSON.parse(localStorage.getItem('Usuario%201')).img
 
     document.getElementById('nome-perfil-2').innerText = JSON.parse(localStorage.getItem('Usuario%202')).nome.replace("%20", " ")
-
+    document.getElementById('usuario-imagem-2').src = JSON.parse(localStorage.getItem('Usuario%202')).img
 
     document.getElementById('nome-perfil-3').innerText = JSON.parse(localStorage.getItem('Usuario%203')).nome.replace("%20", " ")
-
+    document.getElementById('usuario-imagem-3').src = JSON.parse(localStorage.getItem('Usuario%203')).img
 
     document.getElementById('nome-perfil-4').innerText = JSON.parse(localStorage.getItem('Usuario%204')).nome.replace("%20", " ")
-
+    document.getElementById('usuario-imagem-4').src = JSON.parse(localStorage.getItem('Usuario%204')).img
 
     document.getElementById('nome-perfil-5').innerText = JSON.parse(localStorage.getItem('Usuario%205')).nome.replace("%20", " ")
+    document.getElementById('usuario-imagem-5').src = JSON.parse(localStorage.getItem('Usuario%205')).img
 }
 
 // Funções para trocar a foto de perfil
 
 function Tela_Trocar_Imagem() {
-    window.location.href = `Mudar Foto.html?Imagem=${imagemPerfil}&Nome=${nomePerfil}`
+    window.location.href = `Mudar Foto.html?Usuario=${nomeUsuario}&Numero=${numero_perfil}&Imagem=${imagemPerfil}&Nome=${nomePerfil}`
 } 
 
 function Voltar() {
     window.history.back()
+}
+
+function Voltar_perfil() {
+    window.location.href = 'Perfis.html'
 }
