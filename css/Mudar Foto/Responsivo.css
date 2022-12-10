@@ -1,0 +1,89 @@
+@media only screen and (max-width: 1024px) {
+
+    nav {
+        height: 15%;
+    }
+
+    .texto-editar h2 {
+        font-size: 2rem;
+    }
+
+    .texto-editar p {
+        font-size: 1rem;
+    }
+
+    .perfil p {
+        font-size: 1.3rem;
+    }
+
+    main {
+        min-height: 700vh;
+    }
+
+    .galeria input {
+        width: 11vw;
+    }
+
+    .container {
+        width: 30vw;
+    }
+}
+    
+@media only screen and (max-width: 420px) {
+    nav {
+        height: 10%;
+        width: 10%;
+    }
+
+    .texto-editar h2 {
+        font-size: 1rem;
+    }
+
+    .texto-editar {
+        width: 70%;
+    }
+
+    .texto-editar p {
+        font-size: 0.6rem;
+    }
+
+    .perfil p {
+        font-size: 1rem;
+    }
+
+    main {
+        min-height: 250vh;
+    }
+
+    section {
+        margin-top: 3rem;
+    }
+
+    .galeria {
+        gap: 1rem; /*Define a lacuna entre duas tags*/ 
+    }
+
+    .galeria input{
+        min-width: 35px;
+        min-height: 35px;
+        max-width: 100px;
+        max-height: 100px;
+        width: 4vw;
+    }
+
+    .text img {
+        min-height: 10px;
+        min-width: 70px;
+        max-width: 150px;
+        max-height: 50px;
+    }
+
+    .text p {
+        font-size: 1.5rem;
+    }
+
+    .arrow-left, 
+    .arrow-right {
+        font-size: 20px;
+    }
+}
