@@ -29,6 +29,16 @@
     }
 }
     
+@media only screen and (max-width: 720px) {
+    .galeria input{
+        min-width: 65px;
+        min-height: 65px;
+        max-width: 100px;
+        max-height: 100px;
+        width: 4vw;
+    }
+}
+
 @media only screen and (max-width: 420px) {
     nav {
         height: 10%;
@@ -52,7 +62,7 @@
     }
 
     main {
-        min-height: 250vh;
+        min-height: 320vh;
     }
 
     section {
