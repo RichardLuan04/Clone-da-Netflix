@@ -1,4 +1,142 @@
 main {
     width: 100vw;
     min-height: 100vh;
- }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem {
+    width: 100%;
+    height: 100%;
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.espaco-infos {
+    background: linear-gradient(77deg,rgba(0,0,0,.6),transparent 85%);
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.espaco-infos img {
+    min-height: 100px;
+    min-width: 200px;
+    max-width: 500px;
+    max-height: 300px;
+    width: 40vw;
+}
+
+.esquerda-infos {
+    padding-left: 4rem;
+    width: 50%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sobre {
+    width: 60%;
+}
+
+.sobre p {
+    text-align: justify;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+    font-size: 1.2rem;
+}
+
+.botoes {
+    width: 60%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+#botao-assistir {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    min-width: 50px;
+    max-width: 150px;
+    max-height: 80px;
+    width: 10vw;
+    cursor: pointer;
+    transition: 0.3s
+}
+
+#botao-assistir:hover {
+    background-color: #cacaca;
+}
+
+#play-svg,
+#info-svg {
+    margin-right: 10px;
+}
+
+#botao-mais {
+    background-color: rgba(109, 109, 110, 0.7);
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    min-width: 100px;
+    max-width: 200px;
+    max-height: 80px;
+    width: 15vw;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 10px;
+}
+
+#botao-mais:hover {
+    background-color: rgba(139, 139, 139, 0.7);
+}
+
+#info-svg {
+    filter: invert(100%);
+}
+
+.direita-info {
+    width: 50%;
+    height: 65%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+

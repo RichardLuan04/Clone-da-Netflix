@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/Clone-da-Netflix/css/Padrão/reset.css">
-    <link rel="stylesheet" href="/Clone-da-Netflix/css/Catalogo/Cat-Header.css">
-    <link rel="stylesheet" href="/Clone-da-Netflix/css/Catalogo/Cat-Main.css">
-    <link rel="stylesheet" href="/Clone-da-Netflix/css/Catalogo/Cat-Footer.css">
-    <link rel="stylesheet" href="/Clone-da-Netflix/css/Catalogo/Cat-Modais.css">
-    <link rel="stylesheet" href="/Clone-da-Netflix/css/Catalogo/Cat-Responsivo.css">
+    <link rel="stylesheet" href="/css/Padrão/reset.css">
+    <link rel="stylesheet" href="/css/Catalogo/Cat-Header.css">
+    <link rel="stylesheet" href="/css/Catalogo/Cat-Main.css">
+    <link rel="stylesheet" href="/css/Catalogo/Cat-Footer.css">
+    <link rel="stylesheet" href="/css/Catalogo/Cat-Modais.css">
+    <link rel="stylesheet" href="/css/Catalogo/Cat-Responsivo.css">
 
-    <script src="/Clone-da-Netflix/js/Pagina Principal/Functions.js" defer></script>
+    <script src="/js/Pagina Principal/Functions.js" defer></script>
 
     <title>Ínicio - Netflix</title>
 </head>
@@ -22,7 +22,7 @@
             <div class="opcoes">
                 <nav>
                     <div class="logo">
-                        <input type="image" src="/Clone-da-Netflix/imgs/logo - Netflix.png" alt="logo">
+                        <input type="image" src="/imgs/logo - Netflix.png" alt="logo">
                     </div>
 
                     <div class="navegacao">
@@ -40,7 +40,7 @@
                 <div class="div-modais">
                     <div class="elemento-texto">
                         <div class="Campo-Texto">
-                            <svg onclick="Animacao_Campo()" width="24" height="24">
+                            <svg onclick="Animacao_Campo()" width="24" height="24" id="lupa-pesquisa">
                                 <path fill-rule="evenodd" clip-rule="evenodd" 
                                     d="M14 11C14 14.3137 11.3137 17 8 17C4.68629 17 2 14.3137 2 11C2 7.68629
                                     4.68629 5 8 5C11.3137 5 14 7.68629 14 11ZM14.3623 15.8506C12.9006 17.7649
@@ -80,39 +80,31 @@
         </section>
     </header>
 
-    <main>
+    <main>  
         <section>
             <div class="imagem">
-                <img src="https://image.tmdb.org/t/p/w500/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg">
+                <img src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWHEIr084a0SpVb9naW1Mf55GDhkDBgc2z20w8FB7h5faX5nWlQJXQs4D8xk9mlxqRd3ceiUlYwHCK_aTKPMkOL5-w6MwmGthRnp.webp?r=971">
             </div>
 
             <div class="espaco-infos">
-                <section>
-                    <div class="logo-N">
-                        <img src="">
-                        <p>Filme</p>
-                    </div>
-
-                    <div class="logo-movie">
-                        <img src="">
-                    </div>
-                    <!--Se estiver-->
+                <div class="esquerda-infos">
+                    <img src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABfAy3wPVCitKxeoq0pZCUSrEso2lm5a34jHFHnyEQ4T4OWZMvbJdWE83tZ71p0aMNvFrTNucZAHedW19rQiMKLKsU5ChSG1Vvg49GbvDfIZt.webp?r=625">
+                    
+                    <!--Se estiver
                     <div class="top">
                         <img src="">
                         <p>Top 3 em filmes hoje</p>
-                    </div>
+                    </div> -->
 
                     <div class="sobre">
-                        <p>Após os eventos devastadores de "Vingadores: Guerra Infinita", o universo está em ruínas
-                        devido aos esforços do Titã Louco, Thanos. Com a ajuda de aliados remanescentes, 
-                        os Vingadores devem se reunir mais uma vez a fim de desfazer as ações de Thanos e restaurar
-                         a ordem no universo de uma vez por todas, não importando as consequências.</p>
+                        <p>O agente do FBI Kurt Weller segue pistas escondidas nas 
+                        tatuagens de uma mulher amnésica para desvendar uma  conspiração.</p>
                     </div>
 
                     <div class="botoes">
-                        <button>
+                        <button id="botao-assistir">
                             <div>
-                                <svg width="24" height="24">
+                                <svg width="24" height="24" id="play-svg">
                                     <path d="M4 2.69127C4 1.93067 4.81547 1.44851 5.48192 
                                     1.81506L22.4069 11.1238C23.0977 11.5037 23.0977 12.4963
                                     22.4069 12.8762L5.48192 22.1849C4.81546 22.5515 4 22.0693
@@ -123,9 +115,9 @@
                             <span class="value-button">Assistir</span>
                         </button>
 
-                        <button>
+                        <button id="botao-mais">
                             <div>
-                                <svg width="24" height="24">
+                                <svg width="24" height="24" id="info-svg">
                                     <path d="M12 3C7.02944 3 3 7.02944 3 12C3 
                                         16.9706 7.02944 21 12 21C16.9706 21 21 
                                         16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1
@@ -140,10 +132,10 @@
                             <span class="value-button-info">Mais informações</span>
                         </button>
                     </div>
-                </section>
+                </div>
 
-                <div class="idade">
-                    <img src="">
+                <div class="direita-info">
+                     <img src="">
                 </div>
             </div>
         </section>

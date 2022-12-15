@@ -1,5 +1,7 @@
 
 const overlay = document.querySelector(".opacidade-principal")
+const modal = document.querySelector(".modal-login")
+const page = document.querySelector(".principal")
 
 function Mostrar_Modal() {
     modal.style.display = 'flex'
