@@ -24,10 +24,12 @@ main section {
 .imagem img {
     width: 100%;
     height: 100%;
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, #000000 30%);
+    mask-image: linear-gradient(to top, transparent 0%, #000000 30%);
 }
 
 .espaco-infos {
-    background: linear-gradient(77deg,rgba(0,0,0,.6),transparent 85%);
+    background: linear-gradient(77deg,rgb(20, 20, 20, .6),transparent 85%);
     position: absolute;
     z-index: 1;
     width: 100vw;
@@ -147,4 +149,93 @@ main section {
     max-height: 80px;
     width: 5vw;
     margin-right: 50px;
+}
+
+/* Estilizando os sliders e exibição de filmes e series*/
+
+.conteudo {
+    margin-top: 150vh;
+    position: absolute;
+    z-index: 1;
+    width: 92%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.container-text {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.container-text p{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.container figure {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.container figure::-webkit-scrollbar {
+    display: none;
+}
+
+.galeria {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5px;
+}
+
+.galeria input, .galeria img{
+    min-width: 240px;
+    min-height: 140px;
+    max-width: 340px;
+    max-height: 190px;
+    width: 10vw;
+    flex-shrink: 0; /*Não permite que o programa faça todos os elementos caberem por padrão*/
+    border-radius: 5px;
+}
+
+.arrow-left, 
+.arrow-right {
+    width: 5%;
+    position: absolute;
+    right: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to left, transparent 0%, #141414 100%);
+    border: none;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.2;
+    transition: all 400ms ease-in-out;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.arrow-right {
+    right: 0;
+    left: auto;
+    background: linear-gradient(to right, transparent 0%, #141414 100%);
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    opacity: 1;
 }

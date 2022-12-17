@@ -10,7 +10,7 @@ body {
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(/imgs/background\ -\ index.png);
+    background-image: url(/imgs/background_index.png);
     display: flex;
     flex-direction: column;
     align-items: center;

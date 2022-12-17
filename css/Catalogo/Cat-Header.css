@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    background: #141414;
     width: 100vw;
     min-height: 100vh;
     display: flex;
@@ -16,7 +17,7 @@ body {
 
 header {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     top: 0;
     left: 0;
     width: 100vw;
