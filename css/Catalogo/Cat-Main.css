@@ -194,7 +194,8 @@ main section {
     display: none;
 }
 
-.galeria {
+.galeria, 
+.galeria-top10 {
     display: flex;
     flex-flow: row nowrap;
     gap: 5px;
@@ -238,4 +239,32 @@ main section {
 .arrow-left:hover,
 .arrow-right:hover {
     opacity: 1;
+}
+
+.imagens {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.imagens svg {
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 160px;
+    max-height: 160px;
+    width: 50%;
+}
+
+.imagens img {
+    min-width: 120px;
+    min-height: 120px;
+    max-width: 180px;
+    max-height: 180px;
+    width: 50%;
+}
+
+.galeria-top10 {
+    gap: 25px;
 }
