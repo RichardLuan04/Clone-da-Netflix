@@ -37,14 +37,6 @@ async function Search () {
     let response_movie_more = await fetch(endpoint_movie_more)
     let bodyJson_filme_more = await response_movie_more.json()  
 
-    // Endpoint de imagens de filmes 
-
-    let poster_filme = bodyJson_filme.results[0].poster_path
-    let background_filme = bodyJson_filme.results[0].backdrop_path
-
-    let endpoint_background_filme = `https://image.tmdb.org/t/p/w500${background_filme}`
-    let endpoint_poster_filme = `https://image.tmdb.org/t/p/w500${poster_filme}`
-
     // Trocando de main
 
     document.getElementById('catalogo-sliders').style.display = 'none'
@@ -52,13 +44,13 @@ async function Search () {
 
     // Carregando imagens relacionadas a pesquisa
 
-    let imagens = document.querySelector('.imagens-pesquisa')
+    let images = document.querySelector('.imagens-pesquisa')
 
-    let image = document.createElement('img')
-    image.src = endpoint_background_filme
-    imagens.append(image)
+    for (let i=0;i<bodyJson_filme.results.length;i++) {
+        let background_filme = bodyJson_filme.results[i].backdrop_path
 
-    image = document.createElement('img')
-    image.src = endpoint_poster_filme
-    imagens.append(image)
+        let image = document.createElement('img')
+        image.src = `https://image.tmdb.org/t/p/w500${background_filme}`
+        images.append(image)
+    }
 }

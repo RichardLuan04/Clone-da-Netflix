@@ -1,0 +1,8 @@
+Para o dia 20/04/22
+
+- Slider de dramas
+- Slider de filmes de terror
+- Slider de anime
+- Slider de comedias para tv
+
+- Estilizar os filmes pesquisados
