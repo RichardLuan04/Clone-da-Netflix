@@ -33,3 +33,7 @@ function Fechar_Campo() {
 
     btnLupa.setAttribute('onclick', "Animacao_Campo()")
 }
+
+function Recarregar() {
+    window.location.reload()
+}

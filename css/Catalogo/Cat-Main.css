@@ -268,3 +268,9 @@ main section {
 .galeria-top10 {
     gap: 25px;
 }
+
+/* Modal para pesquisa */
+
+.modal-pesquisa {
+    display: none;
+}

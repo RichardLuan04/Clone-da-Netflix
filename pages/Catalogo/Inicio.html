@@ -14,6 +14,7 @@
 
     <script src="/js/Pagina Principal/Functions.js" defer></script>
     <script src="/js/Pagina Principal/Slider-Catalogo.js" defer></script>
+    <script src="/js/Pagina Principal/Pesquisa.js" defer></script>
 
     <title>Ínicio - Netflix</title>
 </head>
@@ -23,7 +24,7 @@
             <div class="opcoes">
                 <nav>
                     <div class="logo">
-                        <input type="image" src="/imgs/logo - Netflix.png" alt="logo">
+                        <input type="image" src="/imgs/logo - Netflix.png" alt="logo" onclick="Recarregar()">
                     </div>
 
                     <div class="navegacao">
@@ -82,7 +83,16 @@
     </header>
 
     <div class="modal-pesquisa">
+        <figure>
+            <div class="relacionados">
+                <h2>Veja títulos sobre: </h2>
+                <p id="titulos-relacionados"></p>
+            </div>
 
+            <div class="imagens-pesquisa">
+
+            </div>
+        </figure>
     </div>
 
     <main id="catalogo-sliders">  
