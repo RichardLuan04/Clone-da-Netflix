@@ -18,7 +18,12 @@ document.addEventListener("keyup", function(e) {
 })
 
 async function Search () {
-    debugger
+    let images = document.querySelector('.imagens-pesquisa')
+    let ul = document.getElementById('lista-nomes')
+
+    ul.innerHTML = ''
+    images.innerHTML = ''
+
     const key = 'bf345adcb24f454dbfd43680c4760cf5'
     let language = 'PT-br'
     let search = document.getElementById("campo-texto").value
@@ -44,13 +49,27 @@ async function Search () {
 
     // Carregando imagens relacionadas a pesquisa
 
-    let images = document.querySelector('.imagens-pesquisa')
-
     for (let i=0;i<bodyJson_filme.results.length;i++) {
         let background_filme = bodyJson_filme.results[i].backdrop_path
 
-        let image = document.createElement('img')
-        image.src = `https://image.tmdb.org/t/p/w500${background_filme}`
-        images.append(image)
+        if (background_filme != null) {
+            let image = document.createElement('input')
+            image.type = 'image'
+            image.className = 'item-search'
+            image.src = `https://image.tmdb.org/t/p/w500${background_filme}`
+            images.append(image)
+        }
+    }
+
+    // Carregando textos relacionados
+
+    for (let i=0;i<5;i++) {
+        let nome_filme = bodyJson_filme.results[i].title
+
+        if (nome_filme != null) {
+            let li = document.createElement('li')
+            li.innerText = nome_filme
+            ul.append(li)
+        }
     }
 }

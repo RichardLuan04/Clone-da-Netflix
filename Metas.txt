@@ -1,8 +1,10 @@
 Para o dia 20/04/22
 
-- Slider de dramas
+- Slider de dramas - feito
+- top 10 series - feito
+- Estilizar os filmes pesquisados - feito
+- Pesquisa funcionando (imagens e textos e resete) - feito
+
 - Slider de filmes de terror
 - Slider de anime
 - Slider de comedias para tv
-
-- Estilizar os filmes pesquisados
