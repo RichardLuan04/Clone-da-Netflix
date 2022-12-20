@@ -237,3 +237,63 @@ controle_lan.forEach((control) => {
         })
     })
 })
+
+// Slider apenas drama - abreviação - drama
+
+let corrente_itens_drama = 0
+
+const controle_drama = document.querySelectorAll('.control-drama')
+const itens_drama = document.querySelectorAll('.item-drama')
+const max_itens_drama = itens_drama.length
+
+controle_drama.forEach((control) => {
+    control.addEventListener("click", () => {
+        const isLeft = control.classList.contains('arrow-left')
+
+        isLeft ? corrente_itens_drama -= 5: corrente_itens_drama += 5
+
+        if (corrente_itens_drama >= max_itens_drama) {
+            corrente_itens_drama = 0
+        }
+
+        if ( corrente_itens_drama < 0) {
+            corrente_itens_drama = max_itens_drama - 1
+        }
+
+        itens_drama[corrente_itens_drama].scrollIntoView({
+            inline: 'start',
+            behavior: "smooth",
+            block: "nearest"
+        })
+    })
+})
+
+// Slider apenas top 10 series- abreviação - topSerie
+
+let corrente_itens_topSerie = 0
+
+const controle_topSerie = document.querySelectorAll('.control-topSerie')
+const itens_topSerie = document.querySelectorAll('.item-topSerie')
+const max_itens_topSerie = itens_topSerie.length
+
+controle_topSerie.forEach((control) => {
+    control.addEventListener("click", () => {
+        const isLeft = control.classList.contains('arrow-left')
+
+        isLeft ? corrente_itens_topSerie -= 5: corrente_itens_topSerie += 5
+
+        if (corrente_itens_topSerie >= max_itens_topSerie) {
+            corrente_itens_topSerie = 0
+        }
+
+        if ( corrente_itens_topSerie < 0) {
+            corrente_itens_topSerie = max_itens_topSerie - 1
+        }
+
+        itens_topSerie[corrente_itens_topSerie].scrollIntoView({
+            inline: 'start',
+            behavior: "smooth",
+            block: "nearest"
+        })
+    })
+})
