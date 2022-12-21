@@ -149,6 +149,7 @@ main section {
     max-height: 80px;
     width: 5vw;
     margin-right: 50px;
+    border-radius: 10px;
 }
 
 /* Estilizando os sliders e exibição de filmes e series*/
