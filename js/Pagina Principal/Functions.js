@@ -37,3 +37,18 @@ function Fechar_Campo() {
 function Recarregar() {
     window.location.reload()
 }
+
+// Usando json de imagens para o main e escolhendo uma aleatoriamente
+
+fetch("Media_Main.json").then((response) => {
+    response.json().then((main_images) => {
+        let imagesJson = main_images
+
+        let random_number = parseInt(Math.random() * 20)
+
+        document.getElementById('imagem-principal').src = imagesJson.medias[random_number].image
+        document.querySelector('.sobre').innerHTML = imagesJson.medias[random_number].media_overview
+        document.getElementById('logo-principal').src = imagesJson.medias[random_number].media_logo
+        document.getElementById('classificacao-idade').src = imagesJson.medias[random_number].age_rating
+    }) 
+})

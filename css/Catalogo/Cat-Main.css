@@ -59,9 +59,6 @@ main section {
 
 .sobre {
     width: 60%;
-}
-
-.sobre p {
     text-align: justify;
     color: #fff;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
