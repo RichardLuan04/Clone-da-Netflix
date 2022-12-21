@@ -326,7 +326,7 @@ main section {
 }
 
 .imagens-pesquisa {
-    gap: 5px;
+    gap: 2rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -337,10 +337,10 @@ main section {
 }
 
 .imagens-pesquisa input {
-    min-width: 230px;
-    min-height: 130px;
-    max-width: 330px;
-    max-height: 80px;
+    min-width: 160px;
+    min-height: 200px;
+    max-width: 110px;
+    max-height: 300px;
     width: 10vw;
     border-radius: 5px;
     margin-top: 40px;
