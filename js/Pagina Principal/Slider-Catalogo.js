@@ -297,3 +297,93 @@ controle_topSerie.forEach((control) => {
         })
     })
 })
+
+// Slider apenas para filmes de terror
+
+let corrente_itens_terror = 0
+
+const controle_terror = document.querySelectorAll('.control-terror')
+const itens_terror = document.querySelectorAll('.item-terror')
+const max_itens_terror = itens_terror.length
+
+controle_terror.forEach((control) => {
+    control.addEventListener("click", () => {
+        const isLeft = control.classList.contains('arrow-left')
+
+        isLeft ? corrente_itens_terror -= 5: corrente_itens_terror += 5
+
+        if (corrente_itens_terror >= max_itens_terror) {
+            corrente_itens_terror = 0
+        }
+
+        if ( corrente_itens_terror < 0) {
+            corrente_itens_terror = max_itens_terror - 1
+        }
+
+        itens_terror[corrente_itens_terror].scrollIntoView({
+            inline: 'start',
+            behavior: "smooth",
+            block: "nearest"
+        })
+    })
+})
+
+// Slider apenas para animes
+
+let corrente_itens_anime = 0
+
+const controle_anime = document.querySelectorAll('.control-anime')
+const itens_anime = document.querySelectorAll('.item-anime')
+const max_itens_anime = itens_anime.length
+
+controle_anime.forEach((control) => {
+    control.addEventListener("click", () => {
+        const isLeft = control.classList.contains('arrow-left')
+
+        isLeft ? corrente_itens_anime -= 5: corrente_itens_anime += 5
+
+        if (corrente_itens_anime >= max_itens_anime) {
+            corrente_itens_anime = 0
+        }
+
+        if ( corrente_itens_anime < 0) {
+            corrente_itens_anime = max_itens_anime - 1
+        }
+
+        itens_anime[corrente_itens_anime].scrollIntoView({
+            inline: 'start',
+            behavior: "smooth",
+            block: "nearest"
+        })
+    })
+})
+
+// Slider apenas para comedias para tv = abreviacao = cpt
+
+let corrente_itens_cpt = 0
+
+const controle_cpt = document.querySelectorAll('.control-cpt')
+const itens_cpt = document.querySelectorAll('.item-cpt')
+const max_itens_cpt = itens_cpt.length
+
+controle_cpt.forEach((control) => {
+    control.addEventListener("click", () => {
+        const isLeft = control.classList.contains('arrow-left')
+
+        isLeft ? corrente_itens_cpt -= 5: corrente_itens_cpt += 5
+
+        if (corrente_itens_cpt >= max_itens_cpt) {
+            corrente_itens_cpt = 0
+        }
+
+        if ( corrente_itens_cpt < 0) {
+            corrente_itens_cpt = max_itens_cpt - 1
+        }
+
+        itens_cpt[corrente_itens_cpt].scrollIntoView({
+            inline: 'start',
+            behavior: "smooth",
+            block: "nearest"
+        })
+    })
+})
