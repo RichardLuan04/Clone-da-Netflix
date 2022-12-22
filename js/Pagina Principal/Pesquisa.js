@@ -50,6 +50,7 @@ async function Search () {
                 let image = document.createElement('input')
                 image.type = 'image'
                 image.className = 'item-search'
+                image.setAttribute('onclick', `Mais_Informações(${bodyJson_media.results[i].id})`)
                 image.src = `https://image.tmdb.org/t/p/w500${background_media}`
                 images.append(image)
             }

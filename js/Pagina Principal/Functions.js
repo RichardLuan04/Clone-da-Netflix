@@ -44,11 +44,34 @@ fetch("Media_Main.json").then((response) => {
     response.json().then((main_images) => {
         let imagesJson = main_images
 
-        let random_number = parseInt(Math.random() * 20)
+        let random_number = parseInt(Math.random() * imagesJson.medias.length)
 
         document.getElementById('imagem-principal').src = imagesJson.medias[random_number].image
         document.querySelector('.sobre').innerHTML = imagesJson.medias[random_number].media_overview
         document.getElementById('logo-principal').src = imagesJson.medias[random_number].media_logo
         document.getElementById('classificacao-idade').src = imagesJson.medias[random_number].age_rating
     }) 
+})
+
+fetch("Media_Catalog.json").then((response) => {
+    response.json().then((catalog_images) => {
+        let catalogJson = catalog_images
+        let titles = document.querySelectorAll('.container-text-add')
+        let background_images = document.querySelectorAll('.galeria-add')
+
+        for (let i=0;i<catalogJson.Catalog.length;i++){ // Repetindo de acordo com a quantidade de slider
+            titles[i].innerHTML = catalogJson.Catalog[i].text // Insirando dentro da tag o nome do campo do slider
+
+            for (let cont=0;cont<catalogJson.Catalog[i].images.length;cont++) { // Repetindo de acordo com a quantidade de imagens
+                let input = document.createElement('input')
+                input.type = 'image'
+                input.className = `item-${catalogJson.Catalog[i].abbreviation}`
+                input.src = catalogJson.Catalog[i].images[cont].image
+                
+                input.setAttribute('onclick', `Mais_Informações(${catalogJson.Catalog[i].id})`) // FINALIZAR Passando o id como parametro para o onclick
+
+                background_images[i].append(input)
+            }
+        }
+    })
 })
