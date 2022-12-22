@@ -169,13 +169,10 @@ main section {
     margin-top: 4rem;
 }
 
-.container-text {
+.container-text, .container-text-add {
     width: 100%;
     display: flex;
     justify-content: start;
-}
-
-.container-text p{
     margin-bottom: 1rem;
     font-size: 1.2rem;
     color: #fff;
@@ -193,13 +190,14 @@ main section {
 }
 
 .galeria, 
-.galeria-top10 {
+.galeria-top10,
+.galeria-add {
     display: flex;
     flex-flow: row nowrap;
     gap: 5px;
 }
 
-.galeria input, .galeria img{
+.galeria input, .galeria img, .galeria-add input{
     min-width: 240px;
     min-height: 140px;
     max-width: 340px;

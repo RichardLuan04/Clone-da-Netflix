@@ -15,6 +15,7 @@
     <script src="/js/Pagina Principal/Functions.js" defer></script>
     <script src="/js/Pagina Principal/Slider-Catalogo.js" defer></script>
     <script src="/js/Pagina Principal/Pesquisa.js" defer></script>
+    <script src="/js/Pagina Principal/Mais Informações.js" defer></script>
 
     <title>Ínicio - Netflix</title>
 </head>
@@ -152,226 +153,76 @@
 
         <div class="conteudo">
             <div class="container">
-                <div class="container-text">
-                    <p>Séries para maratonar</p>
+                <div class="container-text-add">
+                    
                 </div>
 
                 <button class="arrow-left control-spm" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-spm" aria-label="Next image">🠞</button>
 
                 <figure>
-                    <div class="galeria">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaobMsdL6ejvTg8B69xj5nl9-JBp_VwbGZI2sFTe7UL5Mka2Hq1drM6wJ8YbpsrcZrchclDJNCZ-yon3WN6-G1sTQ-RpzDx-D0g.webp?r=422" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABS9YHMgCsO1DmTj1EOd9X-cJQ6RUR7vhKoDKeIfsSu_ktHECBpdNs-x_jMMKOmNhfpTkUuS72ibPIvnVl4NOZ6QnBSgT6QCVDRc.webp?r=89f" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXR6S0Y93tPTNe7F6Bi3X3EYmbahLaNNw-9PO_E_7771WPQ1kAddehYhNn7FcQorUt9xg_xIhPfvivqOpTS7Oa4cPPYSNe9MHUopNTfUJhajFG6MH2usPLBu2BUb0Z0eontc.jpg?r=ea6" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABe7-4f7Nwu_JZd8RyDNzHtaRXKMUeVhIoAOzCbN_exbwh3pTIaOAgXTc-4PAVt9oDxJTNQomyBRs-fizJnnqwTT99cBo-BhBRyY.webp?r=dcd" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSPBTTvSQTgUxcK3gQHISlGkb15Vee5xsZNc1dvlCbZqw4pzuVtErW-Ot-BpEkxz1k0tqW2UOynJ01XXmC9NTjibIdhj3HTMRVIXp2AYRSKnu-n0KNhqWdzxFJiMEUNItAQw.jpg?r=cfc" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABT5lJUV_6k1KEwVmKoyvLrEzSwWcqn5ttFEH5zFWhY2ag8KkKLkbLwswm3Mk5Q8moRWIEgOpocFELRHi6m7e35P6hcwZim9Gn0YD6gDL2p6IhO70FAGbbzFBQ3D1k2Q74GKy.jpg?r=1a2" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZi_RqpT84KU9PuLqluo8QNslnXT8Hu2_bME3ez2GFxUqc-CdICtULofUMFIpTV_EO1tghUWNSLzXeqhWzYDdSL2ifiUB0eKrn8.webp?r=01d" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcmIS8WvmpBOkc1ByBTNqBGG4F09PEFDSE0J2C5hcL-cRnqTmz1tNeiT_LULCWqFIg-uJ8rWsz3mS7zzlkRUysymthPw3GNyHh2KoPeuLHULEVs79OR2BbXwxDulnDY5JcInQp7XzsE536thIzXKxkjW4Nd_OqrAeGqTvCJ3N6fGsVCjkQI-AoZ0rrLOppI.jpg?r=103" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZQftaKws8frZCi_H_pAbXQnJT3s0BC-Vligoq5U28w3TI-3qHn01x8ahks9ZmPqqViMfqvb8CCOHkBj0OlTfhQrcmpUJo5TFZWIDlXXWei_bNVK5Fkagqu3448aFjuTBZeQ.jpg?r=8d2" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABd-E4G4W5Tzr25yxS-tT-yOQXe2_seb4B0PN5i6TT7qxBHVt4XHGipb2JLL7jHNFMdKIZKxIq0GUJiM9wAii_CVSKR-YuJ_uSXCCpZh8X9LTigbWdxgQOeCfvUt0q5Wso00T.jpg?r=40c" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfnYgxX0bC786LFHCI-QiU1Bct0t10TBPZQ51l07W2j_EFcW5DtazJwvxFBqi-nsg5Dg26CHs_T-J0OndyPhYs5oyNTWe_LbVUV4ulVgWDRKf75Z5BXZrZGHag1oBMNi3rOh.jpg?r=ae1" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVv51mOokaizA-UGh7cPMnUpc7zVwDyWLTThKNlo_luBTvduMTAN7YjISo0nBzgm8VF0s1ggfo-GiaY1IHvdSgwaovBcJrl2YHJzWzQGjMyy5svnB78qPBmmdqH5IaruKcD-.jpg?r=6c7" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZvUcJ56xd0UH0atq244i0LLLtPljDqDzGu1250JZUmhAK7PvTXZCk1vwYg5lgtoL3CHrKNtJkqGAAzsVtil2KhD-6_43p5xxGb81iaRwGOYIVpWED6yloNAQ9l-JTbCaUZm.jpg?r=e31" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSkPFDfjiQ9p3nh3-SS9XpWr04kX0_Bv9Dg0lC5h0EpwxTn0x5YOtHERwFuAhtKYTT_IV1eWNqWAf6TAYzjh4FJ6eDcx1Wi6IcnbyvJ4CUVdxEuGGZhi_7sw8djSOtFkCjvy.jpg?r=968" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVuSCwa2imivfmfSy8U_q-SnI3qQjyxButiIliRsOdRlaX5XlKAmFWR7TEOsDnEnVCPXgC0NgP8VE8wDiagYIil3nLPGLhKNUiU-bSnTTm-Mbgki63xRVD3piJ5UIFvTWQA_.jpg?r=b2d" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABd1gD34UIxSe67UnPedw5t54k1F-FgEJv9oyts8qtiGe5ntzzq1wFcpAjscToe9hFke1-37LLSVWomzI0fCsSAe-yrroZX8Dmfo.webp?r=3d2" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWWkUxtcJVK58SAnG-FMLo4iX-hjD1ZcT1MPd9Dk3ZTIFmz-Xt4QenjV5vEu80a-BXmRLEZCJa3XhSXDaEU633C5F_nmRIC8ZoeclQQAvW4SbBIYaRD3FdclHTVt90oDyLQs.jpg?r=9a9" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABb8ZRAxlGflLZCiv839mZr2gzMOnoss3FvIey7Qmrmu32aJTLKlPMO3H1N4vjfp8mPU2sXnMICujoMweiBvgVM7hgqNbzhd36ms9YPYV66enpQQEcGfoow66O2KkR8k_863t.jpg?r=283" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQmB2lxN-Y9pwx2W7CN4hfeEtv0fszelTolzUf_xTa_82PWq6kUi7OXQ3Kt4O-9LhPFXjy44qF2E9_djq-NLdHwadLvErTWedrxJrmOvXHnLgkUMV37qvwrAzvzJ-Lo0f-EX.jpg?r=2c7" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfVExERcaOhFR73E5igRRGnwjq9G0YLl_n5QnbJ2RKxo9GttttC-DVLGBIPgu2PDcM_A26N_xDmfc6QkkX_OWAUVFZp4yPdC70GwL-rofuFv8wfnpmpJFNVHbrtb7IcmHe9hTTcHYsi73DykgFMtvOgYnFrw4VE9quwHU4RM0ZOjyktq6IBUC0mgVp6LILQRbqo9sBQZWze5yU-QyheGvYjqW12_Yk3ZPbgByvI2s5xvM6AKMbrOH7rMSBUkyKCkD6FOEXWq8YS9PnuNIAE-S_lIxzuPcq6ywus18UrFcM0qUqA0JtG-RzXVYATaCF5GxEH6TZYvsV5vPv3TeLJ5i_uWTZUMt18_f_E7yMyGdftmpXbwpmA.jpg?r=33c" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTw-IchmBhH_bCXVZIQYwI19nnd0NQBDxJFQmTokzIUwS6d52SgxrRHD-nT92qjDvCzRxinykvfNeV_oJ4ttAo4rB5df1SAG65L3jhCbMn0lt4iFD7gZ-T-Hncx159z0Lu9y.jpg?r=48d" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABb1tVoO9jiGj2ZBdviaWfFVMERiYDm6Ygw6fAdBOxRC-ksdTFaJ2JSgfnDK7Bub_nft40lpUfl-5JAu4RDgFqyzEynzWNbSrio-cBbvFjda1VfWKgsBATHhvUVyGUB_WjbGu.jpg?r=c4a" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQ_niagI6j0Rg6e5t2s69YSg8FAvheT_aqp03k80Ckz8uBS4a3-ZC_q3ArzM_wQM9k49YqAg67ZAnk9skZw2zWTLsFgtGyVyT-4dPwSOK2N3RRUxNMkNdbzd9_w0gsKGGEnhFXgWCoovAGxwtn6qMIt89SoOI5bPdJhCCyhTITm4YjJO8VBozhfp5hh0fwTNWWKtdVW_h6s_6TQr941Gl5wxF8bTJkIA-jdTnZ4fYx5ZL_lLXyrQAyY7r3mEQHxRp2TNqX6dAfJpfEcMVfOWj9LkoHu_Kw-jsHdiOC11MlVM91WHxjJiqqZ_-6uGSwM0-LFxCaErz4Kq0gKP7zo1xOa72EVKtM1xvxibvmToN-0IkhfmGWeHag.jpg?r=7ba" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVVBefzzb0fZRln5fGdbTRgA36U6DGx_DREST_G13nc_wthS0FNli_QP-4VGIYiA5mUG2eHkpW3oy40Xnla9LBrejki0Dtx_LNx7-W_cxCgoV3nxqPCkuhelZNT__Oflm2Ae.jpg?r=31e" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcHho7hx3NvjXNy-6OuNtlZi0DOWwQPHdci3f3sYDAOno4SKZ5GCBLY6G90WMTzVTtOCfWnAfRjpCBy0nib3AZhkDcfAjAqErgSPQ9NZMN4Cwo3vTfkyzj_Ao2PS36ZWdaEy.jpg?r=09e" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABc7wCsuj9NVcpFh1YOC39IR_YmQO4TMWqjn6oM4IqPleSeDoWAPLjiY14V9t_yWHoZ5L2w-xkENBp7Yh7lpEUQLg-SXX8j_cxwS7Xx-w9YFzZsSRE_KU1BOXa2507BuTMIcQ.jpg?r=131" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABT1wBoIvANTm-iMbGlPC_DPiE4WQCOc4t9ukGL76W89x3wG5M6tfnGMf-pm-ySqwvZuQrEp5ZYM9N7VL680wP92NpRJry32GT_IGw-hB9i9_fO2xZLx6q64u-48Q-7Gc8Z1Ww14NFOgwIX0P5LsegX1DFqC3WC1qgTtiaBjr_8FcNYkptuAKS4qOs8vpeZ_ha_sjFlxqvUglWdQqIu1FbJh6fDHZquTQcfz0iNjROzLkFYhuaXI88JQ0hbtXZpm0GnRVfsS1LUZpTSYC5HY49gYMhhXES3QJ_m40kt3n1R1qVgsHCjcJTT6P.jpg?r=0d3" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeUpzWVwg1smnBP4xfNdUbO5OJxJVSmkgYjxFpjbSnmpieizgh6RnhOJPzsKx22dqeJ5B0s9kxz_7NY-PrN8ypBa3dTITkWLpUg_aD9wDuBlX4Uj_uCUNWoeaXzpYhmmo3de.jpg?r=217" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVidPn7QFdM1iqhXc1WFa71GAPxS9uIy7KJ9lNlhY7PGB07KUaoNJ8gNNYwSPDZifIMBEzXFXlsNxVnCich2YpuA5HI4bIH5CH6ArAXpRLBsayKyXb7mQWmaFo2E72cFMCLn.jpg?r=176" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABexMFTSu3Fh3PyD1S1y-JvAwXm1Q9nblemkHVG7UcmekZw6jNDObd8Mdffb6N-YJ1Q6dcFiF6Nrfwj1xyUGPz6ftySh4Y6So8MxoaJsA_DqLOcNEBvj7A3hJgHSgsNTuvkCr.jpg?r=f3e" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVV-zZFCwQ0JkOP6NAvsJ3LC0Nvb2cBqlMe5cK92oW_dd1eF3RYfkFUYS6sMX_pcPsYimPjk0S0RLFATUKhjhfZa7iSN_zvT_RRwPk0CgstEEfy95W_mEf3jZX4_KBsFe9oJ.jpg?r=11a" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTVatK8q7AOcLCBbyjqrc1yRPqxNp90rpgTKKqG_YwAYvjvIgL1veYE8QNuwI4bXLi269Y8e2tiPefqomgZgeIQ9xT4EhGRPx05hwh34RKuGhdQsGzDFL0jKxZUO0QFXsOs3.jpg?r=158" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABexnQiGtz5OFqEdCHEPQKSVZQN4uKlhytYhQNrE4rhMMfVmW9-cROzIBUFfFLvPO3VktRoyppS9CQiDamXqqfeyIKmXQTQTofbU.webp?r=2c2" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABakBgzCBU4xabMrvv1ZEcUvYHM8aA_02yEorWE8-MRqqRpwcuDim5wzGk9PMAAmcuz3H73dfBpZ-ayvojozdN3VwB7rT8yJoiTHivkdoKWMqZfbOhvpU4jx91tYBXa8iZYy-.jpg?r=dd8" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUwPC8Yv-z0Ocm_AXQHQV9KppsoJJESV78RWmzj1tzC9qJpF3FrZe9KTLQ7nU3PsaVEQpUvijFWeCJlSLZS5GxGFVtS26qEY1xGciIM4ubJ3UMGQ0aMAgQ_8Q1Hf1NOApeAR.jpg?r=578" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRfK_W-ginXDnsmVcHkXgIPrYiMpiE_q8SN3axA5h5MJl-DuNCuvxSclIoF-DPd98IPt71uh5zqBhQV-OwTYWh_eCoMvTXsZiU5hn386IKvT26fWrs9RG2MAOT7MReRdwAAQ.jpg?r=dc6" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYuKjjKMzFh6RN2q7ml5nJDrNguQzImqCdD7tTYKKUXYnliwYVjasxzPERdiwpcDhL8zqUyaRHnRhYWtajxpwaRLf1FUTtHR7CGGFkn028rZF0CCpGfBAYA-e6H0DdaVUrdO.jpg?r=393" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWicqFkbt5lPRFZtsYej8VanWjUrDUkKvd8JtgF03SzJXThoyCWlRavOk-KHqs4TK9mjJnGWYk3aWHSuEWZBJdKrV3Qrn5xckmN8Xh2FcTXhbduAlrcagflh0WBJ2QnWCqDF.jpg?r=15f" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWZ-7WIe4mcv1rPaFEw6vBAfbrxsOB3vXsZtlulPhh_aB3WGL9CxsyM30mh8vlJ5mySdXYjnfMp7CL9gcncAd9Ll_RO95ViygwwuuY19ba_zCAL99q4ZvRLae1POFon-87m5.jpg?r=aca" alt="Série Netflix">
-                        <input type="image" class="item-spm" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQxZVO7PGfPmSbvugKteKgq80Nij8rc4U6sSZageY5P8QNNV7Jab8pL_fahxPCFLp0GWYs0H6nTmwIMTmTWxquKyuYDQLlvq5Q-cATxZhpxw05fytLbJtWRv7ZpPlYIxvMNK.jpg?r=9e7" alt="Série Netflix">
+                    <div class="galeria-add">
+                        
                     </div>
                 </figure>
             </div>
 
             <div class="container">
-                <div class="container-text">
-                    <p>Continuar assistindo como Richard</p> <!--Mudar de acordo com o perfil-->
+                <div class="container-text-add">
+                   
                 </div>
 
                 <button class="arrow-left control-cam" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-cam" aria-label="Next image">🠞</button>
 
                 <figure>
-                    <div class="galeria">
-                        <input type="image" class="item-cam" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaJkitbqGnHtkKuwo7MBPw5GRh35lv2ClmTD5IOBWYvsbgr0v-EsFg8W0Bk7_5EchYocKASnu3WuUCbv9zm56oMM2DoyG6UXqy0.webp?r=bf9" alt="Continuar assistindo">
-                        <input type="image" class="item-cam" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWZ-7WIe4mcv1rPaFEw6vBAfbrxsOB3vXsZtlulPhh_aB3WGL9CxsyM30mh8vlJ5mySdXYjnfMp7CL9gcncAd9Ll_RO95ViygwwuuY19ba_zCAL99q4ZvRLae1POFon-87m5.jpg?r=aca" alt="Continuar assistindo">
-                        <input type="image" class="item-cam" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeUESsvG6eZ9_3iL6NjIQ9VRMB7i5un-RoTeF4sDC8T2Jzwqvaut_KV1pd1EsFVguhzkCBHOcJFpuvHnIJDVS_Zbnbeaece65VFGoD8hQaVbG5vSXmdDSPnqlxiAcSF95NdT.jpg?r=10b" alt="Continuar assistindo">
-                        <input type="image" class="item-cam" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABb8EsfCnUeD-WXRz4kFydiuqGQ6m0I0R6B7Oh746gWccoaE_JkurqNJN6QyHy9qc0eY8SNyuC6oU5pHVnUNLlqjuI21gwqJeWIE.webp?r=a37" alt="Continuar assistindo">
-                        <input type="image" class="item-cam" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWicqFkbt5lPRFZtsYej8VanWjUrDUkKvd8JtgF03SzJXThoyCWlRavOk-KHqs4TK9mjJnGWYk3aWHSuEWZBJdKrV3Qrn5xckmN8Xh2FcTXhbduAlrcagflh0WBJ2QnWCqDF.jpg?r=15f" alt="Continuar assistindo">
-                        <input type="image" class="item-cam" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaobMsdL6ejvTg8B69xj5nl9-JBp_VwbGZI2sFTe7UL5Mka2Hq1drM6wJ8YbpsrcZrchclDJNCZ-yon3WN6-G1sTQ-RpzDx-D0g.webp?r=422" alt="Continuar assistindo">
-                        <input type="image" class="item-cam" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcjScCXa3vLlQolqkEEfvMgLhkBcYDdCNOrbRarrShkvhuRMV6MqV0i6qVqcT5l4l0zODY-TujcKRpaezfSKlh3OHs8mVpjYk00.webp?r=bb1" alt="Continuar assistindo">
-                        <input type="image" class="item-cam" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVsTLU_UwrvSd_mPWnU-O4f76BWlgRhp5wi6wXrIgnbWpXV5zY5cL0cvMdo1o-OX8qP8g_CpeM3eEbcCkFjWVcbqdNaAe-sHW-c.webp?r=0b1" alt="Continuar assistindo">
-                        <input type="image" class="item-cam" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABROcLIsK7XwAOnMhATfe2yQ4gMLzE2ocyYlLwg3pjWKl3wewKYke8qieQxfkMqk6vVJu1KR0YyDX_M_FH5vP0eiZ38-IUJOokX-LOSGZcwBo0PBnevOeUm1Nr2kK_qRPDGEdU6i6FQKMD-5Rw83M8MaMzP36wKePoZBEsCtO5m62dIPsxzWMo9zQUhB4UlJpDAWucPDqgEL1ynqqicMgG_xGhHU-pOVeDC9NsPklCTGDZo7rsb8EwexVS1Nw2WTaT0f89xDBCimOgcJofJMbWW5fvAPvCzzYN5uVzXj6ROcgqYfctZtC3s-ldo0.jpg?r=e7e" alt="Continuar assistindo">
-                        <input type="image" class="item-cam" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQkIf9E5szswj1OrgomkM0FbaPiCOTVI5u3dUd1mSYfPJHFVosJR-lJa1ar0ROpVhhGMrl1zhw4o8tHkV6TZKUM0983MMz4NOL0bLm1tt4nnn2APe7MjRCiCA804kUyOsX6B.jpg?r=fbc" alt="Continuar assistindo">
-                        <input type="image" class="item-cam" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRJ4SUjd6qemrMY9GRFcebtxm0raJVfrJU8H2OyZeVJlxFaIO4FoL-aUH9i4x63NhnJClsmlAic4hAuBYt4EAodOxfsco3QOyJBpUhRQvUkzB787wfP537fNk39CEZ7SB34V.jpg?r=fad" alt="Continuar assistindo">
-                        <input type="image" class="item-cam" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZAYM-hCPNrK9hzYLoj8dGWfJJrjLIL9emImtpWOVjasrR8IWXKDsKvh0dSjhwSdUqXE4n3w_sWTG9OFfLQwabdASuz3iGxPeZwMJ5EoJMGtHmKw7vyki3BH5CasZNveEymA.jpg?r=203" alt="Continuar assistindo">
-                        <input type="image" class="item-cam" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfHkU-oHCpvLA69EovjjrpFsOA7TxjasnawB3QBhrWbIJko2CoL5LgiwmJGAogUoiCgAItedNOJJ5aYr28bG6b4D6P_AIDBAxzc.webp?r=0ed" alt="Continuar assistindo">
-                        <input type="image" class="item-cam" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVvan-Yk7_XGDNdKi3W2To1e7zeSl0_vp6Zl8wVjcfrJbNuXHHxNgV2mPJVLWyxxMTDPMiHLa6zP-dVJhWSzzRQB47Guzd0Xwnrc9ge9tCtpevE1M22v0js9H6xP8m2b81_U.jpg?r=39b" alt="Continuar assistindo">
-                        <input type="image" class="item-cam" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYZn8PJumGk8KWDyqwj0xL4QiKJ5kn0g6O5NE27113J5nbC51FDsRxeF2UsC4m1kBEC2FisbYW71M6_PgApaztllY06uW6O5W71A9QtkfVNd3540vdsEZoEXeCZyl_qw3_jPrycOarcKB7Knp4MYrtrdQ9t8CDAKQOwB3XDXkUhKT2swiyLxicuFgVCdyY4.jpg?r=478" alt="Continuar assistindo">
-                        <input type="image" class="item-cam" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABd-WwrjO9Tvk_LuwSSUYIw4jeJd8w4Vpk3s-DYH4LjvskeRWfZTc43jsqp8OYTadRrf5wS0C_yd79tPWZ-Eng3uWixpRvqGAeZs.webp?r=379" alt="Continuar assistindo">
-                        <input type="image" class="item-cam" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVFB_QHKLbTavzu5qbUH1kf9M1zRP2K_DCoFX7WUocA8HTWiK8WxCwcMst9_CTdXFViZCMGM2YKutVp0HlocEmMp5qVWwAmIDK1GrYWqQxinR92wAkkJZblqpMuALhLy-NYm.jpg?r=64b" alt="Continuar assistindo">
-                        <input type="image" class="item-cam" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZap16KO2d4rqDuHab76pg29BxmOIQOwoUnqRYehFtXcFhY6utrk9pyuJq9yN_H6wYh_zGOKdxxz2CeVF62_69EsGuI9hLU-B7Mh6WCAvPX2Lo6xE6JrZy3jHqlkh1ERTk3M.jpg?r=41a" alt="Continuar assistindo">
-                        <input type="image" class="item-cam" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYPB-5vbMXaodx2KCe0Cxiz5w8CBFHXZYN1Zzc8sC78BFNaTHUuEVBu2jLnQglc-9sLJKdPV2aDjTefdMdiOtWNTpUYYH8SwMuc.webp?r=91a" alt="Continuar assistindo">
-                        <input type="image" class="item-cam" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQSP6zLRrvgDGqtzH9Ae5cXeiyMqRFWs2ezeyosKkmRKg6aMcie2e6e2fEoCnpribVA8-17BQuHPFqCPkPrZyo038SLiCgr-lx8.webp?r=720" alt="Continuar assistindo">
+                    <div class="galeria-add">
+                        
                     </div>
                 </figure>
             </div>
 
             <div class="container">
-                <div class="container-text">
-                    <p>Em alta</p>
+                <div class="container-text-add">
+                    
                 </div>
 
                 <button class="arrow-left control-alta" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-alta" aria-label="Next image">🠞</button>
 
                 <figure>
-                    <div class="galeria">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSKFU8Wi2j9J9D4LUOtUjA4weZllBkxv0VW5k41ah_7BymRl9RNFBO-Jg0iM9PyJ8DYVlfsYREWFhzoyvu0ePAFaGBnBit6CclnLMPP9IcUQq_EHDkubH4D1R4ggRgmvgkuU.jpg?r=3f2" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcjScCXa3vLlQolqkEEfvMgLhkBcYDdCNOrbRarrShkvhuRMV6MqV0i6qVqcT5l4l0zODY-TujcKRpaezfSKlh3OHs8mVpjYk00.webp?r=bb1" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWWkUxtcJVK58SAnG-FMLo4iX-hjD1ZcT1MPd9Dk3ZTIFmz-Xt4QenjV5vEu80a-BXmRLEZCJa3XhSXDaEU633C5F_nmRIC8ZoeclQQAvW4SbBIYaRD3FdclHTVt90oDyLQs.jpg?r=9a9" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQSP6zLRrvgDGqtzH9Ae5cXeiyMqRFWs2ezeyosKkmRKg6aMcie2e6e2fEoCnpribVA8-17BQuHPFqCPkPrZyo038SLiCgr-lx8.webp?r=720" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWg6Kukjy425hM8VtUCtUeb4n1XROW3sg-sTmSNKLHWyzbWvNCX_iKO_ZgkC-dQ86geZydlTFHoUtJG08_eweS7-xdC38VCizB6nuOsgMMQDC_r7VvbNy_IMN0DpBsyCdnMr.jpg?r=a57" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABd1gD34UIxSe67UnPedw5t54k1F-FgEJv9oyts8qtiGe5ntzzq1wFcpAjscToe9hFke1-37LLSVWomzI0fCsSAe-yrroZX8Dmfo.webp?r=3d2" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbCDPEP6bGE64TCKednHtlryF2BqvrUlTfS19TmrQVEBw8fpNMNOFO3768BR8bfxagdzvUNPEUggJks-v6FcTxJmXEZAIUt71DU7Vn5oynduVyys5y6yhzYIqQaVtZ_uNg7K.jpg?r=3f1" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYo12oRO8fdO9OclcdTRISeGpa0pM069fvXV1MhPQcG6z-tefFVTR4-a9VzW_ZLx-yP1qlQ1eWpeKHL3RNJXFNkWgn0oOb_8-kyYCw38IfszydUkmB5vJ9mv2QWj6pDr0gnA.jpg?r=426" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYDiOSvWCvZ2yMQlWlw9wkQsTz4yLThIuiJZLUMSQXG_LerBtgEWrGX3CYV1_xfoTvDC-GlnUxKVZOb44pof6mMq-ngqLUht05M.webp?r=e42" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABblD83NXR30l-4tAxx0pmiJMk4DC48wl2Esn0VER73uzBQRHzeAGu1AHxeA9WB-64Wd8Y-XW9PcYGfhKrkg1em7XOSOT9pmEetgx36qeMh_ol_Z4fvUVHC7HNP9-rTyIyXPq939TWfCc-Yn7IjpwSLZyLi2HjCsynxAChjlpHflort2a1E-DeH_R2xFVdpH80iRUdcj1I0vsF0eKUTFQm-iwdTe1jbqbnxUfudXcNFA7ghEyQCLhSH931b0KRtyBwDw4MxqUToKDkYzhxtdJZEUV6i_xYiUZwsGhKN6JgWtoxZEA4bbVVDGE.jpg?r=3a1" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaOokRuQ0xZwMbZc6_ZyifiiVEICV9KUo8BpM9igE23g9QZvoVrpsYMOqVXUmYBBjPllSe38uNVpHNRm93Rp46BK1fXqBbbARG7xYzuFBn22Ubk8NI56--KAlfRfV7nYnLJIVh7hTf2moOpZIRwocF7FqrvOPH58SJoDG93JiM8eAUwko6SPThTCMZZ7dZ8.jpg?r=619" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZvUcJ56xd0UH0atq244i0LLLtPljDqDzGu1250JZUmhAK7PvTXZCk1vwYg5lgtoL3CHrKNtJkqGAAzsVtil2KhD-6_43p5xxGb81iaRwGOYIVpWED6yloNAQ9l-JTbCaUZm.jpg?r=e31" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVP4aZ5SactRJw0B7G6HvhwqeNkKGjm3Wr2sgbeIYJ2em5Lq1g0ao_GLwiQdcJp7p39iE6ma_2QdtlRxSYazRYPP29FkWg804ApOpGiXo_8dw1zWwAdG7Poz3bD-gLWdp7A6.jpg?r=905" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXSHx0D9JNYPvBGy4GTASDkjbvU9Rr37FSTmZLNeUW4HYxUQxtXh_ZWjhDBzz4yLlPiEwdei_dybGq4QI6MROxbQTTQOog9hp6XVaV_81rJemHyPoqaOqp0eZE-mID7qzmh4.jpg?r=ff3" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfXEM8ZZghMTwQbmlsh9WCr6JKIH5yAfyqhBVzW3jSn7NDL1Fxphvp89F0vjHniBrxBB32M7_pt6VOYav3pAfJdgKZXxhrLES5Dz3UUgDz7WuFFLkvizO2l-_D1eyWayrsFqaYfnp-l9hPxJ_G6HcCW1_gSqhroTUOCRL1mBeU9kBG_tnjhurT1Fk33ERKk.jpg?r=064" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYb4I8QWg_tT7bKuYysP-ldvr-5YVL-29KD3vidD--4ou8zCG4ICUYmu6rBSMeJ0Rl2rnJk6HEEc2AFAguZXU82MBanIneEJ-IrT2wxYoKtgGIR4bHn8x1uvmUGjl0YfDV7f.jpg?r=e37" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXmJRtvVW2u1642ZFTLaRnAyF4WaoM6hogUoGAbyvr5XtWC2zJerBVtjl-zS2NML7BqSTXV6MDYDDwu2pRdSSXJB4bjTwrCaORAqFcAiwyHktCzl5igw--DfHUSM9Ek1BLOd.jpg?r=81f" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVv2WbZ7mPrmRE3DMmZK28GryockDjdX5G-VBj6TUd6BQzwLLym5fk2Frnlra5cfoVDHoBCfj7y8TNDW9IMHhO8RI3fhcOVKd9Q.webp?r=f51" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQe-Tryli27miWowfG3GeVEPTEKVi_hZD-XOybB59cizPmwYZbC0YtQaehZXGIKYGiZQEBguOBR1zLB9wxKetymFOyPfd1A-8P2plkCYuHukwlhneX4tiABduoK7CfkKby2U.jpg?r=587" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSLp0fxIFcj-jGOf49Cuap4cURL3SF-s6Qd0FEgsmn-A2iPUrZB26dCxe6jb0-jA8LEMxSdlMd9F9rL3eJ71b1uTup25iROZXq11LFatwGM0X1HGGZunisSOqjcETSGaW_Th.jpg?r=103" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABalKFLauOhYZsOxEE3qpgzul8-momEI1qU4u3zHq0riju0KfIDySkTwHAELKkZmNFxg6oZ1nOrf3zITEWcU1xZtporm4Um7s5B_wZkHCvAwl9kfZVYFEIlk5BlX-lqiLg7Vg.jpg?r=a07" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUtMzpWj4JUSGUXXGrbgHW_mKSOUiPptdVvAKHzURG0WpEyID4c_sfdPLUXEPltbk0kAP1PF1ppvNjK83P8OMfV21BHA7x9nwPs.webp?r=f47" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeebCKtpF2o4jV6GEaqs3E9UeCkglC1AtBXPv_XxlK8yGAdYJxa80JBNMZkdyD_NsuZ9sTJ82AjSoA0Im2ukbmg8jREtrqyp6YY.webp?r=fd7" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeu_xTy9-Hd7nua3BHcC6Krb6XeGw7_oN32C8DwqrlFABUtzMlwd6jbcS2TNNIiBCrTvhrP44k15UjqDkJV4ktI0iY5DDgDJG6NgIyiVUAYCukdXXRUUZ2FfSDWnlDlgsaYok83GvXioBv6R5F5sBRExKGOqW2l1zHwoAOZBo1nc5KczOb93lxqL_NVhyTGRL-XBByF1mukdBIvvgAcJHr-kcgmR2ve5n0W5MH4jVKli-l4i2_fcqv9LNWxCfan6usrdpYY2DcXXs5BmbNjBvkPC3znYrcIG4f51at9-cnIgG7KllryrtJdjwk0ISzKzj74hz0G64gjLoQcwHLP1FaAYwkK4cOBXh3oRQ4wutuD001B_xJs.jpg?r=b81" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbaScVau1dRXLcTDxaYGVWPtoVaLazAqXM9sVDGLSmEtDGTVuiEtW-5RKJIBaFqvbYhyfbnOZBuLFymO0zLk6uxjRtjM6Jt3gbmLslRfSGKahatTKr-niA6g6pDODzbB_Xii.jpg?r=fd7" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABR2G7dIuefvOTM_4riY3a4juiPc-7pc6XC4id7d-_WPflhxcSwdxnZrF5bv2Q8dBil6RYE4KWeFnxu41QpAl_RDkfl_1bIndZ0O_cAsZH1Zsmkkkd_72OieodeGtQYaLicoe.jpg?r=7f4" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUP6cVmKrMn6w4xZRfJz7ieUZH7S7bktTmqb0pAuMZsr-dGiUPv9Na3-HyIN7Ji0KQfRL56N84NbiFrf5wXAX5QJmSg5m6NV1HWGkbRnAzxGU3OW0gzqu8mE0BkEtN6-Pwls.jpg?r=782" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTjGh2T1S7b3q0EXq6VxTTvDZocJG6OLAI6a4lu4LIP1cuF8Sj6Q9tcxFDiZxivlfkV6tD0bnitO7ikWdUGoTxDyf-hh-lM5v4M.webp?r=61d" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRJ4SUjd6qemrMY9GRFcebtxm0raJVfrJU8H2OyZeVJlxFaIO4FoL-aUH9i4x63NhnJClsmlAic4hAuBYt4EAodOxfsco3QOyJBpUhRQvUkzB787wfP537fNk39CEZ7SB34V.jpg?r=fad" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABROcLIsK7XwAOnMhATfe2yQ4gMLzE2ocyYlLwg3pjWKl3wewKYke8qieQxfkMqk6vVJu1KR0YyDX_M_FH5vP0eiZ38-IUJOokX-LOSGZcwBo0PBnevOeUm1Nr2kK_qRPDGEdU6i6FQKMD-5Rw83M8MaMzP36wKePoZBEsCtO5m62dIPsxzWMo9zQUhB4UlJpDAWucPDqgEL1ynqqicMgG_xGhHU-pOVeDC9NsPklCTGDZo7rsb8EwexVS1Nw2WTaT0f89xDBCimOgcJofJMbWW5fvAPvCzzYN5uVzXj6ROcgqYfctZtC3s-ldo0.jpg?r=e7e" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWxkY10eD2iK_ABkn_2y4SmlPjFC3uWqAXcCi3LSuhJYHg0AmqazGO-jpUgYPDqLerMRhKv0eknHyiIUCOjor0LyEcPjTFlRRfw.webp?r=117" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRHx2itvvtrNJTz0n4YT59F28DS0MbhoFaCpdJYpIz_qKZ09cmocTUKkl6i98eaENli6LbsYmETDiTSkrKwk0kVYhOk7RJWavEJER5dkPco4FNWtNncSrPoFqhTSzZypOkh0qJoXPalQPECamqdw4XeTkJ69A2LwJUA.webp?r=23b" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVVQAK9yDPyCTBQqfxymXfHLHtPwqu4J4aSaIQqpa1h-o3q2UHlQLNcj-31KQd7JW8tf8RRWOte8uPI5U3n3WWBSH42pEZcHvHAB6D6hIZRXTmuIIuh5hGYKg8kHqmMxQy9-qiDrXjxR-orDUW6XG39uxQW58vMaBwoh0msut7SNIFvsqoCflYrvIWoFeiE.jpg?r=12b" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdsCFPcU61li-LHb4zacWPNmCqnMCbWEMc09ts7XOK9Kfpo0ZMDTEMB2fzt97xH14UfhDZvvvgI-tOn6mO0Peu-W13tiZZFZUx7OsNdGU2MdGq7-l0t1G-vmRhGwhssNuhMW.jpg?r=e5b" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQR63HNcYu781ipc5EiRZjcDt-xx0-Z8xq6ldlE6PeEXrJ9qDNkFC0sVG7O1SkZm4vk30w3pvrrKNF0r6EM_B-xCkWIqldAIrJjXYWI56jHf4Wnx1wTcNMlV5x_KX4ptKvqy.jpg?r=1d9" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQ_niagI6j0Rg6e5t2s69YSg8FAvheT_aqp03k80Ckz8uBS4a3-ZC_q3ArzM_wQM9k49YqAg67ZAnk9skZw2zWTLsFgtGyVyT-4dPwSOK2N3RRUxNMkNdbzd9_w0gsKGGEnhFXgWCoovAGxwtn6qMIt89SoOI5bPdJhCCyhTITm4YjJO8VBozhfp5hh0fwTNWWKtdVW_h6s_6TQr941Gl5wxF8bTJkIA-jdTnZ4fYx5ZL_lLXyrQAyY7r3mEQHxRp2TNqX6dAfJpfEcMVfOWj9LkoHu_Kw-jsHdiOC11MlVM91WHxjJiqqZ_-6uGSwM0-LFxCaErz4Kq0gKP7zo1xOa72EVKtM1xvxibvmToN-0IkhfmGWeHag.jpg?r=7ba" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbr4F9oDlQilH6aaO91co7V--SyJvwbqUyssCbxHeyN_vkp8ARCQpkrHMhfxjpwFGox9E-VpxMDhppKFwNvNUiptk-SC9FlPToGrPhumskk7m5pplK-AG9fWxWXs3WryYQ5ZKMP9rIpaImP9N7HuOek2iBILexp2yRqoLSPhftijwiAGj2Xj2G1aVBk644s.jpg?r=9d4" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeRSDNMeka5yvmIfp3-yNCFKPC5U_BdwXN83Yl6uTY7f269MrTcX3ny-8svxcJG5QL0H_jfgoNQ9l8T3YITeqcQJANjFHYgYT2a0sO0VX8HHSD6sH0NxT8cnN5u6bhx1N6OAsh4L9lM_I2GlwhwvIF2pQTNZmpMr3aAPN0o195FAlGDnw_N9QP_OHrLsvTM.jpg?r=d47" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaJ5wPPc84tXfMBcKLS-4rL1AOuk-EXFjrXbSYze2E8GXuuU6jGSis2a3GxEiT41ZfTFIkyh3yR0Tb6MsmG2RAP6H2Lxt9sw0qE.webp?r=e9c" alt="Em alta">
-                        <input type="image" class="item-alta" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYXqvCom3Ce5yLfaHmGZCf8ON96YeKnmSq6f3bWCMBrEU8TokB2X5a4n2Jiqoxspmh7Jflk7P9HSUY8bJYabbdnxShrARu47-0U0OJpKqEHgREpLgGNVdRzSStBBwbncBMQg.jpg?r=ab3" alt="Em alta">
+                    <div class="galeria-add">
+                       
                     </div>
                 </figure>
             </div>
 
             <div class="container">
-                <div class="container-text">
-                    <p>Filmes de ação</p>
+                <div class="container-text-add">
+                    
                 </div>
 
                 <button class="arrow-left control-fda" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-fda" aria-label="Next image">🠞</button>
 
                 <figure>
-                    <div class="galeria">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVenJVMh8Hehzdob-gDtAwmB6MT003J7dO57WwdpVNN6liI8S6YXhei16qqZKGApPogF7SSpm0IsObMPt8H3n12uLpnTYD9YrtI.webp?r=e89" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQut8pBJ31k7hwXyTXywvNwQCNBBHXKz_exxElMk4KtoRDa-7sIZAiD0aiPAmXHCHtnJYdlbwu_KRcI42jTlh0F9TjjCiz8gGpA.webp?r=884" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSA8ZQQupA4ZfRRyazqPbsCpR0Eql_-YobfWExZ8EDrpglAApsCih2q-jIZrxB53q1pyIY2AV3qXZf67ekLsOLs1yMWhUwhFL2A.webp?r=dd2" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABa16YPCACnmunPc7BKlchjMMR---j9K5mTC-vJMdiVFD_1NNX7icxmuCjCV-42YPTo4ynB25drJaLQC5Rg-OQEMpRCMCbaHso0bF50Z62up2B731SwgMTtGDS0iMgVWn-tNE.jpg?r=b4f" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYPB-5vbMXaodx2KCe0Cxiz5w8CBFHXZYN1Zzc8sC78BFNaTHUuEVBu2jLnQglc-9sLJKdPV2aDjTefdMdiOtWNTpUYYH8SwMuc.webp?r=91a" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeAMdVFOtkZKIZ20yEiCQLIo2v4PR5K2t8kmaeKYo4FyLBlBK4C-q9C3auh-dCGjdImTFy8wAQQhlmFAWnfRGbMfmQrOABQjsQU.webp?r=71d" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYo12oRO8fdO9OclcdTRISeGpa0pM069fvXV1MhPQcG6z-tefFVTR4-a9VzW_ZLx-yP1qlQ1eWpeKHL3RNJXFNkWgn0oOb_8-kyYCw38IfszydUkmB5vJ9mv2QWj6pDr0gnA.jpg?r=426" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWxkY10eD2iK_ABkn_2y4SmlPjFC3uWqAXcCi3LSuhJYHg0AmqazGO-jpUgYPDqLerMRhKv0eknHyiIUCOjor0LyEcPjTFlRRfw.webp?r=117" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVsTLU_UwrvSd_mPWnU-O4f76BWlgRhp5wi6wXrIgnbWpXV5zY5cL0cvMdo1o-OX8qP8g_CpeM3eEbcCkFjWVcbqdNaAe-sHW-c.webp?r=0b1" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABa8WSu7YCn1KbnXbmNCj5nah6IDwBMLaJyWAseRtJQUfWT3cxo4c4eYo3Gg1fd-cCfOUHbjcMHwsMi7qSxiaEZL7YjJ37LIIRhg.webp?r=882" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABX5qIhIomjs7LjBIEJaSuucMzOd6XxotMtzHaUgHmTJzB_5q7NQZ-J2f2sU9BH9prvsen6phuuWgcGeAaxdMZTIF1_HW7bokfQA.webp?r=760" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYv4TpBpVDVc1vx5ft6tl01TAf1Rl4C-5dhPOhobadK6cMWQkhkla9xvBUUTjdNqSL6s_dj0t9lfq8uN4IfMA6L8FqHalucsGbM.webp?r=56c" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYnCZ8Yj75i82bRemow9A-G0s9eZYRdGVszoWBh0vQHVH6nqPRF8pgunU4D4PZ32w9R3nMzvUSfSJoN8eQv-ddDbsV5sF9Wdz3M.webp?r=de7" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbMevExfNDzKz8Aha56T24WCUeky6gUcgSKUEbUMJH8FVeeCAWndEFdWK5RA8b94hRmgzvtvuyyVawCrdGr7QHtTvFtjLPQczm8.webp?r=3af" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcVWyz5ixDjseQyQcj33njwheOP-EKfKjcJiP-4bTr2iz1sw-HlrsKtPwiwH7v8iaWnbjBnvz87V9iipdFt_MGKXY3B6z0rcF5c.webp?r=73b" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXt3WwTlAsm0WpvzS0PC73ln8h7ucwM7a1qImbLVNdFB8kbwVOkXIctvU9J27zUBuhpEPNboAg5Sg8yQjvSqmYFv0Blf1-xoAGN3RlgO44H3fSsnP53ZOQh_p-L5um81r-rY.jpg?r=8a3" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABboFfr3kaKab2NXlo8GChDNTJ8FT8OUWeXajxdPUgPsxXtxI-J5Ybu7ounc-tOm_Uz8gU5A7ip6Ts1sK67Fefe-PsMJXC_7fzreFGsNjK6xNBLkDRx4c4osCHqLT-E42B2cM.jpg?r=1db" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYjGODqrDMDXKXIttxNiSdgNQSIpyw5hXaQqCZdlotBKbKlYftjgZAnfA4zx2IsC48nK9KKBn5G2fU-jNuNvgtO4qUGF_AjmcL4.webp?r=e71" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQU33FAYwAh7QH5fVsvG5mY-wyX60yFfB7etfvuDNCDQ_g4qjtSZalKvQAG2a1wwqWjBKRuY2mqFUpHXgRPJKMCyT7NF54yuLOs.webp?r=8de" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbuiPgztdibNXKls4gYlYdFrnEl1hJgIu2MrhYCSAAtBLteDn5PcWAzJGaFqxioZbEZr1-TjM74ZwtZIkd1vnwgdiVJsvJpIk30.webp?r=43c" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABU_AV7UUSAsL2juSdr7Gietn_7gxligNFKFM9AMs1ItYcssVTskZdimn6yuM3QSxO33c8N_WaJ2JfuX8V0rB8DvcHGw6OuEr-12OHXAQ4q4PCPZoIbfLog8v9FpPDySfRuYD.jpg?r=658" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUopfXvINnvACz2x6hA21xZJYsQDRKWmUBm298GqMzv1pxvViO6YXUVnD5r-dUEiJyE5njd-C6Y42GvlzH3ySDX3NkFDJvqCFgcRTo3rXnmLRaUUD7FlvEn91vlNrwL7-JVE.jpg?r=731" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-2015-1740.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABafkucEXg7s4DAe7UEpiCEGr4Ncs1dT50LAKkKMUePaE3tLkn0gENMENsqIewpFyRYMk1ou5P4OjhRMouLG9SHMTw1GfiwqUVV7gKRPwoiGhdQVMq3xUCo-rXJknjBCmcPFJ.jpg?r=aee" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeeUNI_VaZ7G2jLXi8XmEtQyhOY2EySbFI35ZhpBqdoxR0o6Qn6ZHo-wcxCqItTBuZ9HxQ8K8ZI2M1BXYl2Yqn_IkncqLU8wp_o.webp?r=0b0" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVudDTeX91HWyqm4CuGjRJGQJVPmeORtMbthmmlXZf4OB3u8jFlJjLAdBL3nOkgTL5r90V96mjjytl8rPacNCMUFRYrdZQBVGy1om6N3DeR5eKsEKpU6FmTnx-xp45EnbDfU.jpg?r=db8" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABagRYF2f8B7dATrnn7JhTdKdr5Q9k5P5xRnKDxLz4WzP3f-n0bhx3czZrlVZY4MpnVzXmmrOsu0XGm7gqrblxzZm1nsjh_w4pjo.webp?r=92a" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVxlCuj1NdCkirREm6qUgV_AzYNHN2QMv-YyPO7h1xkBl0VbxNu_iXQmxScbAeTHZVeC87ux4JAk9MX_UwnpqZpvWErFEEzaYm8.webp?r=feb" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-2015-1740.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeebCKtpF2o4jV6GEaqs3E9UeCkglC1AtBXPv_XxlK8yGAdYJxa80JBNMZkdyD_NsuZ9sTJ82AjSoA0Im2ukbmg8jREtrqyp6YY.webp?r=fd7" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSJWPOZby51KlLyHVUSAl3CuhPebjoxr5wdmzDj6GHtFy3pxwxriZuE0g_0skXfUGjmBBdJX4czhACl8CusdBxMRGjpRn-LGgj8.webp?r=524" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeA4acy_LG8mlddiBN4it-vVbcsEiKfrnshWBtxc2X8P3gx3vbiGSHJzO9iKgD7ucIQvTktMudJLVm9YTzExd-Y8Oysz5zZzmic.webp?r=05c" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRVtDIOZdlmFMocNWw7yk3PVMaUZty_YHdWuKsj9xvJBl6umWZHkg92W3e9hc1BG3bpeY_LGqH8xz2EtNT0DIpIQ2xE6BUaf33o.webp?r=e93" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfu594Q1UCLXgIHbm5ArGrnlx8lkX8X-xyrQ0NKTNuKzR360cHVVCzPALB-_foT0Ism9FYTbH6cguDIT4fqasXf1Ud_NSMCzJDk.webp?r=0b0" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYLkLDPZYurvlmOor7eAEQF2moJyaweYKnQKgTtcrx1XKRIX3W6byiQkaZ7omZQbsvWCbiHpQJdlP5O1f61ru3xb5vTWhmtFvzw.webp?r=e90" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSXFD7jRflydZc1F1iZsQDkvZ0EGT_1MF091Cl6WqhHiP3cHtu54ECuan138A_y2ILJvwvOFKMzv1o-ktzaB1IsbISlPdP2DGhw.webp?r=635" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYAeYOH59EMyW7166RzzMc7ZC6AVRFqsDu8oR7Agc2FlEN8jhrKdlVra1UYqLHzdefE0ic-Ido_MISdGF8MmZ9JsSZZJ4QRsyVA.webp?r=075" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVNaBTImy2Of6kmLL70IxXqswdFL7XdmdOuSJvtIG9jgm-dUvuXxFNTiEgffcJT0FjDtfwenpBpjcE8CIewp40LmN40874e7CDc.webp?r=8ec" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZNtiE7HjVuPnI89H07xgXkOtCvtS5wPjY1MrSSLS0ZDA7XwRPLC2LCgr4auv2l9upQ_-bzdqr6jpIij80hSftt7ELVE3e44zrpjnejtNMdfOl6nueCA52ZZxNDq9pGh4ohk.jpg?r=493" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABR64VXeYxLfxaMkCXjzOVrkMd1XW_ILeiougERwstLVXhs_No_OzhefAnMVnVOWbIobeDmpDV9HxEwXfW6e9uLFzLmtVj3zfMts.webp?r=6bd" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABS6OewHAWKIZc2vS-W32MAqw1ljlDNiXIINTLyBHMSSJKWlqiV2cYjK7mK1hLBBsfSwxImEtYUxurcRQdIfMVIwoMUvJJ0EQEH0.webp?r=579" alt="Filmes Netflix">
-                        <input type="image" class="item-fda" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSDyOngAder8vuuQxyMD_iImUkG8x2TpFG9M95MgCsidISnqiOjE1-2arf6zNHRE88tylIP36elaxmR5pCcZGe56sydcbmGxxCI.webp?r=4dc" alt="Filmes Netflix">
+                    <div class="galeria-add">
+                        
                     </div>
                 </figure>
             </div>
 
             <div class="container">
-                <div class="container-text">
-                    <p>Séries pós-apócalípticas</p>
+                <div class="container-text-add">
+                    
                 </div>
 
                 <button class="arrow-left control-spa" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-spa" aria-label="Next image">🠞</button>
 
                 <figure>
-                    <div class="galeria">
-                        <input type="image" class="item-spa" src="https://occ-0-2015-1740.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABakBgzCBU4xabMrvv1ZEcUvYHM8aA_02yEorWE8-MRqqRpwcuDim5wzGk9PMAAmcuz3H73dfBpZ-ayvojozdN3VwB7rT8yJoiTHivkdoKWMqZfbOhvpU4jx91tYBXa8iZYy-.jpg?r=dd8" alt="Series Netflix">
-                        <input type="image" class="item-spa" src="https://occ-0-2015-1740.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABS9YHMgCsO1DmTj1EOd9X-cJQ6RUR7vhKoDKeIfsSu_ktHECBpdNs-x_jMMKOmNhfpTkUuS72ibPIvnVl4NOZ6QnBSgT6QCVDRc.webp?r=89f" alt="Series Netflix">
-                        <input type="image" class="item-spa" src="https://occ-0-2015-1740.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYxMqvA13hx26K2b2C-w7u4tH1ggGoY89e4Zv7KxR8HKbfKWZ9Crz1AYlWpMDacp4EyQvdAXvsBB08FPY_pZ4JJk0grHoHWaDc-CjfD701bVh3abdPhLothXRr4KZdyPNXyQ.jpg?r=4cf" alt="Series Netflix">
-                        <input type="image" class="item-spa" src="https://occ-0-2015-1740.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABel39Hv_GiOgKd_OwnIYbfhkMDYCe0qduOXTWShYAZL03TrjMYKERAPobIIIxKjsig36Iw2iaJ9i8q7rJXLXzekPLF1bGfebBKamXAGkrUyT1mOvOFBWfziWfB7zgnNZVQCK.jpg?r=605" alt="Series Netflix">
-                        <input type="image" class="item-spa" src="https://occ-0-2015-1740.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVcbncpPRvKocWvIesfY46zPjRfWX9xMs9jUm-zZzNAWzGlkjL4ZwSByc9pKtYiwrCvct0O20ep1gRcP24Xd4FZKRVfui7Cu3zA.webp?r=d42" alt="Series Netflix">
-                        <input type="image" class="item-spa" src="https://occ-0-2015-1740.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXnuD-i_rJ7mbT0cGaBCehZM_nkA_oH3KUCRVMkGOLR3VxKs82YU2XsSKrXcPYVEW_5HXYW5YpP2UcgzMTEeipmygLgo-eBGbqDuk7vVQxPZ9NxI6_59uUWPrTmIN94gz0U6.jpg?r=406" alt="Series Netflix">
-                        <input type="image" class="item-spa" src="https://occ-0-2015-1740.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABffvnYRnFLe2nCi2lsR6mnNHXAtUDGb8rWzZH_wYVRLRW0zygTt8f0sd3KT9Tp5AVu0bL7SVpMKNXLajYf8WR2OPxyzFXIjJBtPzojt_OXn8n6yXuZwAt_bJlxUOM0EHMiCC.jpg?r=97b" alt="Series Netflix">
-                        <input type="image" class="item-spa" src="https://occ-0-2015-1740.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABX0EG6MltbZ36KBeJdnCFoxFhuE36eV3I2GknnGj9y13ir2R9nGjQmTtaxXrQWuQ1GoOV7P6j6D_V2kYfzOixombcbNX_xGy17vAArF5u03cn0RBSzc7NQxhEtPC8FVXsu_b.jpg?r=8ff" alt="Series Netflix">
-                        <input type="image" class="item-spa" src="https://occ-0-2015-1740.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWZ-7WIe4mcv1rPaFEw6vBAfbrxsOB3vXsZtlulPhh_aB3WGL9CxsyM30mh8vlJ5mySdXYjnfMp7CL9gcncAd9Ll_RO95ViygwwuuY19ba_zCAL99q4ZvRLae1POFon-87m5.jpg?r=aca" alt="Series Netflix">
-                        <input type="image" class="item-spa" src="https://occ-0-2015-1740.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdLgI9jm0glSQ2MvRCuJksfqU0uwajw3UD8yU9bm9xkqHS8ZFNRFTUBXNtY_jXDmrHZgE4M7ausGjYvvtJ4cYPrz3Y-UT8YnIc25YA2DlKlNeGHDEhDYBUMeyyFOeAolvFA2.jpg?r=518" alt="Series Netflix">
-                        <input type="image" class="item-spa" src="https://occ-0-2015-1740.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZOo3vZa4SM1Uo1hUJ60f_0_yRQsNTXNsDoPwyUSBCZSNm047Ztk3N4fYixPW66T1wx5rMgrTogCdb4xEV9ix_WBnxZ718SX0g9Bw11gjbfNqWYXQKaVCahXHaqK-ioo9_RY.jpg?r=9e8" alt="Series Netflix">
-                        <input type="image" class="item-spa" src="https://occ-0-2015-1740.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRMz7AsKMVkWdNbdtHMKxbHAynyy9eJQBViBm3G41mthcWximc6jX2uKVxuehwWzKv2CGyD21bCmv2XUcyIR2G67GZeyg2iv9T7jPkqHgU_dukooQ3FJL0v8W4Kg35CsR4uD.jpg?r=6ab" alt="Series Netflix">
-                        <input type="image" class="item-spa" src="https://occ-0-2015-1740.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbaScVau1dRXLcTDxaYGVWPtoVaLazAqXM9sVDGLSmEtDGTVuiEtW-5RKJIBaFqvbYhyfbnOZBuLFymO0zLk6uxjRtjM6Jt3gbmLslRfSGKahatTKr-niA6g6pDODzbB_Xii.jpg?r=fd7" alt="Series Netflix">
-                        <input type="image" class="item-spa" src="https://occ-0-2015-1740.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaEFz55a1YG3AdtBssKyhdYm_4FrzxS-_RI0nZXaWvYlUv98RmfK3W95sjZ8rnAiywMTtjKVQA-n8lws6FJQohe41LQAVnOHM2ycFYmy-nFJT4CqdJI5y5WUbdO9yLJxhZ2P.jpg?r=bca" alt="Series Netflix">
-                        <input type="image" class="item-spa" src="https://occ-0-2015-1740.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXCadUGkwGL8o6X31H_nIXh58NgIqMmA2gUE-_i4UO6nvCksOT5GRpLlngnmKevZTdP0VWe1uja8e0F7t4yrErAdBXhRxjo9r6j84t22oHPqcmAaRT0-oxP7pS24BYoK7C7g.jpg?r=021" alt="Series Netflix">
+                    <div class="galeria-add">
+                        
                     </div>
                 </figure>
             </div>
@@ -544,50 +395,16 @@
             </div>
 
             <div class="container">
-                <div class="container-text">
-                    <p>Séries Policiais</p>
+                <div class="container-text-add">
+                   
                 </div>
 
                 <button class="arrow-left control-sp" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-sp" aria-label="Next image">🠞</button>
 
                 <figure>
-                    <div class="galeria">
-                        <input type="image" class="item-sp" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSrVs-XFlA7ixBq7J65KG9I2ZsmldCBBR1zOYrr1rgxBy5A8_JGdllEPLqB_mKSpPJnunokq2-yuM4E_3CBfg2TdYh914PQAykh1tgFs6o7vbTvAeT3lfMEYvZWMyFmQFtQK.jpg?r=f99" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZvUcJ56xd0UH0atq244i0LLLtPljDqDzGu1250JZUmhAK7PvTXZCk1vwYg5lgtoL3CHrKNtJkqGAAzsVtil2KhD-6_43p5xxGb81iaRwGOYIVpWED6yloNAQ9l-JTbCaUZm.jpg?r=e31" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWWkUxtcJVK58SAnG-FMLo4iX-hjD1ZcT1MPd9Dk3ZTIFmz-Xt4QenjV5vEu80a-BXmRLEZCJa3XhSXDaEU633C5F_nmRIC8ZoeclQQAvW4SbBIYaRD3FdclHTVt90oDyLQs.jpg?r=9a9" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABf8CFchNcSl1USuaIu2SgNGqkiUsoDjvQmRh8S9U4H9fJ0oLTfN_EJIHCN8yr_8DNyFk-8PrLqjqGR9yoic-wakcLK3p4RPHZnkeIYwVgL9gvXgsPxY_WfWzWv46WukBR9YK.jpg?r=a00" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSHTRDdru99TjSfi33cgxO-XJMJzbEWQmC2ynyQHtEvEedzksAE4XhTKdoXKRRqMwNPyhpoy4o4s2nErkuWW8R_o8M56bq507AgE06sIE40Sy9rR9thu7pvf3JDPT5GwpjSn.jpg?r=302" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQ_LDFXtTFVDOBkAPw6uBoaik6aOIDjoLLrOGnMlS6OepcqQ48CbDQHJn2YiJbnOhAwgh_XOrnsgIDg6HbVnF2pCeV6JXO0E0DxmTIETQWAMMASVs_AtXI48ylregNV-GQPI.jpg?r=ae4" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRRbVuyjs_6qQH1Cs3cOvqnanwy7Nu7sPnq-2-3tIeXONoYhS0TNYSy5Uh3YOSkVmQUjFoAQK749VpLd-D9_YPDDhr4TYgOz2WtcEw8faDXGjQqEYrkIsGdWZ10bkgvkkJs0.jpg?r=c02" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVOCNBO1dR9lQdlnx4PmWPbk5UeAlFwDGxmUus9JR9QhN21pC6k-2Jmflh_uo96f94gWBlgUQzOudZPfO3WTYZNCgx_cK6KCYWUl05Ypy8NP-zsox4NVQcCwnu_sN8V8CuC7.jpg?r=615" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTNIvImKSN4zX05Jf3xaw0rAhvAq3ZfHKs2RUgB-_K_1yoRciKAKqEsHI0ONde0d2qPuFDHMq7PqsD8YEbjN08goMML4C-e-zBhtj-ZgpiYYIiNPxJoJ9jQSb3TDnBxVm-3_.jpg?r=4d2" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABawpL4gNVZgZ3jIOE3JKwUD_DxTH2xwbR0P9O8Wlcxi2kBaTxZ5kZkeFH64L1rJrEVg9M79JHcQ20lD-Klr4S40NmeluvLX_D1w.webp?r=2a6" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdKlooI3vpQrz8ORO7ReDi2VsnecJ4E58Rphsqd7Z-KN55yspoBWFazlo0av_PQWTsP2O-SsiPHc53asbLxQB61OG8tJYadZ21mToRIdcv76zNE_WAhn8f5f65dXv0iXju3B.jpg?r=b37" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRX0Hb7GgvMJeuYLy-uwC8hWSw0HeeC-RZwn4El_QXzloDuXenwvDvRoSzkAxItSHupfBg1DvTz6Jzqqy-wMGzC2uJUOMJZVgeydZnv4gHgaYogxu5fSZmBTu612fwOxbW11.jpg?r=f18" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABc7wCsuj9NVcpFh1YOC39IR_YmQO4TMWqjn6oM4IqPleSeDoWAPLjiY14V9t_yWHoZ5L2w-xkENBp7Yh7lpEUQLg-SXX8j_cxwS7Xx-w9YFzZsSRE_KU1BOXa2507BuTMIcQ.jpg?r=131" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeNFAcQqeJuSjKHDEN3VewAsI_QdegVJ9HyqQZ2B9pWztXhp6UTatA3L3E_jJiGNPvsOcCVbmG3j6JzgTp5xVr0HiCcjc58Orbs04OtEFKrS-XJAXfRdw_1JueVltJJTPtd9.jpg?r=fe6" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbihKlHWrLFl-Y1ZYAf9lAt8DIbrPdIKUQjDyJyfQAKu4scfopnv3rVc2WrKrdejO4L7IpbpZAbVVmE2g7sSKrvn-FVJBL533TlhmqVWPaRY0T4OB0Eo_h5GRzSqobcmK1Ih.jpg?r=d00" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZIBBR7oynkiPyAuy1yxwbupZ2_C5gGGR-IJXda-q21670ZvLjLJOQ2GBUlFu2md97suJM_WYwGMw8cYXlim_F1OB8obfA4bA0q_LlrXk_gC4FvzBoe237KXybQbX8RGev68.jpg?r=e66" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYxMqvA13hx26K2b2C-w7u4tH1ggGoY89e4Zv7KxR8HKbfKWZ9Crz1AYlWpMDacp4EyQvdAXvsBB08FPY_pZ4JJk0grHoHWaDc-CjfD701bVh3abdPhLothXRr4KZdyPNXyQ.jpg?r=4cf" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcfxsLRkrML20YAf-mTFwuC4c2IWb-jatEQsOLDnv1AOciWBNTzwhuv3zCS14Dpj8hsUQMV_GEIF84tL94PbWq2NL-PEuiFrKKi9hewhmgBPATNkLvJRv0UpQvBZn-4W6QIc.jpg?r=be6" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZHgsFpqTgzuCQkss960_rQM4fwNjQip2ObMYNsH-YqooQF6vvg2F_HqyY0WTBjhCEvAHyNjCqVRZXq1-SyhqS7lCwW2mWeeHHggPcyWbj6BmVODj4CClkp95b3E31cDZx2Y.jpg?r=2f1" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWjgcmQ1x4MrV2ekaHd6oaWu0Vie_Vs8kWPOmjd58vc47cx6jAivPsA59LrJwCVIC_pyO8Xd3n08DcNEMGfTi5DIHWPUh0rIdiIWZF-YDamhDFHyTH2dm_Zxt7cgxjQUuvEy.jpg?r=719" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZ3MaGKfELBCgJM1yBqgZG6fsIYKfOVjHbaruzXlC6wkYQdTrm_q_gbaR_mY64XmcPoun10s7lTc8AFySrBW2Qj1m2HHdXWczVcmJV2A31WZMcvn3XpkDnl8iQeOEo8FYdBd.jpg?r=2bf" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdlvDmgZkEvyPWIC_PzMaEujgITa5PhbFLeBFJDlRkd4v_p32rpKh3MOfTHNd7azgHrhVFoH8nACazfoOAOU001TsZoHbnyyhRSWO7crypvBecr6Ay9eK1poChOPEym4_pPK.jpg?r=bbe" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfoo6Ff9CVzLdOC2RBVBlTQrsVeVbYfaeUFAzDKyix6OIMTDhIkBYoQC-hp_1JQpeUiTXP2MSTaQrzfqk9cEqmYo-Z_xrm_6Mm3IydJUgCnrYkKPDrL3OA7nrrwokmofXn42.jpg?r=a36" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVc6lUmCOY0UzM4DuvwjZqOr97XhZZb4-7CtJ7ubobEJ0iHigQDDvyxTIpOpDD3ddVo-egP-Uh_uHAqVebBwnug6OMdYh6zaJRZeTHBIC6tr6wnyWAOGloB936ml_LFyeo42.jpg?r=ebb" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQhBJhBQ12xE1EO6yxP0zHTAFwbjVrWQzej62Lr_fEQW0qzqBrb3fdlRoXU9FWRAZN_pum3mrJA48nVv6KnO4pcn9IKASq_uxpomm7ZnZmGznbHiQeAqK4emyrUXidXv87gl.jpg?r=cc2" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQrAv8k8IvYuZ_2csRRekKkjnlB1tF3nacyOGvKj6x_q-lGBRQmu088rw36h8EresLK4FmAQN_784Jy56nK8h82oiSk9J4l0uNM-cccK-zkYIBYQebkRATzyu9LerPuPs61M.jpg?r=b30" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQ0Ni5vIOiA9JaTy-1gX7hgfuKXKzRadKyuHSlU4EBqRyIQawHSYePb3V408Fk2EHfyLzT4jnKDMoAS5G5heF1C2Ccr1q1HL1OpxTzB0FbpfSxw0W5k-0Y7_x7eANRaEATdh.jpg?r=c53" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdTmPzkvnBdgu_2sedsVYmfdp8K7WAinzKz1H9dkRuie9choDOcG1jdFWgY2sviWT59z39llrDB3jU6R6EeOM-eS8yRxE9j2OyasqeXJwtgikWhohMEP1SjohSO8GRpv8XaP.jpg?r=c96" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVhcIB2EvUgVqYShRcvlkQH_SjV5r7qwDMJBrsD4NCKiTkZte8vSOENltUbW7Ml6ewXwkpaQ5zLGifO9lszKIelh-ExGWAUw_RU38m_25lJ9_2-C3artco-LDbrY8GWtXlqE.jpg?r=cf1" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXnuD-i_rJ7mbT0cGaBCehZM_nkA_oH3KUCRVMkGOLR3VxKs82YU2XsSKrXcPYVEW_5HXYW5YpP2UcgzMTEeipmygLgo-eBGbqDuk7vVQxPZ9NxI6_59uUWPrTmIN94gz0U6.jpg?r=406" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVQowPPMzfv7469tHehYkUlwDUoM6vHNDGTzbdplLFRMv8eqLQtJpCQsxyibx-BPzI_heaUYROaNeW0bFXuRzb0P3F-BbSopwQGCG7hg0ZWppbNNJbOWx3yLbqzw5FHzieHb.jpg?r=811" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQ_niagI6j0Rg6e5t2s69YSg8FAvheT_aqp03k80Ckz8uBS4a3-ZC_q3ArzM_wQM9k49YqAg67ZAnk9skZw2zWTLsFgtGyVyT-4dPwSOK2N3RRUxNMkNdbzd9_w0gsKGGEnhFXgWCoovAGxwtn6qMIt89SoOI5bPdJhCCyhTITm4YjJO8VBozhfp5hh0fwTNWWKtdVW_h6s_6TQr941Gl5wxF8bTJkIA-jdTnZ4fYx5ZL_lLXyrQAyY7r3mEQHxRp2TNqX6dAfJpfEcMVfOWj9LkoHu_Kw-jsHdiOC11MlVM91WHxjJiqqZ_-6uGSwM0-LFxCaErz4Kq0gKP7zo1xOa72EVKtM1xvxibvmToN-0IkhfmGWeHag.jpg?r=7ba" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQTjpsWIHI1b7MyhEDJIONbx_ypOq5U7nRr8si71jurW22W1tkBBe8ffBNxqIaVcdwNdrA95ZEPv5JO5DvNp1ZtXdb6j-YLHpaSpWquRCl-JGA1n5ONkp9pfRF0K_dir9bdJ.jpg?r=ab1" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTG1wUGGQydDruC1WdOR1SaCjxL6oxS6_s_j6vBB1kRCtRPdMXMsLQeMmfNh2S-1XjQ07J829BRmIV8K-7xCELmwN50QVn0jNgU.webp?r=b11" alt="Series Policiais">
-                        <input type="image" class="item-sp" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYgcfrrdMUY6VAUnV8lSsRcCEgvGPHwSzrh9yhyrN4iM4t-Pn23LgzxUWmMgHaZbVZ1iOtWoQtCJUwD-DfuNzFJAG84-uSqAkj4.webp?r=27b" alt="Series Policiais">
+                    <div class="galeria-add">
+                        
                     </div>
                 </figure>
             </div>
@@ -602,139 +419,37 @@
 
                 <figure>
                     <div class="galeria">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">
-                        <input type="image" src="" alt="Minha Lista">   
+                        
                     </div>
                 </figure>
             </div>
 
             <div class="container">
-                <div class="container-text">
-                    <p>Lançamentos</p>
+                <div class="container-text-add">
+                   
                 </div>
 
                 <button class="arrow-left control-lan" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-lan" aria-label="Next image">🠞</button>
 
                 <figure>
-                    <div class="galeria">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUOJFCoiFsBFV5xfHxLWfyq4b9Rmumo0yF_QQoJ8dWJGhCRi0aRTDdALl12yYgRBQGCwZd61se3ZyYRJSSUMttwP21LZ_6ffhqZw18izXdZ9jU4wSVQcusYdA2JT7lSayglx.jpg?r=082" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWG5J4UeRo91s_9H3On_LmmukiPf8P6FBZ4r_zO-E5W391ncSnDucl1uB_y99oEfBbF31Zu3cKmmyEq6s8nbXjw9F_TuJPyUZnIRjgARXmi159tK17rwAlLP3_N8zba5srSxPzyZrOQDkcKflCLUXnvKsQC4FeMhvooOdUOWLEIr2kUo7LrA2zeAmhC1Y90.jpg?r=1c8" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABS1fxePF9z_t6Kq7ta7UrhJ8j6HbZ8SE91ixlCVH2bslpRSIIJA9CS7iT2226Vy_01MBdd_Q3M-wTtHRCXoumkR5TQxzLS8YNIlgXHxfICQJ8X8Whodj6HCTpVhbGvgCrfwh.jpg?r=c9c" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWcgxsSUBYRx7Bok5u6TUIcjtADltiAl51JsNpSTw5l1ogv6bLaf7Ysz0UstY7MwuhPryEj2BKPPhyV__IybRaU6h9na9Hf2IynhpkKawk1-YiTogPoJpcS97NuHBx_72CeG.jpg?r=6db" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdamQyp_rBoNR-sPiUQnvgvRI81oA5oYEbqvimZOR3yoKdmYHL6XkJCiyzc2Kz7QP95-J8i_au6QpOG1f48H-73Q2dh3PZqAfJN0QQ2fHL6f6g6rcTphnVzp5DsE6RVuXK30kcylj-LZXCAkqY9CnYPTVyN_MGEqTwGE_Rz6gaBQ-n_4cKLpcOBV6XwwN5M.jpg?r=eae" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTbgRPCb4D2OCZph699H1UZup9d4mZiB0LzPqd1te2gMXiIhi8LIro1u3qbg71o1dvdLEG3l8G4SM4OZgpUm7D0oh4zXUKcBtsn6SvKSzWBbH-3g4Di4UpDz8JzE9aK-5W-M.jpg?r=7c7" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABV6Qo2qKei5O52ByVM4dEdTo1S_wcTMxsV_Lp4xtMTH-HHSPJmFBXOALOzDGTuvdX0G9MhjWgNIT4neNIjTyhxwgpYwtNArFnHaST4nz6BFPbIDcOn-0EiVITrsqsAZbJod47MVrePIZ4ZSNt0p3gRXMQUVNO4Leh59Yac_TV5F9QFgECB-kUd-MPsPjH98.jpg?r=ea4" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXiG68J0kgFbGrIoD5NiH8hXwGpnWCLaHNTBZY6l6QlXS0W_Q4LPYPvmojtljnAeLuF6GrfrUc7OryL3MjjhzT6U4oBKXNoYnUlqEUy_Q0J-0WmJPl1P01uYkY0n60qqndO6.jpg?r=04d" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSINfJp_SKF6m46cz7MOfdkEgkSMQKln1zNnyBkLG6vVSoAIDFD_Cqa-FzpFLAKh6T3w3sD2SXc_CPpVxbci9N2Aiksvt1ySqYBZ9LXn-PVBTENqGtUpqSj22qGX68y24MpXviZFLF_fCoJRPihSVmqr2LOBDtDaw-7wHCV0u4lJIelJyEvxXZKwvKycCmxXmvKarPyQXQqc5rajHbAB7SY6sW1pgw6x6pbZoVdXjPGinyjm35S1dEAEz5zYf9JXz7P29q8qM00F32a_3XuVJaIGUgIN.webp?r=300" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXcB2EPcV48ZxaeeLrVMdoiCXcrpJsFcSuob4fthZLiDvrNMJ7XKeJVuFXL6Z8b4as-uSDxvAkwOelE4JCw5hF8uGdNFz4nSY2w2rXtf8BSxJ27J7dvxs_T2GbcfU6mGYGBa.jpg?r=14a" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUlYDRT6OkTqnN0W3UtfN1IQ_DbxKVX5OEpVeaFY4f_1lYGtyHHUt1oGxrtpIX_0kCURUIqyU-FsU0jAla4U5R2yG-IXqXIJX4M.webp?r=7b7" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUloedcZeAF8TiOHeyV8H_W4_T0Hx7BzrkNxkGRVQIfA3bTkSKLDGn9NHMdP21Ghkg9STJsSl_3bgEFacc2ppqczrvmb4LpOdVXRjhW9IL69h04btnnaRCMLuyA6aAX6LonGvJUdoc1rUG94tYX37vri1Z_SbOpG4G8cDwRpUQotdMPCZ9h0tY2whrkEFAGInW2368yaasUYewddlWhFYxJL1k3kibeleuiyQb-rA1bMmQgaVbf9q1WwuZk3i2CUOY4VnOffjExVKye7BdipErriGLuPMEqqxhF9i9mAD_UO0voMaLUMl01U-vc.jpg?r=00f" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABT_wB504eUZxdbR0KoJ5_bFipCtzj-JmgIxkNIQJsk2pIR73VoOpZ-r6MaMVQgFskuRQ7UcpboFh4-vxTixDAyll1pQumqo-YDpCqksSpZrzQenQoqvoq_mpiGvhetwEo8UQ_8xUDDKBorzQgetD4UBDWvplRQ9SL4C8MquQAXCJsUhQD4rEE-0h2pvrPKVp30yXlhZog7dPG1BfUAvwyyF01j3BbFlZweqiv_aqxe0QaU6h7A-hIPSVoEaByLrZTw0KBWJS5_Yhr-E8KizaMQvDgDU8NljS3C9Xl5ewKYpnu9RINkmlD6uGzK__nVBWTr7bCM2FimyevwRyVSDVYWyeKrkcu1O8zLd2SErYEVVjtnamjFG8Zd660nIhV1YvHZBA-aTP8zpVoBS8K3k3aUVuL0HZIFBVTyPd_LgGkWIYeDXxG7YM7duAnqoj7TrpiXoxKpgkLtCEb1E.jpg?r=b29" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSSNc5cOC2Xt7ApGy5CuKGRJoalaT83FhP9z_zRskgBBTufLPF5RCPeUz5CfceBKSpbd0uFY4RKS4AeQM5XrX4Yiozt9mgcq5KMzaI2TpY1dq54Jj0ucG94niBghX_LTjmqVTtn5h8qXRSSZr9EvsowgVub28-ybES4OmrlFCBwD8fVe5CRte6cbQBCJlpA.jpg?r=a74" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABT4K8b5rJLrDj7GKlz77jXNCTTRGzIEl9eC-eRUxJ4rhpgCffcBW90ZqiYvY2MxItJ85QrH6BmUO7IYWvAa01KDwqEJmTRRgRO8.webp?r=555" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABf61oHbu40o1xmmmbTU9Gy1sQWxknSXSS2qhXPNW0V80MVEdnlvUr6iPxQsTGGm92bIhABOLpNSJ2vvDulWxIRVJF4wAeDjkAvWEmHGOBLgnbjh_Zyu4pR_TkdyvZzE76neMzqu_I7DJCkDR4UHQrPkugAyEF94tChX8NY2FIG6jxV98QjchQREidK8RMB8.jpg?r=86b" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbG05-RbdGvODKj4dMeMXpnPLQQDlwzUoiiSnVXIedPDWZeGqDelAOh69Kmn49vd_NZWexUVWk3MspzkcnxBa2nRy1Q_kgJeGM2HkjJkS8I_agTuSNGHvD08wuNoQRy7JsBtpZ2J1WyCvkXoatJYSqNli_-VMe383SRKjTNHNVcZcLIwHNh5NwJYGwF45agLld4IQAa57r2zg4hE-b6mT-biTQKPFceMFlijwXK8A9L6BKex-BF8kUVOXbAugaNZC7o0Uq5WRHzoSlhKg-OrJGMScVAtvcxeClpgt2L-yz7JCbPvSjqZroT2.jpg?r=fde" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTDfAa3UkzAa-ciRtGKi35XErmErqe7YKvVWq5x1zaWnf4FBSMXqhISreD66khwW80gEXjQoJfGeb5BrBt_5Dvy_a4T_Iydf-hwqUoxIghI7XYoS5kwC6p-gI2tfhSNgAFjl6CMAVsVuFdRsrRqoPn2AZN3iSOypCjs.webp?r=abd" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABT4z9l-vw-5-0_Cgce4V4AfChJGojSWCJhRuy2m7HW5NNPqCkOLfv1iWHAjOoZo-8rpba84W5cPc9pCx_CXtNPo-ob3BEtnYk6J0W8zti-2sBHt-Yiw4YtL0HWQ6RTUv4BsfD7bHuJL9vuvL2X_fQ_n01x3KgXkfhdeVjE4cC2uF5Zg2252UnoBHWiWEQLk.jpg?r=17e" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABalO-hT4CRCL0PMJJ8mD8DVU4G62QjZy2drhV_7TUNB1te9b-ecFkK26QaIIYQbcJ2rd67FsMq5Ex-tyaKn6TVc7KY20hh5cb_Ck4LAPCt31t_6ndKmqCsIy3zmD6kH2RZRx.jpg?r=76c" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaeFAhKqE1WT0BPIw2RYBsoFeTlkn2lQ9mnfPpMj6VKIXApW747JqC2KgiX52KTPXCshxseCZ6PIw-VPCysG1dwsgc4JqP3b0zE.webp?r=67f" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXjkRdN_JzJyV1bfC4dLRXprrM7iOINQay-vct7eLeY2xumZr-QzyQcO94-T0q28x1IOAQzwLiyeeq3kupf8vIfjj21fsSk3Jy1I16vKftwKfzIwM2AYCjRaSrQ7_ZtdTbRYUD07s_e_X8g322AmcCQ_osbEVcCYLMcveYSf9THygcth9rWBe-JaheIGhGnTNfTzKrAueBAm31v_a5kpOsQOzouiXn4gKGBMEPYWhNbAf_zqUvUsMoPp__R0SEmPQ05oqZojLpu1oZo4eQt48Znz6iofAHf1A8Gq3J9zXDmOtEvRCdn7Pgs1ilO4AkXFqazESQQ7A343dC8vZ-jU_bSEhDdK_CqDa98GSKYzxlv6HS8KpWaTrU4rsDTDKmzlaG8PlVfXeBW-ockD1CSTEl6pvrTpujysAEn9oCqPsm7I5T-iGjjXofPvQ6mLem0qcxhHMY_WD1s39o8.jpg?r=954" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXhDu7YMPC2UCoGKnxruQb-8mM2v1t-ouAoJ2SrOuc1zfl25DdouaVNRzViekKJZrbFdm-37Oc_88qI08tYDV2Uwg8Ke8BCt_x3LRMpCtpWRL3HDC1D2sVXgp-Z4_bYVBWH2.jpg?r=7ad" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfaBgk6zf5pra16SbCU2QXPwPPXSn8Tj3GEI8EiGVFEKjXl00vA_Hz9iA4ILUlLJYUxQp7VrkLhDlrXuw-kOfl1hTAYSAi_O5XbHUBDP7ZRZ2cuSM29qYaGAqPo-64XtJeGR.jpg?r=eaa" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfhlEQfRee_WaFtc3oeGigaLLUG6yvPdWPc2fkSX9ZBhL88DMm3GV_0Z4tGgCpdtpnG85jjMB8i7R7en4g_tE-KE71vXJi12HRILVs5KWjugUroBplptipWnTZMiHoN3HSUJ93bpDOw53i9waBlaH4DMM1vwBA1XwgdtqiV_putNhlEaz_u3gZWs3xYUYz65VpAoBtZa6pJG4LgldzH2KfvzM-D2IlIkYSw5eRY11c3f0haRnDeFkkWfA6h9cE5XuAQAlNuihH9HN9_MDXTJiWDiAWfCGgHL5kZXfiHdZYkO_PMSx_0Ndaue.jpg?r=038" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQeVTeysT2gLXjz5irhqRCgR10hMbUytgluYGzTkdV50l-PmW489AnY3-yCpVrYdB5PyguXa7MnK10vfAbDQsyQqMgnQ3Ai-XroKerbnOpdhKuCWutHWt8IScfRo3_tkWouXVyq5iUcThODV-S7gPy839j1z7z97_2RACOJiWIGpRD0Yg0WIUkxB33KS744.jpg?r=4dd" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRTr4z1O3_yLbfHZWMfuGiG_KulpRWKftRVY28INsN8GLYxn8EZk12SkRy3YwlX-KIyQzrZsLsR8a5IrJ6AnjQnNjzlRAGXBf2QuXpmPPvGck5z1PmQVgwbotr_-33Vj3TwD.jpg?r=c45" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABab4PB5WWE9puDPOj2qdygtraOR1kGIB-GmWEruf_G64VXQmmXX2SsaG8i7aW-FTOgK1qYW1R4fWugAPdAR8sMTg-RGi_3b-VNBRXXxJkhuZTHCMaY3JvhkvjGJyFeWPrdBYNoPk64Rb8o4bkKddei_fHwPVT5ADsLCBYzGZqtX5pnQjaCrYIzIZzu2PmKE.jpg?r=68d" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSDM5ZQq0szfPBAB6F9B23nTIodyRw_h_cJb9crz5U66GoCZliMVP0zllZ1xLASY51UR_d8caQiOgHeKXVcKqmhO_30krT0XQLEEnKjfnF9djHyGzwFxaxG3f_tGb-ApnwhAN_r23grWeqKSrAm3ySkS5FKTGwlk1olnNyZAP7Vu9kmOp6GQa3y5i_cwnec.jpg?r=3b8" alt="Lançamentos">
-                        <input type="image" class="item-lan" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYcSR3ZxVzNXU3u07_h3nUZwvSTF521TPHF3olMYEXuSngMnBy_Y2fyK5hTmbH2F_1REaTecBfh4wB7QK8CPcvS8SuhKRHwJ2zs.webp?r=a92" alt="Lançamentos">
+                    <div class="galeria-add">
+                        
                     </div>
                 </figure>
             </div>
 
             <div class="container">
-                <div class="container-text">
-                    <p>Dramas</p>
+                <div class="container-text-add">
+                   
                 </div>
 
                 <button class="arrow-left control-drama" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-drama" aria-label="Next image">🠞</button>
 
                 <figure>
-                    <div class="galeria">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVL6zTXSyVkE6BDKCzqRdsLEnvmO5MPuBcs4VhpjQY2M-CHcjurY8SunzwejJHy04w7sAcjAtenKcMoY1OA4S2cAzZTBpAwdfYg.webp?r=779" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWcgOqPuBYTWK4gptkxLohVJIsZldgrNzIINGqfyi2-NGdV_sbEylUg8i4k6cK02Nfh2LeZQKtcH_brFSkE8s2DVuxwaIC1kS3bTD-2Aq8FxeCzME41Ffk2lZiDU2Iemrcq1.jpg?r=c13" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZyjU9XZNyXKgm-rQQlYFvdDyHVjOBeWvA0F3k6VsHyn0_qdMQe8J_68Odivy_MGEpO5HLiQM7qHFetZqBxEzG_hF5-xnH22Qgk.webp?r=0ea" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZI91g_QXaGYfJWENAJIug4Zu0JU9v4ztCtVRIRv9TQzFLiNp7Y3RsLyIsOFKpEVs9wJcGldTBpzQQcvY-crclXIgBSlKtkM1tE.webp?r=a16" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTs9itIhoyM9iRufojzjCZrOYTV04pjCauiOM1Vyc8nJToxO5hrr7bKv1bs4avB2Asir27fy9P5i2kevQlcXmPYrBUGGpUHiTWg.webp?r=283" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeA4acy_LG8mlddiBN4it-vVbcsEiKfrnshWBtxc2X8P3gx3vbiGSHJzO9iKgD7ucIQvTktMudJLVm9YTzExd-Y8Oysz5zZzmic.webp?r=05c" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABa0G2JOjJgcV6IeprgfFwm-Z9fgAzNcm-yZvLFWXnWj8RLvN9L8w5viR1kfIccc2m3o00WULm0gtCF16bPBASZKO_yefZKLcYfvbN6qt3QLxkYyTrnYbJShbkoabytitTVzl.jpg?r=08d" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfSJTfo-KiR2fyfyZ5eD4XKenS2HdPVu842P6mVvAWEXJ2LP1Jrhq_fjlIrjIZi9paBjGAA_qCnylUy9NH7a4WKi4fOf10AvbtL3fgNIwl8GrBzEXvvbaNEg5cBg4I3gZf0b.jpg?r=84a" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXr82xFI3uMypn5wJ5JqI2YZNXqBsbUgl6Ss2DFVHcLu-uEvKOL7OVeUnZSirkWrGh6dgM7c-ceMSOQGV20d-MVeFTQHphq_iqQ_usIU077DBgmEUSr7xhB3RKR-lSVaDSf_.jpg?r=a58" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXh9aY3UQTdWUhgPpmV_6NsVWu5NstFKDacEFPJxDPk6IdbG2pViKLkh6iXw7ePjbgudI_gJQetm8eb7fsgIezaXxd6APr-cvZ4.webp?r=855" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQnsUgZEARvR7iGCPG1ESlLkIghAaeFXsd6rOqXdiZPSUQAKItYl_Cw2YhRHLI5nq87g0bgSDNYrc041lZqrf7u8OBoE4nInnsXSmls8EN0ri_gd_afo9vJepGlEDMkdoIHP.jpg?r=c86" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWNcXNlWOHIthn4avpj2UMaUJTt5pmRjiDw602cZIofzaEQYxsw-SlL-N3HVJvpl8GlzLruCsLDvY7bfthgJ_UR9DlBHmLFLoss.webp?r=6b9" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZzEEAFQ2mArcfwLVKgCa5y7RVUojiikzgO2z2OKaSkdPJjBMuFQB_CZl8gYLcNQpD5crnF0xImKqabAd5yjnYx-xyokOHu24jE.webp?r=1a4" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTSw3qTQCSieXCkP2-hn6R7cXIzofe20_ntKll5ClmgnqtT5IQ-UnxPqWEaaqG2sbo5rYtP-1qD_C4QzdMb7W110nIRJnRFZ8ti4HYz9gs1Tnl4E6D5ANQ2fd-1L6tV9mlo1.jpg?r=78a" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfYTaSbM8GfjBPynAyGUVA7aQKUSsqIaq99Y16ukLTTPYL1Vq8Kzjt9gLbrqhUcOw_cfis-aL7G48HpkTl07BgLY1DhPeKisZEUK2TU6AJS8vJowpSUxKkw8lqw0FnwhPZyX.jpg?r=18d" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABexhFoEhQ9JfJ9ddvDu6dVwoidy89HWWnkBCBYZml7xEQGD5gyK8egCkrJfmtjceNnWi7Rsivnn9l5IqRj1F-H5jSmKIlyfZm7n2yVAtaVqFwXmUIagTFIqDLvW_oOrM8LpS.jpg?r=8d8" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSUHGBFJS3H9PJJDmt3pWHsKUynYyk5ig6ADBghCA_12bG2RR3AI0E3aUuw_BT0ZDaBWCCyhP_IFE7uJwOH9pvO2l564ufidPVEMipJ_HThjy0z8Bzb5DQDT0kRKf2MrtheG.jpg?r=bc0" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/L-z_Qgqd1m6sZc1d8FxyH1iz9f0/AAAABS5lkLq5BySAPVbc_U-EwdjjNtFCEBhw4FGTdz4EIq9yDpxleaokzWrxexWnd1_y-FOjfAuqP-yTrY9kt11NH831Zzb8dGUqhB7XDyLSPi10r28jW5Pu1jLXWCFRAcAW7ugOOD44CNhpqkhyUvvxqGk.jpg" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbsmaVzTqrykXWAQ7D4ST92JHnA7PeGBwrpTZAUJ_3n6EmgnFFKyGCJyYYngvNy2NarwyuzNzNrhwPZq7kFzUsfC05oN3xTAHC0CEperwtzvLh8BjSk4CPjbOnWAmQ_ehi31.jpg?r=9e9" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfMZ5KdGhlBfWJKisKbeDQSyite56s3C2PxTzmSzBw2NCYdvIQB_UhO68TkUYYMTGYoxjnsDJe9B2-bVuUzVM83Uwy2nKSOpnTE.webp?r=c78" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYzmf_ilGiY_WDxcADdYrxplQPS-DtQdhifLaTF9lZXfFhix5FjSadQ95CbJ4JbJI0kJrV6YG5B4qDd0daIFK-XNMjBkbDOEdLeVhWREoNoW4ujAisahPoYrPp84RN-F3JC4.jpg?r=39a" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTtNpaqxu63I3GHh_cfpMtGj0cP---a6RkkYaWwUX8EFpIUbNlDNvY5DOdydZz9l9loQjiNWcK-7me-PwoqRrJTtxT3859bVkI4.webp?r=3cc" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaYp1WTilJW8QGYoSCeMT271WGAZIXPCVBQgZsIwyGOzZCEnU1PbGJKCFc_rjrrq2hWdonOczcrF-8kNDajJFJ0B-j99DY7Ju36XehSN677Au0UkRWJq0Cl48rmfBi-VW5Lq.jpg?r=cdc" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRYHG3VKisIEstQwV12K7p9uAmTjkpij9F1dlDg3c3NkcRVR0m9zp0vMrLWbII_jtoiqBs74GLmdtKMiFbziiyIkM9rqKQN_smT2G8CC4nheT8TxCqlh-AoqmJM5wH95xvBg.jpg?r=65d" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdhaSKcOi_YIa5lggZZoNXmEY-cy9VMwQTMgq2U_oqT_bDL-MWoY84GdpQeLuYtm_r9pB_Cm2BzGxrk1RzW12OfkImxxid_CbtE.webp?r=c0d" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWdhg9i9qCS-w7hTnUIum2EM6czEhsCteZldurXwbJkt9fqdJijsGcU-ux2y64qXmx1qPLscrOUJvb5nbauNbNdqc63Va5McsH3JZ3CcgtB77TQ1PGn0nPe63NX9_Xudg-P-.jpg?r=70e" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZ3i5mY8zlYkg-3IFcBarDlJWSCsr1b2cBCu_bpfNKXCoWX6qYBSbwZ_o4eN3LWiJTN83Kgk32TP7aa-9M0zw0__8zNBuyRPRmE.webp?r=c4b" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQsf6LSF4uoxwEKtBhRL1nh_0K1u7HTecK9ReyjyEtuq-7IfWDpZpMhd8fCvWSSz_9AvpBMkKXMc0lsmOzuBjPG0NjQH-IonvHofbM4uXoIV_yRPLeNKwwp6qm91IDL3Kfp2.jpg?r=651" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXX1PwkWLnIIkKIE4e3cD5wxKtbUeGLzgkIFopoq7M8g-yh5Wrn6R_2KxrVqu7At2OP-gLO58fuaW15gL2__9-JBYeIJm8AaBE0.webp?r=30b" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABek9lhTEK3h7K8niBLoEed6AmnKb2YfsCp9jTAuzCYWZDggVeQuE8C8FXijp6yMV9dGzBjfv9A7riUI-53iFM9nRg7ShvYeFHQV-00rBmFItCpnmVXY0TLVhyVWR1G94E-3Y.jpg?r=3df" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdbZUr_T950LeeWDHcPh2oGcAlTasREsEH3T9qw1vWN06uuJrOOsl3FN7Y1pwpolZ5FFp88tf2o5mfBfMKZxKSJL4HcGE9a8UNEAuzUghO7hfpAaGC4uYOD6c5W9Xh5FhZ3a.jpg?r=deb" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABf9mpjByb2rVlia5CAID18pXpZX4bWPJ_nbkFds4kpfw1mJB0SOBrC14WWkk2KVKiujq8gUWMqgviUPtuCpYjJrI8XukqqkrpYM.webp?r=2e4" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSrDaUrSr5yjWYsZ_zK-j3VaQ2aaE3MBWII3MB56X-ySS5e6eT8v4bsrp5KH-Wlj9jG91goZPfc4cNL6U1Y4IMoS8xywsPJ9iII.webp?r=f3e" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSoC8VKwefH59uXGJAQ9dWFe3rMmwzwGG255-06JKppEzr_6Iz2WtEtDZgEtAKvV7X5BvpTOaGF3FNxHT0eNeFlWcwKF9C2Dpyk.webp?r=1a4" alt="Dramas">
-                        <input type="image" class="item-drama" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcrku8KTCMvIPz0ikfYuU45kusa5YuuIw2Fs46WrFYmzfkKFbhp0hQQVuYw5qa3L7YX98wuEaioVRwLkLb7ICD83ass8dx88SteuaeCD22UDQ5NdMP08vHnav3c89yf9l3ow.jpg?r=946" alt="Dramas">
+                    <div class="galeria-add">
+                        
                     </div>
                 </figure>
             </div>
@@ -907,128 +622,46 @@
             </div>
 
             <div class="container">
-                <div class="container-text">
-                    <p>Filmes de Terror</p>
+                <div class="container-text-add">
+                    
                 </div>
 
                 <button class="arrow-left control-terror" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-terror" aria-label="Next image">🠞</button>
 
                 <figure>
-                    <div class="galeria">
-                        <input type="image" class="item-terror" src="https://image.tmdb.org/t/p/w500/8yE6wv1l570zWyh6zmkFxysw3Kc.jpg" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWu-_mHijPj-3LBexuVgjmzRqLL7WC-sPJh3imDufHxFLDQ8iKk5dVUDOdpsE5bJi1S1lOGNIkXxappkY3i4yWG7tNtCnEYO-VU.webp?r=dc2" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://image.tmdb.org/t/p/w500/ecKQlAEG95k62SMGhvX83oEqANK.jpg" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABd-WwrjO9Tvk_LuwSSUYIw4jeJd8w4Vpk3s-DYH4LjvskeRWfZTc43jsqp8OYTadRrf5wS0C_yd79tPWZ-Eng3uWixpRvqGAeZs.webp?r=379" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZbRzhxieE85P1cphABWoUhLnVRBwGpy52gpSZYCGW6TIvFt54o9VtGCz8FI9aN94t1fzwO-uaYupkzovFzptMmsg9k_BumvI4s.webp?r=62b" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABalKFLauOhYZsOxEE3qpgzul8-momEI1qU4u3zHq0riju0KfIDySkTwHAELKkZmNFxg6oZ1nOrf3zITEWcU1xZtporm4Um7s5B_wZkHCvAwl9kfZVYFEIlk5BlX-lqiLg7Vg.jpg?r=a07" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVV08QExeIqixoq64OKE2Gtrft_t44XoQ-BywpHcPA-KA0-O5Z81P-51Fq5uoZiLmhazLyd-stoWsnmSB5V153PDZIosgHxwijw.webp?r=3ad" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABX0E9hpIFnKqBrPO3YUqwqKzkXk91tYNPt_hh-wQnm2jaSAxKREmMyVBx91HMC0QnsjLg44g7E6K5pYt-0iu9fOQ9FAkBF_YNRt91ceglM9sc_LJcVlR_P-7lg4ssrHD80l8.jpg?r=3f7" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVv2WbZ7mPrmRE3DMmZK28GryockDjdX5G-VBj6TUd6BQzwLLym5fk2Frnlra5cfoVDHoBCfj7y8TNDW9IMHhO8RI3fhcOVKd9Q.webp?r=f51" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaMnOWkgqWCMthiFo2pY_DF3m7qTubYXFY5geTRL-EdcTVym5vmJXiNsmbasQUseAnV5pKHgeV9ZAPN7LHQtqOsG74gvrxpyK8tCyaJJSIvn77xZaborwc0Ep-Z76zMPIc-F.jpg?r=0fb" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfiF7XS36xzDYp9zMYN2GmQO0Kwu-sLHHQgWxAXDXpcvQpx5_HijDvSrJi7RNkRFfS4WhpXyiy4L3u5ejAu7U0v1uvYPGORfKzqRLJLp9FaEt5wWBtzfNLwJ7INdBHUDQ0pd.jpg?r=268" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZdhD6h3cJ0qvW_PfK8WROjHeR0uSUfOClk5ofZ9ZcydWTOM1TrhhfKno7e5xzj788Khz-CizAL3iQtw0qofdWgrwNIgD_f_NE0.webp?r=2cd" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeUESsvG6eZ9_3iL6NjIQ9VRMB7i5un-RoTeF4sDC8T2Jzwqvaut_KV1pd1EsFVguhzkCBHOcJFpuvHnIJDVS_Zbnbeaece65VFGoD8hQaVbG5vSXmdDSPnqlxiAcSF95NdT.jpg?r=10b" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXvQe3Z3-cI_1MCmdfrlA6JV4sDoNcli1hCX45ZmYOo6RK3-Rgrcp6ohM8kG2nyyeSCKMuW3RQApwok0P2NI2WWrYhcqTjKibag.webp?r=b93" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSW1A3BGYKTi9XxMiqC7GoCdkM6_se3fVaSdJnOXsN3rDbMTyVrYAJHqaxR9z9jst60o1616GzsLuaoT2b-ySAlNkyEFWOnmWBE.webp?r=1ff" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXyAUUoJ9VFXvHXl2JgzMWAbOVmVJ1sVZzRU0Ewi-aLuAQdQrHXVYUyOGIB11R2aNiub75MRRexGUpY9kRt7A0PW5s5shuRCxBo571N2hEwbaFzMOXa5K0jxWgmR_By6J5q-.jpg?r=d9c" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZfm4nL5bJFijT4Mdxkvd60vj1EOtCrBO90nj718XrZNZjbrCAjlDmxJP0WwbE4zy8Tr27TXPKiQGRjJLKt-r9GAJ_0JCfg-Jx9pmMehMG377dpVLiLWLh4vYFxfj7Oh-GVZ.jpg?r=6b7" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSOC9eiz2jmgW4HCfdxCjDNiWwhLqKUAwhvFHOlyqOIRj20Yx_41xKmWggv-_Ud1Ix8gGp6xR7BxU3vj0M3S1ifnABH3nhHkFmI.webp?r=cd7" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfmZcdQcOxCXpiI4f1OPAuXzzWwUDqUrRghblVzJbjSXQ0JvCWxhfc-_FUfLHad5bWUD8HUPE1Ed0WOqhijAfgfry-5HVDxgnCY.webp?r=41a" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfGNlxwXcFF5mB9SjuIkOzqncNSDozwe8Grm4X_JVhT16SdHyQRsq1TGE1uF-Bx0vcbkVSGshhfsj89DVH5Mc7QWvVFmu8ZWLaxxJ3XUOATLEB8B_Z1QYA5PCnRgcAAy8k4g.jpg?r=c54" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfST4AAWD9ZVbp_pNLbAN_1abqDEVgZUwu1pXZ5G1z_PYDuD5OCdSYKZXWbOAQ7Xz-ciCjfxA56uhw-lvwVtspV5ElpyIOwHcB0.webp?r=4cf" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABft83MgodBiaGDSy36PIDBBsr0PGnoEJmKeQBanAgH4JXF4p6XW0xwq6o3UShGCAeDEdSxUIRY0EusRV5FXvO7rBboku_S2xQYI.webp?r=b54" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVkJPAKJRxRORCoSPuHQMcqajaB24u_blRuNGW-jMeZnkbarudkXELxe8LOmXqWqeVULGHDUM2TCgbSMB0QRxvkl_KEb5Fnc1dU.webp?r=9c3" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABe_uJg7Ll7p0hfhRON5tlKMyiuIhG4kdiOg5pqXasZxiPyLKJKIPBqi2ApnEJ2MRLbJO297_rEToFm15Wm0rArU4A_60zCSdlGEpCX0FR13C79CzIUmwHu4-oXeuyQ3zqkAya4BOcTIQuBryrJef4iX8cG-gW1Ck024.webp?r=c75" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWCiU1CcBtVibE4c4EvAzpsqyj-4jB7jzXWdxat5YMh4RzJ85VbcLTGfaXcGDJpyfL_8gSqaqmdtJYACUyGCMVTiOyPgbGLeNnU.webp?r=8aa" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUJeZTMBCEnDPpi9kf5J-xpklnMhOBPNFUlRBDrq_ZRyp8dzhaPk0UK4a6OfE0T7LVV_opJUc7Epdr_VCn2qvMOBsQ96Qw1XxXk.webp?r=3ef" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZAYM-hCPNrK9hzYLoj8dGWfJJrjLIL9emImtpWOVjasrR8IWXKDsKvh0dSjhwSdUqXE4n3w_sWTG9OFfLQwabdASuz3iGxPeZwMJ5EoJMGtHmKw7vyki3BH5CasZNveEymA.jpg?r=203" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://image.tmdb.org/t/p/w500/4DUoPZOHdPuROP4nyEIsPaMIiQl.jpg" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABa2lAqlkdz1T83DaSegQScIw6Q7S2kyKHzVmIVZBy296V1caXWDdADiR7VwnqqILVuJe0pqN82eql02u9Qyp2MISp6xECyXwgm4.webp?r=9db" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdWjogmUdQ2PuLAJwzsdFzIv9RC2SVFd3cU6RWMU61iAoODkqFxWXefQnxOOGoy2fLIx10NgxQO6HG7W2mHrK3mo3ivadWHBEmk.webp?r=680" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfSAP3_G5Lpy3a83Dh1GPFypJ3FOBPSh3SVOoh2TJWFWb0nbvIjgUkievg4-mxV4C4pv4yd5PI0w67hDKwYQ4Vaw3tyBQOUOdX0.webp?r=dde" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABf02M1AkJW7_47LuKzBOv44avnNr4dlC9Cp1ZztePryiJaySN6kNd9s7j9vHBfvzWt5WxCgL3Av3n7I5-ml8kCP412ITJ_t2xnJNccAYn9lUoQ-hx7hnbjNRWnjl0uRBY0dr.jpg?r=281" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcE414PZ6dvkdOOGS3zjboVfeoqqZbwPoh0akUDoxBwNLpfpKdOccTn6NTCrgh5BQMrU9hWqOMuK_FfktC4mXY9S5MLOEh9fdKySts5zgqdwv6Nji6zPsnC1FtqN1y-UjWly.jpg?r=854" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfix1rllhh9C5uJlmL8Y4JKuDRYdsn_-bobe96pYF7bUXF901AlTHqX6gKd6bnhtXqY_JUCldl_qlKXjCjvc0qZB5dq7uOec6zw.webp?r=5f5" alt="Filme de Terror">
-                        <input type="image" class="item-terror" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTR-tSWagItKvUcKBy8oDOv4J6Of9fHz1wB0nK-7f6HWZ_DmbCBkVLRvn9JQND41kswsKllGtVB9aFdlFNlMJNCR2sLyD90wsQY.webp?r=588" alt="Filme de Terror">
+                    <div class="galeria-add">
+                       
                     </div>
                 </figure>
             </div>
 
             <div class="container">
-                <div class="container-text">
-                    <p>Anime</p>
+                <div class="container-text-add">
+                    
                 </div>
 
                 <button class="arrow-left control-anime" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-anime" aria-label="Next image">🠞</button>
 
                 <figure>
-                    <div class="galeria">
-                        <input type="image" class="item-anime" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSzhNYenTByMNNjOOAczGz_XqrDJfRRqwRarzxP4Qpk1NbLspBHGuJ3mOoeqxIIv15eaIWiqcOZCBYOZHFpEqWcZPJ3RecDPnl0.webp?r=5ca" alt="Animes">
-                        <input type="image" class="item-anime" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSGPpYcfQNRScBU4SKCctVCLlD1W0M2UhuTpT6ZsR3BlyXXAx6Q2Yj-2ZnG55I2YJ1euWyQ8uMxOSqybTX7ozDY_b8zaEWrbEYnl-bgtUwSW-gMc2xCnaesz51FVIKtNVZjC.jpg?r=f3e" alt="Animes">
-                        <input type="image" class="item-anime" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYDiOSvWCvZ2yMQlWlw9wkQsTz4yLThIuiJZLUMSQXG_LerBtgEWrGX3CYV1_xfoTvDC-GlnUxKVZOb44pof6mMq-ngqLUht05M.webp?r=e42" alt="Animes">
-                        <input type="image" class="item-anime" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfFjP457-vwpAkNERoCM9NEu1rggz0SNkk7Hi6sg3sCh9_J39taZBHJPBOUowArADQ10zQLEZd2_Wm3xonNE3jVhtIRBzi27xUk.webp?r=8fa" alt="Animes">
-                        <input type="image" class="item-anime" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdxJMaELFnUqsVGB2HpOX7znPqAKcJx3d_HMHrGJOCLQXQsqcUKqc4IfazDVnbQBASJuq5JT-5jhozYPqgPdK8q5nJLZ_gmWNL4.webp?r=2c3" alt="Animes">
-                        <input type="image" class="item-anime" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUtMzpWj4JUSGUXXGrbgHW_mKSOUiPptdVvAKHzURG0WpEyID4c_sfdPLUXEPltbk0kAP1PF1ppvNjK83P8OMfV21BHA7x9nwPs.webp?r=f47" alt="Animes">
-                        <input type="image" class="item-anime" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXJYTbCBDjk1FXt81j2NlKDjrm68WkieY59tv3DsjNGqR6r5ZuYrUytPiEVv9HqlYM_jF-KURfpruQi3FTbtbAk6cBwma40yUnM.webp?r=cea" alt="Animes">
-                        <input type="image" class="item-anime" src="https://image.tmdb.org/t/p/w500/s1eUjN5hLpez9QoBK8t4rUoopgN.jpg" alt="Animes">
-                        <input type="image" class="item-anime" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaJ5wPPc84tXfMBcKLS-4rL1AOuk-EXFjrXbSYze2E8GXuuU6jGSis2a3GxEiT41ZfTFIkyh3yR0Tb6MsmG2RAP6H2Lxt9sw0qE.webp?r=e9c" alt="Animes">
-                        <input type="image" class="item-anime" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdzxX39nktrDRhFWz4kNWtLTPxAxSAcYR8ixQxgh8viLlbtizy4zOzRdGPOJuMb8-6wSZBhsKXAMMh8h0e3jikmRGDnlHbKJMk76I9pJ4S5LABWjSMnADvCakxi3SNfL2Q6j.jpg?r=d6c" alt="Animes">
-                        <input type="image" class="item-anime" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABROcLIsK7XwAOnMhATfe2yQ4gMLzE2ocyYlLwg3pjWKl3wewKYke8qieQxfkMqk6vVJu1KR0YyDX_M_FH5vP0eiZ38-IUJOokX-LOSGZcwBo0PBnevOeUm1Nr2kK_qRPDGEdU6i6FQKMD-5Rw83M8MaMzP36wKePoZBEsCtO5m62dIPsxzWMo9zQUhB4UlJpDAWucPDqgEL1ynqqicMgG_xGhHU-pOVeDC9NsPklCTGDZo7rsb8EwexVS1Nw2WTaT0f89xDBCimOgcJofJMbWW5fvAPvCzzYN5uVzXj6ROcgqYfctZtC3s-ldo0.jpg?r=e7e" alt="Animes">
-                        <input type="image" class="item-anime" src="https://image.tmdb.org/t/p/w500/u8QK47ttafn3iYox9o1dKyEEhcv.jpg" alt="Animes">
-                        <input type="image" class="item-anime" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVEYl7qLlCYLXfc9dV5-BL68ajb2_LznMPV397_9iuL9qs3srlunE5GwX7EDCGSpPahVHHBu18Z35QueIFV1UL8a4gkvdhXIbxM.webp?r=cc2" alt="Animes">
-                        <input type="image" class="item-anime" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXlzQ_D2aAjjj9N2p_UD-qB2IJai6Ja648m4d0ske_5Bc8eNhZAjoiP8TbFK_MShhGNGyP3ZTEEcqi5ow9YPPl57l7rxzV58OpI.webp?r=6b2" alt="Animes">
-                        <input type="image" class="item-anime" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVHi_Pa53XZhQSMsBJTWPTbDFrZnqvm8jF7O0LbX3sCbJI5v0t4Trx5JfgbsEvKyFGY89Gz0eerq0YhE659GoojQiQC57xgw13huDzTYPuk7xhQMDTr2yWgUlslUztq2utUH.jpg?r=6d8" alt="Animes">
-                        <input type="image" class="item-anime" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQR63HNcYu781ipc5EiRZjcDt-xx0-Z8xq6ldlE6PeEXrJ9qDNkFC0sVG7O1SkZm4vk30w3pvrrKNF0r6EM_B-xCkWIqldAIrJjXYWI56jHf4Wnx1wTcNMlV5x_KX4ptKvqy.jpg?r=1d9" alt="Animes">
-                        <input type="image" class="item-anime" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfjSJtks1nrf2FVZKxZ36cYDbmcT93qgl4oNdUnbZfahFrxQIdbtZxkI0NmDDc4RDD8Srymqi--85-5QNb3juFRHjGGjf4fTZgESFeLBG_u5Cg-PJRqZ8W_w4uVpuG9Tez1h.jpg?r=e0b" alt="Animes">
-                        <input type="image" class="item-anime" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaS0YAmivJZG0JitQyCJAKhooYDZ-b3aBfk1gMAoNwJWsAj0UfnRHaKq3-4J_zTxpWnGRxddDJAe_yyxexK94Sp9TOnzXOz8A6I.webp?r=295" alt="Animes">
-                        <input type="image" class="item-anime" src="https://image.tmdb.org/t/p/w500/rUYPBaQqtpt2IdvzHdIrsYn29mk.jpg" alt="Animes">
-                        <input type="image" class="item-anime" src="https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQ5CY4z5MDi-lKjRu0wsjMOrTN4ItewFmg_w-UbyarNqZNhrqh1SlpJS_wpq7jArxVQNFBZhhOLu31PfFfcmYIN-rpTUoUMGULi_P0J9wLStUKdq5CGluuyOTTVZ8XCJKihk.jpg?r=0f9" alt="Animes">
+                    <div class="galeria-add">
+                        
                     </div>
                 </figure>
             </div>
 
             <div class="container">
-                <div class="container-text">
-                    <p>Comédias para a TV</p>
+                <div class="container-text-add">
+                    
                 </div>
 
                 <button class="arrow-left control-cpt" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-cpt" aria-label="Next image">🠞</button>
 
                 <figure>
-                    <div class="galeria">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdsNy-mCwILOgMZWvvou1IgJeE8ruvMiX29uR7p_DaciwnIRGDZ9okyogh2Czd5pdJejBOBPXWSpay6zI-_EonIFQFf8H-3bXsi7SA6oOJJaOp541ZxSDWbVAm1JLpnWe7miIXATsLZ5Q8T0ADi7e1W2T1fagl2VsEHHUE_LqcyCHWU7j4recWifhvFDLj4.jpg?r=08d" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQ8aYaDsQ2L2yDc3CLKiHAfRogFZl0B-YQ9AdCSlnWx0PsFDycIbedBC_BLbCFYwHK3WYHC2cgcjvShHs8deHSs9v_iCv2Lo0YuIJ0eXtjp5eGbH6Aps2zTjQj8xj_mUpzV8.jpg?r=0c5" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfRjYhgqpRaEIbD7GFqqoILBayGavNEHPhsE3CNoaVoHKSAl_k6NZ15esBL1xkGAu8R9w_wvc9u_WK4X8diUBJq1e1uhzQU0V3kpbR3ovzz8tCFUHFvrljuNQU98_dHGHDEn.jpg?r=1bf" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSqn5WUiPrTopYUVnhCL6DBhYGBRfh7cBz5yCaVFVXEEY18ARWQ-g4MWUgF46pLnYcUcNToJsBnBQcfrgXt7-Wvr-j3YciwA-1g.webp?r=a66" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeD5PqLvlR8h5q-b4UWXkVxs8U-9tdS3d47SZV67zzMIb6Kosnx13eUqLsZgwsxI16oS_qhseyXtpGFoqsIl_MSgx3FBUkh3FHA.webp?r=ac0" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdDHuufmsDQIYG_JYh86neTvCOZ2lzZUL4igHtMth8xrsgZYPHqKIylWrZwlbicRK7WK-sy6WrRWx51r0a5ukF9Qx65K3R5yShk6gqqJj38QZW0uvBvDSm9AA0s3jRuu9hno.jpg?r=e8a" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfdO-kUZh6r6MwMwDuYYfimQpvkhAzbGiE7PFBSQxJ4oJMLMabgIWDFyyDLAOMDwzYyRqiFgX55NNZ8QsgvMAwZKTn1tqfy-7Oo.webp?r=bd8" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeebCKtpF2o4jV6GEaqs3E9UeCkglC1AtBXPv_XxlK8yGAdYJxa80JBNMZkdyD_NsuZ9sTJ82AjSoA0Im2ukbmg8jREtrqyp6YY.webp?r=fd7" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZUtjg6Jmm0KHM2ZYtuPTVlRhjV3sV1FC-cygoRGXVk2KXll7RVgHyz9K-ex3AVx-EpAfkhEKHta9_54y0BzixDfTowU8V4r62U.webp?r=d8b" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSYgDX31fEAL-RY91ahyuAMNdrRAgXyImJ-2Pbzbw-oxThQ2WJ0yWbPb0pJwme5XWZpqi5B8ByDsSYhne-f8-9tizXqFwcVcj6E.webp?r=31d" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVrozMfAkj4BrNiIbZpfAKo6HRSPhW3Do9NPg1Z4H2x1zR7zNTJ84-ln0n-s0BevvBZyXr2fhr_HjIVrkLUjbixWXQcRZsG5IZD0p5FWHx_AQTsqEDMCDryyH_U9otCwHRvp.jpg?r=b9c" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWAZv9gO6P8A_9kClbzi7GX4cRVL3nh1dSH4VrTBKKc7d72gEg7uA1Y8UhqI1MzR021i6e5c4qZA276sozmE97HETxHwPBO0Zth9SjaUAnhuP2v-yVBrcZKvFyUvPMfxd-Dy.jpg?r=e1a" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXXpwqtyO1-crVFYJOdy3LtSciKE9_8FRA9XnaqLMNAGvYCxOCSkldj0IgV70MAmLb2V9Pb799dPeuq-d9Km2lYOdHKTYmzpPCc.webp?r=b91" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaLmn6YitmTC592P7D9v3I8SOoEtdpyuSEqNzKnYDFLb3ArXbt9q_GlYLCkyNeqVGC5ch7az-KlfT1SIGUxJ-Y9yMjjgX4M2R3Q.webp?r=a7c" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcO1fq6_CGfbWSKvlom5PDs4vtxULcoJeh2flH5_2q67kpfbiGzJAY-TiRZzq4epGWGnlvrr3lrCg-s50Ut1YKBcQgJYe8Fwo8o.webp?r=37a" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWc5_2nsY57E-Zy0JEdrKIqcHsujVuAYUq8cYrUfnmvJ8-1OuMVKFXVyTvskOUBSAuPQrZEgn-42YhF57OuKTO7_4l7y4ozJmcLdC37mCGnsd6fTof6dwcm9iBPWblSXe4gU.jpg?r=766" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSyh1tLEMpUlyvrP_VB06OCyZfn756XUPUx0sMBUwUjdlJVEDJjcd3fEA4fVqSpuAgxPy98NXY89Wr_NrKQMF-0zZPxHUUJ5pkc.webp?r=bee" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcc22XeREYYS5xA7ZZNmtwT_SviPQUKuBBhMdZcvQg6srnbmaS7HlVVo9kBwTV4C8zq9A18dRvCgOjhkDH32u7NMFsC4WeQOMKw.webp?r=b72" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXS4XH5FtX2OAMJvAuQ59B6zbrE2-z7GoS4a2c66WQM6AWunVghWSLG7eSbFPYv6Tt3Hs1PqtltoBHZ7Ed61oCM6_Cfv4uuQJGo.webp?r=fa5" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXec2ZN1aF2FrvuvFwCxF_A7nc_uUnHwB_SDoC4a9cWyhkOXQgjPT_hT43TByxHmQQP_Q5VuqV_4AosEvNGFE9G_TnhHzfVIIIg.webp?r=1ac" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZt3BFQAYvElL9Jt2ToYgPtMaL9wP7Av_zaXrVYnCpTmwZafU4NueRjlCUlsJXo5Kc5eravKAamEL_pe64oCFxEUSPfrJcDB8D4.webp?r=2c8" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQAjXYHSnmU1fwS0VDyBir0Yp6JvoKXhG5VZAJcD7vz6GDAXB3bIHIZh9gXSzLdDkm6CfufW6wQDoT49O8AGq5_MfwsaE3Gj1iA.webp?r=2e5" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTp0mbwXYS2i1NiHVEwQ-2Fn5SxQIdfNbLrBKnGpYT_V5EACuqMsyHCPsv9o2AyOppY9DtJqZsEyUyg-uVN513EwlZ_vAg9rQ0c.webp?r=c71" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQmSKZw1-pvU1xX8ZOIZbAo4U9pnVM0qXqrmnbNohkB_d42tYRb8B8gx8XkbKXTu4OBcYJVMwVeW1qF8SnV2_RMTdVaRuBs991foKAmtsTg15PfqBjCKcCdg1gj4YKlfNoCs.jpg?r=9d8" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABW3SiEsamsfLn-6r7Z-p6gEQKkSzz3zxBWGnL9BE7ryiVwHJaMJ01b4hO9ky4wR_tJsSO77WfbTMFLHyLkquielrX-jStz9Lh3eRT6bbpn825E0h-CT65ydkvaO4jMCaQyPbbzS_F-L-Gb6Uzr5OvU98UMBDkMSv_wQ12R22alzwppX3oYWhV-Eo3PsVLmc.jpg?r=4c2" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXVEEjyKyHbmKnruUooJUK5-i4PZGEBfak4F_DXQ2fmFIUWvy9kaw-xdNkX9hwUn1i_H_fyvR1GBfoXZsCj4bNIU4_XJeOPVqls.webp?r=bd6" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVQzO2PMBruQfSgqdQGLKwcGbzwuk76Fqi8rBzo6HRa0UkWBCnEd_59p0lmh8W78Ecg5dBgusmVbWmhT3Rgb9-D0dxQZbibPv9E.webp?r=cf3" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfW8Q-pbys08CrDLqYXA4OAM0PPUdfM7iwH0KC4empnCuM1rLVl8Dd4ulw7KINCLCgPC_q4UWbCUwHhBXaFf3iTwQoXEJ2w5khs.webp?r=0bc" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQ7zjCBXH5UeCO80JopHQarRuhPMp-CBwDmQxB6cQNyKQykSfRD6fH0iUysMV35qzEVHRjzBJLobf9k5MwN2WtQcHMRvCuJSy8Y.webp?r=e24" alt="Filmes de Comédia">
-                        <input type="image" class="item-cpt" src="https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQx4e45kHSoNtpt8MXUrTd_EGksgK2RKhtYJ8Iz_H5e3dh3-bISrln-ykWfaPDdfDA6Z0ej8irRjMEaGuue3GKi3kBF1oLaoiEM.webp?r=49e" alt="Filmes de Comédia">
+                    <div class="galeria-add">
+                       
                     </div>
                 </figure>
             </div>
