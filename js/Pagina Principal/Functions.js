@@ -68,7 +68,7 @@ fetch("Media_Catalog.json").then((response) => {
                 input.className = `item-${catalogJson.Catalog[i].abbreviation}`
                 input.src = catalogJson.Catalog[i].images[cont].image
                 
-                input.setAttribute('onclick', `Mais_Informações(${catalogJson.Catalog[i].id})`) // FINALIZAR Passando o id como parametro para o onclick
+                input.setAttribute('onclick', `Buscar_ID("${catalogJson.Catalog[i].images[cont].name}")`) // FINALIZAR Passando o id como parametro para o onclick
 
                 background_images[i].append(input)
             }
