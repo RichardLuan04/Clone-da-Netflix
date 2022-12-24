@@ -1,11 +1,9 @@
 // Mudar o menu ao rolar a tela
 
-(function () {
-    let menu = document.getElementById('header')
-    window.addEventListener('scroll', function () {
-        window.scrollY > 0 ? menu.classList.add('menuFixo') : menu.classList.remove('menuFixo')
-    })
-})()
+let menu = document.getElementById('header')
+ window.addEventListener('scroll', function () {
+    window.scrollY > 0 ? menu.classList.add('menuFixo') : menu.classList.remove('menuFixo')
+})
 
 // Animação da barra de pesquisar
 

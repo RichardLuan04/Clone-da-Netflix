@@ -50,7 +50,7 @@ async function Search () {
                 let image = document.createElement('input')
                 image.type = 'image'
                 image.className = 'item-search'
-                image.setAttribute('onclick', `Mais_Informações(${bodyJson_media.results[i].id})`)
+                image.setAttribute('onclick', `Mais_Informações("${bodyJson_media.results[i].id}","${bodyJson_media.results[i].media_type}")`)
                 image.src = `https://image.tmdb.org/t/p/w500${background_media}`
                 images.append(image)
             }
@@ -72,4 +72,13 @@ async function Search () {
 
  - Response do episodio separado = 
    https://api.themoviedb.org/3/tv/{serie_id}/season/{numero_temporada}/episode/{numero_episodio}?api_key={chave}&language={lingua}
+
+- Response para pesquisar por popularidade =
+  https://api.themoviedb.org/3/movie/popular?api_key=bf345adcb24f454dbfd43680c4760cf5&language=pt-BR&page=1
+
+- Response para recomendações =
+  https://api.themoviedb.org/3/tv/{tv_id}/recommendations?api_key=bf345adcb24f454dbfd43680c4760cf5&language=pt-BR&page=1
+
+- Response para classificação de idade = 
+  https://api.themoviedb.org/3/tv/{tv_id}/content_ratings?api_key=bf345adcb24f454dbfd43680c4760cf5&language=pt-BR
 */
