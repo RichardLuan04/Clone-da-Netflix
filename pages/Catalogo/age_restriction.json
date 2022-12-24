@@ -1,0 +1,28 @@
+{
+    "result": [
+        {
+            "age": "L",
+            "background": "green"
+        },
+        {
+            "age": 10,
+            "background": "blue"
+        },
+        {
+            "age": 12,
+            "background": "yellow"
+        },
+        {
+            "age": 14,
+            "background": "orange"
+        },
+        {
+            "age": 16,
+            "background": "red"
+        },
+        {
+            "age": 18,
+            "background": "black"
+        }
+    ]
+}
