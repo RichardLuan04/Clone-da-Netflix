@@ -48,6 +48,8 @@ fetch("Media_Main.json").then((response) => {
         document.querySelector('.sobre').innerHTML = imagesJson.medias[random_number].media_overview
         document.getElementById('logo-principal').src = imagesJson.medias[random_number].media_logo
         document.getElementById('classificacao-idade').src = imagesJson.medias[random_number].age_rating
+
+        document.getElementById('botao-mais').setAttribute('onclick', `Buscar_ID("${imagesJson.medias[random_number].title}")`)
     }) 
 })
 
