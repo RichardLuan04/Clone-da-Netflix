@@ -1,19 +1,18 @@
 html {
     -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
-    position: fixed;
     background: #141414;
     width: 100vw;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     font-family: Fira Sans, Arial;
+    background-attachment: fixed;
 }
 
 header {
