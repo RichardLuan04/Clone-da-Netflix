@@ -66,56 +66,77 @@ async function fetch_function () {
             titles[i].innerHTML = catalogJson.Catalog[i].text // Insirando dentro da tag o nome do campo do slider
 
             for (let cont=0;cont<catalogJson.Catalog[i].images.length;cont++) { // Repetindo de acordo com a quantidade de imagens
-                // Criando div 
-
-                let div = document.createElement('div')
-                div.className = 'imagens'
                 
+                let div = document.createElement("div")
+                div.style.position = 'relative'
+
                 let input = document.createElement('input')
                 input.type = 'image'
-                input.className = `item-${catalogJson.Catalog[i].abbreviation} image`
+                input.className = `image item-${catalogJson.Catalog[i].abbreviation}`
                 input.id = `${i}-${cont}`
                 input.src = catalogJson.Catalog[i].images[cont].image
 
                 let name = catalogJson.Catalog[i].images[cont].name
 
-                input.setAttribute('onmouseover', `Add_hover("${name}","${i}-${cont}")`)
-                input.setAttribute("onMouseOut", `Remove_hover("${name}","${i}-${cont}")`)
+                input.setAttribute('onmouseover', `Add_hover("${i}-${cont}", "${i}-${cont}-second")`)
+                input.setAttribute("onMouseOut", `Remove_hover()`)
                 input.setAttribute('onclick', `Buscar_ID("${name}")`) // FINALIZAR Passando o id como parametro para o onclick
                 div.append(input)
-                
-                // Criando imagemm invisivel
-                
+
+                // Imagem invisivel
+
+                let second = document.createElement('input')
+                second.type = 'image'
+                second.className = `image invisible`
+                second.id = `${i}-${cont}-second`
+
+                second.style.display = 'none' // Estilizando
+                second.style.opacity = 0
+                second.style.position = 'absolute'
+                second.style.zIndex = 1
+                second.style.top = 0
+
+                second.setAttribute('onmouseover', `Add_hover("${i}-${cont}", "${i}-${cont}-second")`)
+                second.setAttribute("onMouseOut", `Remove_hover()`)
+                second.setAttribute('onclick', `Buscar_ID("${name}")`)
+
                 let endpoint_media = `https://api.themoviedb.org/3/search/multi?api_key=bf345adcb24f454dbfd43680c4760cf5&query=${name}&language=pt-BR`
                 let response_media = await fetch(endpoint_media)
                 let jsonMedia = await response_media.json()
-                
-                let poster = jsonMedia.results[0].poster_path
 
-                let input_invisivel = document.createElement('input')
-                input_invisivel.type = 'image'
-                input_invisivel.className = `item-${catalogJson.Catalog[i].abbreviation} image img-invisible`
-                input_invisivel.id = `${i}-${cont}-invisible`
-                input_invisivel.src = `https://image.tmdb.org/t/p/w500${poster}`
-                div.append(input_invisivel)
+                if (jsonMedia.total_results != 0) {
+                    let background = jsonMedia.results[0].backdrop_path
+                    second.src = `https://image.tmdb.org/t/p/w500${background}`
+                }
+                div.append(second)
 
-                
-                background_images[i].append(div)
+                background_images[i].append(div) 
             }
         }
 }
 
 // Animação hover nas imagens
 
-async function Add_hover(hover_img, position) {
-
+async function Add_hover(position,second_position) {
     let imagem_hover = document.getElementById(`${position}`)
     imagem_hover.classList.add("active-image")
+
+    let imagem_secundaria = document.getElementById(`${second_position}`)
+    imagem_secundaria.classList.add("active-image")
+    imagem_secundaria.style.display = 'flex' 
+    setTimeout(() => {
+        imagem_secundaria.style.opacity = 1
+    }, 200);
 }
 
-async function Remove_hover(name, position) {
+async function Remove_hover() {
     let imagem_hover = document.querySelectorAll(".image")
     imagem_hover.forEach((img) => {
         img.classList.remove("active-image")
     })
+
+    let imagens_secundarias = document.querySelectorAll(".invisible")
+    imagens_secundarias.forEach((img) => {
+        img.style.opacity = 0
+    }) 
 }

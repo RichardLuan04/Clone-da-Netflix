@@ -28,7 +28,9 @@ setTimeout(() =>{
             })
         })
     })
-}, 500)
+}, 2000)
+
+
 
 
 // Slider apenas para Continuar assistindo como - abreviação = cam
@@ -36,6 +38,7 @@ setTimeout(() =>{
 let corrente_itens_cam = 0
 
 setTimeout(() => {
+    
     const controle_cam = document.querySelectorAll('.control-cam')
     const itens_cam = document.querySelectorAll('.item-cam')
     const max_itens_cam = itens_cam.length
@@ -61,7 +64,7 @@ setTimeout(() => {
             })
         })
     })
-},500)
+},2000)
 
 // Slider apenas para Em Alta - abreviação = alta
 
@@ -93,7 +96,7 @@ setTimeout(() => {
             })
         })
     })
-},500)
+},2000)
 
 // Slider apenas para Filmes de ação - abreviação = fda
 
@@ -125,7 +128,7 @@ setTimeout(() => {
             })
         })
     })
-},500)
+},2000)
 
 // Slider apenas para Series pós apocalipticas - abreviação = spa
 
@@ -157,7 +160,7 @@ setTimeout(() => {
             })
         })
     })
-},500)
+},2000)
 
 // Slider apenas para top 10 Filmes - abreviação - topFilme
 
@@ -189,7 +192,7 @@ setTimeout(() => {
             })
         })
     })
-},500)
+},2000)
 
 // Slider apenas series policiais - abreviação - sp
 
@@ -221,7 +224,7 @@ setTimeout(() => {
             })
         })
     })
-},500)
+},2000)
 
 // Slider apenas lançamentos - abreviação - lan
 
@@ -253,7 +256,7 @@ setTimeout(() => {
             })
         })
     })
-},500)
+},2000)
 
 // Slider apenas drama - abreviação - drama
 
@@ -285,7 +288,7 @@ setTimeout(() => {
             })
         })
     })
-},500)
+},2000)
 
 // Slider apenas top 10 series- abreviação - topSerie
 
@@ -317,7 +320,7 @@ setTimeout(() => {
             })
         })
     })
-},500)
+},2000)
 
 // Slider apenas para filmes de terror - abreviacao = terror
 
@@ -349,7 +352,7 @@ setTimeout(() => {
             })
         })
     })
-},500)
+},2000)
 
 // Slider apenas para animes - abreviacao = anime
 
@@ -381,7 +384,7 @@ setTimeout(() => {
             })
         })
     })
-},500)
+},2000)
 
 // Slider apenas para comedias para tv = abreviacao = cpt
 
@@ -413,4 +416,4 @@ setTimeout(() => {
             })
         })
 })
-},500)
+},2000)
