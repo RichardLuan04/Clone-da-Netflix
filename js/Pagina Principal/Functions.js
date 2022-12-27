@@ -53,25 +53,69 @@ fetch("Media_Main.json").then((response) => {
     }) 
 })
 
-fetch("Media_Catalog.json").then((response) => {
-    response.json().then((catalog_images) => {
-        let catalogJson = catalog_images
-        let titles = document.querySelectorAll('.container-text-add')
+fetch_function ()
+
+async function fetch_function () {
+    let catalogo_media = await fetch("Media_Catalog.json")
+    let catalogJson = await catalogo_media.json()
+
+    let titles = document.querySelectorAll('.container-text-add')
         let background_images = document.querySelectorAll('.galeria-add')
 
         for (let i=0;i<catalogJson.Catalog.length;i++){ // Repetindo de acordo com a quantidade de slider
             titles[i].innerHTML = catalogJson.Catalog[i].text // Insirando dentro da tag o nome do campo do slider
 
             for (let cont=0;cont<catalogJson.Catalog[i].images.length;cont++) { // Repetindo de acordo com a quantidade de imagens
+                // Criando div 
+
+                let div = document.createElement('div')
+                div.className = 'imagens'
+                
                 let input = document.createElement('input')
                 input.type = 'image'
-                input.className = `item-${catalogJson.Catalog[i].abbreviation}`
+                input.className = `item-${catalogJson.Catalog[i].abbreviation} image`
+                input.id = `${i}-${cont}`
                 input.src = catalogJson.Catalog[i].images[cont].image
-                
-                input.setAttribute('onclick', `Buscar_ID("${catalogJson.Catalog[i].images[cont].name}")`) // FINALIZAR Passando o id como parametro para o onclick
 
-                background_images[i].append(input)
+                let name = catalogJson.Catalog[i].images[cont].name
+
+                input.setAttribute('onmouseover', `Add_hover("${name}","${i}-${cont}")`)
+                input.setAttribute("onMouseOut", `Remove_hover("${name}","${i}-${cont}")`)
+                input.setAttribute('onclick', `Buscar_ID("${name}")`) // FINALIZAR Passando o id como parametro para o onclick
+                div.append(input)
+                
+                // Criando imagemm invisivel
+                
+                let endpoint_media = `https://api.themoviedb.org/3/search/multi?api_key=bf345adcb24f454dbfd43680c4760cf5&query=${name}&language=pt-BR`
+                let response_media = await fetch(endpoint_media)
+                let jsonMedia = await response_media.json()
+                
+                let poster = jsonMedia.results[0].poster_path
+
+                let input_invisivel = document.createElement('input')
+                input_invisivel.type = 'image'
+                input_invisivel.className = `item-${catalogJson.Catalog[i].abbreviation} image img-invisible`
+                input_invisivel.id = `${i}-${cont}-invisible`
+                input_invisivel.src = `https://image.tmdb.org/t/p/w500${poster}`
+                div.append(input_invisivel)
+
+                
+                background_images[i].append(div)
             }
         }
+}
+
+// Animação hover nas imagens
+
+async function Add_hover(hover_img, position) {
+
+    let imagem_hover = document.getElementById(`${position}`)
+    imagem_hover.classList.add("active-image")
+}
+
+async function Remove_hover(name, position) {
+    let imagem_hover = document.querySelectorAll(".image")
+    imagem_hover.forEach((img) => {
+        img.classList.remove("active-image")
     })
-})
+}

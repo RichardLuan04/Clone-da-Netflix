@@ -180,9 +180,13 @@ main section {
 }
 
 .container figure {
+    width: 100%;
+    display: flex;
+    align-items:center;
     overflow-x: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    height: 27vh;
 }
 
 .container figure::-webkit-scrollbar {
@@ -195,9 +199,21 @@ main section {
     display: flex;
     flex-flow: row nowrap;
     gap: 5px;
+    position: relative;
 }
 
-.galeria input, .galeria img, .galeria-add input{
+.imagens {
+    position: relative;
+}
+
+.img-invisible {
+    position: absolute;
+    z-index: 1;
+    visibility: visible;
+    opacity: 1;
+}
+
+.image, .galeria img{
     min-width: 240px;
     min-height: 140px;
     max-width: 340px;
@@ -205,12 +221,21 @@ main section {
     width: 10vw;
     flex-shrink: 0; /*Não permite que o programa faça todos os elementos caberem por padrão*/
     border-radius: 5px;
+    transition: 0.5s;
+}
+
+.active-image {
+    transform: scaley(1.26);
+    transition: 0.5s;
+    min-width: 180px;
+    max-width: 280px;
 }
 
 .arrow-left, 
 .arrow-right {
     width: 5%;
     position: absolute;
+    z-index: 2;
     right: auto;
     top: 0;
     bottom: 0;

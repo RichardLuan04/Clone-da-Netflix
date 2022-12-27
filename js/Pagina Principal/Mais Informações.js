@@ -73,14 +73,14 @@ async function Mais_Informações (id_media,media_type) {
 
     // Adicionando restrição de idade
 
-    let endpoint_rating = `https://api.themoviedb.org/3/${media_type}/${id_media}/content_ratings?api_key=${key}&language=${language}`
-    let response_rating= await fetch(endpoint_rating)
-    let jsonRating = await response_rating.json()
-    
-    let age_response = await fetch("age_restriction.json")
-    let jsonAge = await age_response.json()
-
     if (media_type == 'tv'){
+        let endpoint_rating = `https://api.themoviedb.org/3/${media_type}/${id_media}/content_ratings?api_key=${key}&language=${language}`
+        let response_rating= await fetch(endpoint_rating)
+        let jsonRating = await response_rating.json()
+        
+        let age_response = await fetch("age_restriction.json")
+        let jsonAge = await age_response.json()
+
         for (let i=0;i<jsonRating.results.length;i++){
             if (jsonRating.results[i].iso_3166_1 == "BR") {
 

@@ -84,7 +84,7 @@
     </header>
 
     <div class="modal-pesquisa">
-        <figure>
+        <figure class="figura">
             <div class="relacionados">
                 <h2>Veja títulos sobre: </h2>
                 <ul id="lista-nomes"></ul>
@@ -246,7 +246,7 @@
                 <button class="arrow-left control-spm" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-spm" aria-label="Next image">🠞</button>
 
-                <figure>
+                <figure class="figura">
                     <div class="galeria-add">
                         
                     </div>
@@ -261,7 +261,7 @@
                 <button class="arrow-left control-cam" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-cam" aria-label="Next image">🠞</button>
 
-                <figure>
+                <figure class="figura">
                     <div class="galeria-add">
                         
                     </div>
@@ -276,7 +276,7 @@
                 <button class="arrow-left control-alta" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-alta" aria-label="Next image">🠞</button>
 
-                <figure>
+                <figure class="figura">
                     <div class="galeria-add">
                        
                     </div>
@@ -291,7 +291,7 @@
                 <button class="arrow-left control-fda" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-fda" aria-label="Next image">🠞</button>
 
-                <figure>
+                <figure class="figura">
                     <div class="galeria-add">
                         
                     </div>
@@ -306,7 +306,7 @@
                 <button class="arrow-left control-spa" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-spa" aria-label="Next image">🠞</button>
 
-                <figure>
+                <figure class="figura">
                     <div class="galeria-add">
                         
                     </div>
@@ -321,9 +321,9 @@
                 <button class="arrow-left control-topFilme" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-topFilme" aria-label="Next image">🠞</button>
 
-                <figure>
+                <figure class="figura">
                     <div class="galeria-top10">
-                        <div class="imagens item-topFilme" onclick="Buscar_ID('Doctor Strange Multiverse of madness')">
+                        <div class="imagens item-topFilme" id="image" onclick="Buscar_ID('Doctor Strange Multiverse of madness')">
                             <svg id="rank-1" width="100%" height="100%">
                                 <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M35.377 152H72V2.538L2 19.362v30.341l33.377-8.459V152z"></path>
                             </svg>
@@ -331,7 +331,7 @@
                             <img src="https://image.tmdb.org/t/p/w500/boIgXXUhw5O3oVkhXsE6SJZkmYo.jpg" alt="Top 1 Netflix">
                         </div>
 
-                        <div class="imagens item-topFilme" onclick="Buscar_ID('Batman')">
+                        <div class="imagens item-topFilme" id="image" onclick="Buscar_ID('Batman')">
                             <svg id="rank-2" width="100%" height="100%">
                                 <path stroke="#595959" stroke-linejoin="square" stroke-width="4" 
                                 d="M3.72 152H113v-30.174H50.484l4.355-3.55 29.453-24.012c5.088-4.124 
@@ -347,7 +347,7 @@
                             <img src="https://image.tmdb.org/t/p/w500/wd7b4Nv9QBHDTIjc2m7sr0IUMoh.jpg" alt="Top 2 Netflix">
                         </div>
 
-                        <div class="imagens item-topFilme" onclick="Buscar_ID('Titanic')">
+                        <div class="imagens item-topFilme" id="image" onclick="Buscar_ID('Titanic')">
                             <svg id="rank-3" width="100%" height="100%">
                                 <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M3.809 41.577h33.243c1.3-2.702 3.545-4.947 
                                 6.674-6.72 3.554-2.015 7.83-3.01 12.798-3.01 5.555 0 10.14 1.11 13.723 3.376 3.839 2.427 5.782 6.283 5.782 
@@ -364,7 +364,7 @@
                             <img src="https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg" alt="Top 3 Netflix">
                         </div>
 
-                        <div class="imagens item-topFilme" onclick="Buscar_ID('O telefone preto')">
+                        <div class="imagens item-topFilme" id="image" onclick="Buscar_ID('O telefone preto')">
                             <svg id="rank-4" width="100%" height="100%">
                                 <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M72 152h35.333v-30.977H128V92.497h-20.667V2H69.89L2 
                                 92.712v28.311h70V152zM36.202 92.188l35.93-47.998v47.998h-35.93z">
@@ -374,7 +374,7 @@
                             <img src="https://image.tmdb.org/t/p/w500/yw6H4C64tjBWlyKFG1pzmq5zOQh.jpg" alt="Top 4 Netflix">
                         </div>
 
-                        <div class="imagens item-topFilme" onclick="Buscar_ID('Vingadores Ultimato')">
+                        <div class="imagens item-topFilme" id="image" onclick="Buscar_ID('Vingadores Ultimato')">
                             <svg id="rank-5" width="100%" height="100%">
                                 <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M105.588 32.174V2H13.534l-8.3 88.357h32.463c2.145-2.362 
                                 4.866-4.254 8.143-5.675 3.585-1.554 7.543-2.328 11.859-2.328 6.247 0 11.418 1.745 15.418 5.255 4.061 3.564 6.104 
@@ -389,7 +389,7 @@
                             <img src="https://image.tmdb.org/t/p/w500/q6725aR8Zs4IwGMXzZT8aC8lh41.jpg" alt="Top 5 Netflix">
                         </div>
 
-                        <div class="imagens item-topFilme" onclick="Buscar_ID('Top gun maverick')">
+                        <div class="imagens item-topFilme" id="image" onclick="Buscar_ID('Top gun maverick')">
                             <svg id="rank-6" width="100%" height="100%">
                                 <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M79.482 38.192h35.551c-3.284-10.945-8.963-19.573-17.048-25.938C89.323 
                                 5.434 77.531 2 62.545 2 50.756 2 40.35 4.86 31.277 10.577c-9.064 5.712-16.198 14.09-21.412 25.178C4.63 46.893 
@@ -405,7 +405,7 @@
                             <img src="https://image.tmdb.org/t/p/w500/jTrXwK56EoLHHxfBkpwGdfmy2uh.jpg" alt="Top 6 Netflix">
                         </div>
 
-                        <div class="imagens item-topFilme" onclick="Buscar_ID('O homem do norte')">
+                        <div class="imagens item-topFilme" id="image" onclick="Buscar_ID('O homem do norte')">
                             <svg id="rank-7" width="100%" height="100%">
                                 <path stroke="#595959" stroke-width="4" d="M113,2 L2,2 L2,33.4022989 L75.9665929,33.4022989 
                                 L21.22571,152 L60.28102,152 L113,32.7672283 L113,2 Z" stroke-linejoin="square">
@@ -415,7 +415,7 @@
                             <img src="https://image.tmdb.org/t/p/w500/vJfLNvOMK1Ek7OvpKgBDSqH2kN1.jpg" alt="Top 7 Netflix">
                         </div>
 
-                        <div class="imagens item-topFilme" onclick="Buscar_ID('A culpa é das estrelas')">
+                        <div class="imagens item-topFilme" id="image" onclick="Buscar_ID('A culpa é das estrelas')">
                             <svg id="rank-8" width="100%" height="100%">
                                 <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M59.5 152c11.335 0 21.358-1.72 
                                 30.077-5.15 8.637-3.397 15.361-8.258 20.213-14.586 4.805-6.267 7.21-13.876 7.21-22.899 
@@ -434,7 +434,7 @@
                             <img src="https://image.tmdb.org/t/p/w500/lW1HA1JqXxKp1x5eSzEqTNxfIgA.jpg" alt="Top 8 Netflix">
                         </div>
 
-                        <div class="imagens item-topFilme" onclick="Buscar_ID('Baby driver')">
+                        <div class="imagens item-topFilme" id="image" onclick="Buscar_ID('Baby driver')">
                             <svg id="rank-9" width="100%" height="100%">
                                 <path stroke="#595959" stroke-width="4" d="M40.0597376,115.807692 L4.47328474,115.807692 
                                 C7.45109332,126.586242 13.4362856,135.15497 22.4670906,141.582071 C32.2129251,148.518048 
@@ -463,7 +463,7 @@
                             <img src="https://image.tmdb.org/t/p/w500/1rYTtQ14rPB3KOgk5TjkUqiQFch.jpg" alt="Top 9 Netflix">
                         </div>
 
-                        <div class="imagens item-topFilme" onclick="Buscar_ID('Até o ultimo homem')">
+                        <div class="imagens item-topFilme" id="image" onclick="Buscar_ID('Até o ultimo homem')">
                             <svg id="rank-10" width="100%" height="100%">
                                 <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M34.757 151.55h35.869V2.976L2 19.687v30.14l32.757-8.41v110.132zm105.53 3.45c12.394 
                                 0 23.097-3.12 32.163-9.353 9.093-6.25 16.11-15.047 21.066-26.43C198.5 107.766 201 94.196 201 78.5c0-15.698-2.5-29.266-7.484-40.716-4.955-11.384-11.973-20.18-21.066-26.431C163.384
@@ -488,7 +488,7 @@
                 <button class="arrow-left control-sp" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-sp" aria-label="Next image">🠞</button>
 
-                <figure>
+                <figure class="figura">
                     <div class="galeria-add">
                         
                     </div>
@@ -503,7 +503,7 @@
                 <button class="arrow-left" aria-label="Previous image">🠜</button>
                 <button class="arrow-right" aria-label="Next image">🠞</button>
 
-                <figure>
+                <figure class="figura">
                     <div class="galeria">
                         
                     </div>
@@ -518,7 +518,7 @@
                 <button class="arrow-left control-lan" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-lan" aria-label="Next image">🠞</button>
 
-                <figure>
+                <figure class="figura">
                     <div class="galeria-add">
                         
                     </div>
@@ -533,7 +533,7 @@
                 <button class="arrow-left control-drama" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-drama" aria-label="Next image">🠞</button>
 
-                <figure>
+                <figure class="figura">
                     <div class="galeria-add">
                         
                     </div>
@@ -548,9 +548,9 @@
                 <button class="arrow-left control-topSerie" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-topSerie" aria-label="Next image">🠞</button>
 
-                <figure>
+                <figure class="figura">
                     <div class="galeria-top10">
-                        <div class="imagens item-topSerie" onclick="Buscar_ID('Vikings')">
+                        <div class="imagens item-topSerie" id="image" onclick="Buscar_ID('Vikings')">
                             <svg id="rank-1" width="100%" height="100%">
                                 <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M35.377 152H72V2.538L2 19.362v30.341l33.377-8.459V152z"></path>
                             </svg>
@@ -558,7 +558,7 @@
                             <img src="https://image.tmdb.org/t/p/w500/oktTNFM8PzdseiK1X0E0XhB6LvP.jpg" alt="Top 1 Netflix">
                         </div>
 
-                        <div class="imagens item-topSerie" onclick="Buscar_ID('The boys')">
+                        <div class="imagens item-topSerie" id="image" onclick="Buscar_ID('The boys')">
                             <svg id="rank-2" width="100%" height="100%">
                                 <path stroke="#595959" stroke-linejoin="square" stroke-width="4" 
                                 d="M3.72 152H113v-30.174H50.484l4.355-3.55 29.453-24.012c5.088-4.124 
@@ -574,7 +574,7 @@
                             <img src="https://image.tmdb.org/t/p/w500/mY7SeH4HFFxW1hiI6cWuwCRKptN.jpg" alt="Top 2 Netflix">
                         </div>
 
-                        <div class="imagens item-topSerie" onclick="Buscar_ID('The walking dead')">
+                        <div class="imagens item-topSerie" id="image" onclick="Buscar_ID('The walking dead')">
                             <svg id="rank-3" width="100%" height="100%">
                                 <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M3.809 41.577h33.243c1.3-2.702 3.545-4.947 
                                 6.674-6.72 3.554-2.015 7.83-3.01 12.798-3.01 5.555 0 10.14 1.11 13.723 3.376 3.839 2.427 5.782 6.283 5.782 
@@ -591,7 +591,7 @@
                             <img src="https://image.tmdb.org/t/p/w500/xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg" alt="Top 3 Netflix">
                         </div>
 
-                        <div class="imagens item-topSerie" onclick="Buscar_ID('Peaky blinders')">
+                        <div class="imagens item-topSerie" id="image" onclick="Buscar_ID('Peaky blinders')">
                             <svg id="rank-4" width="100%" height="100%">
                                 <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M72 152h35.333v-30.977H128V92.497h-20.667V2H69.89L2 
                                 92.712v28.311h70V152zM36.202 92.188l35.93-47.998v47.998h-35.93z">
@@ -601,7 +601,7 @@
                             <img src="https://image.tmdb.org/t/p/w500/i0uajcHH9yogXMfDHpOXexIukG9.jpg" alt="Top 4 Netflix">
                         </div>
 
-                        <div class="imagens item-topSerie" onclick="Buscar_ID('Stranger things')">
+                        <div class="imagens item-topSerie" id="image" onclick="Buscar_ID('Stranger things')">
                             <svg id="rank-5" width="100%" height="100%">
                                 <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M105.588 32.174V2H13.534l-8.3 88.357h32.463c2.145-2.362 
                                 4.866-4.254 8.143-5.675 3.585-1.554 7.543-2.328 11.859-2.328 6.247 0 11.418 1.745 15.418 5.255 4.061 3.564 6.104 
@@ -616,7 +616,7 @@
                             <img src="https://image.tmdb.org/t/p/w500/oqkld2D0qcnSNRm15rYV2883JE3.jpg" alt="Top 5 Netflix">
                         </div>
 
-                        <div class="imagens item-topSerie" onclick="Buscar_ID('dark')">
+                        <div class="imagens item-topSerie" id="image" onclick="Buscar_ID('dark')">
                             <svg id="rank-6" width="100%" height="100%">
                                 <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M79.482 38.192h35.551c-3.284-10.945-8.963-19.573-17.048-25.938C89.323 
                                 5.434 77.531 2 62.545 2 50.756 2 40.35 4.86 31.277 10.577c-9.064 5.712-16.198 14.09-21.412 25.178C4.63 46.893 
@@ -632,7 +632,7 @@
                             <img src="https://image.tmdb.org/t/p/w500/5LoHuHWA4H8jElFlZDvsmU2n63b.jpg" alt="Top 6 Netflix">
                         </div>
 
-                        <div class="imagens item-topSerie" onclick="Buscar_ID('La casa de papel')">
+                        <div class="imagens item-topSerie" id="image" onclick="Buscar_ID('La casa de papel')">
                             <svg id="rank-7" width="100%" height="100%">
                                 <path stroke="#595959" stroke-width="4" d="M113,2 L2,2 L2,33.4022989 L75.9665929,33.4022989 
                                 L21.22571,152 L60.28102,152 L113,32.7672283 L113,2 Z" stroke-linejoin="square">
@@ -642,7 +642,7 @@
                             <img src="https://image.tmdb.org/t/p/w500/ofBAZM79LltP7FIBRWJDMzyQGYG.jpg" alt="Top 7 Netflix">
                         </div>
 
-                        <div class="imagens item-topSerie" onclick="Buscar_ID('Vis a vis')">
+                        <div class="imagens item-topSerie" id="image" onclick="Buscar_ID('Vis a vis')">
                             <svg id="rank-8" width="100%" height="100%">
                                 <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M59.5 152c11.335 0 21.358-1.72 
                                 30.077-5.15 8.637-3.397 15.361-8.258 20.213-14.586 4.805-6.267 7.21-13.876 7.21-22.899 
@@ -661,7 +661,7 @@
                             <img src="https://image.tmdb.org/t/p/w500/vIFsPAn5EFHZnimvekXhi4LJf1p.jpg" alt="Top 8 Netflix">
                         </div>
 
-                        <div class="imagens item-topSerie" onclick="Buscar_ID('The 100')">
+                        <div class="imagens item-topSerie" id="image" onclick="Buscar_ID('The 100')">
                             <svg id="rank-9" width="100%" height="100%">
                                 <path stroke="#595959" stroke-width="4" d="M40.0597376,115.807692 L4.47328474,115.807692 
                                 C7.45109332,126.586242 13.4362856,135.15497 22.4670906,141.582071 C32.2129251,148.518048 
@@ -690,7 +690,7 @@
                             <img src="https://image.tmdb.org/t/p/w500/cfhfcEt4bOXuVZkTC0nNBpqqiWb.jpg" alt="Top 9 Netflix">
                         </div>
 
-                        <div class="imagens item-topSerie" onclick="Buscar_ID('Round 6')">
+                        <div class="imagens item-topSerie" id="image" onclick="Buscar_ID('Round 6')">
                             <svg id="rank-10" width="100%" height="100%">
                                 <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M34.757 151.55h35.869V2.976L2 19.687v30.14l32.757-8.41v110.132zm105.53 3.45c12.394 
                                 0 23.097-3.12 32.163-9.353 9.093-6.25 16.11-15.047 21.066-26.43C198.5 107.766 201 94.196 201 78.5c0-15.698-2.5-29.266-7.484-40.716-4.955-11.384-11.973-20.18-21.066-26.431C163.384
@@ -715,7 +715,7 @@
                 <button class="arrow-left control-terror" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-terror" aria-label="Next image">🠞</button>
 
-                <figure>
+                <figure class="figura">
                     <div class="galeria-add">
                        
                     </div>
@@ -730,7 +730,7 @@
                 <button class="arrow-left control-anime" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-anime" aria-label="Next image">🠞</button>
 
-                <figure>
+                <figure class="figura">
                     <div class="galeria-add">
                         
                     </div>
@@ -745,7 +745,7 @@
                 <button class="arrow-left control-cpt" aria-label="Previous image">🠜</button>
                 <button class="arrow-right control-cpt" aria-label="Next image">🠞</button>
 
-                <figure>
+                <figure class="figura">
                     <div class="galeria-add">
                        
                     </div>
