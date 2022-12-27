@@ -269,14 +269,23 @@ main section {
 
 .imagens img {
     min-width: 120px;
-    min-height: 120px;
+    min-height: 110px;
     max-width: 180px;
-    max-height: 180px;
+    max-height: 170px;
     width: 50%;
 }
 
 .galeria-top10 {
     gap: 25px;
+}
+
+#top-movie,#topSerie {
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+#top-movie:hover,#topSerie:hover {
+    border-color: #fff;
 }
 
 /* Modal para pesquisa */
