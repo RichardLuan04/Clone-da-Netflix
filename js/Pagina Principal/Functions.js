@@ -36,6 +36,13 @@ function Recarregar() {
     window.location.reload()
 }
 
+// Loading
+
+setTimeout(() => {
+    document.querySelector(".pagina").style.display = 'flex'
+    document.querySelector(".tela-loading").style.display = 'none'
+},5000)
+
 // Usando json de imagens para o main e escolhendo uma aleatoriamente
 
 fetch("Media_Main.json").then((response) => {

@@ -288,3 +288,53 @@
 .coluna-lista p {
     color: #fff;
 }
+
+/* Tela de loading */
+
+.tela-loading {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: in-animation 0.4s normal;
+}
+
+@keyframes in-animation {
+    from {
+        opacity: 0;
+        transform: scale(1.5);
+    } to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.tela-loading img {
+    position: absolute;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.loading {
+    position: absolute;
+    animation: rotação 1s infinite;
+    height: 100px;
+    width: 100px;
+    border: 5px solid #141414;
+    border-top-color: #ee0000;
+    border-right-color: #ee0000;
+    border-radius: 50%;
+}
+
+@keyframes rotação {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.pagina {
+    display: none;
+}
