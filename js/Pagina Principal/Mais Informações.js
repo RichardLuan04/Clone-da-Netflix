@@ -220,11 +220,15 @@ async function Mais_Informações (id_media,media_type) {
 
     /* Carregamento de episodios, temporadas, nomes dos episodios e tc */
 
+    let episodios = document.querySelector(".episodios")
+    episodios.innerHTML = ''  // Resetando o html 
+
     if (media_type == 'tv'){
+        debugger
         document.querySelector(".preview-episodios").style.display = 'flex'
         
         let number_season = document.getElementById('select').textContent
-        number_season.substring(10)
+        number_season = number_season.substring(10)
 
         let endpoint_season = `https://api.themoviedb.org/3/tv/${id_media}/season/${number_season}?api_key=${key}&language=${language}`
         let response_season= await fetch(endpoint_season)
@@ -237,53 +241,71 @@ async function Mais_Informações (id_media,media_type) {
         for (let i=0;i<jsonSeason.episodes.length;i++){
 
             // Criando campo para o episodio
+            
+            let div_ep = document.createElement("div")
+            div_ep.className = 'ep'
 
-            let div_ep = document.createElement("div").className = 'ep'
+            let div_infos_ep = document.createElement("div")
+            div_infos_ep.className = 'infos-ep'
 
-            let div_infos_ep = document.createElement("div").className = 'infos-ep'
             let hr = document.createElement("hr")
 
             div_ep.append(div_infos_ep)
-            div_ep.append(hr)
 
-            let div_numero_ep = document.createElement("div").className = 'numero-ep'
+            let div_numero_ep = document.createElement("div")
+            div_numero_ep.className = 'numero-ep'
+            div_numero_ep.innerHTML = jsonSeason.episodes[i].episode_number
+
             div_infos_ep.append(div_numero_ep)
 
-            let div_imagem_ep = document.createElement("div").className = 'imagem-ep'
-            let still = jsonSeason.episodes[i].still_path
-            let img = document.createElement("img").src = `https://image.tmdb.org/t/p/w500${still}`
+            let div_imagem_ep = document.createElement("div")
+            div_imagem_ep.className = 'imagem-ep'
+
+            let img = document.createElement("img")
+
+            if (jsonSeason.episodes[i].still_path != null) {
+                let still = jsonSeason.episodes[i].still_path
+                img.src = `https://image.tmdb.org/t/p/w500${still}`
+            }
 
             div_imagem_ep.append(img)
             div_infos_ep.append(div_imagem_ep)
 
-            let div_sobre_ep = document.createElement("div").className = 'sobre-ep'
+            let div_sobre_ep = document.createElement("div")
+            div_sobre_ep.className = 'sobre-ep'
 
-            let div_top = document.createElement("div").className = 'top'
+            let div_top = document.createElement("div")
+            div_top.className = 'top'
 
-            let p_1 = document.createElement("p").innerText = jsonSeason.episodes[i].name
-            let p_2 = document.createElement("p").innerText = jsonSeason.episodes[i].runtime
+            let p_1 = document.createElement("p")
+            p_1.innerText = jsonSeason.episodes[i].name
+            let p_2 = document.createElement("p")
+            p_2.innerText = jsonSeason.episodes[i].runtime
 
             div_top.append(p_1)
             div_top.append(p_2)
 
             div_sobre_ep.append(div_top)
 
-            let div_bottom = document.createElement("div").className = 'bottom'
-            let p_overview = document.createElement('p').innerText = jsonSeason.episodes[i].overview
+            let div_bottom = document.createElement("div")
+            div_bottom.className = 'bottom'
+            let p_overview = document.createElement('p')
+            p_overview.innerText = jsonSeason.episodes[i].overview
 
             div_bottom.append(p_overview)
             div_sobre_ep.append(div_bottom)
 
-            // Adicionando informaçõoes do episodio
+            div_infos_ep.append(div_sobre_ep)
 
-            document.querySelector(".numero-ep").innerHTML = jsonSeason.episodes[i].episode_number
-        }
+            episodios.append(div_ep)
+            episodios.append(hr)
+        } 
 
         // Adicionando modal
         
         let ul = document.getElementById("lista-temporadas")
 
-        for (let i=0;i<JsonId.seasons.length;i++){
+        for (let i=1;i<JsonId.seasons.length;i++){
 
             let li = document.createElement("li")
 
