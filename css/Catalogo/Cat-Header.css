@@ -15,6 +15,23 @@ body {
     background-attachment: fixed;
 }
 
+.pagina {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    animation: animacao-pagina 0.5s normal;
+}
+
+@keyframes animacao-pagina {
+    from {
+        transform: scale(1.5);
+        opacity: 0;
+    } to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 header {
     position: fixed;
     z-index: 3;

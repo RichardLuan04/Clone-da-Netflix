@@ -55,18 +55,6 @@ async function Mais_Informações (id_media,media_type) {
         document.getElementById("temporadas").innerText = `${hours}h ${minutes}min`
     }
 
-    // Adicionando imagem da compania
-    
-    let company = JsonId.production_companies[0].logo_path
-    let logo = document.getElementById("company")
-
-    if (company != undefined) {    
-        logo.style.visibility = 'visible'
-        logo.src = `https://image.tmdb.org/t/p/w500${company}`
-    } else {
-        logo.style.visibility = 'hidden'
-    }
-
     if (JsonId.last_air_date != undefined) {
         document.getElementById("ultimo-ano-lançamento").innerText = JsonId.last_air_date.substring(0,4) // Adicionando ultima data de lançamento
     }
@@ -216,6 +204,103 @@ async function Mais_Informações (id_media,media_type) {
             span.append(a)
             coluna[0].append(span)
         }
+    }
+
+    // Adicionando imagem da compania
+    
+    let company = JsonId.production_companies[0].logo_path
+    let logo = document.getElementById("company")
+
+    if (company != undefined) {    
+        logo.style.visibility = 'visible'
+        logo.src = `https://image.tmdb.org/t/p/w500${company}`
+    } else {
+        logo.style.visibility = 'hidden'
+    }
+
+    /* Carregamento de episodios, temporadas, nomes dos episodios e tc */
+
+    if (media_type == 'tv'){
+        document.querySelector(".preview-episodios").style.display = 'flex'
+        
+        let number_season = document.getElementById('select').textContent
+        number_season.substring(10)
+
+        let endpoint_season = `https://api.themoviedb.org/3/tv/${id_media}/season/${number_season}?api_key=${key}&language=${language}`
+        let response_season= await fetch(endpoint_season)
+        let jsonSeason = await response_season.json()
+        console.log(JsonId)
+        console.log(jsonSeason)
+
+        // Adicionando episodios
+
+        for (let i=0;i<jsonSeason.episodes.length;i++){
+
+            // Criando campo para o episodio
+
+            let div_ep = document.createElement("div").className = 'ep'
+
+            let div_infos_ep = document.createElement("div").className = 'infos-ep'
+            let hr = document.createElement("hr")
+
+            div_ep.append(div_infos_ep)
+            div_ep.append(hr)
+
+            let div_numero_ep = document.createElement("div").className = 'numero-ep'
+            div_infos_ep.append(div_numero_ep)
+
+            let div_imagem_ep = document.createElement("div").className = 'imagem-ep'
+            let still = jsonSeason.episodes[i].still_path
+            let img = document.createElement("img").src = `https://image.tmdb.org/t/p/w500${still}`
+
+            div_imagem_ep.append(img)
+            div_infos_ep.append(div_imagem_ep)
+
+            let div_sobre_ep = document.createElement("div").className = 'sobre-ep'
+
+            let div_top = document.createElement("div").className = 'top'
+
+            let p_1 = document.createElement("p").innerText = jsonSeason.episodes[i].name
+            let p_2 = document.createElement("p").innerText = jsonSeason.episodes[i].runtime
+
+            div_top.append(p_1)
+            div_top.append(p_2)
+
+            div_sobre_ep.append(div_top)
+
+            let div_bottom = document.createElement("div").className = 'bottom'
+            let p_overview = document.createElement('p').innerText = jsonSeason.episodes[i].overview
+
+            div_bottom.append(p_overview)
+            div_sobre_ep.append(div_bottom)
+
+            // Adicionando informaçõoes do episodio
+
+            document.querySelector(".numero-ep").innerHTML = jsonSeason.episodes[i].episode_number
+        }
+
+        // Adicionando modal
+        
+        let ul = document.getElementById("lista-temporadas")
+
+        for (let i=0;i<JsonId.seasons.length;i++){
+
+            let li = document.createElement("li")
+
+            let div = document.createElement("div")
+            div.className = 'text-temp'
+            div.innerHTML = JsonId.seasons[i].name
+
+            let span = document.createElement("span")
+            span.innerText = `(${JsonId.seasons[i].episode_count} episódios)`
+            
+            li.append(div)
+            li.append(span)
+
+            ul.append(li)
+        }
+    } else {
+        document.querySelector(".preview-episodios").style.display = 'none'
     }
 }
 

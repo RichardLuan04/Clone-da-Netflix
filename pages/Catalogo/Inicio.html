@@ -16,6 +16,7 @@
     <script src="/js/Pagina Principal/Pesquisa.js" defer></script>
     <script src="/js/Pagina Principal/Mais Informações.js" defer></script>
     <script src="/js/Pagina Principal/Slider-Catalogo.js" defer></script>
+    <script src="/js/Pagina Principal/Select.js" defer></script>
 
     <title>Ínicio - Netflix</title>
 </head>
@@ -110,9 +111,11 @@
                     <div class="titles">
                         
                         <div class="close">
-                            <button id="close-modal">
-                                <svg width="24" height="25"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.29297 3.70706L10.5859 12L2.29297 20.2928L3.70718 21.7071L12.0001 13.4142L20.293 21.7071L21.7072 20.2928L13.4143 12L21.7072 3.70706L20.293 2.29285L12.0001 10.5857L3.70718 2.29285L2.29297 3.70706Z" fill="currentColor"></path></svg>
-                            </button>
+                            <div class="button-close">
+                                <button id="close-modal">
+                                    <svg width="24" height="25"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.29297 3.70706L10.5859 12L2.29297 20.2928L3.70718 21.7071L12.0001 13.4142L20.293 21.7071L21.7072 20.2928L13.4143 12L21.7072 3.70706L20.293 2.29285L12.0001 10.5857L3.70718 2.29285L2.29297 3.70706Z" fill="currentColor"></path></svg>
+                                </button>
+                            </div>
                         </div>
     
                         <div class="title-span">
@@ -185,179 +188,20 @@
                 <div class="preview-episodios">
                     <div class="eps-temps">
                         <p> Episódios</p>
-    
-                        <select id="temporadas">
-                            <option>Temporada 1</option>
-                            <option>Temporada 2</option>
-                            <option>Temporada 3</option>
-                            <option>Temporada 4</option>
-                            <option>Temporada 5</option>
-                            <option>Temporada 6</option>
-                        </select>
+                        
+                        <div class="modal-select">
+                            <button id="select" onclick="Open_Select()">Temporada 1</button>
+
+                            <ul id="lista-temporadas">
+                                
+                            </ul>
+                        </div>
                     </div>
     
+                    <hr>
+
                     <div class="episodios">
-                        <div class="ep">
-                            <div class="infos-ep">
-                                <div class="numero-ep">
-                                    <p>1</p>
-                                </div>
-        
-                                <div class="imagem-ep">
-        
-                                </div>
-        
-                                <div class="sobre-ep">
-                                    <div class="top">
-                                        <p>Episódio 1</p>
-        
-                                        <p>57min</p>
-                                    </div>
-        
-                                    <div class="bottom">
-                                        <p>O ambicioso gângster Thomas Shelby percebe que um carregamento de armas desaparecido pode ser sua grande chance de subir na vida.</p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <hr>
-    
-                        </div>
-    
-                        <div class="ep">
-                            <div class="infos-ep">
-                                <div class="numero-ep">
-                                    <p>1</p>
-                                </div>
-        
-                                <div class="imagem-ep">
-        
-                                </div>
-        
-                                <div class="sobre-ep">
-                                    <div class="top">
-                                        <p>Episódio 1</p>
-        
-                                        <p>57min</p>
-                                    </div>
-        
-                                    <div class="bottom">
-                                        <p>O ambicioso gângster Thomas Shelby percebe que um carregamento de armas desaparecido pode ser sua grande chance de subir na vida.</p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <hr>
-    
-                        </div>
-    
-                        <div class="ep">
-                            <div class="infos-ep">
-                                <div class="numero-ep">
-                                    <p>1</p>
-                                </div>
-        
-                                <div class="imagem-ep">
-        
-                                </div>
-        
-                                <div class="sobre-ep">
-                                    <div class="top">
-                                        <p>Episódio 1</p>
-        
-                                        <p>57min</p>
-                                    </div>
-        
-                                    <div class="bottom">
-                                        <p>O ambicioso gângster Thomas Shelby percebe que um carregamento de armas desaparecido pode ser sua grande chance de subir na vida.</p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <hr>
-    
-                        </div>
-    
-                        <div class="ep">
-                            <div class="infos-ep">
-                                <div class="numero-ep">
-                                    <p>1</p>
-                                </div>
-        
-                                <div class="imagem-ep">
-        
-                                </div>
-        
-                                <div class="sobre-ep">
-                                    <div class="top">
-                                        <p>Episódio 1</p>
-        
-                                        <p>57min</p>
-                                    </div>
-        
-                                    <div class="bottom">
-                                        <p>O ambicioso gângster Thomas Shelby percebe que um carregamento de armas desaparecido pode ser sua grande chance de subir na vida.</p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <hr>
-    
-                        </div>
-    
-                        <div class="ep">
-                            <div class="infos-ep">
-                                <div class="numero-ep">
-                                    <p>1</p>
-                                </div>
-        
-                                <div class="imagem-ep">
-        
-                                </div>
-        
-                                <div class="sobre-ep">
-                                    <div class="top">
-                                        <p>Episódio 1</p>
-        
-                                        <p>57min</p>
-                                    </div>
-        
-                                    <div class="bottom">
-                                        <p>O ambicioso gângster Thomas Shelby percebe que um carregamento de armas desaparecido pode ser sua grande chance de subir na vida.</p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <hr>
-    
-                        </div>
-    
-                        <div class="ep">
-                            <div class="infos-ep">
-                                <div class="numero-ep">
-                                    <p>1</p>
-                                </div>
-        
-                                <div class="imagem-ep">
-        
-                                </div>
-        
-                                <div class="sobre-ep">
-                                    <div class="top">
-                                        <p>Episódio 1</p>
-        
-                                        <p>57min</p>
-                                    </div>
-        
-                                    <div class="bottom">
-                                        <p>O ambicioso gângster Thomas Shelby percebe que um carregamento de armas desaparecido pode ser sua grande chance de subir na vida.</p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <hr>
-    
-                        </div>
+                        
                     </div>
                 </div>
             </div>
