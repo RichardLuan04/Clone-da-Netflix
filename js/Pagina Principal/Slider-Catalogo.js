@@ -130,6 +130,38 @@ setTimeout(() => {
     })
 },2000)
 
+// Slider apenas para minha lista - abreviacao = my
+
+let corrente_itens_my = 0
+
+setTimeout(() => {
+    const controle_my = document.querySelectorAll('.control-my')
+    const itens_my = document.querySelectorAll('.item-my')
+    const max_itens_my = itens_my.length
+
+    controle_my.forEach((control) => {
+        control.addEventListener("click", () => {
+            const isLeft = control.classList.contains('arrow-left')
+
+            isLeft ? corrente_itens_my -= 5: corrente_itens_my += 5
+
+            if (corrente_itens_my >= max_itens_my) {
+                corrente_itens_my = 0
+            }
+
+            if ( corrente_itens_my < 0) {
+                corrente_itens_my = max_itens_my - 1
+            }
+
+            itens_my[corrente_itens_my].scrollIntoView({
+                inline: 'start',
+                behavior: "smooth",
+                block: "nearest"
+            })
+        })
+    })
+},2000)
+
 // Slider apenas para Series pós apocalipticas - abreviação = spa
 
 let corrente_itens_spa = 0
