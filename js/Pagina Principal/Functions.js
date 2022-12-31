@@ -38,10 +38,10 @@ function Recarregar() {
 
 // Loading
 
-/*setTimeout(() => {
+setTimeout(() => {
     document.querySelector(".pagina").style.display = 'flex'
     document.querySelector(".tela-loading").style.display = 'none'
-},5000)*/
+},500)
 
 // Usando json de imagens para o main e escolhendo uma aleatoriamente
 

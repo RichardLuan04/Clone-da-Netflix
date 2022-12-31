@@ -496,11 +496,11 @@ hr {
 .tela-loading {
     width: 50%;
     height: 50%;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    animation: in-animation 0.4s normal;
+    animation: in-animation 0.6s normal;
 }
 
 @keyframes in-animation {
