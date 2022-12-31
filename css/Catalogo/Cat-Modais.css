@@ -64,7 +64,7 @@
     position: absolute;
     z-index: 1;
     width: 70%;
-    height: 10%;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,14 +85,14 @@
     height: 50%;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .button-close {
     width: 90%;
     display: flex;
     justify-content: flex-end;
-    padding: 20px;
+
 }
 
 .close button {

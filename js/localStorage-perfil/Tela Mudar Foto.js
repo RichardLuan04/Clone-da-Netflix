@@ -10,7 +10,6 @@ function Click_Image(image) {
 }
 
 function Mudar_Imagem() {
-debugger
     let nova_imagem = document.getElementById('imagem-nova').src
 
     window.location.href = `Editar.html?Usuario=${nomeUsuario}&Imagem=${nova_imagem}&Numero=${numero_perfil}&Nome=${nomePerfil}`

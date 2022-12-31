@@ -12,11 +12,13 @@
     <link rel="stylesheet" href="/css/Catalogo/Cat-Modais.css">
     <link rel="stylesheet" href="/css/Catalogo/Cat-Responsivo.css">
 
+    <script src="/js/Consulta_URL.js" defer></script>
     <script src="/js/Pagina Principal/Functions.js" defer></script>
     <script src="/js/Pagina Principal/Pesquisa.js" defer></script>
     <script src="/js/Pagina Principal/Mais Informações.js" defer></script>
     <script src="/js/Pagina Principal/Slider-Catalogo.js" defer></script>
     <script src="/js/Pagina Principal/Select.js" defer></script>
+    <script src="/js/Pagina Principal/Minha Lista.js" defer></script>
 
     <title>Ínicio - Netflix</title>
 </head>
@@ -84,7 +86,7 @@
                         </div>
     
                         <div class="elemento">
-                            <img src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABW2S0pyTjDyOEy9Hpvu13Exrf389Pioqaco3R9XnZlDXLoAJbef00jZ32Mh42dSvbnTJYcjnEEosjoovBWGk-1cTrKUt4n6q8g.png?r=fe5">
+                            <img src="" alt="imagem-perfil" id="imagem-perfil">
                             <!--Criar div com modal com hover-->
                         </div>
                     </div>
@@ -129,7 +131,7 @@
                                     <p>Assistir</p>
                                 </button>
         
-                                <button id="circle-play">
+                                <button id="circle-play" class="lista-botao">
                                     <svg width="24" height="24"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.68239 19.7312L23.6824 5.73115L22.3178 4.26904L8.02404 17.6098L2.70718 12.293L1.29297 13.7072L7.29297 19.7072C7.67401 20.0882 8.28845 20.0988 8.68239 19.7312Z" fill="currentColor"></path></svg>
                                 </button>
         
@@ -531,7 +533,7 @@
                     <button class="arrow-right" aria-label="Next image">🠞</button>
     
                     <figure class="figura">
-                        <div class="galeria">
+                        <div class="galeria minha-lista">
                             
                         </div>
                     </figure>

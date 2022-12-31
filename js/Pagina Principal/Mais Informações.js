@@ -243,8 +243,6 @@ async function Adicionar_Temporada(media_type, id_media, number_season) {
         let endpoint_season = `https://api.themoviedb.org/3/tv/${id_media}/season/${number_season}?api_key=${key}&language=${language}`
         let response_season= await fetch(endpoint_season)
         let jsonSeason = await response_season.json()
-        console.log(jsonId)
-        console.log(jsonSeason)
 
         // Adicionando episodios
 

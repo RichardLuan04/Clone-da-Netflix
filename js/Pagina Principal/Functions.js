@@ -147,3 +147,21 @@ async function Remove_hover() {
         img.style.opacity = 0
     }) 
 }
+
+// Caso o usuario click para assistir 
+
+let play = document.getElementById('assistir-play')
+
+play.addEventListener('click', () => {
+    alert('Não é possivel assistir nesse site!')
+})
+
+let botao_play = document.getElementById("botao-assistir")
+
+botao_play.addEventListener('click', () => {
+    alert('Não é possivel assistir nesse site!')
+})
+
+// Adicionando imagem de perfil
+
+document.getElementById("imagem-perfil").src = Consulta('imagem')
