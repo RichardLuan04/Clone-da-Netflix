@@ -324,6 +324,7 @@
     display: flex;
     justify-content: end;
     height: 100%;
+    text-align: start;
 }
 
 @keyframes select-animation {
@@ -358,10 +359,10 @@
 
 .modal-select ul li {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 10px;
-    width: 100%;
+    max-width: 500px;
     height: 7vh;
 }
 

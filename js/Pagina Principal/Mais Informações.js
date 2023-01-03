@@ -20,6 +20,7 @@ async function Mais_Informações (id_media,media_type) {
     setTimeout(() => {
         document.querySelector(".modal-mais-informacoes").style.display = 'flex'
         document.getElementById("catalogo-sliders").style.position = 'fixed'
+        document.querySelector(".modal-pesquisa").style.position = 'fixed'
     },500)
 
     let endpoint_id = `https://api.themoviedb.org/3/${media_type}/${id_media}?api_key=${key}&language=${language}`
@@ -31,12 +32,9 @@ async function Mais_Informações (id_media,media_type) {
 
     // adicionando titulo ou nome
 
-    if (media_type == 'movie'){
-        document.getElementById("titulo-midia").innerText = JsonId.title
-    } else {
-        document.getElementById("titulo-midia").innerText = JsonId.name
-    }
+    let midia = media_type == 'movie' ? JsonId.title : JsonId.name
 
+    document.getElementById("titulo-midia").innerText = midia
     document.querySelector(".infos-baixo").innerHTML = JsonId.overview // Adicionando resumo sobre a midia
 
     let season
@@ -222,6 +220,26 @@ async function Mais_Informações (id_media,media_type) {
     number_season = number_season.substring(10)
 
     Adicionar_Temporada(media_type, id_media, number_season)
+
+    
+    // Verificando se a midia ja esta na 'minha lista'
+    
+    const svg_certo = document.getElementById("svg-certo")
+    const svg_x = document.getElementById("svg-x")
+
+    svg_certo.style.display = 'none'
+    svg_x.style.display = 'flex'
+    botao_lista.setAttribute("onclick", "Adiconar_Minha_lista()")
+    
+    if (midias_Salvas != null) {
+        JSON.parse(midias_Salvas).forEach(element => {
+            if (element.nome == midia) {
+                botao_lista.setAttribute("onclick", "Remover_Minha_Lista()")
+                svg_certo.style.display = 'flex'
+                svg_x.style.display = 'none'
+            }
+        });
+    }
 }
 
 /* Carregamento de episodios, temporadas, nomes dos episodios e etc */
@@ -342,5 +360,6 @@ const closeButton = document.getElementById("close-modal")
 
 closeButton.addEventListener('click', () => {
     document.querySelector(".modal-mais-informacoes").style.display = 'none'
-        document.getElementById("catalogo-sliders").style.position = 'static'
+    document.getElementById("catalogo-sliders").style.position = 'static'
+    document.querySelector(".modal-pesquisa").style.position = 'static'
 })

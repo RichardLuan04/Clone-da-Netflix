@@ -25,7 +25,7 @@ if (midias_Salvas !== null) {
     }
 }
 
-botao_lista.addEventListener("click", () => {
+function Adiconar_Minha_lista() {
 
     // Adicionando ao local storage
 
@@ -58,5 +58,34 @@ botao_lista.addEventListener("click", () => {
         lista.append(input)
     }
 
-    alert("Adicionado aos seus favoritos")
-})
+    document.getElementById("svg-certo").style.display = 'flex'
+    document.getElementById("svg-x").style.display = 'none'
+
+    window.location.reload()
+}
+
+function Remover_Minha_Lista() {debugger
+    minha_lista = []
+    let imagem = document.getElementById("preview-imagem").src
+    let nome = document.getElementById("titulo-midia").textContent
+
+    JSON.parse(midias_Salvas).forEach(element => {
+        if (element.nome != nome) {
+            let midia = {
+                imagem: element.imagem,
+                nome: element.nome
+            }
+
+            minha_lista.push(midia)
+        }
+    });
+
+    let listaJson = JSON.stringify(minha_lista)
+    localStorage.removeItem(`Lista-${nomeUsuario}`)
+    localStorage.setItem(`Lista-${nomeUsuario}`, listaJson)
+
+    document.getElementById("svg-certo").style.display = 'none'
+    document.getElementById("svg-x").style.display = 'flex'
+
+    window.location.reload()
+}
