@@ -537,3 +537,24 @@ hr {
         transform: rotate(1turn);
     }
 }
+
+/* Modal simples para mostrar modal de lista */
+
+.modal-lista {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.imagens-lista {
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+    width: 80%;
+    min-height: 80vh;
+}

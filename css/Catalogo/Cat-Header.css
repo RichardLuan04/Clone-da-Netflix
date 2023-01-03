@@ -95,15 +95,16 @@ header section {
     align-items: center;
 }
 
-.navegacao a {
+.navegacao p {
     padding: 10px;
     color: #e5e5e5;
     text-decoration: none;
     font-size: 0.9rem;
     transition: 0.3s;
+    cursor: pointer;
 }
 
-.navegacao a:hover {
+.navegacao p:hover {
     color: #adadad;
 }
 

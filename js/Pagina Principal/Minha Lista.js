@@ -7,6 +7,31 @@ let nomeUsuario = Consulta('usuario')
 let minha_lista = []
 let midias_Salvas = localStorage.getItem(`Lista-${nomeUsuario}`)
 
+// Abrindo pagina para minha lista
+
+let lista_botao = document.getElementById("lista_a")
+
+lista_botao.addEventListener("click", () => {
+    document.querySelector(".modal-pesquisa").style.display = 'none'
+    document.getElementById("catalogo-sliders").style.display = 'none'
+    document.querySelector(".modal-lista").style.display = 'flex'
+
+    JSON.parse(midias_Salvas).forEach(element => {
+        let endpoint_media = `https://api.themoviedb.org/3/search/multi?api_key=${key}&query=${element.nome}&language=${language}`
+        fetch(endpoint_media).then((response) => [
+            response.json().then((posterJson) => {
+                console.log(posterJson)
+                let image = document.createElement("img")
+                image.id = 'image_lista'
+                image.src = `https://image.tmdb.org/t/p/w500${posterJson.results[0].poster_path}`
+                image.alt = 'Midia minha lista'
+
+                let campo_lista = document.querySelector(".imagens-lista")
+                campo_lista.append(image)
+            })
+        ])
+    })
+})
 
 // Mudando no catalogo assim que entrar no site
 

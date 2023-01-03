@@ -165,3 +165,8 @@ botao_play.addEventListener('click', () => {
 // Adicionando imagem de perfil
 
 document.getElementById("imagem-perfil").src = Consulta('imagem')
+
+let inicio_a = document.getElementById("inicio_a")
+inicio_a.addEventListener("click", () => {
+    window.location.reload()
+})
