@@ -540,7 +540,18 @@ hr {
 
 /* Modal simples para mostrar modal de lista */
 
+@keyframes animacao-minha-lista {
+    from {
+        opacity: 0;
+        transform: scale(1.2);
+    } to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .modal-lista {
+    animation: animacao-minha-lista normal 0.5s;
     display: none;
     justify-content: center;
     align-items: center;
@@ -548,7 +559,7 @@ hr {
     min-height: 100vh;
 }
 
-.imagens-lista {
+.imagens-lista, .bombando figure {
     gap: 2rem;
     display: flex;
     flex-direction: row;
@@ -556,5 +567,73 @@ hr {
     justify-content: start;
     align-items: flex-start;
     width: 80%;
-    min-height: 80vh;
+    height: 80vh;
+}
+
+/* Modal para bombando */
+
+.bombando {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.bombando figure {
+    flex-direction: column;
+}
+
+.mudar-midia {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#botao-mudar {
+    min-height: 40px;
+    min-width: 100px;
+    max-height: 80px;
+    max-width: 160px;
+    border: 2px solid #808080;
+    background: none;
+    border-radius: 5px;
+    color: #808080;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#botao-mudar:hover, .passar-pagina button:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
+.passar-pagina {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.passar-pagina button {
+    min-height: 40px;
+    min-width: 60px;
+    max-height: 80px;
+    max-width: 100px;
+    border: 2px solid #808080;
+    background: none;
+    border-radius: 5px;
+    color: #808080;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.passar-pagina span {
+    color: #fff;
+    font-size: 1.5rem;
 }
