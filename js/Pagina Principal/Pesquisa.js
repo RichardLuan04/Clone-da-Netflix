@@ -9,10 +9,8 @@
 - Response para pesquisar por midias = https://api.themoviedb.org/3/search/multi?api_key={key}&query={Serie}&language={língua}
 */
 
-document.addEventListener("keyup", function(e) {
-    if (e.key === 'Enter') {
-        Search()    
-    }
+document.addEventListener("keyup", function() {
+    Search()    
 })
 
 async function Search () {
@@ -38,6 +36,8 @@ async function Search () {
     // Trocando de main
 
     document.getElementById('catalogo-sliders').style.display = 'none'
+    document.querySelector(".modal-lista").style.display = 'none'
+    document.querySelector(".bombando").style.display = 'none'
     document.querySelector('.modal-pesquisa').style.display = 'flex'
 
     // Carregando imagens relacionadas a pesquisa e textos relacionados

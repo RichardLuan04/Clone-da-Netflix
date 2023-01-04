@@ -14,7 +14,11 @@ let lista_botao = document.getElementById("lista_a")
 lista_botao.addEventListener("click", () => {
     document.querySelector(".modal-pesquisa").style.display = 'none'
     document.getElementById("catalogo-sliders").style.display = 'none'
+    document.querySelector(".bombando").style.display = 'none'
     document.querySelector(".modal-lista").style.display = 'flex'
+
+    let campo_lista = document.querySelector(".imagens-lista")
+    campo_lista.innerHTML = ''
 
     JSON.parse(midias_Salvas).forEach(element => {
         let endpoint_media = `https://api.themoviedb.org/3/search/multi?api_key=${key}&query=${element.nome}&language=${language}`
@@ -25,8 +29,8 @@ lista_botao.addEventListener("click", () => {
                 image.id = 'image_lista'
                 image.src = `https://image.tmdb.org/t/p/w500${posterJson.results[0].poster_path}`
                 image.alt = 'Midia minha lista'
+                image.setAttribute('onclick', `Mais_Informações("${posterJson.results[0].id}","${posterJson.results[0].media_type}")`)
 
-                let campo_lista = document.querySelector(".imagens-lista")
                 campo_lista.append(image)
             })
         ])

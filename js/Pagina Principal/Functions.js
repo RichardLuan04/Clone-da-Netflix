@@ -32,6 +32,12 @@ function Fechar_Campo() {
     btnLupa.setAttribute('onclick', "Animacao_Campo()")
 }
 
+let overlay_principal = document.querySelector(".conteudo")
+
+overlay_principal.addEventListener('click', function(e) {
+    if (e.target == this) Fechar_Campo()
+})
+
 function Recarregar() {
     window.location.reload()
 }

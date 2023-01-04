@@ -21,6 +21,7 @@ async function Mais_Informações (id_media,media_type) {
         document.querySelector(".modal-mais-informacoes").style.display = 'flex'
         document.getElementById("catalogo-sliders").style.position = 'fixed'
         document.querySelector(".modal-pesquisa").style.position = 'fixed'
+        document.querySelector(".modal-lista").style.position = 'fixed'
     },500)
 
     let endpoint_id = `https://api.themoviedb.org/3/${media_type}/${id_media}?api_key=${key}&language=${language}`
@@ -264,7 +265,7 @@ async function Adicionar_Temporada(media_type, id_media, number_season) {
 
         // Adicionando episodios
 
-        for (let i=0;i<jsonSeason.episodes.length;i++){
+        for (let episodio of jsonSeason.episodes){
 
             // Criando campo para o episodio
             
@@ -280,7 +281,7 @@ async function Adicionar_Temporada(media_type, id_media, number_season) {
 
             let div_numero_ep = document.createElement("div")
             div_numero_ep.className = 'numero-ep'
-            div_numero_ep.innerHTML = jsonSeason.episodes[i].episode_number
+            div_numero_ep.innerHTML = episodio.episode_number
 
             div_infos_ep.append(div_numero_ep)
 
@@ -289,8 +290,8 @@ async function Adicionar_Temporada(media_type, id_media, number_season) {
 
             let img = document.createElement("img")
 
-            if (jsonSeason.episodes[i].still_path != null) {
-                let still = jsonSeason.episodes[i].still_path
+            if (episodio.still_path != null) {
+                let still = episodio.still_path
                 img.src = `https://image.tmdb.org/t/p/w500${still}`
             }
 
@@ -304,9 +305,9 @@ async function Adicionar_Temporada(media_type, id_media, number_season) {
             div_top.className = 'top'
 
             let p_1 = document.createElement("p")
-            p_1.innerText = jsonSeason.episodes[i].name
+            p_1.innerText = episodio.name
             let p_2 = document.createElement("p")
-            p_2.innerText = jsonSeason.episodes[i].runtime
+            p_2.innerText = episodio.runtime
 
             div_top.append(p_1)
             div_top.append(p_2)
@@ -316,7 +317,7 @@ async function Adicionar_Temporada(media_type, id_media, number_season) {
             let div_bottom = document.createElement("div")
             div_bottom.className = 'bottom'
             let p_overview = document.createElement('p')
-            p_overview.innerText = jsonSeason.episodes[i].overview
+            p_overview.innerText = episodio.overview
 
             div_bottom.append(p_overview)
             div_sobre_ep.append(div_bottom)
@@ -333,17 +334,16 @@ async function Adicionar_Temporada(media_type, id_media, number_season) {
             let ul = document.getElementById("lista-temporadas")
             ul.innerHTML = ''
 
-            for (let i=1;i<jsonId.seasons.length;i++){
-
+            for (let season of jsonId.seasons) {
                 let li = document.createElement("li")
-                li.setAttribute('onclick', `Mudar_Temporada("${media_type}", ${id_media}, ${i})`)
+                li.setAttribute('onclick', `Mudar_Temporada("${media_type}", ${id_media}, ${season.season_number})`)
 
                 let div = document.createElement("div")
                 div.className = 'text-temp'
-                div.innerHTML = jsonId.seasons[i].name
+                div.innerHTML = season.name
 
                 let span = document.createElement("span")
-                span.innerText = `(${jsonId.seasons[i].episode_count} episódios)`
+                span.innerText = `(${season.episode_count} episódios)`
                 
                 li.append(div)
                 li.append(span)
@@ -362,4 +362,11 @@ closeButton.addEventListener('click', () => {
     document.querySelector(".modal-mais-informacoes").style.display = 'none'
     document.getElementById("catalogo-sliders").style.position = 'static'
     document.querySelector(".modal-pesquisa").style.position = 'static'
+    document.querySelector(".modal-lista").style.position = 'static'
+})
+
+let overlay = document.querySelector(".modal-mais-informacoes")
+
+overlay.addEventListener('click', function(e) {
+    if (e.target == this) closeButton.click()
 })
