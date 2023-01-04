@@ -22,7 +22,7 @@ lista_botao.addEventListener("click", () => {
 
     JSON.parse(midias_Salvas).forEach(element => {
         let endpoint_media = `https://api.themoviedb.org/3/search/multi?api_key=${key}&query=${element.nome}&language=${language}`
-        fetch(endpoint_media).then((response) => [
+        fetch(endpoint_media).then((response) => {
             response.json().then((posterJson) => {
                 console.log(posterJson)
                 let image = document.createElement("img")
@@ -33,7 +33,7 @@ lista_botao.addEventListener("click", () => {
 
                 campo_lista.append(image)
             })
-        ])
+        })
     })
 })
 

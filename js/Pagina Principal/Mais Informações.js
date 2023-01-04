@@ -22,6 +22,7 @@ async function Mais_Informações (id_media,media_type) {
         document.getElementById("catalogo-sliders").style.position = 'fixed'
         document.querySelector(".modal-pesquisa").style.position = 'fixed'
         document.querySelector(".modal-lista").style.position = 'fixed'
+        document.querySelector(".bombando").style.position = 'fixed'
     },500)
 
     let endpoint_id = `https://api.themoviedb.org/3/${media_type}/${id_media}?api_key=${key}&language=${language}`
@@ -363,6 +364,7 @@ closeButton.addEventListener('click', () => {
     document.getElementById("catalogo-sliders").style.position = 'static'
     document.querySelector(".modal-pesquisa").style.position = 'static'
     document.querySelector(".modal-lista").style.position = 'static'
+    document.querySelector(".bombando").style.position = 'static'
 })
 
 let overlay = document.querySelector(".modal-mais-informacoes")
