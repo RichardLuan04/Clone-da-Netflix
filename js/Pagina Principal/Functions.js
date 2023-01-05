@@ -42,6 +42,51 @@ function Recarregar() {
     window.location.reload()
 }
 
+// Hover de perfis
+
+function Modal_Perfis_Open() {
+    document.querySelector(".modal-perfis").style.display = 'grid'
+}
+
+function Modal_Perfis_Close() {
+    document.querySelector(".modal-perfis").style.display = 'none'
+}
+
+let imagens_modal = document.querySelectorAll(".imagem-modal") // Adicionando perfis no modal
+let nomes_modal = document.querySelectorAll(".nome-modal")
+let figuras_modal = document.querySelectorAll(".figura-perfil")
+
+let indice = 1
+imagens_modal.forEach((imagens) => {
+    imagens.src = JSON.parse(localStorage.getItem(`Usuario%20${indice}`)).img
+    indice++
+})
+
+indice = 1
+nomes_modal.forEach((nomes) => {
+    nomes.innerHTML = JSON.parse(localStorage.getItem(`Usuario%20${indice}`)).nome
+    nomes.setAttribute("onclick", `Mudar_Perfil('Usuario%20${indice}')`)
+    indice++
+})
+
+function Mudar_Perfil(user) {
+    let userJson = JSON.parse(localStorage.getItem(user))
+    window.location.href = `\\\pages/Catalogo/Inicio.html?usuario=${userJson.usuario}&imagem=${userJson.img}&numero=${userJson.numero}&nome=${userJson.nome}`
+}   
+
+indice = 1
+figuras_modal.forEach((figuras) => {
+    if (`Usuario%20${indice}` == nomeUsuario) {
+        figuras.style.display = 'none'
+    } 
+
+    indice++
+})
+
+document.getElementById("sair").addEventListener("click", () => {
+    window.location.href = '\\\index.html'
+})
+
 // Loading
 
 setTimeout(() => {
@@ -51,7 +96,7 @@ setTimeout(() => {
 
 // Usando json de imagens para o main e escolhendo uma aleatoriamente
 
-fetch("Media_Main.json").then((response) => {
+fetch("\\json/Media_Main.json").then((response) => {
     response.json().then((main_images) => {
         let imagesJson = main_images
 
@@ -69,7 +114,7 @@ fetch("Media_Main.json").then((response) => {
 fetch_function ()
 
 async function fetch_function () {
-    let catalogo_media = await fetch("Media_Catalog.json")
+    let catalogo_media = await fetch("\\\json/Media_Catalog.json")
     let catalogJson = await catalogo_media.json()
 
     let titles = document.querySelectorAll('.container-text-add')

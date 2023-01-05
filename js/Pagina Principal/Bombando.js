@@ -20,6 +20,7 @@ botao_bombando.addEventListener("click", () => {
                 img.setAttribute('onclick', `Mais_Informações("${resultado.id}","${document.getElementById('botao-mudar').textContent}")`)
 
                 lista_bombando.append(img)
+                console.log(popularJson)
             }
         })
     })
@@ -46,7 +47,10 @@ controls.forEach((control) => {
 
         left ? number -= 1 : number += 1
 
-        number < 1 || number > 36570 ? alert('Pagina não encontrada') : pagina.innerHTML = number
+        let midia = document.getElementById('botao-mudar').textContent
+        let limit = midia == 'movie' ? 36570 : 7117
+
+        number < 1 || number > limit ? alert('Pagina não encontrada') : pagina.innerHTML = number
 
         botao_bombando.click()
     })

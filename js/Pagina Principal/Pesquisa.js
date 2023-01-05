@@ -10,7 +10,9 @@
 */
 
 document.addEventListener("keyup", function() {
-    Search()    
+  	setTimeout(() => {
+    	Search()    
+  	},2000)
 })
 
 async function Search () {
