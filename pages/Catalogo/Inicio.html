@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,22 +14,25 @@
     <link rel="stylesheet" href="/css/Catalogo/Cat-Responsivo.css">
 
     <script src="/js/Consulta_URL.js" defer></script>
+    <script src="/js/Pagina Principal/Minha Lista.js" defer></script>
     <script src="/js/Pagina Principal/Functions.js" defer></script>
     <script src="/js/Pagina Principal/Pesquisa.js" defer></script>
     <script src="/js/Pagina Principal/Mais Informações.js" defer></script>
     <script src="/js/Pagina Principal/Slider-Catalogo.js" defer></script>
     <script src="/js/Pagina Principal/Select.js" defer></script>
-    <script src="/js/Pagina Principal/Minha Lista.js" defer></script>
     <script src="/js/Pagina Principal/Bombando.js" defer></script>
 
     <title>Ínicio - Netflix</title>
 </head>
+
 <body id="body">
 
     <div class="tela-loading">
         <div class="loading"></div>
 
-        <img src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABYSw2XUJOe-RXGqlMhzAK2kb3m8jiiuICaICOYRemQXvfBcEmoaG0XMebWDsKrQ4fhsAYwzopxK6Cm5l5w2F9iMzCVqZuapW7A.png?r=201')" src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABYSw2XUJOe-RXGqlMhzAK2kb3m8jiiuICaICOYRemQXvfBcEmoaG0XMebWDsKrQ4fhsAYwzopxK6Cm5l5w2F9iMzCVqZuapW7A.png?r=201" alt="">
+        <img src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABYSw2XUJOe-RXGqlMhzAK2kb3m8jiiuICaICOYRemQXvfBcEmoaG0XMebWDsKrQ4fhsAYwzopxK6Cm5l5w2F9iMzCVqZuapW7A.png?r=201')"
+            src="https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABYSw2XUJOe-RXGqlMhzAK2kb3m8jiiuICaICOYRemQXvfBcEmoaG0XMebWDsKrQ4fhsAYwzopxK6Cm5l5w2F9iMzCVqZuapW7A.png?r=201"
+            alt="">
     </div>
 
     <div class="pagina">
@@ -39,7 +43,7 @@
                         <div class="logo">
                             <input type="image" src="/imgs/logo - Netflix.png" alt="logo" onclick="Recarregar()">
                         </div>
-    
+
                         <div class="navegacao">
                             <p id="inicio_a">Início</p>
                             <p>Séries</p>
@@ -50,14 +54,13 @@
                         </div>
                     </nav>
                 </div>
-    
+
                 <div class="modais-search">
                     <div class="div-modais">
                         <div class="elemento-texto">
                             <div class="Campo-Texto">
                                 <svg onclick="Animacao_Campo()" width="24" height="24" id="lupa-pesquisa">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" 
-                                        d="M14 11C14 14.3137 11.3137 17 8 17C4.68629 17 2 14.3137 2 11C2 7.68629
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 11C14 14.3137 11.3137 17 8 17C4.68629 17 2 14.3137 2 11C2 7.68629
                                         4.68629 5 8 5C11.3137 5 14 7.68629 14 11ZM14.3623 15.8506C12.9006 17.7649
                                         10.5945 19 8 19C3.58172 19 0 15.4183 0 11C0 6.58172 3.58172 3 8 3C12.4183
                                         3 16 6.58172 16 11C16 12.1076 15.7749 13.1626 15.368 14.1218L24.0022 19.1352L22.9979 
@@ -66,12 +69,11 @@
                                 </svg>
                             </div>
                         </div>
-    
+
                         <div class="elemento">
                             <button>
                                 <svg width="24" height="24">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" 
-                                    d="M13 4.07092C16.3922 4.55624 18.9998 7.4736 18.9998 11V15.2538C20.0486 15.3307 21.0848 
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13 4.07092C16.3922 4.55624 18.9998 7.4736 18.9998 11V15.2538C20.0486 15.3307 21.0848 
                                     15.4245 22.107 15.5347L21.8926 17.5232C18.7219 17.1813 15.409 17 11.9998 17C8.59056 17 5.27764 
                                     17.1813 2.10699 17.5232L1.89258 15.5347C2.91473 15.4245 3.95095 15.3307 4.99978 15.2538V11C4.99978
                                     7.47345 7.6076 4.55599 11 4.07086V2L13 2V4.07092ZM16.9998 15.1287V11C16.9998 8.23858 14.7612
@@ -82,19 +84,54 @@
                                     </path>
                                 </svg>
                             </button>
-    
+
                             <!--Criar div com modal com hover-->
                         </div>
-    
-                        <div class="elemento">
+
+                        <div class="elemento" onmouseover="Modal_Perfis_Open()" onmouseout="Modal_Perfis_Close()">
                             <img src="" alt="imagem-perfil" id="imagem-perfil">
-                            <!--Criar div com modal com hover-->
+
+                            <div class="modal-perfis">
+                                <div class="opcoes">
+
+                                    <figure class="figura-perfil">
+                                        <img class= "imagem-modal" src="" alt="">
+                                        <p class="nome-modal"></p>
+                                    </figure>
+
+                                    <figure class="figura-perfil">
+                                        <img class= "imagem-modal" src="" alt="">
+                                        <p class="nome-modal"></p>
+                                    </figure>
+
+                                    <figure class="figura-perfil">
+                                        <img class= "imagem-modal" src="" alt="">
+                                        <p class="nome-modal"></p>
+                                    </figure>
+
+                                    <figure class="figura-perfil">
+                                        <img class= "imagem-modal" src="" alt="">
+                                        <p class="nome-modal"></p>
+                                    </figure>
+
+                                    <figure class="figura-perfil">
+                                        <img class= "imagem-modal" src="" alt="">
+                                        <p class="nome-modal"></p>
+                                    </figure>
+                                </div>
+
+                                <hr>
+
+                                <div class="sair">
+                                    <p id="sair">Sair da Netflix</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
         </header>
-    
+
         <div class="modal-lista">
             <div class="imagens-lista">
 
@@ -107,134 +144,157 @@
                     <h2>Veja títulos sobre: </h2>
                     <ul id="lista-nomes"></ul>
                 </div>
-    
+
                 <div class="imagens-pesquisa"></div>
             </figure>
         </div>
-    
+
         <div class="modal-mais-informacoes">
             <div class="mais-informacoes">
                 <div class="preview-imagem-title">
                     <img src="" alt="Imagem de fundo" id="preview-imagem">
-    
+
                     <div class="titles">
-                        
+
                         <div class="close">
                             <div class="button-close">
                                 <button id="close-modal">
-                                    <svg width="24" height="25"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.29297 3.70706L10.5859 12L2.29297 20.2928L3.70718 21.7071L12.0001 13.4142L20.293 21.7071L21.7072 20.2928L13.4143 12L21.7072 3.70706L20.293 2.29285L12.0001 10.5857L3.70718 2.29285L2.29297 3.70706Z" fill="currentColor"></path></svg>
+                                    <svg width="24" height="25">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M2.29297 3.70706L10.5859 12L2.29297 20.2928L3.70718 21.7071L12.0001 13.4142L20.293 21.7071L21.7072 20.2928L13.4143 12L21.7072 3.70706L20.293 2.29285L12.0001 10.5857L3.70718 2.29285L2.29297 3.70706Z"
+                                            fill="currentColor"></path>
+                                    </svg>
                                 </button>
                             </div>
                         </div>
-    
+
                         <div class="title-span">
                             <span id="titulo-midia"></span>
                         </div>
-    
+
                         <div class="space-buttons">
                             <div class="buttons">
-                                <button id="assistir-play">        
-                                    <svg width="24" height="24"><path d="M4 2.69127C4 1.93067 4.81547 1.44851 5.48192 1.81506L22.4069 11.1238C23.0977 11.5037 23.0977 12.4963 22.4069 12.8762L5.48192 22.1849C4.81546 22.5515 4 22.0693 4 21.3087V2.69127Z" fill="currentColor"></path></svg>
+                                <button id="assistir-play">
+                                    <svg width="24" height="24">
+                                        <path
+                                            d="M4 2.69127C4 1.93067 4.81547 1.44851 5.48192 1.81506L22.4069 11.1238C23.0977 11.5037 23.0977 12.4963 22.4069 12.8762L5.48192 22.1849C4.81546 22.5515 4 22.0693 4 21.3087V2.69127Z"
+                                            fill="currentColor"></path>
+                                    </svg>
                                     <p>Assistir</p>
                                 </button>
-        
+
                                 <button id="circle-play" class="lista-botao">
-                                    <svg id="svg-x"  width="24" height="24"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 2V11H2V13H11V22H13V13H22V11H13V2H11Z" fill="currentColor"></path></svg>
-                                    <svg id="svg-certo" width="24" height="24"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.68239 19.7312L23.6824 5.73115L22.3178 4.26904L8.02404 17.6098L2.70718 12.293L1.29297 13.7072L7.29297 19.7072C7.67401 20.0882 8.28845 20.0988 8.68239 19.7312Z" fill="currentColor"></path></svg>
+                                    <svg id="svg-x" width="24" height="24">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11 2V11H2V13H11V22H13V13H22V11H13V2H11Z" fill="currentColor"></path>
+                                    </svg>
+                                    <svg id="svg-certo" width="24" height="24">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8.68239 19.7312L23.6824 5.73115L22.3178 4.26904L8.02404 17.6098L2.70718 12.293L1.29297 13.7072L7.29297 19.7072C7.67401 20.0882 8.28845 20.0988 8.68239 19.7312Z"
+                                            fill="currentColor"></path>
+                                    </svg>
                                 </button>
-        
+
                                 <button id="circle-play">
-                                    <svg width="24" height="24"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.696 8.7732C10.8947 8.45534 11 8.08804 11 7.7132V4H11.8377C12.7152 4 13.4285 4.55292 13.6073 5.31126C13.8233 6.22758 14 7.22716 14 8C14 8.58478 13.8976 9.1919 13.7536 9.75039L13.4315 11H14.7219H17.5C18.3284 11 19 11.6716 19 12.5C19 12.5929 18.9917 12.6831 18.976 12.7699L18.8955 13.2149L19.1764 13.5692C19.3794 13.8252 19.5 14.1471 19.5 14.5C19.5 14.8529 19.3794 15.1748 19.1764 15.4308L18.8955 15.7851L18.976 16.2301C18.9917 16.317 19 16.4071 19 16.5C19 16.9901 18.766 17.4253 18.3994 17.7006L18 18.0006L18 18.5001C17.9999 19.3285 17.3284 20 16.5 20H14H13H12.6228C11.6554 20 10.6944 19.844 9.77673 19.5382L8.28366 19.0405C7.22457 18.6874 6.11617 18.5051 5 18.5001V13.7543L7.03558 13.1727C7.74927 12.9688 8.36203 12.5076 8.75542 11.8781L10.696 8.7732ZM10.5 2C9.67157 2 9 2.67157 9 3.5V7.7132L7.05942 10.8181C6.92829 11.0279 6.72404 11.1817 6.48614 11.2497L4.45056 11.8313C3.59195 12.0766 3 12.8613 3 13.7543V18.5468C3 19.6255 3.87447 20.5 4.95319 20.5C5.87021 20.5 6.78124 20.6478 7.65121 20.9378L9.14427 21.4355C10.2659 21.8094 11.4405 22 12.6228 22H13H14H16.5C18.2692 22 19.7319 20.6873 19.967 18.9827C20.6039 18.3496 21 17.4709 21 16.5C21 16.4369 20.9983 16.3742 20.995 16.3118C21.3153 15.783 21.5 15.1622 21.5 14.5C21.5 13.8378 21.3153 13.217 20.995 12.6883C20.9983 12.6258 21 12.5631 21 12.5C21 10.567 19.433 9 17.5 9H15.9338C15.9752 8.6755 16 8.33974 16 8C16 6.98865 15.7788 5.80611 15.5539 4.85235C15.1401 3.09702 13.5428 2 11.8377 2H10.5Z" fill="currentColor"></path></svg>
+                                    <svg width="24" height="24">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.696 8.7732C10.8947 8.45534 11 8.08804 11 7.7132V4H11.8377C12.7152 4 13.4285 4.55292 13.6073 5.31126C13.8233 6.22758 14 7.22716 14 8C14 8.58478 13.8976 9.1919 13.7536 9.75039L13.4315 11H14.7219H17.5C18.3284 11 19 11.6716 19 12.5C19 12.5929 18.9917 12.6831 18.976 12.7699L18.8955 13.2149L19.1764 13.5692C19.3794 13.8252 19.5 14.1471 19.5 14.5C19.5 14.8529 19.3794 15.1748 19.1764 15.4308L18.8955 15.7851L18.976 16.2301C18.9917 16.317 19 16.4071 19 16.5C19 16.9901 18.766 17.4253 18.3994 17.7006L18 18.0006L18 18.5001C17.9999 19.3285 17.3284 20 16.5 20H14H13H12.6228C11.6554 20 10.6944 19.844 9.77673 19.5382L8.28366 19.0405C7.22457 18.6874 6.11617 18.5051 5 18.5001V13.7543L7.03558 13.1727C7.74927 12.9688 8.36203 12.5076 8.75542 11.8781L10.696 8.7732ZM10.5 2C9.67157 2 9 2.67157 9 3.5V7.7132L7.05942 10.8181C6.92829 11.0279 6.72404 11.1817 6.48614 11.2497L4.45056 11.8313C3.59195 12.0766 3 12.8613 3 13.7543V18.5468C3 19.6255 3.87447 20.5 4.95319 20.5C5.87021 20.5 6.78124 20.6478 7.65121 20.9378L9.14427 21.4355C10.2659 21.8094 11.4405 22 12.6228 22H13H14H16.5C18.2692 22 19.7319 20.6873 19.967 18.9827C20.6039 18.3496 21 17.4709 21 16.5C21 16.4369 20.9983 16.3742 20.995 16.3118C21.3153 15.783 21.5 15.1622 21.5 14.5C21.5 13.8378 21.3153 13.217 20.995 12.6883C20.9983 12.6258 21 12.5631 21 12.5C21 10.567 19.433 9 17.5 9H15.9338C15.9752 8.6755 16 8.33974 16 8C16 6.98865 15.7788 5.80611 15.5539 4.85235C15.1401 3.09702 13.5428 2 11.8377 2H10.5Z"
+                                            fill="currentColor"></path>
+                                    </svg>
                                 </button>
                             </div>
-        
+
                             <div class="som">
                                 <button id="circle-play">
-                                    <svg width="24" height="24"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 4.00003C11 3.59557 10.7564 3.23093 10.3827 3.07615C10.009 2.92137 9.57889 3.00692 9.29289 3.29292L4.58579 8.00003H1C0.447715 8.00003 0 8.44774 0 9.00003V15C0 15.5523 0.447715 16 1 16H4.58579L9.29289 20.7071C9.57889 20.9931 10.009 21.0787 10.3827 20.9239C10.7564 20.7691 11 20.4045 11 20V4.00003ZM5.70711 9.70714L9 6.41424V17.5858L5.70711 14.2929L5.41421 14H5H2V10H5H5.41421L5.70711 9.70714ZM15.2929 9.70714L17.5858 12L15.2929 14.2929L16.7071 15.7071L19 13.4142L21.2929 15.7071L22.7071 14.2929L20.4142 12L22.7071 9.70714L21.2929 8.29292L19 10.5858L16.7071 8.29292L15.2929 9.70714Z" fill="currentColor"></path></svg>
+                                    <svg width="24" height="24">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11 4.00003C11 3.59557 10.7564 3.23093 10.3827 3.07615C10.009 2.92137 9.57889 3.00692 9.29289 3.29292L4.58579 8.00003H1C0.447715 8.00003 0 8.44774 0 9.00003V15C0 15.5523 0.447715 16 1 16H4.58579L9.29289 20.7071C9.57889 20.9931 10.009 21.0787 10.3827 20.9239C10.7564 20.7691 11 20.4045 11 20V4.00003ZM5.70711 9.70714L9 6.41424V17.5858L5.70711 14.2929L5.41421 14H5H2V10H5H5.41421L5.70711 9.70714ZM15.2929 9.70714L17.5858 12L15.2929 14.2929L16.7071 15.7071L19 13.4142L21.2929 15.7071L22.7071 14.2929L20.4142 12L22.7071 9.70714L21.2929 8.29292L19 10.5858L16.7071 8.29292L15.2929 9.70714Z"
+                                            fill="currentColor"></path>
+                                    </svg>
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="preview-informacoes">
                     <div class="conteudo-esquerda">
                         <div class="infos-topo">
                             <p id="relevancia">97% Relevante</p>
-    
+
                             <p id="ultimo-ano-lançamento"></p>
-    
+
                             <div id="avaliacao">
                                 <span id="numero-avaliacao"></span>
                             </div>
-    
+
                             <p id="temporadas"></p>
-    
+
                             <span id="hd">HD</span>
-    
+
                             <img width="60" height="30" src="" alt="logo company" id="company">
                         </div>
-    
+
                         <div class="infos-baixo">
-                            
+
                         </div>
                     </div>
-    
+
                     <div class="conteudo-direita">
                         <div class="coluna-lista">
-                        
+
                         </div>
-    
+
                         <div class="coluna-lista">
-                            
+
                         </div>
-    
+
                         <div class="coluna-lista">
-                            
+
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="preview-episodios">
                     <div class="eps-temps">
                         <p> Episódios</p>
-                        
+
                         <div class="modal-select">
                             <button id="select" onclick="Open_Select()">Temporada 1</button>
 
                             <ul id="lista-temporadas">
-                                
+
                             </ul>
                         </div>
                     </div>
-    
+
                     <hr>
 
                     <div class="episodios">
-                        
+
                     </div>
                 </div>
             </div>
         </div>
-    
-        <main id="catalogo-sliders">  
+
+        <main id="catalogo-sliders">
             <section>
                 <div class="imagem">
                     <img src="" id="imagem-principal">
                 </div>
-    
+
                 <div class="espaco-infos">
                     <div class="esquerda-infos">
                         <img src="" id="logo-principal">
-                        
+
                         <!--Se estiver
                         <div class="top">
                             <img src="">
                             <p>Top 3 em filmes hoje</p>
                         </div> -->
-    
+
                         <div class="sobre"></div>
-    
+
                         <div class="botoes">
                             <button id="botao-assistir">
                                 <div>
@@ -248,7 +308,7 @@
                                 </div>
                                 <span class="value-button">Assistir</span>
                             </button>
-    
+
                             <button id="botao-mais">
                                 <div>
                                     <svg width="24" height="24" id="info-svg">
@@ -267,111 +327,113 @@
                             </button>
                         </div>
                     </div>
-    
+
                     <div class="direita-info">
-                         <img src="" id="classificacao-idade">
+                        <img src="" id="classificacao-idade">
                     </div>
                 </div>
             </section>
-    
+
             <div class="conteudo">
                 <div class="container">
                     <div class="container-text-add">
-                        
+
                     </div>
-    
+
                     <button class="arrow-left control-spm" aria-label="Previous image">🠜</button>
                     <button class="arrow-right control-spm" aria-label="Next image">🠞</button>
-    
+
                     <figure class="figura">
                         <div class="galeria-add">
-                            
+
                         </div>
                     </figure>
                 </div>
-    
+
                 <div class="container">
                     <div class="container-text-add">
-                       
+
                     </div>
-    
+
                     <button class="arrow-left control-cam" aria-label="Previous image">🠜</button>
                     <button class="arrow-right control-cam" aria-label="Next image">🠞</button>
-    
+
                     <figure class="figura">
                         <div class="galeria-add">
-                            
+
                         </div>
                     </figure>
                 </div>
-    
+
                 <div class="container">
                     <div class="container-text-add">
-                        
+
                     </div>
-    
+
                     <button class="arrow-left control-alta" aria-label="Previous image">🠜</button>
                     <button class="arrow-right control-alta" aria-label="Next image">🠞</button>
-    
+
                     <figure class="figura">
                         <div class="galeria-add">
-                           
+
                         </div>
                     </figure>
                 </div>
-    
+
                 <div class="container">
                     <div class="container-text-add">
-                        
+
                     </div>
-    
+
                     <button class="arrow-left control-fda" aria-label="Previous image">🠜</button>
                     <button class="arrow-right control-fda" aria-label="Next image">🠞</button>
-    
+
                     <figure class="figura">
                         <div class="galeria-add">
-                            
+
                         </div>
                     </figure>
                 </div>
-    
+
                 <div class="container">
                     <div class="container-text-add">
-                        
+
                     </div>
-    
+
                     <button class="arrow-left control-spa" aria-label="Previous image">🠜</button>
                     <button class="arrow-right control-spa" aria-label="Next image">🠞</button>
-    
+
                     <figure class="figura">
                         <div class="galeria-add">
-                            
+
                         </div>
                     </figure>
                 </div>
-    
+
                 <div class="container">
                     <div class="container-text">
                         <p>Brasil: Top 10 em filmes hoje</p>
                     </div>
-    
+
                     <button class="arrow-left control-topFilme" aria-label="Previous image">🠜</button>
                     <button class="arrow-right control-topFilme" aria-label="Next image">🠞</button>
-    
+
                     <figure class="figura">
                         <div class="galeria-top10">
-                            <div class="imagens item-topFilme" id="image" onclick="Buscar_ID('Doctor Strange Multiverse of madness')">
+                            <div class="imagens item-topFilme" id="image"
+                                onclick="Buscar_ID('Doctor Strange Multiverse of madness')">
                                 <svg id="rank-1" width="100%" height="100%">
-                                    <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M35.377 152H72V2.538L2 19.362v30.341l33.377-8.459V152z"></path>
+                                    <path stroke="#595959" stroke-linejoin="square" stroke-width="4"
+                                        d="M35.377 152H72V2.538L2 19.362v30.341l33.377-8.459V152z"></path>
                                 </svg>
-    
-                                <img src="https://image.tmdb.org/t/p/w500/boIgXXUhw5O3oVkhXsE6SJZkmYo.jpg" alt="Top 1 Netflix" id="top-movie">
+
+                                <img src="https://image.tmdb.org/t/p/w500/boIgXXUhw5O3oVkhXsE6SJZkmYo.jpg"
+                                    alt="Top 1 Netflix" id="top-movie">
                             </div>
-    
+
                             <div class="imagens item-topFilme" id="image" onclick="Buscar_ID('Batman')">
                                 <svg id="rank-2" width="100%" height="100%">
-                                    <path stroke="#595959" stroke-linejoin="square" stroke-width="4" 
-                                    d="M3.72 152H113v-30.174H50.484l4.355-3.55 29.453-24.012c5.088-4.124 
+                                    <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M3.72 152H113v-30.174H50.484l4.355-3.55 29.453-24.012c5.088-4.124 
                                     9.748-8.459 13.983-13.004 4.16-4.464 7.481-9.339 9.972-14.629 2.449-5.203
                                     3.678-11.113 3.678-17.749 0-9.428-2.294-17.627-6.875-24.645-4.597-7.042-10.941-12.494-19.07-16.376C77.803
                                     3.957 68.496 2 58.036 2 47.591 2 38.37 4.023 30.347 8.06c-8.015 4.032-14.457 9.578-19.352 16.654-4.492
@@ -380,10 +442,11 @@
                                     3.194-5.987 7.124-11.405 11.84L3.72 122.465V152z">
                                     </path>
                                 </svg>
-    
-                                <img src="https://image.tmdb.org/t/p/w500/wd7b4Nv9QBHDTIjc2m7sr0IUMoh.jpg" alt="Top 2 Netflix" id="top-movie">
+
+                                <img src="https://image.tmdb.org/t/p/w500/wd7b4Nv9QBHDTIjc2m7sr0IUMoh.jpg"
+                                    alt="Top 2 Netflix" id="top-movie">
                             </div>
-    
+
                             <div class="imagens item-topFilme" id="image" onclick="Buscar_ID('Titanic')">
                                 <svg id="rank-3" width="100%" height="100%">
                                     <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M3.809 41.577h33.243c1.3-2.702 3.545-4.947 
@@ -397,20 +460,22 @@
                                     31.515 5.816 21.91 13.415c-9 7.119-15.025 16.486-18.101 28.162z">
                                     </path>
                                 </svg>
-    
-                                <img src="https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg" alt="Top 3 Netflix" id="top-movie">
+
+                                <img src="https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg"
+                                    alt="Top 3 Netflix" id="top-movie">
                             </div>
-    
+
                             <div class="imagens item-topFilme" id="image" onclick="Buscar_ID('O telefone preto')">
                                 <svg id="rank-4" width="100%" height="100%">
                                     <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M72 152h35.333v-30.977H128V92.497h-20.667V2H69.89L2 
                                     92.712v28.311h70V152zM36.202 92.188l35.93-47.998v47.998h-35.93z">
                                     </path>
                                 </svg>
-    
-                                <img src="https://image.tmdb.org/t/p/w500/yw6H4C64tjBWlyKFG1pzmq5zOQh.jpg" alt="Top 4 Netflix" id="top-movie">
+
+                                <img src="https://image.tmdb.org/t/p/w500/yw6H4C64tjBWlyKFG1pzmq5zOQh.jpg"
+                                    alt="Top 4 Netflix" id="top-movie">
                             </div>
-    
+
                             <div class="imagens item-topFilme" id="image" onclick="Buscar_ID('Vingadores Ultimato')">
                                 <svg id="rank-5" width="100%" height="100%">
                                     <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M105.588 32.174V2H13.534l-8.3 88.357h32.463c2.145-2.362 
@@ -422,13 +487,15 @@
                                     0-20.099 3.483-27.234 10.461l-3.892 3.806 3.273-35.354h63.595z">
                                     </path>
                                 </svg>
-    
-                                <img src="https://image.tmdb.org/t/p/w500/q6725aR8Zs4IwGMXzZT8aC8lh41.jpg" alt="Top 5 Netflix" id="top-movie">
+
+                                <img src="https://image.tmdb.org/t/p/w500/q6725aR8Zs4IwGMXzZT8aC8lh41.jpg"
+                                    alt="Top 5 Netflix" id="top-movie">
                             </div>
-    
+
                             <div class="imagens item-topFilme" id="image" onclick="Buscar_ID('Top gun maverick')">
                                 <svg id="rank-6" width="100%" height="100%">
-                                    <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M79.482 38.192h35.551c-3.284-10.945-8.963-19.573-17.048-25.938C89.323 
+                                    <path stroke="#595959" stroke-linejoin="square" stroke-width="4"
+                                        d="M79.482 38.192h35.551c-3.284-10.945-8.963-19.573-17.048-25.938C89.323 
                                     5.434 77.531 2 62.545 2 50.756 2 40.35 4.86 31.277 10.577c-9.064 5.712-16.198 14.09-21.412 25.178C4.63 46.893 
                                     2 60.425 2 76.365c0 14.416 2.356 27.344 7.059 38.798 4.667 11.368 11.573 20.34 20.734 26.956C38.904 148.7 50.225 
                                     152 63.816 152a61.513 61.513 0 0019.922-3.278 53.546 53.546 0 0017.378-9.792c5.154-4.33 9.255-9.64 12.314-15.947
@@ -438,23 +505,26 @@
                                     83.975 56.762 82 62.604 82c5.847 0 10.906 1.98 15.074 5.905C81.878 91.859 84 96.837 84 102.71c0 5.885-2.131 10.805-6.35 14.622-4.167 3.77-9.214 5.668-15.045 5.668z">
                                     </path>
                                 </svg>
-    
-                                <img src="https://image.tmdb.org/t/p/w500/jTrXwK56EoLHHxfBkpwGdfmy2uh.jpg" alt="Top 6 Netflix" id="top-movie">
+
+                                <img src="https://image.tmdb.org/t/p/w500/jTrXwK56EoLHHxfBkpwGdfmy2uh.jpg"
+                                    alt="Top 6 Netflix" id="top-movie">
                             </div>
-    
+
                             <div class="imagens item-topFilme" id="image" onclick="Buscar_ID('O homem do norte')">
                                 <svg id="rank-7" width="100%" height="100%">
                                     <path stroke="#595959" stroke-width="4" d="M113,2 L2,2 L2,33.4022989 L75.9665929,33.4022989 
                                     L21.22571,152 L60.28102,152 L113,32.7672283 L113,2 Z" stroke-linejoin="square">
                                     </path>
                                 </svg>
-    
-                                <img src="https://image.tmdb.org/t/p/w500/vJfLNvOMK1Ek7OvpKgBDSqH2kN1.jpg" alt="Top 7 Netflix" id="top-movie">
+
+                                <img src="https://image.tmdb.org/t/p/w500/vJfLNvOMK1Ek7OvpKgBDSqH2kN1.jpg"
+                                    alt="Top 7 Netflix" id="top-movie">
                             </div>
-    
+
                             <div class="imagens item-topFilme" id="image" onclick="Buscar_ID('A culpa é das estrelas')">
                                 <svg id="rank-8" width="100%" height="100%">
-                                    <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M59.5 152c11.335 0 21.358-1.72 
+                                    <path stroke="#595959" stroke-linejoin="square" stroke-width="4"
+                                        d="M59.5 152c11.335 0 21.358-1.72 
                                     30.077-5.15 8.637-3.397 15.361-8.258 20.213-14.586 4.805-6.267 7.21-13.876 7.21-22.899 
                                     0-7.326-2.261-14.07-6.813-20.29-4.548-6.214-10.837-10.658-18.922-13.35l-5.4-1.799 5.338-1.975c7.238-2.678 
                                     12.572-6.683 16.066-12.018 3.53-5.388 5.284-11.178 5.284-17.414 0-7.912-2.133-14.839-6.405-20.84-4.3-6.042-10.403-10.825-18.345-14.351C79.816
@@ -467,10 +537,11 @@
                                         6.664-13.038C47.944 90.613 53.245 89 59.5 89c6.255 0 11.556 1.613 15.836 4.856 4.406 3.34 6.664 7.74 6.664 13.038 0 5.434-2.254 9.907-6.664 13.25C71.056 123.387 65.755 125 59.5 125z">
                                     </path>
                                 </svg>
-    
-                                <img src="https://image.tmdb.org/t/p/w500/lW1HA1JqXxKp1x5eSzEqTNxfIgA.jpg" alt="Top 8 Netflix" id="top-movie">
+
+                                <img src="https://image.tmdb.org/t/p/w500/lW1HA1JqXxKp1x5eSzEqTNxfIgA.jpg"
+                                    alt="Top 8 Netflix" id="top-movie">
                             </div>
-    
+
                             <div class="imagens item-topFilme" id="image" onclick="Buscar_ID('Baby driver')">
                                 <svg id="rank-9" width="100%" height="100%">
                                     <path stroke="#595959" stroke-width="4" d="M40.0597376,115.807692 L4.47328474,115.807692 
@@ -496,109 +567,113 @@
                                     C46.5580107,32.9364861 51.6342894,31 57.5,31 Z" stroke-linejoin="square">
                                     </path>
                                 </svg>
-    
-                                <img src="https://image.tmdb.org/t/p/w500/1rYTtQ14rPB3KOgk5TjkUqiQFch.jpg" alt="Top 9 Netflix" id="top-movie">
+
+                                <img src="https://image.tmdb.org/t/p/w500/1rYTtQ14rPB3KOgk5TjkUqiQFch.jpg"
+                                    alt="Top 9 Netflix" id="top-movie">
                             </div>
-    
+
                             <div class="imagens item-topFilme" id="image" onclick="Buscar_ID('Até o ultimo homem')">
                                 <svg id="rank-10" width="100%" height="100%">
-                                    <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M34.757 151.55h35.869V2.976L2 19.687v30.14l32.757-8.41v110.132zm105.53 3.45c12.394 
+                                    <path stroke="#595959" stroke-linejoin="square" stroke-width="4"
+                                        d="M34.757 151.55h35.869V2.976L2 19.687v30.14l32.757-8.41v110.132zm105.53 3.45c12.394 
                                     0 23.097-3.12 32.163-9.353 9.093-6.25 16.11-15.047 21.066-26.43C198.5 107.766 201 94.196 201 78.5c0-15.698-2.5-29.266-7.484-40.716-4.955-11.384-11.973-20.18-21.066-26.431C163.384
                                     5.119 152.681 2 140.287 2c-12.393 0-23.096 3.12-32.162 9.353-9.093 6.25-16.11 15.047-21.066 26.43-4.984 11.45-7.484 25.02-7.484 40.717 0 15.698 2.5 29.266 7.484 40.716 4.955 11.384 
                                     11.973 20.18 21.066 26.431 9.066 6.234 19.769 9.353 32.162 9.353zm0-31.368c-7.827 0-13.942-4.147-18.15-12.178-4.053-7.736-6.047-18.713-6.047-32.954s1.994-25.218 6.047-32.954c4.208-8.03 
                                     10.323-12.178 18.15-12.178 7.827 0 13.943 4.147 18.15 12.178 4.053 7.736 6.048 18.713 6.048 32.954s-1.995 25.218-6.047 32.954c-4.208 8.03-10.324 12.178-18.15 12.178z">
                                     </path>
                                 </svg>
-    
-                                <img src="https://image.tmdb.org/t/p/w500/88sCL8OQMoieKpHClqRCCbcgH6w.jpg" alt="Top 10 Netflix" id="top-movie">
+
+                                <img src="https://image.tmdb.org/t/p/w500/88sCL8OQMoieKpHClqRCCbcgH6w.jpg"
+                                    alt="Top 10 Netflix" id="top-movie">
                             </div>
-    
+
                         </div>
                     </figure>
                 </div>
-    
+
                 <div class="container">
                     <div class="container-text-add">
-                       
+
                     </div>
-    
+
                     <button class="arrow-left control-sp" aria-label="Previous image">🠜</button>
                     <button class="arrow-right control-sp" aria-label="Next image">🠞</button>
-    
+
                     <figure class="figura">
                         <div class="galeria-add">
-                            
+
                         </div>
                     </figure>
                 </div>
-    
+
                 <div class="container">
                     <div class="container-text">
                         <p>Minha Lista</p>
                     </div>
-    
+
                     <button class="arrow-left control-my" aria-label="Previous image">🠜</button>
                     <button class="arrow-right control-my" aria-label="Next image">🠞</button>
-    
+
                     <figure class="figura">
                         <div class="galeria minha-lista">
-                            
+
                         </div>
                     </figure>
                 </div>
-    
+
                 <div class="container">
                     <div class="container-text-add">
-                       
+
                     </div>
-    
+
                     <button class="arrow-left control-lan" aria-label="Previous image">🠜</button>
                     <button class="arrow-right control-lan" aria-label="Next image">🠞</button>
-    
+
                     <figure class="figura">
                         <div class="galeria-add">
-                            
+
                         </div>
                     </figure>
                 </div>
-    
+
                 <div class="container">
                     <div class="container-text-add">
-                       
+
                     </div>
-    
+
                     <button class="arrow-left control-drama" aria-label="Previous image">🠜</button>
                     <button class="arrow-right control-drama" aria-label="Next image">🠞</button>
-    
+
                     <figure class="figura">
                         <div class="galeria-add">
-                            
+
                         </div>
                     </figure>
                 </div>
-    
+
                 <div class="container">
                     <div class="container-text">
                         <p>Brasil: Top 10 em Séries hoje</p>
                     </div>
-    
+
                     <button class="arrow-left control-topSerie" aria-label="Previous image">🠜</button>
                     <button class="arrow-right control-topSerie" aria-label="Next image">🠞</button>
-    
+
                     <figure class="figura">
                         <div class="galeria-top10">
                             <div class="imagens item-topSerie" id="image" onclick="Buscar_ID('Vikings')">
                                 <svg id="rank-1" width="100%" height="100%">
-                                    <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M35.377 152H72V2.538L2 19.362v30.341l33.377-8.459V152z"></path>
+                                    <path stroke="#595959" stroke-linejoin="square" stroke-width="4"
+                                        d="M35.377 152H72V2.538L2 19.362v30.341l33.377-8.459V152z"></path>
                                 </svg>
-    
-                                <img src="https://image.tmdb.org/t/p/w500/oktTNFM8PzdseiK1X0E0XhB6LvP.jpg" alt="Top 1 Netflix" id="topSerie">
+
+                                <img src="https://image.tmdb.org/t/p/w500/oktTNFM8PzdseiK1X0E0XhB6LvP.jpg"
+                                    alt="Top 1 Netflix" id="topSerie">
                             </div>
-    
+
                             <div class="imagens item-topSerie" id="image" onclick="Buscar_ID('The boys')">
                                 <svg id="rank-2" width="100%" height="100%">
-                                    <path stroke="#595959" stroke-linejoin="square" stroke-width="4" 
-                                    d="M3.72 152H113v-30.174H50.484l4.355-3.55 29.453-24.012c5.088-4.124 
+                                    <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M3.72 152H113v-30.174H50.484l4.355-3.55 29.453-24.012c5.088-4.124 
                                     9.748-8.459 13.983-13.004 4.16-4.464 7.481-9.339 9.972-14.629 2.449-5.203
                                     3.678-11.113 3.678-17.749 0-9.428-2.294-17.627-6.875-24.645-4.597-7.042-10.941-12.494-19.07-16.376C77.803
                                     3.957 68.496 2 58.036 2 47.591 2 38.37 4.023 30.347 8.06c-8.015 4.032-14.457 9.578-19.352 16.654-4.492
@@ -607,10 +682,11 @@
                                     3.194-5.987 7.124-11.405 11.84L3.72 122.465V152z">
                                     </path>
                                 </svg>
-    
-                                <img src="https://image.tmdb.org/t/p/w500/mY7SeH4HFFxW1hiI6cWuwCRKptN.jpg" alt="Top 2 Netflix" id="topSerie">
+
+                                <img src="https://image.tmdb.org/t/p/w500/mY7SeH4HFFxW1hiI6cWuwCRKptN.jpg"
+                                    alt="Top 2 Netflix" id="topSerie">
                             </div>
-    
+
                             <div class="imagens item-topSerie" id="image" onclick="Buscar_ID('The walking dead')">
                                 <svg id="rank-3" width="100%" height="100%">
                                     <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M3.809 41.577h33.243c1.3-2.702 3.545-4.947 
@@ -624,20 +700,22 @@
                                     31.515 5.816 21.91 13.415c-9 7.119-15.025 16.486-18.101 28.162z">
                                     </path>
                                 </svg>
-    
-                                <img src="https://image.tmdb.org/t/p/w500/xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg" alt="Top 3 Netflix" id="topSerie">
+
+                                <img src="https://image.tmdb.org/t/p/w500/xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg"
+                                    alt="Top 3 Netflix" id="topSerie">
                             </div>
-    
+
                             <div class="imagens item-topSerie" id="image" onclick="Buscar_ID('Peaky blinders')">
                                 <svg id="rank-4" width="100%" height="100%">
                                     <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M72 152h35.333v-30.977H128V92.497h-20.667V2H69.89L2 
                                     92.712v28.311h70V152zM36.202 92.188l35.93-47.998v47.998h-35.93z">
                                     </path>
                                 </svg>
-    
-                                <img src="https://image.tmdb.org/t/p/w500/i0uajcHH9yogXMfDHpOXexIukG9.jpg" alt="Top 4 Netflix" id="topSerie">
+
+                                <img src="https://image.tmdb.org/t/p/w500/i0uajcHH9yogXMfDHpOXexIukG9.jpg"
+                                    alt="Top 4 Netflix" id="topSerie">
                             </div>
-    
+
                             <div class="imagens item-topSerie" id="image" onclick="Buscar_ID('Stranger things')">
                                 <svg id="rank-5" width="100%" height="100%">
                                     <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M105.588 32.174V2H13.534l-8.3 88.357h32.463c2.145-2.362 
@@ -649,13 +727,15 @@
                                     0-20.099 3.483-27.234 10.461l-3.892 3.806 3.273-35.354h63.595z">
                                     </path>
                                 </svg>
-    
-                                <img src="https://image.tmdb.org/t/p/w500/oqkld2D0qcnSNRm15rYV2883JE3.jpg" alt="Top 5 Netflix" id="topSerie">
+
+                                <img src="https://image.tmdb.org/t/p/w500/oqkld2D0qcnSNRm15rYV2883JE3.jpg"
+                                    alt="Top 5 Netflix" id="topSerie">
                             </div>
-    
+
                             <div class="imagens item-topSerie" id="image" onclick="Buscar_ID('dark')">
                                 <svg id="rank-6" width="100%" height="100%">
-                                    <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M79.482 38.192h35.551c-3.284-10.945-8.963-19.573-17.048-25.938C89.323 
+                                    <path stroke="#595959" stroke-linejoin="square" stroke-width="4"
+                                        d="M79.482 38.192h35.551c-3.284-10.945-8.963-19.573-17.048-25.938C89.323 
                                     5.434 77.531 2 62.545 2 50.756 2 40.35 4.86 31.277 10.577c-9.064 5.712-16.198 14.09-21.412 25.178C4.63 46.893 
                                     2 60.425 2 76.365c0 14.416 2.356 27.344 7.059 38.798 4.667 11.368 11.573 20.34 20.734 26.956C38.904 148.7 50.225 
                                     152 63.816 152a61.513 61.513 0 0019.922-3.278 53.546 53.546 0 0017.378-9.792c5.154-4.33 9.255-9.64 12.314-15.947
@@ -665,23 +745,26 @@
                                     83.975 56.762 82 62.604 82c5.847 0 10.906 1.98 15.074 5.905C81.878 91.859 84 96.837 84 102.71c0 5.885-2.131 10.805-6.35 14.622-4.167 3.77-9.214 5.668-15.045 5.668z">
                                     </path>
                                 </svg>
-    
-                                <img src="https://image.tmdb.org/t/p/w500/5LoHuHWA4H8jElFlZDvsmU2n63b.jpg" alt="Top 6 Netflix" id="topSerie">
+
+                                <img src="https://image.tmdb.org/t/p/w500/5LoHuHWA4H8jElFlZDvsmU2n63b.jpg"
+                                    alt="Top 6 Netflix" id="topSerie">
                             </div>
-    
+
                             <div class="imagens item-topSerie" id="image" onclick="Buscar_ID('La casa de papel')">
                                 <svg id="rank-7" width="100%" height="100%">
                                     <path stroke="#595959" stroke-width="4" d="M113,2 L2,2 L2,33.4022989 L75.9665929,33.4022989 
                                     L21.22571,152 L60.28102,152 L113,32.7672283 L113,2 Z" stroke-linejoin="square">
                                     </path>
                                 </svg>
-    
-                                <img src="https://image.tmdb.org/t/p/w500/ofBAZM79LltP7FIBRWJDMzyQGYG.jpg" alt="Top 7 Netflix" id="topSerie">
+
+                                <img src="https://image.tmdb.org/t/p/w500/ofBAZM79LltP7FIBRWJDMzyQGYG.jpg"
+                                    alt="Top 7 Netflix" id="topSerie">
                             </div>
-    
+
                             <div class="imagens item-topSerie" id="image" onclick="Buscar_ID('Vis a vis')">
                                 <svg id="rank-8" width="100%" height="100%">
-                                    <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M59.5 152c11.335 0 21.358-1.72 
+                                    <path stroke="#595959" stroke-linejoin="square" stroke-width="4"
+                                        d="M59.5 152c11.335 0 21.358-1.72 
                                     30.077-5.15 8.637-3.397 15.361-8.258 20.213-14.586 4.805-6.267 7.21-13.876 7.21-22.899 
                                     0-7.326-2.261-14.07-6.813-20.29-4.548-6.214-10.837-10.658-18.922-13.35l-5.4-1.799 5.338-1.975c7.238-2.678 
                                     12.572-6.683 16.066-12.018 3.53-5.388 5.284-11.178 5.284-17.414 0-7.912-2.133-14.839-6.405-20.84-4.3-6.042-10.403-10.825-18.345-14.351C79.816
@@ -694,10 +777,11 @@
                                         6.664-13.038C47.944 90.613 53.245 89 59.5 89c6.255 0 11.556 1.613 15.836 4.856 4.406 3.34 6.664 7.74 6.664 13.038 0 5.434-2.254 9.907-6.664 13.25C71.056 123.387 65.755 125 59.5 125z">
                                     </path>
                                 </svg>
-    
-                                <img src="https://image.tmdb.org/t/p/w500/vIFsPAn5EFHZnimvekXhi4LJf1p.jpg" alt="Top 8 Netflix" id="topSerie">
+
+                                <img src="https://image.tmdb.org/t/p/w500/vIFsPAn5EFHZnimvekXhi4LJf1p.jpg"
+                                    alt="Top 8 Netflix" id="topSerie">
                             </div>
-    
+
                             <div class="imagens item-topSerie" id="image" onclick="Buscar_ID('The 100')">
                                 <svg id="rank-9" width="100%" height="100%">
                                     <path stroke="#595959" stroke-width="4" d="M40.0597376,115.807692 L4.47328474,115.807692 
@@ -723,72 +807,75 @@
                                     C46.5580107,32.9364861 51.6342894,31 57.5,31 Z" stroke-linejoin="square">
                                     </path>
                                 </svg>
-    
-                                <img src="https://image.tmdb.org/t/p/w500/cfhfcEt4bOXuVZkTC0nNBpqqiWb.jpg" alt="Top 9 Netflix" id="topSerie">
+
+                                <img src="https://image.tmdb.org/t/p/w500/cfhfcEt4bOXuVZkTC0nNBpqqiWb.jpg"
+                                    alt="Top 9 Netflix" id="topSerie">
                             </div>
-    
+
                             <div class="imagens item-topSerie" id="image" onclick="Buscar_ID('Round 6')">
                                 <svg id="rank-10" width="100%" height="100%">
-                                    <path stroke="#595959" stroke-linejoin="square" stroke-width="4" d="M34.757 151.55h35.869V2.976L2 19.687v30.14l32.757-8.41v110.132zm105.53 3.45c12.394 
+                                    <path stroke="#595959" stroke-linejoin="square" stroke-width="4"
+                                        d="M34.757 151.55h35.869V2.976L2 19.687v30.14l32.757-8.41v110.132zm105.53 3.45c12.394 
                                     0 23.097-3.12 32.163-9.353 9.093-6.25 16.11-15.047 21.066-26.43C198.5 107.766 201 94.196 201 78.5c0-15.698-2.5-29.266-7.484-40.716-4.955-11.384-11.973-20.18-21.066-26.431C163.384
                                     5.119 152.681 2 140.287 2c-12.393 0-23.096 3.12-32.162 9.353-9.093 6.25-16.11 15.047-21.066 26.43-4.984 11.45-7.484 25.02-7.484 40.717 0 15.698 2.5 29.266 7.484 40.716 4.955 11.384 
                                     11.973 20.18 21.066 26.431 9.066 6.234 19.769 9.353 32.162 9.353zm0-31.368c-7.827 0-13.942-4.147-18.15-12.178-4.053-7.736-6.047-18.713-6.047-32.954s1.994-25.218 6.047-32.954c4.208-8.03 
                                     10.323-12.178 18.15-12.178 7.827 0 13.943 4.147 18.15 12.178 4.053 7.736 6.048 18.713 6.048 32.954s-1.995 25.218-6.047 32.954c-4.208 8.03-10.324 12.178-18.15 12.178z">
                                     </path>
                                 </svg>
-    
-                                <img src="https://image.tmdb.org/t/p/w500/6gcHdboppvplmBWxvROc96NJnmm.jpg" alt="Top 10 Netflix" id="topSerie">
+
+                                <img src="https://image.tmdb.org/t/p/w500/6gcHdboppvplmBWxvROc96NJnmm.jpg"
+                                    alt="Top 10 Netflix" id="topSerie">
                             </div>
-    
+
                         </div>
                     </figure>
                 </div>
-    
+
                 <div class="container">
                     <div class="container-text-add">
-                        
+
                     </div>
-    
+
                     <button class="arrow-left control-terror" aria-label="Previous image">🠜</button>
                     <button class="arrow-right control-terror" aria-label="Next image">🠞</button>
-    
+
                     <figure class="figura">
                         <div class="galeria-add">
-                           
+
                         </div>
                     </figure>
                 </div>
-    
+
                 <div class="container">
                     <div class="container-text-add">
-                        
+
                     </div>
-    
+
                     <button class="arrow-left control-anime" aria-label="Previous image">🠜</button>
                     <button class="arrow-right control-anime" aria-label="Next image">🠞</button>
-    
+
                     <figure class="figura">
                         <div class="galeria-add">
-                            
+
                         </div>
                     </figure>
                 </div>
-    
+
                 <div class="container">
                     <div class="container-text-add">
-                        
+
                     </div>
-    
+
                     <button class="arrow-left control-cpt" aria-label="Previous image">🠜</button>
                     <button class="arrow-right control-cpt" aria-label="Next image">🠞</button>
-    
+
                     <figure class="figura">
                         <div class="galeria-add">
-                           
+
                         </div>
                     </figure>
                 </div>
-    
+
                 <nav>
                     <div class="redes-socias">
                         <div class="images-links">
@@ -803,7 +890,8 @@
                             </a>
                             <a href="https://www.instagram.com/NetflixBrasil" target="_blank">
                                 <svg width="24" height="24">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9302 16.1229C21.9586 17.6764 21.3791 
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M21.9302 16.1229C21.9586 17.6764 21.3791 
                                     19.1796 20.3152 20.3119C19.1853 21.3804 17.68 21.9606 16.1252 21.9269C14.4742 22.0209 9.52524
                                      22.0209 7.87524 21.9269C6.32151 21.955 4.81816 21.3756 3.68524 20.3119C2.61778 19.1818
                                       2.03769 17.6772 2.07024 16.1229C1.97724 14.4719 1.97724 9.52294 2.07024 7.87294C2.03979
@@ -849,39 +937,40 @@
                                     8.42869 0.988785 10.213 1.00009 12C0.988785 13.787 1.14277 15.5713 1.46009 17.33C1.71301 18.2825 
                                     2.45414 19.0282 3.40509 19.287C5.12009 19.75 12.0051 19.75 12.0051 19.75C12.0051 19.75 18.8851 19.75 20.6001 
                                     19.287C21.5491 19.0267 22.2881 18.2813 22.5401 17.33C22.8574 15.5713 23.0114 13.787 23.0001 12C23.0114 10.213 
-                                    22.8574 8.42869 22.5401 6.67ZM9.75009 15.27V8.729L15.5001 12L9.75009 15.27Z" fill="currentColor">
+                                    22.8574 8.42869 22.5401 6.67ZM9.75009 15.27V8.729L15.5001 12L9.75009 15.27Z"
+                                        fill="currentColor">
                                     </path>
                                 </svg>
                             </a>
                         </div>
                     </div>
-        
+
                     <div class="links">
                         <div class="coluna">
                             <a href="" target="_blank">Audiodescrição</a>
                             <a href="" target="_blank">Relação com Investidores</a>
                             <a href="" target="_blank">Avisos Legais</a>
                         </div>
-                        
+
                         <div class="coluna">
                             <a href="" target="_blank">Central de Ajuda</a>
                             <a href="" target="_blank">Carreiras</a>
                             <a href="" target="_blank">Preferências de cookies</a>
                         </div>
-        
+
                         <div class="coluna">
                             <a href="" target="_blank">Cartão pré-pago</a>
                             <a href="" target="_blank">Termos de Uso</a>
                             <a href="" target="_blank">informações Corporativas</a>
                         </div>
-        
+
                         <div class="coluna">
                             <a href="" target="_blank">Imprensa</a>
                             <a href="" target="_blank">Privacidade</a>
                             <a href="" target="_blank">Entre em Contato</a>
                         </div>
                     </div>
-        
+
                     <div class="codigo">
                         <div class="code">
                             <button>Código de serviço</button>
@@ -891,7 +980,7 @@
                 </nav>
             </div>
         </main>
-        
+
         <div class="bombando">
             <figure>
                 <div class="mudar-midia">
@@ -911,4 +1000,5 @@
         </div>
     </div>
 </body>
+
 </html>
