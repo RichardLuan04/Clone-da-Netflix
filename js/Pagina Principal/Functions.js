@@ -217,7 +217,85 @@ botao_play.addEventListener('click', () => {
 
 document.getElementById("imagem-perfil").src = Consulta('imagem')
 
-let inicio_a = document.getElementById("inicio_a")
+const inicio_a = document.getElementById("inicio_a")
 inicio_a.addEventListener("click", () => {
     window.location.reload()
+})
+
+// Entrando no modal de series
+
+const series_a = document.querySelector("#series_a")
+
+series_a.addEventListener("click", () => {
+    document.querySelector(".modal-pesquisa").style.display = 'none'
+    document.getElementById("catalogo-sliders").style.display = 'none'
+    document.querySelector(".modal-lista").style.display = 'none'
+    document.querySelector(".bombando").style.display = 'none'
+    document.querySelector(".series-modal").style.display = 'flex' 
+})
+
+const procurar_botao = document.getElementById("procurar-relacionado")
+let imagens_relacionados = document.querySelector(".resultados-relacionados")
+
+document.getElementById("campo-relacionado").addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        procurar_botao.click()
+    }
+})
+
+procurar_botao.addEventListener("click", () => {
+    imagens_relacionados.innerHTML = ''
+    
+    let pesquisa = document.getElementById("campo-relacionado").value
+    let endpoint_media = `https://api.themoviedb.org/3/search/tv?api_key=bf345adcb24f454dbfd43680c4760cf5&query=${pesquisa}&language=pt-BR`
+
+    fetch(endpoint_media).then((response) => {
+        response.json().then((mediaJson) => {
+            var id = mediaJson.results[0].id
+
+            let endpoint_id = `https://api.themoviedb.org/3/tv/${id}/recommendations?api_key=bf345adcb24f454dbfd43680c4760cf5&language=pt-BR&page=${document.getElementById("number_page-rel").textContent}`
+            fetch(endpoint_id).then((responseId) => {
+                responseId.json().then((idJson) => {
+                    
+                    if (idJson.total_pages == 0) {
+                        let p = document.createElement("p")
+                        p.innerText = `Não encontramos Séries relacionadas a ${pesquisa} `
+                        p.id = 'erro-rel'
+                        imagens_relacionados.append(p)
+                    } else {
+                        for (let imagem of idJson.results) {
+
+                            let img = document.createElement("img")
+                            img.id = 'image_lista'
+                            img.alt = 'Serie'
+                            img.src = `https://image.tmdb.org/t/p/w500${imagem.poster_path}`
+                            img.setAttribute('onclick', `Mais_Informações("${imagem.id}","${imagem.media_type}")`)
+    
+                            imagens_relacionados.append(img)
+                        }
+                    }
+                })
+            })
+        })
+    })
+})
+
+// Mudando pagina
+
+const controls_rel = document.querySelectorAll(".control-rel")
+
+    controls_rel.forEach((control) => {
+        control.addEventListener("click", () => {
+                
+            const left = control.classList.contains('left-rel')
+
+            let pagina = document.getElementById("number_page-rel")
+            let number = parseInt(pagina.textContent)
+
+            left ? number -= 1 : number += 1
+
+            number < 1 || number > 2 ? alert('Pagina não encontrada') : pagina.innerHTML = number
+
+            procurar_botao.click()
+    })
 })

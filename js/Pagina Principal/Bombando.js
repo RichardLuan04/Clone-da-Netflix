@@ -4,6 +4,7 @@ botao_bombando.addEventListener("click", () => {
     document.querySelector(".modal-pesquisa").style.display = 'none'
     document.getElementById("catalogo-sliders").style.display = 'none'
     document.querySelector(".modal-lista").style.display = 'none'
+    document.querySelector(".series-modal").style.display = 'none'
     document.querySelector(".bombando").style.display = 'flex'
 
     let lista_bombando = document.querySelector(".bombando-lista")
@@ -18,9 +19,8 @@ botao_bombando.addEventListener("click", () => {
                 img.alt = 'Bombando'
                 img.src = `https://image.tmdb.org/t/p/w500${resultado.poster_path}`
                 img.setAttribute('onclick', `Mais_Informações("${resultado.id}","${document.getElementById('botao-mudar').textContent}")`)
-
+                
                 lista_bombando.append(img)
-                console.log(popularJson)
             }
         })
     })

@@ -18,9 +18,9 @@
     <script src="/js/Pagina Principal/Functions.js" defer></script>
     <script src="/js/Pagina Principal/Pesquisa.js" defer></script>
     <script src="/js/Pagina Principal/Mais Informações.js" defer></script>
-    <script src="/js/Pagina Principal/Slider-Catalogo.js" defer></script>
     <script src="/js/Pagina Principal/Select.js" defer></script>
     <script src="/js/Pagina Principal/Bombando.js" defer></script>
+    <script src="/js/Pagina Principal/Slider-Catalogo.js" defer></script>
 
     <title>Ínicio - Netflix</title>
 </head>
@@ -46,8 +46,8 @@
 
                         <div class="navegacao">
                             <p id="inicio_a">Início</p>
-                            <p>Séries</p>
-                            <p>Filmes</p>
+                            <p id="series_a">Séries</p>
+                            <p id="filmes_a">Filmes</p>
                             <p id="bombando_a">Bombando</p>
                             <p id="lista_a">Minha lista</p>
                             <p>Navegar por Idiomas</p>
@@ -997,6 +997,28 @@
 
                 </div>
             </figure>
+        </div>
+
+        <div class="series-modal">
+            <section>
+                <div class="pesquisar-relacionados">
+                    <div class="pesquisar">
+                        <input type="text" placeholder="Pesquisar por relacionados" id="campo-relacionado">
+
+                        <button id="procurar-relacionado">Procurar</button>
+                    </div>
+
+                    <div class="passar-relacionados">
+                        <button class="left-rel control-rel">🠜</button>
+                        <span id="number_page-rel">1</span>
+                        <button class="right-rel control-rel">🠞</button>
+                    </div>
+                </div>
+
+                <div class="resultados-relacionados">
+
+                </div>
+            </section>
         </div>
     </div>
 </body>

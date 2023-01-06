@@ -23,6 +23,7 @@ async function Mais_Informações (id_media,media_type) {
         document.querySelector(".modal-pesquisa").style.position = 'fixed'
         document.querySelector(".modal-lista").style.position = 'fixed'
         document.querySelector(".bombando").style.position = 'fixed'
+        document.querySelector(".series-modal").style.position = 'fixed' 
     },500)
 
     let endpoint_id = `https://api.themoviedb.org/3/${media_type}/${id_media}?api_key=${key}&language=${language}`
@@ -308,7 +309,7 @@ async function Adicionar_Temporada(media_type, id_media, number_season) {
             let p_1 = document.createElement("p")
             p_1.innerText = episodio.name
             let p_2 = document.createElement("p")
-            p_2.innerText = episodio.runtime
+            p_2.innerText = `${episodio.runtime}min`
 
             div_top.append(p_1)
             div_top.append(p_2)
@@ -365,6 +366,7 @@ closeButton.addEventListener('click', () => {
     document.querySelector(".modal-pesquisa").style.position = 'static'
     document.querySelector(".modal-lista").style.position = 'static'
     document.querySelector(".bombando").style.position = 'static'
+    document.querySelector(".series-modal").style.position = 'static' 
 })
 
 let overlay = document.querySelector(".modal-mais-informacoes")

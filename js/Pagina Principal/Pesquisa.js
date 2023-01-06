@@ -10,9 +10,14 @@
 */
 
 document.addEventListener("keyup", function() {
-  	setTimeout(() => {
-    	Search()    
-  	},2000)
+
+	let campo_pesquisa = document.getElementById("campo-texto")
+
+	if (campo_pesquisa != null) {
+		setTimeout(() => {
+			Search()    
+		},2000)
+	}
 })
 
 async function Search () {
@@ -40,6 +45,7 @@ async function Search () {
     document.getElementById('catalogo-sliders').style.display = 'none'
     document.querySelector(".modal-lista").style.display = 'none'
     document.querySelector(".bombando").style.display = 'none'
+    document.querySelector(".series-modal").style.display = 'none' 
     document.querySelector('.modal-pesquisa').style.display = 'flex'
 
     // Carregando imagens relacionadas a pesquisa e textos relacionados

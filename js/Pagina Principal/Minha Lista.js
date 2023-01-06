@@ -15,6 +15,7 @@ lista_botao.addEventListener("click", () => {
     document.querySelector(".modal-pesquisa").style.display = 'none'
     document.getElementById("catalogo-sliders").style.display = 'none'
     document.querySelector(".bombando").style.display = 'none'
+    document.querySelector(".series-modal").style.display = 'none' 
     document.querySelector(".modal-lista").style.display = 'flex'
 
     let campo_lista = document.querySelector(".imagens-lista")
