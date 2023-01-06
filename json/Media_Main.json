@@ -6,7 +6,9 @@
             "image": "https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVKH13B8aA5kv1_Hpnf7hn_MYyZ1R-22oM5slbw5y-YfqDLMhrBUojoU0dQMDfbGHbu9pNci-rrlcG8_-IFwlo1DcEK03KJ6QxmP.webp?r=36c",
             "media_overview": "A versão em realidade virtual de seu videogame preferido reaproxima dois amigos de faculdade, e as sessões noite adentro levam a uma descoberta surpreendente.",
             "title": "Black Mirror",
-            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg"
+            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg",
+            "video": "https://www.youtube.com/watch?v=JG301LECC_s"
+            
         },
         {
             "id": 2,
@@ -14,7 +16,8 @@
             "image": "https://occ-0-1740-1567.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWHEIr084a0SpVb9naW1Mf55GDhkDBgc2z20w8FB7h5faX5nWlQJXQs4D8xk9mlxqRd3ceiUlYwHCK_aTKPMkOL5-w6MwmGthRnp.webp?r=971",
             "media_overview": "O agente do FBI Kurt Weller segue pistas escondidas nas tatuagens de uma mulher amnésica para desvendar uma  conspiração.",
             "title": "Ponto Cego",
-            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR14-AUTO.jpg"
+            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR14-AUTO.jpg",
+            "video": "https://www.youtube.com/watch?v=RqZkit-aCTo"
         },
         {
             "id": 3,
@@ -22,7 +25,8 @@
             "image": "https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABV8KwsQtkjm0MUIi4CTyVLZzaxVZ3UXAqOLrQ1YZWQWBC3tyneXrc7IknEj8vBRJswgPCNrdWyF3-uLGzs_4eUKL_Cb2uFWFsVqO.webp?r=a1d",
             "media_overview": "Inspirada nos quadrinhos do Arqueiro Verde, esta série acompanha as aventuras do playboy que se torna super-herói e luta contra vilões armado apenas com arco e flechas.",
             "title": "Arrow",
-            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg"
+            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg",
+            "video": "https://www.youtube.com/watch?v=2yrviapP5uY"
         },
         {
             "id": 4,
@@ -30,7 +34,8 @@
             "image": "https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABRC8hB6F_G6lgbON66ydtNeyxOB1e2zO_B-6x81B5evtoPVtUWyneg0xqWNpHVsfBE1phv_mmy7yudEEUmH1NaL1x6IN4jg7vXy3.webp?r=bbb",
             "media_overview": "Entre o passado e o presente, uma família dividida confronta memórias assustadoras do antigo lar e dos eventos aterrorizantes que os expulsaram de lá.",
             "title": "A maldição da residência hill",
-            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg"
+            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg",
+            "video": "https://www.youtube.com/watch?v=OJCbEude3_E"
         },
         {
             "id": 5,
@@ -38,7 +43,8 @@
             "image": "https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABXF36QxP3RjOzYseM4k4rBFT8fofnyJkuiHUp1bx8IafwG8pdtCZc8GFck9RohbCJhUkyKvF-JCy4k2lAiEMf__ULNYEFy9JECqU.webp?r=f21",
             "media_overview": "O detetive novato James Gordon luta contra o crime e a corrupção em Gotham City para vingar o assassinato dos pais de Bruce Wayne.",
             "title": "Gotham",
-            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg"
+            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg",
+            "video": "https://www.youtube.com/watch?v=flYe6T8q_t8"
         },
         {
             "id": 6,
@@ -46,7 +52,8 @@
             "image": "https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABT6bB_df5fr1FuFRIHiKXUxbRBw6tbZXgdgnSIJeq-dUpVedPTJ_OHcfeuzPasTgdaz2xVx0F2gKm_iOLvEHdxhv7A2Gi_QdYpeC.webp?r=a8f",
             "media_overview": "Depois de se mudar para a casa do pai, Bella Swan começa a estudar na nova escola, onde conhece Edward, um rapaz misterioso que na verdade é um vampiro de 108 anos.",
             "title": "Crepúsculo",
-            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR12-AUTO.jpg"
+            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR12-AUTO.jpg",
+            "video": "https://www.youtube.com/watch?v=Ru8THEGdcEU"
         },
         {
             "id": 7,
@@ -54,7 +61,8 @@
             "image": "https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABfSt3F7OQoPpsQbESgS6oO1fOfM91nAesOF0hj9Xf6_aD7yVL-QtRv0f6its8wkZSUQpYjfVFhnkEeWf28bVdJ8ux-wKZjOALFUJ.webp?r=19c",
             "media_overview": "O lendário pirata Shiki reaparece em East Blue e planeja destruir o Governo Mundial. Depois que ele sequestra Nami, os Chapéus de Palha enfrentam uma terra estranha.",
             "title": "One Piece: Strong World",
-            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR12-AUTO.jpg"
+            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR12-AUTO.jpg",
+            "video": "https://www.youtube.com/watch?v=3n58UPvcD7I"
         },
         {
             "id": 8,
@@ -62,7 +70,8 @@
             "image": "https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABUnFqlJ2wEPrD2kbXvQOAV7nDaCVtndPJibp7N0NIbUA0afYSk8wxWWUKgoghgp2DtZX7rQucYIxhbwN81hbIi8lb8n0fiFVDpE0.webp?r=99e",
             "media_overview": "Quase 100 anos após um apocalipse nuclear devastar a Terra, 100 sobreviventes de uma estação espacial voltam para avaliar as condições do planeta.",
             "title": "The 100",
-            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg"
+            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg",
+            "video": "https://www.youtube.com/watch?v=B2OrmjsFrVU"
         },
         {
             "id": 9,
@@ -70,7 +79,8 @@
             "image": "https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABdAHEovYSs-t1jgGfpr3W-ugxYeOunE4lwFqF2rI9XUL-AUirXtRec458jwgg6M3_nhhLNCLleGPJ7Ud91uUeSqxtcEweiajW7sb.webp?r=b7f",
             "media_overview": "Esta série dramática acompanha a vida do viking Ragnar Lothbrok em sua jornada para ampliar o domínio nórdico e desafiar um líder incompetente e sem visão.",
             "title": "Vikings",
-            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg"
+            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg",
+            "video": "https://www.youtube.com/watch?v=9GgxinPwAGc"
         },
         {
             "id": 10,
@@ -78,7 +88,8 @@
             "image": "https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABWLZLzzbXGEvwnkG-Z-4Zol9VFDqL0ZJWaW1q8mErK8V92DYHbD69manWikl8ykL0ckTi8hKbmjHtzz6ScZBihcVnXGb_m9c4Fws.webp?r=6d9",
             "media_overview": "Zumbis dominam o mundo dos vivos, e os sobreviventes unem forças para manter viva a raça humana.",
             "title": "The Walking Dead",
-            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR18-AUTO.jpg"
+            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR18-AUTO.jpg",
+            "video": "https://www.youtube.com/watch?v=sfAc2U20uyg"
         },
         {
             "id": 11,
@@ -86,7 +97,8 @@
             "image": "https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABQywk3rKTtYEqs_1Zqg0euRH0AxnJynLsOehTPvHvnTtF7Qavy8rNZ7b6d7khI73z54dHGCKB_9hOJDdKvM-FAV3E2R_n1AAsUKL.webp?r=e51",
             "media_overview": "Em Bangladesh, o mercenário Tyler Rake luta para sobreviver durante a missão para resgatar o filho de um chefão do crime.",
             "title": "Resgate",
-            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg"
+            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg",
+            "video": "https://www.youtube.com/watch?v=GMKKq_bYd0E"
         },
         {
             "id": 12,
@@ -94,7 +106,8 @@
             "image": "https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABVCTU3BNsBgbagWQ3yRVcmqqy6rk4KnXOTw3T3NQdKf-EfdD0KtTnr3a3TWWi-y3scxjGj8EuZ6EHKxQjVmkSlEyYfhyKbfL4bTe.webp?r=75c",
             "media_overview": "Bruxa e também mortal, a jovem Sabrina Spellman fica dividida entre a vida normal de adolescente e o legado de sua família feiticeira.",
             "title": "O Mundo Sombrio de Sabrina",
-            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg"
+            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg",
+            "video": "https://www.youtube.com/watch?v=GcTnWlOb8A8"
         },
         {
             "id": 13,
@@ -102,7 +115,8 @@
             "image": "https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABehpCyY6lLouE4V1ToAsz874qPp71l5d71eFbvZs0EJ6gcsqqW_Pea9dalvUh4vBolZsPdAxAvZ3QvxkrWKVmhSbjp0UgYYeeKSj.jpg?r=f33",
             "media_overview": "Uma notória gangue da Inglaterra de 1919 é liderada pelo cruel Tommy Shelby, um criminoso disposto a subir na vida a qualquer preço.",
             "title": "Peaky Blinders",
-            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg"
+            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg",
+            "video": "https://www.youtube.com/watch?v=IZFUxDKUKbw"
         },
         {
             "id": 14,
@@ -110,7 +124,8 @@
             "image": "https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABYyTaMXgQj0MqBqbN9Oi_RXNCjsSeNXljr-Gn9rqqlnH38ap6sND9OpeYt-u4Ake14bsJsycbUvWWsz_un9wsLAEvX7vxW0AiOB2.jpg?r=0ff",
             "media_overview": "Enquanto Alfredo, o Grande, defende seu reino de invasões nórdicas, Uhtred - um saxão criado por vikings - planeja reivindicar o que é seu por direito.",
             "title": "The Last Kingdom",
-            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg"
+            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg",
+            "video": "https://www.youtube.com/watch?v=WxPApTGWwas"
         },
         {
             "id": 15,
@@ -118,7 +133,8 @@
             "image": "https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABfYt5MN5Zzd1FP-xcgDjSgb4V0e5Y1Twxak7iEtcp1C4b6yLMf-ei3kxJ_qfLIUrkfCCSCbAHKioD6C2dhdhW6c9FxOsOOZP9Jeu.jpg?r=3e3",
             "media_overview": "Quando um garoto desaparece, a cidade toda participa nas buscas. Mas o que encontram são segredos, forças sobrenaturais e uma menina.",
             "title": "Stranger Things",
-            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg"
+            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg",
+            "video": "https://www.youtube.com/watch?v=yTX0HxTq9wo"
         },
         {
             "id": 16,
@@ -126,7 +142,8 @@
             "image": "https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABZz-iX_y3Syau4SwoUFpnvUqWrEKip0XBIDZENlPnPbAUX140sOYQtwR5zhMAyOvos5Fl0GLSUFPm_fqFqTYQHIzD1N8UqF497In.webp?r=e42",
             "media_overview": "Demônios massacraram sua família e amaldiçoaram sua irmã. Agora Tanjiro inicia sua jornada para encontrar a cura e se vingar.",
             "title": "Demon Slayer",
-            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg"
+            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg",
+            "video": "https://www.youtube.com/watch?v=VQGCKyvzIM4"
         },
         {
             "id": 17,
@@ -134,7 +151,8 @@
             "image": "https://occ-0-4855-1567.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQ_9UClna-b4vqf4HraEBq05xeYIVwFso7JYjkILRs5uZk19NqGJJXd9UU9c-kkci9X0NdWkMdLHuqlxgxv7tsu0rCpXxUi3Bb48NzSXR4YtkNR7t6yawYf0cF2bdJ-LPOKSXQ.jpg?r=54f",
             "media_overview": "O mutante Geralt de Rívia é um caçador de monstros que luta para encontrar seu lugar num mundo onde as pessoas muitas vezes são mais perversas que as criaturas selvagens.",
             "title": "The Witcher",
-            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR18-AUTO.jpg"
+            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR18-AUTO.jpg",
+            "video": "https://www.youtube.com/watch?v=tjujvMkqWe4"
         },
         {
             "id": 18,
@@ -142,7 +160,8 @@
             "image": "https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABbKmszVC7uvVTKVvBYUm5D9j2pe8ZaIvTO4Zxe2mrLVCKUzQVTFgUtm6RGXuL6mIaWtHbzkDlBeCejBTN5BAgyyq3sJEESC7Ry9c.webp?r=54f",
             "media_overview": "Esta história surreal sobre um grupo de pessoas em um jogo de sobrevivência terrível é baseada no mangá de Haro Aso.",
             "title": "Alice in Borderlan",
-            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg"
+            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg",
+            "video": "https://www.youtube.com/watch?v=WZCxI1qv310"
         },
         {
             "id": 19,
@@ -150,7 +169,8 @@
             "image": "https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABaCdzB2RPfgwDwG2_eNKT7rpexehUKEuVjXkB9Q9KxC_-IxUYV4qQCQDxj4I8JPHkN7tpDaHWCMZG4_WvKXXLNnRebyWGb1L1cvD.webp?r=036",
             "media_overview": "Spenser, um ex-policial e ex-presidiário, e o aspirante a lutador Hawk se unem para investigar uma conspiração ligada à morte de dois oficiais de Boston.",
             "title": "Troco em Dobro",
-            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg"
+            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg",
+            "video": "https://www.youtube.com/watch?v=7fzTXxx3p28"
         },
         {
             "id": 20,
@@ -158,7 +178,8 @@
             "image": "https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABSPdsZTF2ylb9UOj7g2r4FPsDYXMT2uXNHdTxlJow4jfDu94-f37heUF2k2UoSdP84SKVxls3Od6jZlOIu-_9nddPlJ6TCJX0fwJ9zH0xV09DTZ5_s0GOI686Q.webp?r=41a",
             "media_overview": "Em seu primeiro caso oficial como detetive, Enola precisa encontrar uma menina desaparecida. Para isso, ela contará com a ajuda dos amigos e do irmão, Sherlock.",
             "title": "Enola Holmes 2",
-            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR12-AUTO.jpg"
+            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR12-AUTO.jpg",
+            "video": "https://www.youtube.com/watch?v=tFz3OGehj0U"
         },
         {
             "id": 21,
@@ -166,7 +187,8 @@
             "image": "https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABQGf8LP7AoNSZ4NfUVY_qEggDJJbBFhdOBsEWqZRNa6Gtrmy5Pa_pIXHtziMnvNontJ8wwkLwazut2LXblCz4Zkz_tWhpoWAngml.webp?r=a33",
             "media_overview": "Inteligente, sarcástica e apática, Wandinha Addams pode estar meio morta por dentro, mas na Escola Nunca Mais ela vai fazer amigos, inimigos e investigar assassinatos.",
             "title": "Wandinha",
-            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg"
+            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR16-AUTO.jpg",
+            "video": "https://www.youtube.com/watch?v=xvJL6qQ249A"
         },
         {
             "id": 22,
@@ -174,7 +196,8 @@
             "image": "https://occ-0-1363-559.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABWRfkuUjspA9QMVpcR4VXoGJ4XLP6qLh7RWj7ppYJ4VkT104Gy2VhECWMb1fOk6oxag63ZAIViEdh8_RzzyptKXxNkx9cL3-Kb_5.webp?r=57e",
             "media_overview": "Super-heróis também precisam de férias! Mas uma nova ameaça faz Peter Parker entrar em ação durante uma excursão na Europa.",
             "title": "Homem Aranha Longe de Casa",
-            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR10-AUTO.jpg"
+            "age_rating": "https://img.olhardigital.com.br/wp-content/uploads/2022/02/NR10-AUTO.jpg",
+            "video": "https://www.youtube.com/watch?v=vaw_8DoqXfk"
         }
     ]
 }
