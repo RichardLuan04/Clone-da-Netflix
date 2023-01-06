@@ -106,10 +106,15 @@ fetch("\\json/Media_Main.json").then((response) => {
         document.querySelector('.sobre').innerHTML = imagesJson.medias[random_number].media_overview
         document.getElementById('logo-principal').src = imagesJson.medias[random_number].media_logo
         document.getElementById('classificacao-idade').src = imagesJson.medias[random_number].age_rating
-
+        document.getElementById("video-principal").src = imagesJson.medias[random_number].video
         document.getElementById('botao-mais').setAttribute('onclick', `Buscar_ID("${imagesJson.medias[random_number].title}")`)
     }) 
 })
+
+setTimeout(() => {
+    document.getElementById('imagem-principal').style.display = 'none'
+    document.getElementById("video-principal").style.display = 'flex'
+},5000) // Tempo que demorara para aparecer o video 
 
 fetch_function ()
 
