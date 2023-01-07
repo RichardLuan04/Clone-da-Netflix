@@ -48,6 +48,9 @@ async function Search () {
     document.querySelector(".series-modal").style.display = 'none' 
     document.querySelector('.modal-pesquisa').style.display = 'flex'
 
+    document.getElementById('imagem-principal').style.display = 'flex'
+    document.getElementById("video-principal").style.display = 'none'
+
     // Carregando imagens relacionadas a pesquisa e textos relacionados
 
     for (let i=0;i<bodyJson_media.results.length;i++) {

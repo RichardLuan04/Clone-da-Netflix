@@ -7,6 +7,9 @@ botao_bombando.addEventListener("click", () => {
     document.querySelector(".series-modal").style.display = 'none'
     document.querySelector(".bombando").style.display = 'flex'
 
+    document.getElementById('imagem-principal').style.display = 'flex'
+    document.getElementById("video-principal").style.display = 'none'
+
     let lista_bombando = document.querySelector(".bombando-lista")
     lista_bombando.innerHTML = ''
     let endpointPopular = `https://api.themoviedb.org/3/${document.getElementById('botao-mudar').textContent}/popular?api_key=bf345adcb24f454dbfd43680c4760cf5&language=pt-BR&page=${document.getElementById("number_page").textContent}`

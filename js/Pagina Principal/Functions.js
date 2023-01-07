@@ -96,25 +96,63 @@ setTimeout(() => {
 
 // Usando json de imagens para o main e escolhendo uma aleatoriamente
 
+let random_number = parseInt(Math.random() * 22)
+
 fetch("\\json/Media_Main.json").then((response) => {
     response.json().then((main_images) => {
-        let imagesJson = main_images
-
-        let random_number = parseInt(Math.random() * imagesJson.medias.length)
-
-        document.getElementById('imagem-principal').src = imagesJson.medias[random_number].image
-        document.querySelector('.sobre').innerHTML = imagesJson.medias[random_number].media_overview
-        document.getElementById('logo-principal').src = imagesJson.medias[random_number].media_logo
-        document.getElementById('classificacao-idade').src = imagesJson.medias[random_number].age_rating
-        document.getElementById("video-principal").src = imagesJson.medias[random_number].video
-        document.getElementById('botao-mais').setAttribute('onclick', `Buscar_ID("${imagesJson.medias[random_number].title}")`)
+        document.getElementById('imagem-principal').src = main_images.medias[random_number].image
+        document.querySelector('.sobre').innerHTML = main_images.medias[random_number].media_overview
+        document.getElementById('logo-principal').src = main_images.medias[random_number].media_logo
+        document.getElementById('classificacao-idade').src = main_images.medias[random_number].age_rating
+        document.getElementById("video-principal").src = main_images.medias[random_number].video
+        document.getElementById('botao-mais').setAttribute('onclick', `Buscar_ID("${main_images.medias[random_number].title}")`)
     }) 
 })
 
-setTimeout(() => {
-    document.getElementById('imagem-principal').style.display = 'none'
-    document.getElementById("video-principal").style.display = 'flex'
-},5000) // Tempo que demorara para aparecer o video 
+Iniciar_Video()
+
+function Iniciar_Video () {
+    setTimeout(() => {
+        document.getElementById('imagem-principal').style.display = 'none'
+        document.getElementById("video-principal").style.display = 'flex'
+    
+        setTimeout(() => {
+            document.getElementById('imagem-principal').style.display = 'flex'
+            document.getElementById("video-principal").style.display = 'none'
+        },70000) // Tempo que demora para o video ser retirado
+    },5000) // Tempo que demorara para aparecer o video 
+}
+
+const botao_som = document.querySelector(".botao-som")
+const som_off = document.getElementById("som-off")
+const som_on = document.getElementById("som-on")
+
+function Botao_On() {
+    som_off.style.display = 'none'
+    som_on.style.display = 'block'
+    botao_som.setAttribute("onclick", "Botao_Off()")
+    
+    Mudando_Som(1,0)
+}
+
+function Botao_Off() {
+    som_off.style.display = 'block'
+    som_on.style.display = 'none'
+    botao_som.setAttribute("onclick", "Botao_On()")
+
+    Mudando_Som(0,1)
+}
+
+function Mudando_Som(old, new_audio) {
+    fetch("\\json/Media_Main.json").then((response) => {
+        response.json().then((main_images) => {
+            let src_video = main_images.medias[random_number].video
+            src_video = src_video.replace(`mute=${old}`, `mute=${new_audio}`)
+
+            document.getElementById("video-principal").src = src_video
+        })
+    })
+}
 
 fetch_function ()
 
@@ -215,7 +253,7 @@ play.addEventListener('click', () => {
 let botao_play = document.getElementById("botao-assistir")
 
 botao_play.addEventListener('click', () => {
-    alert('Não é possivel assistir nesse site!')
+    window.open(document.getElementById("video-principal").src)
 })
 
 // Adicionando imagem de perfil
@@ -224,7 +262,13 @@ document.getElementById("imagem-perfil").src = Consulta('imagem')
 
 const inicio_a = document.getElementById("inicio_a")
 inicio_a.addEventListener("click", () => {
-    window.location.reload()
+    document.querySelector(".modal-pesquisa").style.display = 'none'
+    document.getElementById("catalogo-sliders").style.display = 'flex'
+    document.querySelector(".modal-lista").style.display = 'none'
+    document.querySelector(".bombando").style.display = 'none'
+    document.querySelector(".series-modal").style.display = 'none' 
+
+    Iniciar_Video()
 })
 
 // Entrando no modal de series
@@ -237,6 +281,10 @@ series_a.addEventListener("click", () => {
     document.querySelector(".modal-lista").style.display = 'none'
     document.querySelector(".bombando").style.display = 'none'
     document.querySelector(".series-modal").style.display = 'flex' 
+
+    document.getElementById('imagem-principal').style.display = 'flex'
+    document.getElementById("video-principal").style.display = 'none'
+
 })
 
 const procurar_botao = document.getElementById("procurar-relacionado")
