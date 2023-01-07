@@ -267,6 +267,7 @@ inicio_a.addEventListener("click", () => {
     document.querySelector(".modal-lista").style.display = 'none'
     document.querySelector(".bombando").style.display = 'none'
     document.querySelector(".series-modal").style.display = 'none' 
+    document.querySelector(".filmes-modal").style.display = 'none'
 
     Iniciar_Video()
 })
@@ -280,6 +281,7 @@ series_a.addEventListener("click", () => {
     document.getElementById("catalogo-sliders").style.display = 'none'
     document.querySelector(".modal-lista").style.display = 'none'
     document.querySelector(".bombando").style.display = 'none'
+    document.querySelector(".filmes-modal").style.display = 'none'
     document.querySelector(".series-modal").style.display = 'flex' 
 
     document.getElementById('imagem-principal').style.display = 'flex'
@@ -287,24 +289,41 @@ series_a.addEventListener("click", () => {
 
 })
 
-const procurar_botao = document.getElementById("procurar-relacionado")
-let imagens_relacionados = document.querySelector(".resultados-relacionados")
+// Entrando no modal de filmes
+
+const filmes_a = document.querySelector("#filmes_a")
+
+filmes_a.addEventListener("click", () => {
+    document.querySelector(".modal-pesquisa").style.display = 'none'
+    document.getElementById("catalogo-sliders").style.display = 'none'
+    document.querySelector(".modal-lista").style.display = 'none'
+    document.querySelector(".bombando").style.display = 'none'
+    document.querySelector(".series-modal").style.display = 'none'
+    document.querySelector(".filmes-modal").style.display = 'flex'  
+
+    document.getElementById('imagem-principal').style.display = 'flex'
+    document.getElementById("video-principal").style.display = 'none'
+
+})
+
+const procurar_botao_serie = document.getElementById("procurar-relacionado") // JavaScript para buscar por series relacionadas
+let imagens_relacionados_serie = document.querySelector(".resultados-relacionados")
 
 document.getElementById("campo-relacionado").addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
-        procurar_botao.click()
+        procurar_botao_serie.click()
     }
 })
 
-procurar_botao.addEventListener("click", () => {
-    imagens_relacionados.innerHTML = ''
+procurar_botao_serie.addEventListener("click", () => {
+    imagens_relacionados_serie.innerHTML = ''
     
     let pesquisa = document.getElementById("campo-relacionado").value
     let endpoint_media = `https://api.themoviedb.org/3/search/tv?api_key=bf345adcb24f454dbfd43680c4760cf5&query=${pesquisa}&language=pt-BR`
 
     fetch(endpoint_media).then((response) => {
         response.json().then((mediaJson) => {
-            var id = mediaJson.results[0].id
+            let id = mediaJson.results[0].id
 
             let endpoint_id = `https://api.themoviedb.org/3/tv/${id}/recommendations?api_key=bf345adcb24f454dbfd43680c4760cf5&language=pt-BR&page=${document.getElementById("number_page-rel").textContent}`
             fetch(endpoint_id).then((responseId) => {
@@ -314,7 +333,7 @@ procurar_botao.addEventListener("click", () => {
                         let p = document.createElement("p")
                         p.innerText = `Não encontramos Séries relacionadas a ${pesquisa} `
                         p.id = 'erro-rel'
-                        imagens_relacionados.append(p)
+                        imagens_relacionados_serie.append(p)
                     } else {
                         for (let imagem of idJson.results) {
 
@@ -324,7 +343,7 @@ procurar_botao.addEventListener("click", () => {
                             img.src = `https://image.tmdb.org/t/p/w500${imagem.poster_path}`
                             img.setAttribute('onclick', `Mais_Informações("${imagem.id}","${imagem.media_type}")`)
     
-                            imagens_relacionados.append(img)
+                            imagens_relacionados_serie.append(img)
                         }
                     }
                 })
@@ -349,6 +368,72 @@ const controls_rel = document.querySelectorAll(".control-rel")
 
             number < 1 || number > 2 ? alert('Pagina não encontrada') : pagina.innerHTML = number
 
-            procurar_botao.click()
+            procurar_botao_serie.click()
+    })
+})
+
+const procurar_botao_filme = document.getElementById("procurar-relacionado-filme") // JavaScript para procurar por filmes relacionados
+let imagens_relacionados_filme = document.querySelector(".resultados-relacionados-filme")
+
+document.getElementById("campo-relacionado-filme").addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        procurar_botao_filme.click()
+    }
+})
+
+procurar_botao_filme.addEventListener("click", () => {
+    imagens_relacionados_filme.innerHTML = ''
+    
+    let pesquisa = document.getElementById("campo-relacionado-filme").value
+    let endpoint_media = `https://api.themoviedb.org/3/search/movie?api_key=bf345adcb24f454dbfd43680c4760cf5&query=${pesquisa}&language=pt-BR`
+
+    fetch(endpoint_media).then((response) => {
+        response.json().then((mediaJson) => {
+            let id = mediaJson.results[0].id
+
+            let endpoint_id = `https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=bf345adcb24f454dbfd43680c4760cf5&language=pt-BR&page=${document.getElementById("number_page-rel-filme").textContent}`
+            fetch(endpoint_id).then((responseId) => {
+                responseId.json().then((idJson) => {
+                    
+                    if (idJson.total_pages == 0) {
+                        let p = document.createElement("p")
+                        p.innerText = `Não encontramos Séries relacionadas a ${pesquisa} `
+                        p.id = 'erro-rel'
+                        imagens_relacionados_filme.append(p)
+                    } else {
+                        for (let imagem of idJson.results) {
+
+                            let img = document.createElement("img")
+                            img.id = 'image_lista'
+                            img.alt = 'Serie'
+                            img.src = `https://image.tmdb.org/t/p/w500${imagem.poster_path}`
+                            img.setAttribute('onclick', `Mais_Informações("${imagem.id}","${imagem.media_type}")`)
+    
+                            imagens_relacionados_filme.append(img)
+                        }
+                    }
+                })
+            })
+        })
+    })
+})
+
+// Mudando pagina
+
+const controls_rel_filme = document.querySelectorAll(".control-rel-filme")
+
+    controls_rel_filme.forEach((control) => {
+        control.addEventListener("click", () => {
+                
+            const left = control.classList.contains('left-rel-filme')
+
+            let pagina = document.getElementById("number_page-rel-filme")
+            let number = parseInt(pagina.textContent)
+
+            left ? number -= 1 : number += 1
+
+            number < 1 || number > 2 ? alert('Pagina não encontrada') : pagina.innerHTML = number
+
+            procurar_botao_filme.click()
     })
 })

@@ -5,6 +5,7 @@ botao_bombando.addEventListener("click", () => {
     document.getElementById("catalogo-sliders").style.display = 'none'
     document.querySelector(".modal-lista").style.display = 'none'
     document.querySelector(".series-modal").style.display = 'none'
+    document.querySelector(".filmes-modal").style.display = 'none'
     document.querySelector(".bombando").style.display = 'flex'
 
     document.getElementById('imagem-principal').style.display = 'flex'

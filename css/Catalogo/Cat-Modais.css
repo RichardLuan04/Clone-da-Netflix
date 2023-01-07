@@ -540,7 +540,7 @@ hr {
 
 /* Modal simples para mostrar modal de lista */
 
-@keyframes animacao-minha-lista {
+@keyframes animacao-left {
     from {
         opacity: 0;
         transform: translate3d(100px, 0, 0)
@@ -551,7 +551,7 @@ hr {
 }
 
 .modal-lista {
-    animation: animacao-minha-lista normal 0.5s;
+    animation: animacao-left normal 0.5s;
     display: none;
     justify-content: center;
     align-items: center;
@@ -592,7 +592,8 @@ hr {
 }
 
 .bombando figure, 
-.series-modal section {
+.series-modal section, 
+.filmes-modal section {
     gap: 2rem;
     display: flex;
     flex-direction: column;
@@ -627,7 +628,8 @@ hr {
 #botao-mudar:hover, 
 .passar-pagina button:hover, 
 .series-modal .pesquisar button:hover,
-.passar-relacionados button:hover {
+.passar-relacionados button:hover,
+#procurar-relacionado-filme:hover {
     border-color: #fff;
     color: #fff;
 }
@@ -643,7 +645,8 @@ hr {
 
 .passar-pagina button, 
 .series-modal .pesquisar button, 
-.passar-relacionados button {
+.passar-relacionados button,
+#procurar-relacionado-filme {
     min-height: 40px;
     min-width: 60px;
     max-height: 80px;
@@ -664,7 +667,8 @@ hr {
 }
 
 .bombando-lista, 
-.resultados-relacionados {
+.resultados-relacionados,
+.resultados-relacionados-filme {
     gap: 2rem;
     display: flex;
     flex-direction: row;
@@ -693,7 +697,8 @@ hr {
     gap: 1rem;
 }
 
-.series-modal .pesquisar #campo-relacionado {
+.series-modal .pesquisar #campo-relacionado,
+#campo-relacionado-filme {
     background-color: #000;
     border: 1px solid #fff;
     border-radius: 5px;
@@ -707,7 +712,8 @@ hr {
     font-weight: 400;
 }
 
-.series-modal .pesquisar button {
+.series-modal .pesquisar button,
+#procurar-relacionado-filme {
     min-height: 35px;
     min-width: 60px;
     max-height: 40px;
@@ -720,4 +726,13 @@ hr {
     color: #fff;
     font-weight: bold;
     
+}
+
+.filmes-modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 80vh;
+    animation: animacao-left 500ms linear;
 }

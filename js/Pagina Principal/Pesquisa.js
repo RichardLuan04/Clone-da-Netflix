@@ -46,6 +46,7 @@ async function Search () {
     document.querySelector(".modal-lista").style.display = 'none'
     document.querySelector(".bombando").style.display = 'none'
     document.querySelector(".series-modal").style.display = 'none' 
+    document.querySelector(".filmes-modal").style.display = 'none'
     document.querySelector('.modal-pesquisa').style.display = 'flex'
 
     document.getElementById('imagem-principal').style.display = 'flex'

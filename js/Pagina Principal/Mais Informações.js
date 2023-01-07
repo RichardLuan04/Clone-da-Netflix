@@ -24,6 +24,7 @@ async function Mais_Informações (id_media,media_type) {
         document.querySelector(".modal-lista").style.position = 'fixed'
         document.querySelector(".bombando").style.position = 'fixed'
         document.querySelector(".series-modal").style.position = 'fixed' 
+        document.querySelector(".filmes-modal").style.position = 'fixed'
     },500)
 
     let endpoint_id = `https://api.themoviedb.org/3/${media_type}/${id_media}?api_key=${key}&language=${language}`
@@ -366,6 +367,7 @@ closeButton.addEventListener('click', () => {
     document.querySelector(".modal-pesquisa").style.position = 'static'
     document.querySelector(".modal-lista").style.position = 'static'
     document.querySelector(".bombando").style.position = 'static'
+    document.querySelector(".filmes-modal").style.position = 'static'
     document.querySelector(".series-modal").style.position = 'static' 
 })
 
