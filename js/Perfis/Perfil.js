@@ -61,6 +61,8 @@ let nomeUsuario = Consulta('Usuario')
 let nomePerfil = Consulta('Nome')
 let imagemPerfil = Consulta('Imagem')
 
+nomeUsuario = nomeUsuario.replace("%20", " ") 
+
 let perfil = {
     numero: numero_perfil,
     usuario: nomeUsuario,
@@ -100,3 +102,7 @@ function Voltar() {
 function Voltar_perfil() {
     window.location.href = 'Perfis.html'
 }
+
+document.getElementById("botao-editar").addEventListener("click", () => {
+    alert("Sem utilidade")
+})

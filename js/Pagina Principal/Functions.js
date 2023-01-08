@@ -1,5 +1,7 @@
 // Mudar o menu ao rolar a tela
 
+document.getElementById("imagem-loading").src = Consulta('imagem')
+
 let menu = document.getElementById('header')
  window.addEventListener('scroll', function () {
     window.scrollY > 0 ? menu.classList.add('menuFixo') : menu.classList.remove('menuFixo')
@@ -58,14 +60,34 @@ let figuras_modal = document.querySelectorAll(".figura-perfil")
 
 let indice = 1
 imagens_modal.forEach((imagens) => {
-    imagens.src = JSON.parse(localStorage.getItem(`Usuario%20${indice}`)).img
-    indice++
+    let user = JSON.parse(localStorage.getItem(`Usuario ${indice}`))
+
+    if (user) {
+        imagens.src = user.img
+        indice++
+    }
 })
 
 indice = 1
 nomes_modal.forEach((nomes) => {
-    nomes.innerHTML = JSON.parse(localStorage.getItem(`Usuario%20${indice}`)).nome
-    nomes.setAttribute("onclick", `Mudar_Perfil('Usuario%20${indice}')`)
+    let user = JSON.parse(localStorage.getItem(`Usuario ${indice}`))
+
+    if (user) {
+        nomes.innerHTML = user.nome
+        nomes.setAttribute("onclick", `Mudar_Perfil('Usuario ${indice}')`)
+        indice++
+    }
+})
+
+indice = 1
+figuras_modal.forEach((figuras) => {
+    let user = JSON.parse(localStorage.getItem(`Usuario ${indice}`))
+
+    if (user) {
+        if (`Usuario ${indice}` == nomeUsuario.replace("%20", " ")) {
+            figuras.style.display = 'none'
+        } 
+    }
     indice++
 })
 
@@ -73,15 +95,6 @@ function Mudar_Perfil(user) {
     let userJson = JSON.parse(localStorage.getItem(user))
     window.location.href = `\\\pages/Catalogo/Inicio.html?usuario=${userJson.usuario}&imagem=${userJson.img}&numero=${userJson.numero}&nome=${userJson.nome}`
 }   
-
-indice = 1
-figuras_modal.forEach((figuras) => {
-    if (`Usuario%20${indice}` == nomeUsuario) {
-        figuras.style.display = 'none'
-    } 
-
-    indice++
-})
 
 document.getElementById("sair").addEventListener("click", () => {
     window.location.href = '\\\index.html'
@@ -92,7 +105,7 @@ document.getElementById("sair").addEventListener("click", () => {
 setTimeout(() => {
     document.querySelector(".pagina").style.display = 'flex'
     document.querySelector(".tela-loading").style.display = 'none'
-},500)
+},5000)
 
 // Usando json de imagens para o main e escolhendo uma aleatoriamente
 
@@ -120,7 +133,7 @@ function Iniciar_Video () {
             document.getElementById('imagem-principal').style.display = 'flex'
             document.getElementById("video-principal").style.display = 'none'
         },70000) // Tempo que demora para o video ser retirado
-    },5000) // Tempo que demorara para aparecer o video 
+    },10000) // Tempo que demorara para aparecer o video 
 }
 
 const botao_som = document.querySelector(".botao-som")

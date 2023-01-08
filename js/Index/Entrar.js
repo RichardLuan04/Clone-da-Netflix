@@ -17,3 +17,20 @@ function Entrar() {
         alert("Preencha todos os campos de textos!")
     }
 }
+
+document.getElementById("campo-email").addEventListener("keyup", (e) => {
+    if (e.key === 'Enter') {
+        Entrar_index()
+    }
+})
+
+document.getElementById("email-telefone").addEventListener("keyup", (e) => {
+    if (e.key === 'Enter') {
+        Entrar()
+    }
+})
+document.getElementById("Senha").addEventListener("keyup", (e) => {
+    if (e.key === 'Enter') {
+        Entrar()
+    }
+})

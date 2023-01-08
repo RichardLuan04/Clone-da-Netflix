@@ -66,8 +66,8 @@
     }
 
     .modal-login {
-        width: 35%;
-        height: 85%;
+        width: 50%;
+        height: 90%;
     }
 }
 
@@ -81,7 +81,8 @@
     }
 
     .modal-login {
-        width: 50%;
+        width: 60%;
+        height: 90%;
     }
 
     .infos {
@@ -91,7 +92,7 @@
 
 /* Para celulares */
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 560px){
     header img {
         margin-left: 10px;
         height: 40px;

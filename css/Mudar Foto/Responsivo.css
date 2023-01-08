@@ -1,3 +1,24 @@
+@media only screen and (max-width: 1680px) {
+    .container {
+        width: 30vw;
+    }
+
+    main {
+        min-height: 800vh;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    .container {
+        width: 40vw;
+    }
+
+    .imagem-nova p,
+    .imagem-atual p {
+        font-size: 1.4rem;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
 
     nav {
@@ -16,26 +37,37 @@
         font-size: 1.3rem;
     }
 
-    main {
-        min-height: 700vh;
-    }
-
     .galeria input {
-        width: 11vw;
+        width: 10vw;
     }
 
     .container {
-        width: 30vw;
+        width: 50vw;
     }
 }
     
 @media only screen and (max-width: 720px) {
     .galeria input{
-        min-width: 65px;
-        min-height: 65px;
-        max-width: 100px;
-        max-height: 100px;
-        width: 4vw;
+        min-width: 40px;
+        min-height: 40px;
+        max-width: 70px;
+        max-height: 70px;
+    }
+
+    .container {
+        width: 70vw;
+    }
+
+    .footer-modal button {
+        width: 160px;
+        height: 60px;
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 90vw;
     }
 }
 
@@ -61,10 +93,6 @@
         font-size: 1rem;
     }
 
-    main {
-        min-height: 320vh;
-    }
-
     section {
         margin-top: 3rem;
     }
@@ -74,17 +102,16 @@
     }
 
     .galeria input{
-        min-width: 35px;
-        min-height: 35px;
-        max-width: 100px;
-        max-height: 100px;
-        width: 4vw;
+        min-width: 30px;
+        min-height: 30px;
+        max-width: 50px;
+        max-height: 50px;
     }
 
     .text img {
         min-height: 10px;
-        min-width: 70px;
-        max-width: 150px;
+        min-width: 50px;
+        max-width: 100px;
         max-height: 50px;
     }
 
@@ -95,5 +122,42 @@
     .arrow-left, 
     .arrow-right {
         font-size: 20px;
+    }
+    
+    .footer-modal button {
+        width: 120px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+
+    .main-modal {
+        height: 35%;
+    }
+
+    .main-modal img {
+        height: 70%;
+        width: 90%;
+    }
+
+    .main-modal span {
+        font-size: 1.5 rem;
+    }
+}
+
+@media only screen and (max-width: 1028px) {
+    main {
+        min-height: 470vh;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    main {
+        min-height: 420vh;
+    }
+} 
+
+@media only screen and (max-width: 420px) {
+    main {
+        min-height: 240vh;
     }
 }

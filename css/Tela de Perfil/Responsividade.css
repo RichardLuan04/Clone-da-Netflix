@@ -44,7 +44,8 @@
 }
 
 @media screen and (max-width: 1024px) {
-    #titulo, span {
+    #titulo, span,
+    .text-gerenciar {
         font-size: 2.5rem;
     }
 
@@ -53,23 +54,17 @@
     }
 
     figure input {
-        height: 140px;
-        width: 140px;
+        height: 120px;
+        width: 120px;
     }
 
     .filtro {
-        width: 145px;
-        height: 145px;
+        width: 115px;
+        height: 115px;
     }
 
     .nomes-perfis {
-        font-size: 1rem;
-    }
-
-    #botao-gerenciar {
-        height: 35px;
-        width: 140px;
-        font-size: 0.8rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -114,17 +109,17 @@
     }
 
     figure input {
-        height: 100px;
-        width: 100px;
+        height: 70px;
+        width: 70px;
     }
 
     .filtro {
-        height: 95px;
-        width: 95px;
+        height: 65px;
+        width: 65px;
     }
 
     .nomes-perfis {
-        font-size: 1rem;
+        font-size: 0.7rem;
         margin-top: 5px;
     }
 
@@ -132,5 +127,12 @@
         height: 45%;
         justify-content: center;
         align-items: center;
+    }
+
+    .botao-concluir, 
+    #botao-gerenciar {
+        width: 120px;
+        height: 40px;
+        font-size: 0.8rem;
     }
 }
