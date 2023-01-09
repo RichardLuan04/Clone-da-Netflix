@@ -9,14 +9,16 @@
 - Response para pesquisar por midias = https://api.themoviedb.org/3/search/multi?api_key={key}&query={Serie}&language={língua}
 */
 
-document.addEventListener("keyup", function() {
+document.addEventListener("keyup", function(e) {
 
-	let campo_pesquisa = document.getElementById("campo-texto")
+	if (e.key === 'Enter') {
+		let campo_pesquisa = document.getElementById("campo-texto")
 
-	if (campo_pesquisa != null) {
-		setTimeout(() => {
-			Search()    
-		},2000)
+		if (campo_pesquisa != null) {
+			setTimeout(() => {
+				Search()    
+			},2000)
+		}
 	}
 })
 

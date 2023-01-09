@@ -3,3 +3,225 @@
         font-size: 1.5rem;
     }
 } 
+
+@media screen and (min-width: 1240px) {
+    .image {
+        min-width: 220px;
+        min-height: 130px;
+        max-width: 320px;
+        max-height: 170px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .logo input {
+        min-height: 20px;
+        max-height: 40px;
+        min-width: 40px;
+        max-width: 80px;
+    }
+
+    .navegacao p {
+        font-size: 0.7rem;
+    }
+
+    .elemento img {
+        min-height: 10px;
+        max-height: 30px;
+        min-width: 30px;
+        max-width: 70px;
+    }
+
+    .esquerda-infos img {
+        min-height: 50px;
+        min-width: 150px;
+        max-width: 300px;
+        max-height: 150px;
+    }
+
+    .sobre {
+        font-size: 1rem;
+    }
+
+    .botoes {
+        width: 100%;
+    }
+
+    #botao-assistir {
+        font-size: 0.8rem;
+        min-width: 100px;
+        max-width: 180px;
+    }
+
+    #botao-mais {
+        font-size: 0.8rem;
+        min-width: 200px;
+        max-width: 300px;
+    }
+
+    .container-text-add {
+        font-size: 1rem;
+    }
+
+    .image {
+        min-width: 160px;
+        min-height: 10px;
+        max-width: 250px;
+        max-height: 140px;
+    }
+
+    .container {
+        margin-top: 2rem;
+    }
+
+    .imagens svg {
+        min-width: 60px;
+        min-height: 60px;
+        max-width: 120px;
+        max-height: 120px;
+    }
+    
+    .imagens img {
+        min-width: 80px;
+        min-height: 80px;
+        max-width: 140px;
+        max-height: 140px;
+    }
+
+    .mais-informacoes {
+        width: 80%;
+        height: 90%;
+    }
+
+    .titles {
+        width: 80%;
+        height: 70vh;
+    }
+    
+    #relevancia,
+    #ultimo-ano-lançamento {
+        font-size: 0.8rem;
+    }
+
+    #avaliacao {
+        width: 25px;
+        height: 25px;
+    }
+
+    #assistir-play  {
+        font-size: 0.8rem;
+    }
+
+    #temporadas {
+        font-size: 0.8rem;
+    }
+
+    .infos-baixo {
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+    .coluna-lista {
+        margin-top: 20px;
+        font-size: 0.8rem;
+    }
+
+    .imagens-pesquisa input,
+    #image_lista {
+        min-width: 120px;
+        min-height: 160px;
+        max-width: 70px;
+        max-height: 260px;
+    }
+
+    .passar-pagina button, 
+    .passar-relacionados button {
+        min-height: 40px;
+        min-width: 40px;
+        max-height: 60px;
+        max-width: 80px;
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .opcoes {
+        width: 70%;
+    }
+
+    .opcoes nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo input {
+        min-height: 30px;
+        max-height: 70px;
+        min-width: 70px;
+        max-width: 130px;
+    }
+
+    .notificacao,
+    #navegar_a {
+        display: none;
+    }
+
+    .navegacao {
+        width: 100vw;
+    }
+
+    .navegacao p {
+        font-size: 0.7rem;
+    }
+
+    .modais-search {
+        align-items: flex-start;
+    }
+
+    .div-modais {
+        height: 50%;
+        width: 80vw;
+    }
+
+    .elemento img {
+        min-height: 15px;
+        max-height: 30px;
+        min-width: 30px;
+        max-width: 60px;
+        padding-right: 30px;
+    }
+
+    .elemento-texto {
+        width: 60vw;
+    }
+
+    .elemento-texto svg {
+        transform: scale(0.6);
+    }
+
+    #campo-texto {
+        width: 70%;
+        font-size: 0.8rem;
+    }
+
+    #campo-texto::placeholder {
+        font-size: 0.8rem;
+    }
+
+    .esquerda-infos {
+        padding-left: 1rem;
+    }
+
+    .sobre {
+        width: 100%;
+        font-size: 0.8rem;
+        text-align: start;
+    }
+
+    #logo-principal {
+        min-height: 80px;
+        min-width: 130px;
+        max-width: 280px;
+        max-height: 180px;
+    }
+}

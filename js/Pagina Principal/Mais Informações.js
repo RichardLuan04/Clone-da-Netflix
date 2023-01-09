@@ -292,6 +292,7 @@ async function Adicionar_Temporada(media_type, id_media, number_season) {
             div_imagem_ep.className = 'imagem-ep'
 
             let img = document.createElement("img")
+            img.setAttribute("onclick", "Player_Video()")
 
             if (episodio.still_path != null) {
                 let still = episodio.still_path
@@ -376,3 +377,7 @@ let overlay = document.querySelector(".modal-mais-informacoes")
 overlay.addEventListener('click', function(e) {
     if (e.target == this) closeButton.click()
 })
+
+function Player_Video() {
+    alert("Não é possivel assistir")
+}

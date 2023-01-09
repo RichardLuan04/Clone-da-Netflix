@@ -248,6 +248,12 @@
     align-items: center;
 }
 
+#company {
+    width: 15%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
 .infos-baixo {
     width: 80%;
     height: 70%;
