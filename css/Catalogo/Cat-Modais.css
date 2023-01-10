@@ -58,6 +58,8 @@
     background-size: cover;
     -webkit-mask-image: linear-gradient(to top, transparent 0%, #000000 30%);
     mask-image: linear-gradient(to top, transparent 0%, #000000 30%);
+    object-fit: cover;
+    object-position: center;
 }
 
 .titles {
@@ -219,6 +221,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .infos-topo p, .infos-topo span{

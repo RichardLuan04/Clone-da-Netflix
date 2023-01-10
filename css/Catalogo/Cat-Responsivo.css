@@ -184,6 +184,10 @@
         height: 50%;
         width: 80vw;
     }
+    
+    .elemento {
+        width: 40%;
+    }
 
     .elemento img {
         min-height: 15px;
@@ -194,7 +198,7 @@
     }
 
     .elemento-texto {
-        width: 60vw;
+        width: 72vw;
     }
 
     .elemento-texto svg {
@@ -394,7 +398,8 @@
         gap: 1rem;
         width: 95%;
         justify-content: start;
-        align-items: flex-start;    }
+        align-items: flex-start;    
+    }
     
 
     .mudar-midia {
@@ -404,5 +409,114 @@
     .passar-pagina{
         width: 25%;
         gap: 5px;
+    }
+
+    .relacionados h2,
+    .relacionados ul li {
+        font-size: 0.5rem;
+    }
+
+    .modal-perfis {
+        right: 0;
+        top: 0;
+        height: 33vh;
+        width: 55vw;
+        margin-top: 40px;
+    }
+
+    .modal-perfis .opcoes figure img {
+        min-height: 30px;
+        max-height: 50px;
+        min-width: 30px;
+        max-width: 50px;
+    }
+
+    .modal-perfis .opcoes figure p,
+    #sair {
+        font-size: 0.8rem;
+    }
+
+    .modal-mais-informacoes {
+        padding-top: 0vh;
+        border-radius: 0px;
+    }
+
+    .mais-informacoes {
+        width: 100%;
+        height: 100%;
+    }
+
+    .titles,
+    .button-close {
+        width: 95%;
+    }
+
+    #titulo-midia {
+        font-size: 2rem;
+    }
+
+    #assistir-play  {
+        min-height: 30px;
+        min-width: 100px;
+        max-width: 200px;
+        max-height: 60px;
+        font-size: 0.8rem;
+    }
+
+    .infos-baixo,
+    #relevancia,
+    #ultimo-ano-lançamento,
+    #temporadas,
+    #numero-avaliacao,
+    .coluna-lista {
+        font-size: 0.7rem;
+    }
+
+    #avaliacao {
+        width: 20px;
+        height: 20px;
+    }
+
+    #hd {
+        font-size: 0.5rem;
+        width: 20px;
+        height: 15px;
+    }
+
+    .eps-temps p {
+        font-size: 1rem;
+    }
+
+    #select {
+        font-size: 0.8rem;
+        min-width: 150px;
+        min-height: 30px;
+        max-width: 200px;
+        max-height: 60px;
+    }
+
+    .modal-select ul {
+        margin-top: 3rem;
+        min-width: 200px;
+        height: 200px;
+        max-width: 300px;
+    }
+
+    .modal-select ul li .text-temp, 
+    .modal-select ul li span,
+    .numero-ep,
+    .top p {
+        font-size: 0.8rem;
+    }
+
+    .imagem-ep img {
+        min-width: 60px;
+        min-height: 30px;
+        max-width: 100px;
+        max-height: 60px;
+    }
+
+    .bottom p {
+        font-size: 0.6rem;
     }
 }
