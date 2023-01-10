@@ -112,7 +112,7 @@ setTimeout(() => {
 
 let random_number = parseInt(Math.random() * 22)
 
-fetch("\\json/Media_Main.json").then((response) => {
+fetch("../../json/Media_Main.json").then((response) => {
     response.json().then((main_images) => {
         document.getElementById('imagem-principal').src = main_images.medias[random_number].image
         document.querySelector('.sobre').innerHTML = main_images.medias[random_number].media_overview
@@ -158,7 +158,7 @@ function Botao_Off() {
 }
 
 function Mudando_Som(old, new_audio) {
-    fetch("\\json/Media_Main.json").then((response) => {
+    fetch("../../json/Media_Main.json").then((response) => {
         response.json().then((main_images) => {
             let src_video = main_images.medias[random_number].video
             src_video = src_video.replace(`mute=${old}`, `mute=${new_audio}`)
@@ -171,7 +171,7 @@ function Mudando_Som(old, new_audio) {
 fetch_function ()
 
 async function fetch_function () {
-    let catalogo_media = await fetch("\\\json/Media_Catalog.json")
+    let catalogo_media = await fetch("../../json/Media_Catalog.json")
     let catalogJson = await catalogo_media.json()
 
     let titles = document.querySelectorAll('.container-text-add')
