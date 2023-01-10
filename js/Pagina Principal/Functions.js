@@ -21,6 +21,7 @@ function Animacao_Campo() {
     input.type = "text"
     input.id = "campo-texto"
     input.placeholder = "Títulos, gente e gêneros"
+    input.autocomplete = 'off'
  
     btnLupa.setAttribute('onclick', "Fechar_Campo()") // Mudando botao de click
 }
