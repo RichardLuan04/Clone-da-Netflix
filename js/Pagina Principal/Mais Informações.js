@@ -67,7 +67,7 @@ async function Mais_Informações (id_media,media_type) {
         let response_rating= await fetch(endpoint_rating)
         let jsonRating = await response_rating.json()
         
-        let age_response = await fetch("\\json/age_restriction.json")
+        let age_response = await fetch("../../json/age_restriction.json")
         let jsonAge = await age_response.json()
 
         for (let i=0;i<jsonRating.results.length;i++){

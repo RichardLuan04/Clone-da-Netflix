@@ -94,11 +94,11 @@ figuras_modal.forEach((figuras) => {
 
 function Mudar_Perfil(user) {
     let userJson = JSON.parse(localStorage.getItem(user))
-    window.location.href = `\\\pages/Catalogo/Inicio.html?usuario=${userJson.usuario}&imagem=${userJson.img}&numero=${userJson.numero}&nome=${userJson.nome}`
+    window.location.href = `../../pages/Catalogo/Inicio.html?usuario=${userJson.usuario}&imagem=${userJson.img}&numero=${userJson.numero}&nome=${userJson.nome}`
 }   
 
 document.getElementById("sair").addEventListener("click", () => {
-    window.location.href = '\\\index.html'
+    window.location.href = '../../index.html'
 })
 
 // Loading
